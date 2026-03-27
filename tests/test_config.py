@@ -75,8 +75,29 @@ sources:
         self.assertEqual(config.topics[0].topic_id, "ai_research")
         self.assertEqual(config.topics[0].keywords, ["edge ai", "tinyml"])
         self.assertEqual(config.topics[0].min_relevance_score, 2.0)
+        self.assertEqual(config.topics[0].allowed_paper_languages, [])
         self.assertEqual(config.sources["arxiv"].max_results, 10)
         self.assertEqual(config.sources["linkedin_import"].extra["import_dir"], "imports/linkedin")
+
+    def test_topic_allowed_paper_languages_are_loaded(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            config_dir = Path(tmp_dir)
+            (config_dir / "topics.yaml").write_text(
+                """
+topics:
+  - topic_id: "ship_autonomy"
+    display_name: "Ship Autonomy"
+    keywords: ["autonomous ship"]
+    allowed_paper_languages: ["en", "eng"]
+    sources: ["openalex"]
+""".strip(),
+                encoding="utf-8",
+            )
+            (config_dir / "sources.yaml").write_text("sources: {}", encoding="utf-8")
+
+            config = load_config(config_dir)
+
+        self.assertEqual(config.topics[0].allowed_paper_languages, ["en", "eng"])
 
     def test_duplicate_topic_ids_raise(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:

@@ -109,6 +109,70 @@ class FakeNewsAdapter(SourceAdapter):
         ]
 
 
+class FakeLanguageAdapter(SourceAdapter):
+    source_name = "fake_language"
+
+    def search(self, topic: TopicProfile, start_date: date, end_date: date) -> list[RawItem]:
+        return [
+            RawItem(
+                source=self.source_name,
+                source_id="english-item",
+                item_type="paper",
+                title="Autonomous ship collision avoidance study",
+                authors_or_author=["Alice"],
+                published_at=date(2026, 3, 20),
+                discovered_at=utc_now(),
+                abstract_or_body="A maritime vessel navigation study with collision avoidance results.",
+                url="https://example.org/english",
+                doi=None,
+                topic_id=topic.topic_id,
+                raw_payload={"id": "english-item", "language": "en"},
+            ),
+            RawItem(
+                source=self.source_name,
+                source_id="explicit-ru-item",
+                item_type="paper",
+                title="Autonomous ship structural model",
+                authors_or_author=["Bob"],
+                published_at=date(2026, 3, 20),
+                discovered_at=utc_now(),
+                abstract_or_body="A paper that would otherwise match the ship autonomy topic.",
+                url="https://example.org/explicit-ru",
+                doi=None,
+                topic_id=topic.topic_id,
+                raw_payload={"id": "explicit-ru-item", "language": "ru"},
+            ),
+            RawItem(
+                source=self.source_name,
+                source_id="cyrillic-item",
+                item_type="paper",
+                title="Автономне судно та уникнення зіткнень",
+                authors_or_author=["Carol"],
+                published_at=date(2026, 3, 20),
+                discovered_at=utc_now(),
+                abstract_or_body="Autonomous ship collision avoidance for maritime vessel operations.",
+                url="https://example.org/cyrillic",
+                doi=None,
+                topic_id=topic.topic_id,
+                raw_payload={"id": "cyrillic-item"},
+            ),
+            RawItem(
+                source=self.source_name,
+                source_id="news-ru-item",
+                item_type="news_article",
+                title="Autonomous ship program expands",
+                authors_or_author=["Global Maritime Daily"],
+                published_at=date(2026, 3, 20),
+                discovered_at=utc_now(),
+                abstract_or_body="A Russian-language news article about autonomous ship development.",
+                url="https://example.org/news-ru",
+                doi=None,
+                topic_id=topic.topic_id,
+                raw_payload={"id": "news-ru-item", "language": "ru"},
+            ),
+        ]
+
+
 class PipelineTests(unittest.TestCase):
     def setUp(self) -> None:
         self._original_registry = dict(SOURCE_REGISTRY)
@@ -116,6 +180,7 @@ class PipelineTests(unittest.TestCase):
         SOURCE_REGISTRY["fake_secondary"] = FakeSecondaryAdapter
         SOURCE_REGISTRY["broken_source"] = BrokenAdapter
         SOURCE_REGISTRY["fake_news"] = FakeNewsAdapter
+        SOURCE_REGISTRY["fake_language"] = FakeLanguageAdapter
 
     def tearDown(self) -> None:
         SOURCE_REGISTRY.clear()
@@ -316,3 +381,38 @@ class PipelineTests(unittest.TestCase):
         finally:
             SOURCE_REGISTRY.pop("missing_abstract", None)
             pipeline_module.LandingPageAbstractFetcher = original_fetcher
+
+    def test_allowed_paper_languages_filters_only_non_english_papers(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            tmp_path = Path(tmp_dir)
+            config = AppConfig(
+                topics=[
+                    TopicProfile(
+                        topic_id="ship_autonomy",
+                        display_name="Ship Autonomy",
+                        keywords=["autonomous ship"],
+                        include_terms=[],
+                        exclude_terms=[],
+                        allowed_paper_languages=["en"],
+                        sources=["fake_language"],
+                        min_relevance_score=2.0,
+                    )
+                ],
+                sources={"fake_language": SourceSettings(name="fake_language")},
+                config_dir=str(tmp_path / "config"),
+            )
+            storage = Storage(tmp_path / "state.db")
+            try:
+                run = collect_items(config, storage, "2026-W12", date(2026, 3, 16), date(2026, 3, 22))
+                items = storage.list_items_for_run(run.run_id)
+                self.assertEqual(len(items), 2)
+                self.assertEqual(
+                    {item.title for item in items},
+                    {
+                        "Autonomous ship collision avoidance study",
+                        "Autonomous ship program expands",
+                    },
+                )
+                self.assertEqual(run.source_stats["fake_language"]["filtered_out"], 2)
+            finally:
+                storage.close()

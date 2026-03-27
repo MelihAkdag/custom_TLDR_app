@@ -12,6 +12,7 @@ class TopicProfile:
     keywords: list[str]
     include_terms: list[str] = field(default_factory=list)
     exclude_terms: list[str] = field(default_factory=list)
+    allowed_paper_languages: list[str] = field(default_factory=list)
     sources: list[str] = field(default_factory=list)
     min_relevance_score: float = 2.0
 

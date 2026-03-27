@@ -4,6 +4,7 @@ topics:
     keywords: ["edge AI", "on-device learning", "tinyml"]
     include_terms: ["inference", "deployment"]
     exclude_terms: ["job posting"]
+    allowed_paper_languages: ["en"]
     min_relevance_score: 2.5
     sources: ["arxiv", "openalex", "crossref", "news_rss", "linkedin_import"]
   - topic_id: "renewable_hydrogen"
@@ -11,5 +12,6 @@ topics:
     keywords: ["renewable hydrogen", "green hydrogen", "electrolyzer optimization"]
     include_terms: ["electrolysis"]
     exclude_terms: ["stock analysis"]
+    allowed_paper_languages: ["en"]
     min_relevance_score: 2.5
     sources: ["arxiv", "openalex", "crossref", "news_rss"]
