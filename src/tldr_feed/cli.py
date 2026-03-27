@@ -7,7 +7,7 @@ from pathlib import Path
 from .config import load_config, load_dotenv
 from .pipeline import collect_items, summarize_run, write_report
 from .storage import Storage
-from .summarization import AzureOpenAISummarizer
+from .summarization import build_summarizer_from_env
 from .utils import previous_completed_week, week_to_range
 
 
@@ -56,7 +56,7 @@ def main() -> None:
             return
 
         if args.command == "summarize":
-            stats = summarize_run(storage, args.run_id, summarizer=AzureOpenAISummarizer())
+            stats = summarize_run(storage, args.run_id, summarizer=build_summarizer_from_env())
             print(stats)
             return
 
@@ -68,7 +68,7 @@ def main() -> None:
         if args.command == "run-weekly":
             requested_week, start_date, end_date = _resolve_window(week=args.week)
             run = collect_items(config, storage, requested_week, start_date, end_date)
-            summarize_stats = summarize_run(storage, run.run_id, summarizer=AzureOpenAISummarizer())
+            summarize_stats = summarize_run(storage, run.run_id, summarizer=build_summarizer_from_env())
             outputs = write_report(storage, config, run.run_id, output_dir=args.output_dir)
             print({"run_id": run.run_id, "summaries": summarize_stats, "reports": outputs})
             return

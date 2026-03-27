@@ -5,7 +5,7 @@ Generic weekly research monitoring for:
 - keyword-based news
 - optional LinkedIn inputs
 
-The project fetches candidates from configured sources, filters them by topic relevance, stores normalized records in SQLite, summarizes the kept items with Azure OpenAI, and writes a Markdown/JSON digest.
+The project fetches candidates from configured sources, filters them by topic relevance, stores normalized records in SQLite, summarizes the kept items with a configurable LLM provider, and writes a Markdown/JSON digest.
 
 ## Current Status
 
@@ -20,6 +20,7 @@ Working today:
 - Semantic Scholar metadata enrichment
 - landing-page abstract fallback for papers missing API abstracts
 - Azure OpenAI summarization
+- Ollama local-model summarization
 - Markdown and JSON weekly reports
 
 Available but optional:
@@ -40,7 +41,7 @@ The pipeline is:
 2. Score relevance using keyword phrase matches, token overlap, `include_terms`, `exclude_terms`, and `min_relevance_score`.
 3. Normalize and deduplicate items into SQLite.
 4. Enrich missing paper metadata and abstracts when possible.
-5. Summarize retained items with Azure OpenAI.
+5. Summarize retained items with the configured summarizer.
 6. Generate Markdown and JSON reports.
 
 Current item types:
@@ -89,13 +90,25 @@ cp config/sources.example.yaml config/sources.yaml
 cp .env.example .env
 ```
 
-If your shell environment already provides Azure OpenAI variables, `.env` is optional. Otherwise set:
+If your shell environment already provides summarizer variables, `.env` is optional. Otherwise set one of these options.
+
+Azure OpenAI:
 
 ```env
+SUMMARIZER_PROVIDER=azure_openai
 AZURE_OPENAI_ENDPOINT=...
 AZURE_OPENAI_API_KEY=...
 AZURE_OPENAI_API_VERSION=2024-10-21
 AZURE_OPENAI_DEPLOYMENT=...
+```
+
+Ollama:
+
+```env
+SUMMARIZER_PROVIDER=ollama
+OLLAMA_BASE_URL=http://127.0.0.1:11434
+OLLAMA_MODEL=llama3.1:8b
+OLLAMA_TIMEOUT_SECONDS=120
 ```
 
 Optional:
@@ -317,6 +330,15 @@ Use the `run_id` from collection:
 PYTHONPATH=src python3 -m tldr_feed.cli summarize --run-id <RUN_ID>
 ```
 
+To summarize with a local Ollama model in the current terminal:
+
+```bash
+export SUMMARIZER_PROVIDER=ollama
+export OLLAMA_BASE_URL=http://127.0.0.1:11434
+export OLLAMA_MODEL=llama3.1:8b
+PYTHONPATH=src python3 -m tldr_feed.cli summarize --run-id <RUN_ID>
+```
+
 This step is sequential. Large runs can take several minutes.
 
 ### 4. Generate the Report
@@ -399,8 +421,15 @@ This project does not currently support broad public LinkedIn keyword search.
 
 If summarize fails with Azure errors:
 - confirm `.env` or shell variables are present
+- confirm `SUMMARIZER_PROVIDER=azure_openai`
 - confirm `AZURE_OPENAI_API_VERSION` is set
 - confirm the deployment name is correct
+
+If summarize fails with Ollama errors:
+- confirm `SUMMARIZER_PROVIDER=ollama`
+- confirm Ollama is running locally
+- confirm `OLLAMA_MODEL` matches a model installed in Ollama
+- confirm `OLLAMA_BASE_URL` points to the running Ollama server
 
 If collect fails with `SSL verification failed`:
 - confirm you are using the company CA bundle, not disabling verification

@@ -11,7 +11,7 @@ from .reporting import MarkdownJsonReportWriter
 from .sources import SOURCE_REGISTRY, build_adapter
 from .sources.semantic_scholar import SemanticScholarEnricher
 from .storage import Storage
-from .summarization import AzureOpenAISummarizer, DeterministicSummarizer, Summarizer
+from .summarization import Summarizer, build_summarizer_from_env
 from .utils import build_identity_key, make_item_id, normalize_doi, stable_json_hash, unique_preserve_order
 
 
@@ -92,7 +92,7 @@ def collect_items(
 
 
 def summarize_run(storage: Storage, run_id: str, summarizer: Summarizer | None = None) -> dict[str, int]:
-    summarizer = summarizer or AzureOpenAISummarizer()
+    summarizer = summarizer or build_summarizer_from_env()
     created = 0
     skipped = 0
     for item in storage.list_items_for_run(run_id):
