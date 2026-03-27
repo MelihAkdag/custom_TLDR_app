@@ -35,6 +35,6 @@ topics:
       - "satellite"
       - "medical"
       - "biology"
+    allowed_paper_languages: ["en"]
     min_relevance_score: 3.0
     sources: ["arxiv", "openalex", "crossref", "news_rss"]
-

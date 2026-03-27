@@ -128,6 +128,7 @@ Each topic supports:
 - `keywords`
 - `include_terms`
 - `exclude_terms`
+- `allowed_paper_languages`
 - `min_relevance_score`
 - `sources`
 
@@ -157,6 +158,7 @@ topics:
       - "aircraft"
       - "drone"
       - "medical"
+    allowed_paper_languages: ["en"]
     min_relevance_score: 3.0
     sources: ["arxiv", "openalex", "crossref", "news_rss"]
 ```
@@ -165,6 +167,7 @@ Guidance:
 - increase `min_relevance_score` if the report is noisy
 - add `include_terms` for domain-specific signals
 - add `exclude_terms` for recurring off-topic categories
+- use `allowed_paper_languages: ["en"]` if you want to keep only English papers while leaving news untouched
 - avoid short ambiguous acronyms unless you really need them
 
 ## Sources Configuration

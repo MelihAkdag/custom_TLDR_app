@@ -5,6 +5,7 @@ from datetime import date
 from pathlib import Path
 
 from .content_extraction import LandingPageAbstractFetcher
+from .language import item_matches_allowed_languages
 from .models import AppConfig, NormalizedItem, RawItem, RunRecord, SourceSettings, TopicProfile
 from .relevance import score_item_relevance
 from .reporting import MarkdownJsonReportWriter
@@ -142,6 +143,13 @@ def normalize_raw_item(raw_item: RawItem) -> NormalizedItem:
 
 def _matches_topic_filters(raw_item: RawItem, topic: TopicProfile, relevance_score: float) -> bool:
     haystack = " ".join(part for part in [raw_item.title, raw_item.abstract_or_body or ""] if part).casefold()
+    if raw_item.item_type == "paper" and topic.allowed_paper_languages and not item_matches_allowed_languages(
+        raw_item.raw_payload,
+        raw_item.title,
+        raw_item.abstract_or_body,
+        topic.allowed_paper_languages,
+    ):
+        return False
     if topic.include_terms and not any(term.casefold() in haystack for term in topic.include_terms):
         return False
     if topic.exclude_terms and any(term.casefold() in haystack for term in topic.exclude_terms):

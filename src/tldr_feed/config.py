@@ -220,6 +220,11 @@ def _build_topics(raw_topics: list[dict[str, Any]]) -> list[TopicProfile]:
                 keywords=keywords,
                 include_terms=[str(value).strip() for value in entry.get("include_terms", []) if str(value).strip()],
                 exclude_terms=[str(value).strip() for value in entry.get("exclude_terms", []) if str(value).strip()],
+                allowed_paper_languages=[
+                    str(value).strip().casefold()
+                    for value in entry.get("allowed_paper_languages", [])
+                    if str(value).strip()
+                ],
                 sources=[str(value).strip() for value in entry.get("sources", []) if str(value).strip()],
                 min_relevance_score=float(entry.get("min_relevance_score", 2.0)),
             )
