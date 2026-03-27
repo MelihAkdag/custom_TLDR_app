@@ -1,0 +1,1210 @@
+{
+  "run_id": "6c71ce7825cb4e1a9b15a6e5d79ee8a0",
+  "requested_week": "2026-W13",
+  "window_start": "2026-03-23",
+  "window_end": "2026-03-29",
+  "status": "success",
+  "source_stats": {
+    "arxiv": {
+      "existing_items": 0,
+      "fetched": 2,
+      "filtered_out": 0,
+      "new_items": 2
+    },
+    "crossref": {
+      "existing_items": 1,
+      "fetched": 36,
+      "filtered_out": 25,
+      "new_items": 10
+    },
+    "news_rss": {
+      "existing_items": 0,
+      "fetched": 38,
+      "filtered_out": 17,
+      "new_items": 21
+    },
+    "openalex": {
+      "existing_items": 0,
+      "fetched": 41,
+      "filtered_out": 26,
+      "new_items": 15
+    }
+  },
+  "warnings": [],
+  "errors": [],
+  "topics": [
+    {
+      "topic_id": "ship_autonomy",
+      "display_name": "Ship Autonomy",
+      "items": [
+        {
+          "item_id": "779e47a18061579053666684331ece6856b04ad4fac526238f217289d93d3018",
+          "source": "crossref",
+          "source_id": "10.1115/1.4071291",
+          "item_type": "paper",
+          "title": "Fatigue Life Assessment of High-Pressure Hydrogen Storage Vessel Enhanced by Crack Grinding",
+          "authors_or_author": [
+            "Song Huang",
+            "Yi Chen",
+            "Hu Hui",
+            "Huihui Yang",
+            "Wenwang Wu"
+          ],
+          "published_at": "2026-08-01",
+          "url": "https://doi.org/10.1115/1.4071291",
+          "doi": "10.1115/1.4071291",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Abstract                     Fatigue life of high-pressure hydrogen storage vessel with design pressure of 45 MPa and 99.9 MPa was investigated. The feasibility of improving fatigue life with crack grinding strategy was verified. First, fatigue assessment with fracture mechanics and S–N curve method was performed. The result indicates crack grinding is beneficial to the fatigue life of cracked hydrogen storage vessel. Then, slow strain rate tensile test of 4130X steel in 100 MPa hydrogen environment was performed. A fracture criterion that maximum principal stress equals the ultimate strength of 4130X was suggested for failure in 100 MPa hydrogen environment. At last, numerical burst pressure simulation was performed. The results suggested that burst pressure of hydrogen storage vessel with grinding groove was not influenced by crack grinding. The outcome of this work suggests a grinding strategy that repairs immediately upon crack detection for hydrogen storage vessel.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: crossref\n- Type: paper\n- Published: 2026-08-01\n- Authors: Song Huang, Yi Chen, Hu Hui, Huihui Yang, Wenwang Wu\n- DOI: 10.1115/1.4071291\n- Topics: ship_autonomy\n- Link: https://doi.org/10.1115/1.4071291",
+            "source_excerpt": "Abstract Fatigue life of high-pressure hydrogen storage vessel with design pressure of 45 MPa and 99.9 MPa was investigated. The feasibility of improving fatigue life with crack grinding strategy was verified. First, fatigue assessment with fracture mechanics and S–N curve method was performed. The result indicates crack grinding is beneficial to the fatigue life of cracked hydrogen storage vessel. Then, slow strain rate tensile test of 4130X steel in 100 MPa hydrogen environment was performed. A fracture criterion that maximum principal stress equals the ultimate strength of 4130X was suggested for failure in 100 MPa hydrogen environment. At last, numerical burst pressure simulation was performed. The results suggested that burst pressure of hydrogen storage vessel with grinding groove was not influenced by crack grinding. The outcome of this work suggests a grinding strategy that repairs immediately upon crack detection for hydrogen storage vessel.",
+            "short_summary": "Here is the weekly research digest:\n\n**Weekly Research Digest**\n\nThis study investigates the fatigue life of high-pressure hydrogen storage vessels and explores the effectiveness of crack grinding in improving their durability. Researchers found that crack grinding can enhance the fatigue life of cracked vessels, but surprisingly, it does not affect the burst pressure of the vessel. The findings suggest a potential repair strategy for hydrogen storage vessels by immediately addressing cracks upon detection. This research has implications for the development of more reliable and efficient hydrogen storage systems."
+          }
+        },
+        {
+          "item_id": "b960d0779c13b6097da4bc403dbcd00f294064cd4a63f91a7db0bcf942a6973f",
+          "source": "crossref",
+          "source_id": "10.1007/s11457-026-09510-9",
+          "item_type": "paper",
+          "title": "Shipwrecks and Maritime Heritage in Coastal Protected Areas of Rocha, Uruguay",
+          "authors_or_author": [
+            "Elena Margarita Saccone D’Ambrosio",
+            "Camila Alejandra Gianotti García"
+          ],
+          "published_at": "2026-06-01",
+          "url": "https://doi.org/10.1007/s11457-026-09510-9",
+          "doi": "10.1007/s11457-026-09510-9",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "This article examines the maritime and underwater cultural heritage associated with the marine-coastal protected areas of Rocha Department, Uruguay. Despite the high frequency of shipwrecks along its Atlantic coast, systematic academic research has been limited. Drawing on documentary sources, technical reports, oral histories, and community-held collections, this study compiles and analyzes 161 documented shipwrecks in or near four protected areas: Cabo Polonio, Laguna de Rocha, Laguna Garzón, and Cerro Verde/Islas de la Coronilla. Quantitative and qualitative analyses reveal strong temporal and spatial patterns: nearly 70% of wrecks occurred during the nineteenth century, coinciding with intensified regional navigation and preceding lighthouse construction, while the transition from sail to steam reflects broader global maritime transformations. The results also highlight the diversity of flags, particularly the predominance of British ships, and the persistence of maritime memory in local communities through oral traditions and practices. Beyond identifying tangible remains, the study frames Rocha’s Atlantic coast as a maritime cultural landscape, where material, ecological, and intangible elements intersect. By providing the first systematic synthesis of this heritage, the article establishes a foundation for integrating it into protected-area management. It also stresses the urgent need for stronger regulatory frameworks capable of articulating heritage, land-use planning, environmental protection, and defense norms, as current fragmentation hampers effective stewardship. Finally, the study underscores the potential of international collaboration for research and management of underwater cultural heritage. Strengthening these connections, together with archaeological fieldwork and community-based initiatives, is essential for sustainable conservation and safeguarding this shared cultural legacy.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: crossref\n- Type: paper\n- Published: 2026-06-01\n- Authors: Elena Margarita Saccone D’Ambrosio, Camila Alejandra Gianotti García\n- DOI: 10.1007/s11457-026-09510-9\n- Topics: ship_autonomy\n- Link: https://doi.org/10.1007/s11457-026-09510-9",
+            "source_excerpt": "This article examines the maritime and underwater cultural heritage associated with the marine-coastal protected areas of Rocha Department, Uruguay. Despite the high frequency of shipwrecks along its Atlantic coast, systematic academic research has been limited. Drawing on documentary sources, technical reports, oral histories, and community-held collections, this study compiles and analyzes 161 documented shipwrecks in or near four protected areas: Cabo Polonio, Laguna de Rocha, Laguna Garzón, and Cerro Verde/Islas de la Coronilla. Quantitative and qualitative analyses reveal strong temporal and spatial patterns: nearly 70% of wrecks occurred during the nineteenth century, coinciding with intensified regional navigation and preceding lighthouse construction, while the transition from sail to steam reflects broader global maritime transformations. The results also highlight the diversity of flags, particularly the predominance of British ships, and the persistence of maritime memory in local communities through oral traditions and practices. Beyond identifying tangible remains, the study frames Rocha’s Atlantic coast as a maritime cultural landscape, where material, ecological, and intangible elements intersect. By providing the first systematic synthesis of this heritage, the article establishes a foundation for integrating it into protected-area management. It also stresses the urgent need for stronger regulatory frameworks capable of articulating heritage, land-use planning, environmental protection, and defense norms, as current fragmentation hampers effective stewardship. Finally, the study underscores the potential of international collaboration for research and management of underwater cultural heritage. Strengthening these connections, together with archaeolo...",
+            "short_summary": "Here is a 2-4 sentence summary of the paper in plain English:\n\nResearchers studied shipwrecks along Uruguay's Atlantic coast to understand its maritime heritage. They found that most wrecks occurred during the 19th century and were mostly British ships, reflecting global changes in navigation. The study highlights the importance of protecting these areas not only for their historical significance but also for their ecological value. It calls for stronger regulations to manage this heritage effectively."
+          }
+        },
+        {
+          "item_id": "9f334dc6cce520b0a378189213478f6293108fd0795fa19b1046a9dfbdd29772",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNWk95RDFXZk84TzdoTGR1Z2h0cXRYSDhOSkQzcTkyaHB1VWY4bHh6S2lyb2VoWXJtOUJGSzdYX2dDTzNPUW9acmctMnNyaW5DR2FNV1dhNjdWMjhTc3BlTFB6ZUpFeGhxN1F2dnZnTm0tTFVDNkluNkJuRm1ubTJxM1FWUkFyRUdfYVctMWtHazlxTmtteHdUM3d3WVBGNmZvN2FSamJKZmU1QUdNWlN1d0pHaFJPT1BtRjdPQ043NnA5RmtURzZJbmFkTjU?oc=5",
+          "item_type": "news_article",
+          "title": "HII expands unmanned vessel plans with new Louisiana facility, robotics push",
+          "authors_or_author": [
+            "MSN"
+          ],
+          "published_at": "2026-03-27",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNWk95RDFXZk84TzdoTGR1Z2h0cXRYSDhOSkQzcTkyaHB1VWY4bHh6S2lyb2VoWXJtOUJGSzdYX2dDTzNPUW9acmctMnNyaW5DR2FNV1dhNjdWMjhTc3BlTFB6ZUpFeGhxN1F2dnZnTm0tTFVDNkluNkJuRm1ubTJxM1FWUkFyRUdfYVctMWtHazlxTmtteHdUM3d3WVBGNmZvN2FSamJKZmU1QUdNWlN1d0pHaFJPT1BtRjdPQ043NnA5RmtURzZJbmFkTjU?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "HII expands unmanned vessel plans with new Louisiana facility, robotics push &nbsp;&nbsp; MSN",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-27\n- Authors: MSN\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMizAFBVV95cUxNWk95RDFXZk84TzdoTGR1Z2h0cXRYSDhOSkQzcTkyaHB1VWY4bHh6S2lyb2VoWXJtOUJGSzdYX2dDTzNPUW9acmctMnNyaW5DR2FNV1dhNjdWMjhTc3BlTFB6ZUpFeGhxN1F2dnZnTm0tTFVDNkluNkJuRm1ubTJxM1FWUkFyRUdfYVctMWtHazlxTmtteHdUM3d3WVBGNmZvN2FSamJKZmU1QUdNWlN1d0pHaFJPT1BtRjdPQ043NnA5RmtURzZJbmFkTjU?oc=5",
+            "source_excerpt": "HII expands unmanned vessel plans with new Louisiana facility, robotics push &nbsp;&nbsp; MSN",
+            "short_summary": "Here is a summary of the article in 3 sentences:\n\nHII, a defense contractor, has announced plans to expand its unmanned vessel capabilities with a new facility in Louisiana. The company is also investing in robotics technology to support its unmanned systems development. This expansion aims to further HII's presence in the growing market for autonomous and unmanned vessels."
+          }
+        },
+        {
+          "item_id": "30219ab069f77b8073717070aa44d89db6c45afcdeafa0d68a4956894058289e",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBFQ0tkZnIyNUZ2S0dGcldTUUpWdlRkclVsaEVOU0JFcktsc1NCUGNYT0xuUE5ZeXI4YkttVFFYdGY5b0p3Unk1aF9XMmFNUWdaM3NWcDVTWmVjQUtkNFJMWkdCbHVQRGJG?oc=5",
+          "item_type": "news_article",
+          "title": "\"Autonomous Ship 'Standards War' to Determine Maritime Competitiveness in the Next Decade\"",
+          "authors_or_author": [
+            "아시아경제"
+          ],
+          "published_at": "2026-03-26",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBFQ0tkZnIyNUZ2S0dGcldTUUpWdlRkclVsaEVOU0JFcktsc1NCUGNYT0xuUE5ZeXI4YkttVFFYdGY5b0p3Unk1aF9XMmFNUWdaM3NWcDVTWmVjQUtkNFJMWkdCbHVQRGJG?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "\"Autonomous Ship 'Standards War' to Determine Maritime Competitiveness in the Next Decade\" &nbsp;&nbsp; 아시아경제",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-26\n- Authors: 아시아경제\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMiaEFVX3lxTFBFQ0tkZnIyNUZ2S0dGcldTUUpWdlRkclVsaEVOU0JFcktsc1NCUGNYT0xuUE5ZeXI4YkttVFFYdGY5b0p3Unk1aF9XMmFNUWdaM3NWcDVTWmVjQUtkNFJMWkdCbHVQRGJG?oc=5",
+            "source_excerpt": "\"Autonomous Ship 'Standards War' to Determine Maritime Competitiveness in the Next Decade\" &nbsp;&nbsp; 아시아경제",
+            "short_summary": "Here is a summary of the article in plain English:\n\nA \"standards war\" is brewing among countries regarding autonomous ships, which could determine maritime competitiveness in the next decade. The development and adoption of standards for autonomous vessels will be crucial for industries such as shipping and logistics. Countries are likely to compete to establish their own standards, potentially leading to a global shift in the maritime industry. This competition may impact the future of maritime trade and commerce."
+          }
+        },
+        {
+          "item_id": "356ee9a166afe3e4b6a8a61ee4a2c13fd88afdf0543b8c480e2c4bc80981b638",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQjVJNEhmZHQ5blFPTWxqdS11WWdmeHhwRDdpVi1lUnJQTWpfRGdENC1ZR3N2UUwxaXcwRGtpQ2d6TkdCS1dRTmRCdldWUjVDSXdJM3YwczJBaVlXUThsS1dRVzdSR004eUVla3EyNThmU01uaDBOZjdteWk5TEdkd1k0ZTFURkozQXpvRFdTZk95b1djd1hjelpHUG9hc0pl?oc=5",
+          "item_type": "news_article",
+          "title": "\"Golden Time for Autonomous Ships Is 5 Years — MaaS Strategy Linking Cars, UAM Needed\"",
+          "authors_or_author": [
+            "서울경제신문"
+          ],
+          "published_at": "2026-03-26",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQjVJNEhmZHQ5blFPTWxqdS11WWdmeHhwRDdpVi1lUnJQTWpfRGdENC1ZR3N2UUwxaXcwRGtpQ2d6TkdCS1dRTmRCdldWUjVDSXdJM3YwczJBaVlXUThsS1dRVzdSR004eUVla3EyNThmU01uaDBOZjdteWk5TEdkd1k0ZTFURkozQXpvRFdTZk95b1djd1hjelpHUG9hc0pl?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "\"Golden Time for Autonomous Ships Is 5 Years — MaaS Strategy Linking Cars, UAM Needed\" &nbsp;&nbsp; 서울경제신문",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-26\n- Authors: 서울경제신문\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMioAFBVV95cUxNQjVJNEhmZHQ5blFPTWxqdS11WWdmeHhwRDdpVi1lUnJQTWpfRGdENC1ZR3N2UUwxaXcwRGtpQ2d6TkdCS1dRTmRCdldWUjVDSXdJM3YwczJBaVlXUThsS1dRVzdSR004eUVla3EyNThmU01uaDBOZjdteWk5TEdkd1k0ZTFURkozQXpvRFdTZk95b1djd1hjelpHUG9hc0pl?oc=5",
+            "source_excerpt": "\"Golden Time for Autonomous Ships Is 5 Years — MaaS Strategy Linking Cars, UAM Needed\" &nbsp;&nbsp; 서울경제신문",
+            "short_summary": "Here is a summary of the article in plain English:\n\nA recent report suggests that the optimal time to implement autonomous ships is within the next 5 years. To achieve this, a Multi-Modal Autonomous Mobility (MaaS) strategy that integrates cars and Urban Air Mobility (UAM) systems is needed. This integrated approach would enable seamless transportation services and reduce congestion on waterways. The report emphasizes the importance of adopting autonomous shipping technology to meet future demands."
+          }
+        },
+        {
+          "item_id": "7dd79ef286322560024ffa055621229b12ad344df1816b243994b2ee7d6b5d49",
+          "source": "crossref",
+          "source_id": "10.1201/9781003770497-12",
+          "item_type": "paper",
+          "title": "Autonomous Navigation Mobile Robot Based on Robot Operating System",
+          "authors_or_author": [
+            "J. Logesh",
+            "Kumar P. Senthil",
+            "K. Sanjay",
+            "R. Gokul"
+          ],
+          "published_at": "2026-03-26",
+          "url": "https://doi.org/10.1201/9781003770497-12",
+          "doi": "10.1201/9781003770497-12",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "This paper demonstrates a neural network-based navigation algorithm for autonomous mobile robots (AMRs), utilizing the Robot Operating System (ROS) as the platform framework for real-time path planning with collision avoidance. The autonomous mobile robot uses a mathematical kinematic model which is based on a differential drive system to regulate motion. This allows for exacting and stable control of the motion of the robot. Although traditional path-planning algorithms, such as a A-star or D-star, provide initial optimization of the route, the inherent limitations of these methods in a dynamic environment demonstrate the necessity for the addition of the neural network-based trajectory planning. Neural networks allow for adaptability, by training the model to learn optimal strategies for navigating, with superior outcomes in unstructured environments than the conventional factors of the motion planning algorithms. This Project also looks at the RP LiDAR and SICK sensors used for accurate localization and real-time mapping, and collision avoidance, providing for seamless interaction with the surroundings. ROS provides a modular and scalable platform for using efficient sensor fusion, and is a reliable and recognized platform for developing motion planning models and trajectory planning in real time. Experimental trials verified successful implementation of neural network navigation through previously unknown complex terrain. The following explains the path optimization for the vehicle location while ensuring smooth motion for navigating the obstacles in uncontrolled environments. Adding deep learning capabilities into the traditional algorithms improved the computational procedural times by increasing the frequency of process cycles returning more viable overall results. The AMR capabilities exhibited precise maneuverability when operating in a known static environment exposing trajectory-tracking fidelity, and autonomous navigation reliability, making it a strong candidate for logistics fleets, automated industrial application, and human robot collaboration. This work represents a meaningful contribution toward a scaleable and adaptive mobile robotic system to encourage advance autonomous mobility and intelligent robotics.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: crossref\n- Type: paper\n- Published: 2026-03-26\n- Authors: J. Logesh, Kumar P. Senthil, K. Sanjay, R. Gokul\n- DOI: 10.1201/9781003770497-12\n- Topics: ship_autonomy\n- Link: https://doi.org/10.1201/9781003770497-12",
+            "source_excerpt": "This paper demonstrates a neural network-based navigation algorithm for autonomous mobile robots (AMRs), utilizing the Robot Operating System (ROS) as the platform framework for real-time path planning with collision avoidance. The autonomous mobile robot uses a mathematical kinematic model which is based on a differential drive system to regulate motion. This allows for exacting and stable control of the motion of the robot. Although traditional path-planning algorithms, such as a A-star or D-star, provide initial optimization of the route, the inherent limitations of these methods in a dynamic environment demonstrate the necessity for the addition of the neural network-based trajectory planning. Neural networks allow for adaptability, by training the model to learn optimal strategies for navigating, with superior outcomes in unstructured environments than the conventional factors of the motion planning algorithms. This Project also looks at the RP LiDAR and SICK sensors used for accurate localization and real-time mapping, and collision avoidance, providing for seamless interaction with the surroundings. ROS provides a modular and scalable platform for using efficient sensor fusion, and is a reliable and recognized platform for developing motion planning models and trajectory planning in real time. Experimental trials verified successful implementation of neural network navigation through previously unknown complex terrain. The following explains the path optimization for the vehicle location while ensuring smooth motion for navigating the obstacles in uncontrolled environments. Adding deep learning capabilities into the traditional algorithms improved the computational procedural times by increasing the frequency of process cycles returning more viable overall res...",
+            "short_summary": "Here is a 2-4 sentence summary of the paper:\n\nResearchers developed a neural network-based navigation algorithm for autonomous mobile robots using the Robot Operating System (ROS). The system uses a mathematical kinematic model to regulate motion and incorporates sensors like RP LiDAR and SICK for accurate localization and collision avoidance. This approach allows for adaptability in unstructured environments, outperforming traditional path-planning algorithms. Experimental trials successfully implemented neural network navigation in complex terrain."
+          }
+        },
+        {
+          "item_id": "3e30ac131cd83fc04930001d386be65c914c0952b857392a5a852993eee8720e",
+          "source": "crossref",
+          "source_id": "10.58830/ozgur.pub1212",
+          "item_type": "paper",
+          "title": "Foundations of Maritime Decarbonization",
+          "authors_or_author": [
+            "Vahit Çalışır"
+          ],
+          "published_at": "2026-03-26",
+          "url": "https://doi.org/10.58830/ozgur.pub1212",
+          "doi": "10.58830/ozgur.pub1212",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "This book provides a comprehensive examination of the technological, regulatory, economic, and infrastructural dimensions of maritime decarbonization. Drawing upon an extensive review of contemporary academic literature, policy documents, and industry reports, it synthesizes current knowledge and emerging developments to present a holistic understanding of the low-carbon shipping transition.\r The scope encompasses the full spectrum of decarbonization pathways—from alternative fuels and energy efficiency technologies to digital innovations and market-based mechanisms—while maintaining focus on practical implementation challenges and solutions. The analysis integrates technical feasibility assessments with economic viability considerations, regulatory compliance requirements, and environmental impact evaluations across the complete fuel lifecycle.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: crossref\n- Type: paper\n- Published: 2026-03-26\n- Authors: Vahit Çalışır\n- DOI: 10.58830/ozgur.pub1212\n- Topics: ship_autonomy\n- Link: https://doi.org/10.58830/ozgur.pub1212",
+            "source_excerpt": "This book provides a comprehensive examination of the technological, regulatory, economic, and infrastructural dimensions of maritime decarbonization. Drawing upon an extensive review of contemporary academic literature, policy documents, and industry reports, it synthesizes current knowledge and emerging developments to present a holistic understanding of the low-carbon shipping transition. The scope encompasses the full spectrum of decarbonization pathways—from alternative fuels and energy efficiency technologies to digital innovations and market-based mechanisms—while maintaining focus on practical implementation challenges and solutions. The analysis integrates technical feasibility assessments with economic viability considerations, regulatory compliance requirements, and environmental impact evaluations across the complete fuel lifecycle.",
+            "short_summary": "Here is a 2-4 sentence summary of the paper in plain English:\n\nThis book provides an in-depth look at how to make shipping more environmentally friendly by reducing carbon emissions. It examines various approaches, including new fuels, energy-efficient technologies, digital innovations, and market-based solutions. The authors aim to provide a comprehensive understanding of the challenges and opportunities involved in transitioning to low-carbon shipping."
+          }
+        },
+        {
+          "item_id": "59f7b8448748cf6cadda45146ec52bb575ab853d363c5b6d8f15a7e09096be7a",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOamhVbUgzTFpUTkJnT3QtRFpyYll0T2VPckdUdUlBY3JBS29hbzlwUXNrUks0SWJvaUJueGlXdEZqNEs0anFYdnh6OE1ac0FCYXJLRlprc3UybmRXVDNfNlgxY2JYcTJfVlZBdUFsUnQzYmJTTlRhNEphc1M0OG1oUXczempKZGo1S1JYQy0yYkhFaEd3X1NtWkVFNk5CM1dlQ0cwWkZrVVVzbWlRc3A0?oc=5",
+          "item_type": "news_article",
+          "title": "HII Announces New Assembly Center in Louisiana for Romulus Unmanned Surface Vessels",
+          "authors_or_author": [
+            "news.ssbcrack.com"
+          ],
+          "published_at": "2026-03-26",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOamhVbUgzTFpUTkJnT3QtRFpyYll0T2VPckdUdUlBY3JBS29hbzlwUXNrUks0SWJvaUJueGlXdEZqNEs0anFYdnh6OE1ac0FCYXJLRlprc3UybmRXVDNfNlgxY2JYcTJfVlZBdUFsUnQzYmJTTlRhNEphc1M0OG1oUXczempKZGo1S1JYQy0yYkhFaEd3X1NtWkVFNk5CM1dlQ0cwWkZrVVVzbWlRc3A0?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "HII Announces New Assembly Center in Louisiana for Romulus Unmanned Surface Vessels &nbsp;&nbsp; news.ssbcrack.com",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-26\n- Authors: news.ssbcrack.com\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMirwFBVV95cUxOamhVbUgzTFpUTkJnT3QtRFpyYll0T2VPckdUdUlBY3JBS29hbzlwUXNrUks0SWJvaUJueGlXdEZqNEs0anFYdnh6OE1ac0FCYXJLRlprc3UybmRXVDNfNlgxY2JYcTJfVlZBdUFsUnQzYmJTTlRhNEphc1M0OG1oUXczempKZGo1S1JYQy0yYkhFaEd3X1NtWkVFNk5CM1dlQ0cwWkZrVVVzbWlRc3A0?oc=5",
+            "source_excerpt": "HII Announces New Assembly Center in Louisiana for Romulus Unmanned Surface Vessels &nbsp;&nbsp; news.ssbcrack.com",
+            "short_summary": "Here is a summary of the article in plain English:\n\nHII, a defense contractor, has announced the establishment of a new assembly center in Louisiana to produce Romulus unmanned surface vessels. The Romulus is an unmanned surface vessel designed for various military and civilian applications. This new facility will support the production of these vessels, enhancing HII's capabilities in unmanned systems. The exact location of the assembly center was not specified in the article."
+          }
+        },
+        {
+          "item_id": "55e3a0109f435b20a66bfc4e5d23d0549ae3b06550a1f5e1d8955a4c8d464280",
+          "source": "crossref",
+          "source_id": "10.5194/wes-2026-50",
+          "item_type": "paper",
+          "title": "Improving offshore wind data from reanalyses using ship-based lidar measurements",
+          "authors_or_author": [
+            "Hugo Rubio",
+            "Ville Vakkari",
+            "Martin Kühn",
+            "Julia Gottschall"
+          ],
+          "published_at": "2026-03-26",
+          "url": "https://doi.org/10.5194/wes-2026-50",
+          "doi": "10.5194/wes-2026-50",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Abstract. This study addresses the challenge of integrating ship-based lidar measurements with numerical weather prediction models to improve offshore wind characterisation. Accurate wind measurements are vital for the development of offshore wind energy, yet traditionally used fixed devices, such as meteorological masts and platform- or buoy-based lidars, are expensive and scarce. Ship-based lidar systems offer a flexible, cost-effective alternative by collecting wind data over large areas; however, the non-stationarity of ships results in low data density at any specific location. To overcome this challenge, we propose a novel calibration methodology to assimilate ship-mounted lidar observations into the ERA5 reanalysis by statistically adjusting its wind speed outputs. Inspired by observational nudging, which influences model state variables over time to match observational data, our approach applies a weighted correction directly to the model’s wind speed output, preserving the model’s underlying physics while ensuring computational efficiency and flexibility. The calibration parameters, including calibration strength, temporal window, and spatial radius of influence, were optimised to maximise the impact and accuracy of the calibration process. The comparison between ERA5 before and after the calibration demonstrates that the methodology effectively reduces the systematic underestimation of wind speeds, particularly in coastal regions where ERA5 struggles with complex flow dynamics. The methodology has been validated against independent measurements from a fixed Doppler lidar system deployed on an island in the northern Baltic Sea, demonstrating the calibration’s effectiveness in reducing bias and error spread at this location as well. However, it highlights that the calibration effect is strongly dependent on the distance between the ship and the lidar station, with a bias reduction of 0.2 m s-1 when the ship is within 60 km, compared to 0.05 m s-1 when considering data within 90 km, as a consequence of the intermittent influence of the ship-based lidar data.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: crossref\n- Type: paper\n- Published: 2026-03-26\n- Authors: Hugo Rubio, Ville Vakkari, Martin Kühn, Julia Gottschall\n- DOI: 10.5194/wes-2026-50\n- Topics: ship_autonomy\n- Link: https://doi.org/10.5194/wes-2026-50",
+            "source_excerpt": "Abstract. This study addresses the challenge of integrating ship-based lidar measurements with numerical weather prediction models to improve offshore wind characterisation. Accurate wind measurements are vital for the development of offshore wind energy, yet traditionally used fixed devices, such as meteorological masts and platform- or buoy-based lidars, are expensive and scarce. Ship-based lidar systems offer a flexible, cost-effective alternative by collecting wind data over large areas; however, the non-stationarity of ships results in low data density at any specific location. To overcome this challenge, we propose a novel calibration methodology to assimilate ship-mounted lidar observations into the ERA5 reanalysis by statistically adjusting its wind speed outputs. Inspired by observational nudging, which influences model state variables over time to match observational data, our approach applies a weighted correction directly to the model’s wind speed output, preserving the model’s underlying physics while ensuring computational efficiency and flexibility. The calibration parameters, including calibration strength, temporal window, and spatial radius of influence, were optimised to maximise the impact and accuracy of the calibration process. The comparison between ERA5 before and after the calibration demonstrates that the methodology effectively reduces the systematic underestimation of wind speeds, particularly in coastal regions where ERA5 struggles with complex flow dynamics. The methodology has been validated against independent measurements from a fixed Doppler lidar system deployed on an island in the northern Baltic Sea, demonstrating the calibration’s effectiveness in reducing bias and error spread at this location as well. However, it highlights tha...",
+            "short_summary": "Here is a 2-4 sentence summary of the research digest:\n\nResearchers have developed a new method to improve offshore wind data by combining ship-based lidar measurements with numerical weather prediction models. The approach uses a calibration technique to adjust the model's wind speed outputs to match the observed data, reducing systematic underestimation in coastal regions. This method has been validated against independent measurements and shows promise for improving the accuracy of offshore wind characterization. It offers a cost-effective alternative to traditional fixed devices used for wind measurement."
+          }
+        },
+        {
+          "item_id": "ca3a959544c3607714d6dbc1ae873e8f042a605201ae674e064b338b23238cc9",
+          "source": "arxiv",
+          "source_id": "2603.25689v1",
+          "item_type": "paper",
+          "title": "LEMMA: Laplacian pyramids for Efficient Marine SeMAntic Segmentation",
+          "authors_or_author": [
+            "Ishaan Gakhar",
+            "Laven Srivastava",
+            "Sankarshanaa Sagaram",
+            "Aditya Kasliwal",
+            "Ujjwal Verma"
+          ],
+          "published_at": "2026-03-26",
+          "url": "http://arxiv.org/abs/2603.25689v1",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Semantic segmentation in marine environments is crucial for the autonomous navigation of unmanned surface vessels (USVs) and coastal Earth Observation events such as oil spills. However, existing methods, often relying on deep CNNs and transformer-based architectures, face challenges in deployment due to their high computational costs and resource-intensive nature. These limitations hinder the practicality of real-time, low-cost applications in real-world marine settings. To address this, we propose LEMMA, a lightweight semantic segmentation model designed specifically for accurate remote sensing segmentation under resource constraints. The proposed architecture leverages Laplacian Pyramids to enhance edge recognition, a critical component for effective feature extraction in complex marine environments for disaster response, environmental surveillance, and coastal monitoring. By integrating edge information early in the feature extraction process, LEMMA eliminates the need for computationally expensive feature map computations in deeper network layers, drastically reducing model size, complexity and inference time. LEMMA demonstrates state-of-the-art performance across datasets captured from diverse platforms while reducing trainable parameters and computational requirements by up to 71x, GFLOPs by up to 88.5\\%, and inference time by up to 84.65\\%, as compared to existing models. Experimental results highlight its effectiveness and real-world applicability, including 93.42\\% IoU on the Oil Spill dataset and 98.97\\% mIoU on Mastr1325.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: arxiv\n- Type: paper\n- Published: 2026-03-26\n- Authors: Ishaan Gakhar, Laven Srivastava, Sankarshanaa Sagaram, Aditya Kasliwal, Ujjwal Verma\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: http://arxiv.org/abs/2603.25689v1",
+            "source_excerpt": "Semantic segmentation in marine environments is crucial for the autonomous navigation of unmanned surface vessels (USVs) and coastal Earth Observation events such as oil spills. However, existing methods, often relying on deep CNNs and transformer-based architectures, face challenges in deployment due to their high computational costs and resource-intensive nature. These limitations hinder the practicality of real-time, low-cost applications in real-world marine settings. To address this, we propose LEMMA, a lightweight semantic segmentation model designed specifically for accurate remote sensing segmentation under resource constraints. The proposed architecture leverages Laplacian Pyramids to enhance edge recognition, a critical component for effective feature extraction in complex marine environments for disaster response, environmental surveillance, and coastal monitoring. By integrating edge information early in the feature extraction process, LEMMA eliminates the need for computationally expensive feature map computations in deeper network layers, drastically reducing model size, complexity and inference time. LEMMA demonstrates state-of-the-art performance across datasets captured from diverse platforms while reducing trainable parameters and computational requirements by up to 71x, GFLOPs by up to 88.5\\%, and inference time by up to 84.65\\%, as compared to existing models. Experimental results highlight its effectiveness and real-world applicability, including 93.42\\% IoU on the Oil Spill dataset and 98.97\\% mIoU on Mastr1325.",
+            "short_summary": "Here is a 2-4 sentence summary of the research digest:\n\nResearchers have developed LEMMA, a lightweight semantic segmentation model designed for efficient processing in marine environments. The model uses Laplacian Pyramids to enhance edge recognition, reducing computational costs and resource requirements. This makes it suitable for real-time applications such as disaster response, environmental surveillance, and coastal monitoring. LEMMA achieves state-of-the-art performance while significantly reducing model size, complexity, and inference time compared to existing models."
+          }
+        },
+        {
+          "item_id": "ddc63c6f966b3d074e87c5e1137c76edc99157b21aa6e1ba242afbf843c164ea",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSUFnNU5WRzRiQll6ODlYZHdNb3RMSGxJVTZrdlFBZ3ozOHdBWHVuekxkT0x6NXl4akxaQ0hOQUF5QjBoY0lld093eTBxRWlCeFptY245SnhPWnlYcmpqTXpmajNtcjlaYVhFbU1JQXlpd052Z1U2azAwelUwa20xWXJIaFRwYk4xZEVKRTNkcGRpY3U0YnVXWEprcnBiZEZ6cjEtbS1rVHFkN3c2UUxId0s4ejJrMzRW?oc=5",
+          "item_type": "news_article",
+          "title": "Magnet Defense Begins Production on Unmanned Surface Vessel",
+          "authors_or_author": [
+            "Design and Development Today"
+          ],
+          "published_at": "2026-03-26",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSUFnNU5WRzRiQll6ODlYZHdNb3RMSGxJVTZrdlFBZ3ozOHdBWHVuekxkT0x6NXl4akxaQ0hOQUF5QjBoY0lld093eTBxRWlCeFptY245SnhPWnlYcmpqTXpmajNtcjlaYVhFbU1JQXlpd052Z1U2azAwelUwa20xWXJIaFRwYk4xZEVKRTNkcGRpY3U0YnVXWEprcnBiZEZ6cjEtbS1rVHFkN3c2UUxId0s4ejJrMzRW?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Magnet Defense Begins Production on Unmanned Surface Vessel &nbsp;&nbsp; Design and Development Today",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-26\n- Authors: Design and Development Today\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSUFnNU5WRzRiQll6ODlYZHdNb3RMSGxJVTZrdlFBZ3ozOHdBWHVuekxkT0x6NXl4akxaQ0hOQUF5QjBoY0lld093eTBxRWlCeFptY245SnhPWnlYcmpqTXpmajNtcjlaYVhFbU1JQXlpd052Z1U2azAwelUwa20xWXJIaFRwYk4xZEVKRTNkcGRpY3U0YnVXWEprcnBiZEZ6cjEtbS1rVHFkN3c2UUxId0s4ejJrMzRW?oc=5",
+            "source_excerpt": "Magnet Defense Begins Production on Unmanned Surface Vessel &nbsp;&nbsp; Design and Development Today",
+            "short_summary": "Here is a summary of the article in plain English:\n\nThe Magnet Defense system has started producing an unmanned surface vessel. The production marks a significant step forward for the system, which aims to provide advanced defense capabilities. Details about the vessel's specifications and features are not provided in this announcement."
+          }
+        },
+        {
+          "item_id": "cd631cce0a59d6874c4fa9cc3bdac4fa7dd96b0c567ba9f5a0c2130cf9407768",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQnl1NzM0UUFkVFBNc19yUXl2NGpXbUZ2RW93Tm1qV1ozTkktR2IzOExNdFBjajg3UzVoM283UG5oYllfR1ZycmRvdWFiVVc0MVFJRkxsVldOcHZKZzNMVjZOZmtjNU1DVzJ1VU9uUEV5Wlc2MTN1bDk0RmdYQUNkX0FUSWRLQ0pYSUpUMWxFUjNmeGZUV085Mm1XVC1yX3ByTGppdmVxR0NLM2J5RGJpV3VKdGJJaGx5RW9VakZUVEdJUzVRbUE?oc=5",
+          "item_type": "news_article",
+          "title": "Navy Creates New ‘Marketplace’ for Medium Unmanned Surface Vessels After Cancelling MASC Program",
+          "authors_or_author": [
+            "USNI News"
+          ],
+          "published_at": "2026-03-26",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQnl1NzM0UUFkVFBNc19yUXl2NGpXbUZ2RW93Tm1qV1ozTkktR2IzOExNdFBjajg3UzVoM283UG5oYllfR1ZycmRvdWFiVVc0MVFJRkxsVldOcHZKZzNMVjZOZmtjNU1DVzJ1VU9uUEV5Wlc2MTN1bDk0RmdYQUNkX0FUSWRLQ0pYSUpUMWxFUjNmeGZUV085Mm1XVC1yX3ByTGppdmVxR0NLM2J5RGJpV3VKdGJJaGx5RW9VakZUVEdJUzVRbUE?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Navy Creates New ‘Marketplace’ for Medium Unmanned Surface Vessels After Cancelling MASC Program &nbsp;&nbsp; USNI News",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-26\n- Authors: USNI News\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMixgFBVV95cUxPQnl1NzM0UUFkVFBNc19yUXl2NGpXbUZ2RW93Tm1qV1ozTkktR2IzOExNdFBjajg3UzVoM283UG5oYllfR1ZycmRvdWFiVVc0MVFJRkxsVldOcHZKZzNMVjZOZmtjNU1DVzJ1VU9uUEV5Wlc2MTN1bDk0RmdYQUNkX0FUSWRLQ0pYSUpUMWxFUjNmeGZUV085Mm1XVC1yX3ByTGppdmVxR0NLM2J5RGJpV3VKdGJJaGx5RW9VakZUVEdJUzVRbUE?oc=5",
+            "source_excerpt": "Navy Creates New ‘Marketplace’ for Medium Unmanned Surface Vessels After Cancelling MASC Program &nbsp;&nbsp; USNI News",
+            "short_summary": "The US Navy has created a new marketplace for medium unmanned surface vessels (MUSVs) after cancelling the Medium Unmanned Surface Air System (MASC) program. The new platform aims to provide a more efficient and cost-effective way for the Navy to acquire MUSVs. This move is part of the Navy's efforts to modernize its unmanned capabilities. The marketplace will allow private companies to bid on contracts for MUSV procurement."
+          }
+        },
+        {
+          "item_id": "9305ef1757c85272cbb003dd6f4f9fe2bf3630328541779d34d440655dc54f45",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQ2JiUmh5VWhjMF80LWVYdzFJTUZiU2FRdGNzbnBoUTFtbHVtQUlaVkl1alFmVjJxYWxYalVoLU00WTA2SWRwWi1zQUhQME5scWVQOGYxajh0MVN5MTNmRkNxdXNHVDNtRFFlMHgyOElRaHBFNWhvVXJuNjhhUkg1d0FQTEN0aVZjaDBsYVR2TlA1MnFsMmN4S3Q5YXpJNnMtYTl6RW10UzVZdFZ5cmNYRDhadnBOQUgx?oc=5",
+          "item_type": "news_article",
+          "title": "U.S. Navy Launches New Unmanned Surface Vessel Program to Accelerate Autonomous Development",
+          "authors_or_author": [
+            "news.ssbcrack.com"
+          ],
+          "published_at": "2026-03-26",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQ2JiUmh5VWhjMF80LWVYdzFJTUZiU2FRdGNzbnBoUTFtbHVtQUlaVkl1alFmVjJxYWxYalVoLU00WTA2SWRwWi1zQUhQME5scWVQOGYxajh0MVN5MTNmRkNxdXNHVDNtRFFlMHgyOElRaHBFNWhvVXJuNjhhUkg1d0FQTEN0aVZjaDBsYVR2TlA1MnFsMmN4S3Q5YXpJNnMtYTl6RW10UzVZdFZ5cmNYRDhadnBOQUgx?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "U.S. Navy Launches New Unmanned Surface Vessel Program to Accelerate Autonomous Development &nbsp;&nbsp; news.ssbcrack.com",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-26\n- Authors: news.ssbcrack.com\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQ2JiUmh5VWhjMF80LWVYdzFJTUZiU2FRdGNzbnBoUTFtbHVtQUlaVkl1alFmVjJxYWxYalVoLU00WTA2SWRwWi1zQUhQME5scWVQOGYxajh0MVN5MTNmRkNxdXNHVDNtRFFlMHgyOElRaHBFNWhvVXJuNjhhUkg1d0FQTEN0aVZjaDBsYVR2TlA1MnFsMmN4S3Q5YXpJNnMtYTl6RW10UzVZdFZ5cmNYRDhadnBOQUgx?oc=5",
+            "source_excerpt": "U.S. Navy Launches New Unmanned Surface Vessel Program to Accelerate Autonomous Development &nbsp;&nbsp; news.ssbcrack.com",
+            "short_summary": "Here is a summary of the article in plain English:\n\nThe US Navy has announced a new program to develop unmanned surface vessels (USVs) at an accelerated pace. The goal of this program is to advance the development of autonomous systems for naval operations. This move aims to enhance the Navy's capabilities in various areas, including surveillance and reconnaissance. The exact details of the program are not yet publicly available."
+          }
+        },
+        {
+          "item_id": "d19f55d39a946b9c72e9dbc50b93ec287a76f08209ae17634fe00fe247d82360",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNelhrYXJaTG5vVlh3UGktTVAySk01UEJ0UjVTS1EtQlNhcHpvRnVmT2Zhdml5SEpyX0hMcjR5NDFxcHIzWktqUFpoTFFrQ1lodnlkX1F4UF92aWdnMGNvMTFUM2xWb2xzSlF3WUFiUXhITnlJQTJ6M2NlOERlMS16Vlp0QjU?oc=5",
+          "item_type": "news_article",
+          "title": "Vessel completes autonomous navigation trials in Japan",
+          "authors_or_author": [
+            "Safety4Sea"
+          ],
+          "published_at": "2026-03-26",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNelhrYXJaTG5vVlh3UGktTVAySk01UEJ0UjVTS1EtQlNhcHpvRnVmT2Zhdml5SEpyX0hMcjR5NDFxcHIzWktqUFpoTFFrQ1lodnlkX1F4UF92aWdnMGNvMTFUM2xWb2xzSlF3WUFiUXhITnlJQTJ6M2NlOERlMS16Vlp0QjU?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Vessel completes autonomous navigation trials in Japan &nbsp;&nbsp; Safety4Sea",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-26\n- Authors: Safety4Sea\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMihAFBVV95cUxNelhrYXJaTG5vVlh3UGktTVAySk01UEJ0UjVTS1EtQlNhcHpvRnVmT2Zhdml5SEpyX0hMcjR5NDFxcHIzWktqUFpoTFFrQ1lodnlkX1F4UF92aWdnMGNvMTFUM2xWb2xzSlF3WUFiUXhITnlJQTJ6M2NlOERlMS16Vlp0QjU?oc=5",
+            "source_excerpt": "Vessel completes autonomous navigation trials in Japan &nbsp;&nbsp; Safety4Sea",
+            "short_summary": "A vessel has successfully completed autonomous navigation trials in Japan. The trial, conducted by an unspecified organization, aimed to test the vessel's ability to navigate independently. Details of the trial are not provided, but its success marks a significant step forward for autonomous maritime technology. The outcome is expected to have implications for the future of shipping and navigation."
+          }
+        },
+        {
+          "item_id": "d224193af290b95b10fd76b00e3e9fcb277141f5b21e241f8931d50ecd3b8a4f",
+          "source": "crossref",
+          "source_id": "10.31891/2307-5732-2026-363-78",
+          "item_type": "paper",
+          "title": "СТРУКТУРНО-ДИНАМІЧНА МОДЕЛЬ АВТОНОМНОЇ МОРСЬКОЇ ПЛАТФОРМИ З КІЛЬКІСНИМ АНАЛІЗОМ МІЖСИСТЕМНИХ ВПЛИВІВ",
+          "authors_or_author": [
+            "СЕРГІЙ ВОЛЯНСЬКИЙ",
+            "ЯНА ВОЛЯНСЬКА",
+            "ЛІАНА ДОБРОВОЛЬСКА",
+            "АНТОН КОЗАЧУК"
+          ],
+          "published_at": "2026-03-26",
+          "url": "https://doi.org/10.31891/2307-5732-2026-363-78",
+          "doi": "10.31891/2307-5732-2026-363-78",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "The paper develops a formalized system model of an autonomous marine platform (AMP) as a multi-connected dynamic structure with quantified intersystem impacts. The methodological basis of the study is a systematic approach to the analysis of AMP as a multi-level dynamic system with internal cause-and-effect relationships. The application of the proposed approach provides a transition from a qualitative description of the structure of an autonomous marine platform to its formalized model, suitable for further analysis of the stability and manageability of AMP, assessment of the integral efficiency of functioning and optimization of operating modes of autonomous marine systems. A combination of structural decomposition methods, matrix modeling, and oriented graph theory is used to formalize intersystem interactions. The autonomous marine platform is presented in the form of four interacting subsystems: energy, motor, information and diagnostic and management, for which state vectors are defined and a generalized state space is formed. Intersystem interactions are formalized in the form of a matrix of influences and a weighted oriented graph, which made it possible to quantify the structural role of each subsystem. This approach allows us to implement adaptive management, in which decisions are made not in isolation for individual modules, but taking into account their system interaction, which creates the basis for building a digital double of the platform and further implementing algorithms for optimizing and predicting the technical condition in real time. An indicator of the total initial impact is introduced, which is used to determine the dominant subsystem in the structure of interactions. The results of the analysis confirm the central role of the management subsystem in the formation of a closed adaptive control loop and ensuring the integral efficiency of the autonomous marine platform in conditions of environmental uncertainty.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: crossref\n- Type: paper\n- Published: 2026-03-26\n- Authors: СЕРГІЙ ВОЛЯНСЬКИЙ, ЯНА ВОЛЯНСЬКА, ЛІАНА ДОБРОВОЛЬСКА, АНТОН КОЗАЧУК\n- DOI: 10.31891/2307-5732-2026-363-78\n- Topics: ship_autonomy\n- Link: https://doi.org/10.31891/2307-5732-2026-363-78",
+            "source_excerpt": "The paper develops a formalized system model of an autonomous marine platform (AMP) as a multi-connected dynamic structure with quantified intersystem impacts. The methodological basis of the study is a systematic approach to the analysis of AMP as a multi-level dynamic system with internal cause-and-effect relationships. The application of the proposed approach provides a transition from a qualitative description of the structure of an autonomous marine platform to its formalized model, suitable for further analysis of the stability and manageability of AMP, assessment of the integral efficiency of functioning and optimization of operating modes of autonomous marine systems. A combination of structural decomposition methods, matrix modeling, and oriented graph theory is used to formalize intersystem interactions. The autonomous marine platform is presented in the form of four interacting subsystems: energy, motor, information and diagnostic and management, for which state vectors are defined and a generalized state space is formed. Intersystem interactions are formalized in the form of a matrix of influences and a weighted oriented graph, which made it possible to quantify the structural role of each subsystem. This approach allows us to implement adaptive management, in which decisions are made not in isolation for individual modules, but taking into account their system interaction, which creates the basis for building a digital double of the platform and further implementing algorithms for optimizing and predicting the technical condition in real time. An indicator of the total initial impact is introduced, which is used to determine the dominant subsystem in the structure of interactions. The results of the analysis confirm the central role of the management sub...",
+            "short_summary": "Here is a 2-4 sentence summary of the paper:\n\nResearchers developed a formalized system model of an autonomous marine platform (AMP) as a multi-connected dynamic structure with quantified intersystem impacts. They used a combination of structural decomposition methods, matrix modeling, and oriented graph theory to analyze AMP's interactions between its four subsystems: energy, motor, information, and diagnostic and management. This approach allows for adaptive management decisions that consider the platform's system interaction, enabling real-time optimization and prediction of technical conditions. The model provides a foundation for building a digital double of the platform and improving its overall efficiency."
+          }
+        },
+        {
+          "item_id": "3a5c9a892c05591fe54c8a4899d217085990a4394d7adbda1649d5c759bd693f",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaXdpMXAzS282MXR3RlVkckU4TGxBa1V2ZHVjaGVNX1ljMEV5MXhIQi1kSEk4THRma3NYRExfUXFhSERoc2lfcml0ZmdaRDFoZlI5WFVjNVVKWjM5TEFKN3BLcjFBaEtadk5iMndPN0tsVWtsYTZuVFdDZTgzTWNHQVNIbXZRaUZYWlhYUWFMUHBWWXNqcDhWNG9reXNqb3V3YjZ6MHZCeTE5V3N4eXo1dEo5ZmRxQU10NmZGcThHd05lcG5fVlE?oc=5",
+          "item_type": "news_article",
+          "title": "Autonomous ship gets green light in Japan grapples with seafarer shortage",
+          "authors_or_author": [
+            "Tradewinds News"
+          ],
+          "published_at": "2026-03-25",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaXdpMXAzS282MXR3RlVkckU4TGxBa1V2ZHVjaGVNX1ljMEV5MXhIQi1kSEk4THRma3NYRExfUXFhSERoc2lfcml0ZmdaRDFoZlI5WFVjNVVKWjM5TEFKN3BLcjFBaEtadk5iMndPN0tsVWtsYTZuVFdDZTgzTWNHQVNIbXZRaUZYWlhYUWFMUHBWWXNqcDhWNG9reXNqb3V3YjZ6MHZCeTE5V3N4eXo1dEo5ZmRxQU10NmZGcThHd05lcG5fVlE?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Autonomous ship gets green light in Japan grapples with seafarer shortage &nbsp;&nbsp; Tradewinds News",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-25\n- Authors: Tradewinds News\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMixgFBVV95cUxPaXdpMXAzS282MXR3RlVkckU4TGxBa1V2ZHVjaGVNX1ljMEV5MXhIQi1kSEk4THRma3NYRExfUXFhSERoc2lfcml0ZmdaRDFoZlI5WFVjNVVKWjM5TEFKN3BLcjFBaEtadk5iMndPN0tsVWtsYTZuVFdDZTgzTWNHQVNIbXZRaUZYWlhYUWFMUHBWWXNqcDhWNG9reXNqb3V3YjZ6MHZCeTE5V3N4eXo1dEo5ZmRxQU10NmZGcThHd05lcG5fVlE?oc=5",
+            "source_excerpt": "Autonomous ship gets green light in Japan grapples with seafarer shortage &nbsp;&nbsp; Tradewinds News",
+            "short_summary": "Here is a 2-4 sentence summary of the article:\n\nA autonomous ship has received approval in Japan, which is struggling to address a severe shortage of seafarers. The development comes as the country faces significant challenges in maintaining its maritime workforce. Autonomous ships have been touted as a potential solution to this issue, allowing for more efficient and cost-effective transportation. This approval marks an important step forward for the use of autonomous vessels in Japan's shipping industry."
+          }
+        },
+        {
+          "item_id": "7defea58c47fd23a35dae77c9296dff540a745430ed4db3cc124af11d3eafc2d",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140291452",
+          "item_type": "paper",
+          "title": "Evolution of Human Factor Risks from Traditional Ships to Autonomous Ships: A Comprehensive Review and Prospective Directions",
+          "authors_or_author": [
+            "Zengyun Gao",
+            "Zheng Wang",
+            "Yanmin Lu",
+            "Hailong Feng",
+            "Chunxu Li",
+            "Ke Zhang"
+          ],
+          "published_at": "2026-03-25",
+          "url": "https://doi.org/10.3390/su18073199",
+          "doi": "10.3390/su18073199",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Maritime Autonomous Surface Ships (MASS) are progressing from proof-of-concept to engineering test and initial application phases due to advancements in intelligent sensing, automatic control, and communication technologies. However, numerous studies have shown that the improvement of automation level does not linearly reduce human factor risks. Instead, it exhibits more complex evolutionary characteristics at the medium automation level. In particular, MASS Level 2 (MASS L2) features a “system-dominated, human-supervised” operational mode, and its human factor risks have become one of the key factors restricting the safe operation, large-scale application and sustainable long-term deployment of autonomous ships. This study employs a systematic literature review to analyze 89 core articles (2020–2025) and summarizes the theoretical basis, risk characteristics, and evolutionary trends of human factor risk research in MASS L2. The review results indicate that the current research consensus has gradually shifted from the traditional “human error”-centered explanatory paradigm to a systematic understanding of “information mismatches, opacity, and coupling failures in the human-machine-shore collaborative system”. Typical human factor risks in MASS L2 are mainly manifested as the degradation of supervisory cognition and situation awareness, imbalance in trust in automation, vulnerability in mode switching and takeover, skill degradation, and structural risks in ship-shore collaboration. Based on these findings, this study constructs a classification system and a comprehensive analysis framework for human factor risks in MASS L2, reveals the interaction relationships and dynamic evolution mechanisms among different risk types from a system-level perspective, and further discusses the limitations of existing research in terms of methods, data, and engineering applicability. Finally, considering the development trends of autonomous ship technology, this study proposes future research directions in human factor theoretical modeling, dynamic risk assessment, system design, and operation management. This study aims to provide a systematic knowledge framework for human factor risk research in MASS L2 and offer references for the safety design, safety management, and development of higher-level automation of autonomous ships, while supporting the sustainable and safe advancement of the global intelligent shipping industry.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-25\n- Authors: Zengyun Gao, Zheng Wang, Yanmin Lu, Hailong Feng, Chunxu Li, Ke Zhang\n- DOI: 10.3390/su18073199\n- Topics: ship_autonomy\n- Link: https://doi.org/10.3390/su18073199",
+            "source_excerpt": "Maritime Autonomous Surface Ships (MASS) are progressing from proof-of-concept to engineering test and initial application phases due to advancements in intelligent sensing, automatic control, and communication technologies. However, numerous studies have shown that the improvement of automation level does not linearly reduce human factor risks. Instead, it exhibits more complex evolutionary characteristics at the medium automation level. In particular, MASS Level 2 (MASS L2) features a “system-dominated, human-supervised” operational mode, and its human factor risks have become one of the key factors restricting the safe operation, large-scale application and sustainable long-term deployment of autonomous ships. This study employs a systematic literature review to analyze 89 core articles (2020–2025) and summarizes the theoretical basis, risk characteristics, and evolutionary trends of human factor risk research in MASS L2. The review results indicate that the current research consensus has gradually shifted from the traditional “human error”-centered explanatory paradigm to a systematic understanding of “information mismatches, opacity, and coupling failures in the human-machine-shore collaborative system”. Typical human factor risks in MASS L2 are mainly manifested as the degradation of supervisory cognition and situation awareness, imbalance in trust in automation, vulnerability in mode switching and takeover, skill degradation, and structural risks in ship-shore collaboration. Based on these findings, this study constructs a classification system and a comprehensive analysis framework for human factor risks in MASS L2, reveals the interaction relationships and dynamic evolution mechanisms among different risk types from a system-level perspective, and further di...",
+            "short_summary": "Here is a 2-4 sentence summary of the research digest:\n\nA recent review of 89 articles on Maritime Autonomous Surface Ships (MASS) found that while automation improves safety, it also introduces new human factor risks. These risks include issues with supervisory cognition, trust in automation, and communication between humans and machines. The study suggests a shift from viewing human errors as the primary cause of problems to considering more complex interactions between humans, machines, and shore-based systems. This understanding is crucial for developing effective strategies to mitigate these risks."
+          }
+        },
+        {
+          "item_id": "eaa048c1c9554f9bc5221b037eb57eab77a173ef7f98c63e3eba31aa5495ae5e",
+          "source": "crossref",
+          "source_id": "10.1103/cxyx-37kq",
+          "item_type": "paper",
+          "title": "Illuminating sequential freeze-in dark matter with dark photon signal at the CERN SHiP experiment",
+          "authors_or_author": [
+            "Anonymous"
+          ],
+          "published_at": "2026-03-25",
+          "url": "https://doi.org/10.1103/cxyx-37kq",
+          "doi": "10.1103/cxyx-37kq",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "ollama:fallback",
+            "metadata_markdown": "- Source: crossref\n- Type: paper\n- Published: 2026-03-25\n- Authors: Anonymous\n- DOI: 10.1103/cxyx-37kq\n- Topics: ship_autonomy\n- Link: https://doi.org/10.1103/cxyx-37kq",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "ef5df333805cc8f85a00f48372aa701325c0730c05b0e20d151bfc5c54b31ec8",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOEZoNEhBdk1WaFV4bnRfNjhiVUktYjdKX1FXS3VadEF6WVVMVkRncy16RENUVS14OHlkRmwwTWdBZUNLakJLQzBXcE9scksyQUwzM04tdUJXU2VVbGt4UHpZWHNJRXpYUWpHSmpWVHhNeXI2ME9fN1M0SUg0V2t2Ynk5QzhxM2VXNHEtY210ZExZTFhBVEI2WDJiLWQySV9Kb0pJTUZKLWc?oc=5",
+          "item_type": "news_article",
+          "title": "Japan's First Autonomous RoRo Ship: Certification and Project Goals - News and Statistics",
+          "authors_or_author": [
+            "IndexBox"
+          ],
+          "published_at": "2026-03-25",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOEZoNEhBdk1WaFV4bnRfNjhiVUktYjdKX1FXS3VadEF6WVVMVkRncy16RENUVS14OHlkRmwwTWdBZUNLakJLQzBXcE9scksyQUwzM04tdUJXU2VVbGt4UHpZWHNJRXpYUWpHSmpWVHhNeXI2ME9fN1M0SUg0V2t2Ynk5QzhxM2VXNHEtY210ZExZTFhBVEI2WDJiLWQySV9Kb0pJTUZKLWc?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Japan's First Autonomous RoRo Ship: Certification and Project Goals - News and Statistics &nbsp;&nbsp; IndexBox",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-25\n- Authors: IndexBox\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOEZoNEhBdk1WaFV4bnRfNjhiVUktYjdKX1FXS3VadEF6WVVMVkRncy16RENUVS14OHlkRmwwTWdBZUNLakJLQzBXcE9scksyQUwzM04tdUJXU2VVbGt4UHpZWHNJRXpYUWpHSmpWVHhNeXI2ME9fN1M0SUg0V2t2Ynk5QzhxM2VXNHEtY210ZExZTFhBVEI2WDJiLWQySV9Kb0pJTUZKLWc?oc=5",
+            "source_excerpt": "Japan's First Autonomous RoRo Ship: Certification and Project Goals - News and Statistics &nbsp;&nbsp; IndexBox",
+            "short_summary": "Here is a 2-4 sentence summary of the article in plain English:\n\nA new autonomous Roll-on/Roll-off (RoRo) ship has been certified, marking a significant milestone for Japan's maritime industry. The project aims to develop cutting-edge technology that enables ships to operate independently without human intervention. This innovation is expected to improve safety and efficiency at sea."
+          }
+        },
+        {
+          "item_id": "72f2142085932c4876772851f8e6a65415779c2dbff6568aa0c5949c3709e304",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPOTB6ZWVHUFpxZU1rZi10aWEybkFSZUpwbThEMkpRRWtlTHFremFWOE1CUzBaVVBQZ3BSZGNqckZaR1lGYXRLa2I5MFlPejdUd2t2bjRKTV9ndnBTenl5ODRKTmRhWGMyNFZlc29jVk9fOWE1ckFqWTVjTkM5M3hsY3JFUWw5RVNsVTVYWWpYdXVuQjdjNE84QkxtWXpENUZjR3c?oc=5",
+          "item_type": "news_article",
+          "title": "K Line certifies RO-RO vessel for autonomous navigation",
+          "authors_or_author": [
+            "WorldCargo News"
+          ],
+          "published_at": "2026-03-25",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPOTB6ZWVHUFpxZU1rZi10aWEybkFSZUpwbThEMkpRRWtlTHFremFWOE1CUzBaVVBQZ3BSZGNqckZaR1lGYXRLa2I5MFlPejdUd2t2bjRKTV9ndnBTenl5ODRKTmRhWGMyNFZlc29jVk9fOWE1ckFqWTVjTkM5M3hsY3JFUWw5RVNsVTVYWWpYdXVuQjdjNE84QkxtWXpENUZjR3c?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "K Line certifies RO-RO vessel for autonomous navigation &nbsp;&nbsp; WorldCargo News",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-25\n- Authors: WorldCargo News\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMiogFBVV95cUxPOTB6ZWVHUFpxZU1rZi10aWEybkFSZUpwbThEMkpRRWtlTHFremFWOE1CUzBaVVBQZ3BSZGNqckZaR1lGYXRLa2I5MFlPejdUd2t2bjRKTV9ndnBTenl5ODRKTmRhWGMyNFZlc29jVk9fOWE1ckFqWTVjTkM5M3hsY3JFUWw5RVNsVTVYWWpYdXVuQjdjNE84QkxtWXpENUZjR3c?oc=5",
+            "source_excerpt": "K Line certifies RO-RO vessel for autonomous navigation &nbsp;&nbsp; WorldCargo News",
+            "short_summary": "Here is a summary of the article in plain English:\n\nThe K Line shipping company has certified an RO-RO (roll-on/roll-off) vessel for autonomous navigation. This means that the ship can now operate without human intervention, using advanced technology to navigate and manage its routes. The certification marks an important milestone in the development of autonomous shipping."
+          }
+        },
+        {
+          "item_id": "21d8dccbf9592354fb19fbdcbcfb8e5169174a7b2952f278c5cc53b61c206ead",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140275381",
+          "item_type": "paper",
+          "title": "Multi-scale small-target detection for unmanned surface vessel perception in complex water-surface environments",
+          "authors_or_author": [
+            "Yong Chang",
+            "Jinwei Liao",
+            "Xin Ran",
+            "Jeom-Kee Paik"
+          ],
+          "published_at": "2026-03-25",
+          "url": "https://doi.org/10.1080/17445302.2026.2646557",
+          "doi": "10.1080/17445302.2026.2646557",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "ollama:fallback",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-25\n- Authors: Yong Chang, Jinwei Liao, Xin Ran, Jeom-Kee Paik\n- DOI: 10.1080/17445302.2026.2646557\n- Topics: ship_autonomy\n- Link: https://doi.org/10.1080/17445302.2026.2646557",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "22cb0321eed4373c2220f947956b796931b7a3e00a5bab1d43053f315b5f4ad7",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140328774",
+          "item_type": "paper",
+          "title": "Processed data from SeaExplorer SEA070 in the Amundsen Sea, 2022, as part of the TARSAN and ARTEMIS deployments on cruise NBP2202.",
+          "authors_or_author": [
+            "J. Śliwiński",
+            "Hilde Oliver",
+            "Bastien Y. Queste"
+          ],
+          "published_at": "2026-03-25",
+          "url": "https://doi.org/10.5281/zenodo.19219995",
+          "doi": "10.5281/zenodo.19219995",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "This dataset contains processed Level-3 glider observations from SeaExplorer SEA070 (“Scratch”) collected in the Amundsen Sea during the NBP2202 expedition in early 2022. It forms part of the TARSAN and ARTEMIS efforts associated with the International Thwaites Glacier Collaboration. TARSAN focused on how atmosphere–ice–ocean interactions influence the Thwaites and Dotson ice shelves, using gliders, ship surveys, AUVs, moorings, and CTDs to characterize ocean conditions on the continental shelf and beneath ice shelves. ARTEMIS complemented that work by adding biogeochemical observations, especially from autonomous platforms, to investigate how West Antarctic Ice Sheet melt affects ecosystem structure and regional carbon cycling. In the processed file, SEA070 is represented as a trajectory/timeseries-style product gridded to 1100 depth levels and 492 profiles, spanning about mid-January to mid-February 2022 in the eastern Amundsen Sea near 72.2–72.4°S, 117.9–117.3°W. The dataset includes core hydrography from an RBR Legato CTD (temperature, conductivity, salinity, pressure), dissolved oxygen from an RBR Coda sensor, nitrate from a Sea-Bird Deep SUNA, and optical measurements from a WET Labs ECO Puck FLBBCD (chlorophyll, CDOM, backscatter), together with derived products such as density, potential temperature, mixed-layer depth, euphotic depth, light fields, corrected chlorophyll, corrected nitrate, and corrected oxygen. Note that there was a severe CTD electrical noise issue affecting conductivity, absolute values are OK but the data is incredibly noisy. The oxygen calibration is also imperfect; and absolute values should be treated with caution.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-25\n- Authors: J. Śliwiński, Hilde Oliver, Bastien Y. Queste\n- DOI: 10.5281/zenodo.19219995\n- Topics: ship_autonomy\n- Link: https://doi.org/10.5281/zenodo.19219995",
+            "source_excerpt": "This dataset contains processed Level-3 glider observations from SeaExplorer SEA070 (“Scratch”) collected in the Amundsen Sea during the NBP2202 expedition in early 2022. It forms part of the TARSAN and ARTEMIS efforts associated with the International Thwaites Glacier Collaboration. TARSAN focused on how atmosphere–ice–ocean interactions influence the Thwaites and Dotson ice shelves, using gliders, ship surveys, AUVs, moorings, and CTDs to characterize ocean conditions on the continental shelf and beneath ice shelves. ARTEMIS complemented that work by adding biogeochemical observations, especially from autonomous platforms, to investigate how West Antarctic Ice Sheet melt affects ecosystem structure and regional carbon cycling. In the processed file, SEA070 is represented as a trajectory/timeseries-style product gridded to 1100 depth levels and 492 profiles, spanning about mid-January to mid-February 2022 in the eastern Amundsen Sea near 72.2–72.4°S, 117.9–117.3°W. The dataset includes core hydrography from an RBR Legato CTD (temperature, conductivity, salinity, pressure), dissolved oxygen from an RBR Coda sensor, nitrate from a Sea-Bird Deep SUNA, and optical measurements from a WET Labs ECO Puck FLBBCD (chlorophyll, CDOM, backscatter), together with derived products such as density, potential temperature, mixed-layer depth, euphotic depth, light fields, corrected chlorophyll, corrected nitrate, and corrected oxygen. Note that there was a severe CTD electrical noise issue affecting conductivity, absolute values are OK but the data is incredibly noisy. The oxygen calibration is also imperfect; and absolute values should be treated with caution.",
+            "short_summary": "Here is a 2-4 sentence summary of the research digest:\n\nResearchers from TARSAN and ARTEMIS projects have released processed Level-3 glider observations from SeaExplorer SEA070 in the Amundsen Sea. The dataset, collected during the NBP2202 expedition in early 2022, provides insights into ocean conditions and biogeochemical properties in the eastern Amundsen Sea. It includes various measurements such as temperature, salinity, dissolved oxygen, and chlorophyll, which will help investigate the impact of West Antarctic Ice Sheet melt on ecosystem structure and regional carbon cycling. The dataset is available for research use."
+          }
+        },
+        {
+          "item_id": "9426247c24f90655e985559bb4addf5fae50edc0c2f88998363a893746b80466",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140323532",
+          "item_type": "paper",
+          "title": "Processed data from SeaExplorer SEA070 in the Amundsen Sea, 2022, as part of the TARSAN and ARTEMIS deployments on cruise NBP2202.",
+          "authors_or_author": [
+            "J. Śliwiński",
+            "Hilde Oliver",
+            "Bastien Y. Queste"
+          ],
+          "published_at": "2026-03-25",
+          "url": "https://doi.org/10.5281/zenodo.19219996",
+          "doi": "10.5281/zenodo.19219996",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "This dataset contains processed Level-3 glider observations from SeaExplorer SEA070 (“Scratch”) collected in the Amundsen Sea during the NBP2202 expedition in early 2022. It forms part of the TARSAN and ARTEMIS efforts associated with the International Thwaites Glacier Collaboration. TARSAN focused on how atmosphere–ice–ocean interactions influence the Thwaites and Dotson ice shelves, using gliders, ship surveys, AUVs, moorings, and CTDs to characterize ocean conditions on the continental shelf and beneath ice shelves. ARTEMIS complemented that work by adding biogeochemical observations, especially from autonomous platforms, to investigate how West Antarctic Ice Sheet melt affects ecosystem structure and regional carbon cycling. In the processed file, SEA070 is represented as a trajectory/timeseries-style product gridded to 1100 depth levels and 492 profiles, spanning about mid-January to mid-February 2022 in the eastern Amundsen Sea near 72.2–72.4°S, 117.9–117.3°W. The dataset includes core hydrography from an RBR Legato CTD (temperature, conductivity, salinity, pressure), dissolved oxygen from an RBR Coda sensor, nitrate from a Sea-Bird Deep SUNA, and optical measurements from a WET Labs ECO Puck FLBBCD (chlorophyll, CDOM, backscatter), together with derived products such as density, potential temperature, mixed-layer depth, euphotic depth, light fields, corrected chlorophyll, corrected nitrate, and corrected oxygen. Note that there was a severe CTD electrical noise issue affecting conductivity, absolute values are OK but the data is incredibly noisy. The oxygen calibration is also imperfect; and absolute values should be treated with caution.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-25\n- Authors: J. Śliwiński, Hilde Oliver, Bastien Y. Queste\n- DOI: 10.5281/zenodo.19219996\n- Topics: ship_autonomy\n- Link: https://doi.org/10.5281/zenodo.19219996",
+            "source_excerpt": "This dataset contains processed Level-3 glider observations from SeaExplorer SEA070 (“Scratch”) collected in the Amundsen Sea during the NBP2202 expedition in early 2022. It forms part of the TARSAN and ARTEMIS efforts associated with the International Thwaites Glacier Collaboration. TARSAN focused on how atmosphere–ice–ocean interactions influence the Thwaites and Dotson ice shelves, using gliders, ship surveys, AUVs, moorings, and CTDs to characterize ocean conditions on the continental shelf and beneath ice shelves. ARTEMIS complemented that work by adding biogeochemical observations, especially from autonomous platforms, to investigate how West Antarctic Ice Sheet melt affects ecosystem structure and regional carbon cycling. In the processed file, SEA070 is represented as a trajectory/timeseries-style product gridded to 1100 depth levels and 492 profiles, spanning about mid-January to mid-February 2022 in the eastern Amundsen Sea near 72.2–72.4°S, 117.9–117.3°W. The dataset includes core hydrography from an RBR Legato CTD (temperature, conductivity, salinity, pressure), dissolved oxygen from an RBR Coda sensor, nitrate from a Sea-Bird Deep SUNA, and optical measurements from a WET Labs ECO Puck FLBBCD (chlorophyll, CDOM, backscatter), together with derived products such as density, potential temperature, mixed-layer depth, euphotic depth, light fields, corrected chlorophyll, corrected nitrate, and corrected oxygen. Note that there was a severe CTD electrical noise issue affecting conductivity, absolute values are OK but the data is incredibly noisy. The oxygen calibration is also imperfect; and absolute values should be treated with caution.",
+            "short_summary": "Here is a 2-4 sentence summary of the research digest:\n\nResearchers from TARSAN and ARTEMIS have released processed glider observations from SeaExplorer SEA070 in the Amundsen Sea, collected during the NBP2202 expedition in early 2022. The dataset provides detailed information on ocean conditions, including temperature, salinity, and dissolved oxygen levels, as well as biogeochemical data such as chlorophyll and nitrate concentrations. The data is part of a larger effort to study atmosphere-ice-ocean interactions and their impact on the West Antarctic Ice Sheet."
+          }
+        },
+        {
+          "item_id": "00caa49f33946dd4f6e17a98c0d9b6961da757c2f6ab61dbd20063ba324793be",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7133457349",
+          "item_type": "paper",
+          "title": "Studies on Perceptive Systems for Maritime Autonomous Surface Ships",
+          "authors_or_author": [
+            "Filippo Ponzini"
+          ],
+          "published_at": "2026-03-25",
+          "url": "https://hdl.handle.net/11567/1290857",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "The development of Maritime Autonomous Surface Ships (MASS) represents a pivotal advancement in maritime safety and operational efficiency, particularly by mitigating accidents stemming from human error and reduced visibility. While the automotive and aerospace industries have made significant strides in autonomous perception, maritime situational awareness still relies primarily on traditional, non-cooperative sensors such as radar and the Automatic Identification System (AIS), which face substantial limitations in cluttered coastal and high-traffic settings. This dissertation tackles these gaps by adapting and validating advanced sensing technologies—such as LiDAR, thermal imaging, and RGB cameras—to the distinctive challenges of the marine domain. The core aim is to design, implement, and experimentally validate a multi-modal perception and communication framework that delivers high-level situational awareness for autonomous vessels. The study examines sensor fusion techniques, mitigates the shortage of maritime datasets, investigates AI-based target detection and classification, and assesses the transferability of perception algorithms from other domains to maritime applications. A structured experimental approach was adopted, advancing from simulation-based evaluations to controlled field trials and demanding sea tests. A modular sensing architecture was engineered, integrating LiDAR, thermal, and RGB sensors with high-precision INS/GNSS state estimation. To facilitate algorithm validation, two custom datasets were created: a LiDAR dataset comprising 11,680 scans (including 920 manually labelled samples) and a multi-modal \"human-in-water\" dataset comprising 6,000 samples, augmented with physical and virtual data to replicate environmental perturbations. Quantitative assessments on these datasets confirm the efficacy of the proposed pipelines. System-level validations on the SWAMP autonomous platform in Lake Nemi and the Gulf of Naples affirmed the seamless integration of perception and state estimation, supporting effective autonomous collision avoidance and robust multi-node communication. Multi-modal fusion was crucial in overcoming sensor-specific drawbacks, including LiDAR sparsity and thermal noise. This research contributes validated algorithms, novel datasets, and actionable guidelines for cross-domain adaptation of perception technologies to maritime contexts, laying a solid groundwork for future advancements in autonomous surface vessels.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-25\n- Authors: Filippo Ponzini\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://hdl.handle.net/11567/1290857",
+            "source_excerpt": "The development of Maritime Autonomous Surface Ships (MASS) represents a pivotal advancement in maritime safety and operational efficiency, particularly by mitigating accidents stemming from human error and reduced visibility. While the automotive and aerospace industries have made significant strides in autonomous perception, maritime situational awareness still relies primarily on traditional, non-cooperative sensors such as radar and the Automatic Identification System (AIS), which face substantial limitations in cluttered coastal and high-traffic settings. This dissertation tackles these gaps by adapting and validating advanced sensing technologies—such as LiDAR, thermal imaging, and RGB cameras—to the distinctive challenges of the marine domain. The core aim is to design, implement, and experimentally validate a multi-modal perception and communication framework that delivers high-level situational awareness for autonomous vessels. The study examines sensor fusion techniques, mitigates the shortage of maritime datasets, investigates AI-based target detection and classification, and assesses the transferability of perception algorithms from other domains to maritime applications. A structured experimental approach was adopted, advancing from simulation-based evaluations to controlled field trials and demanding sea tests. A modular sensing architecture was engineered, integrating LiDAR, thermal, and RGB sensors with high-precision INS/GNSS state estimation. To facilitate algorithm validation, two custom datasets were created: a LiDAR dataset comprising 11,680 scans (including 920 manually labelled samples) and a multi-modal \"human-in-water\" dataset comprising 6,000 samples, augmented with physical and virtual data to replicate environmental perturbations. Quantita...",
+            "short_summary": "Here is the weekly research digest:\n\nThis paper presents research on developing perceptive systems for Maritime Autonomous Surface Ships (MASS). The goal is to improve maritime situational awareness in cluttered coastal areas and high-traffic settings using advanced sensing technologies like LiDAR, thermal imaging, and RGB cameras. The study aims to design a multi-modal perception framework that can deliver high-level situational awareness for autonomous vessels. It also investigates AI-based target detection and classification."
+          }
+        },
+        {
+          "item_id": "60ea5f99dd08fde32c8f2198195607d1a2a3cef0192d144e551a965339563b03",
+          "source": "crossref",
+          "source_id": "10.1103/fyd4-gk83",
+          "item_type": "paper",
+          "title": "Updated sensitivities to heavy neutral leptons at the LHC far detectors and SHiP",
+          "authors_or_author": [
+            "Anonymous"
+          ],
+          "published_at": "2026-03-25",
+          "url": "https://doi.org/10.1103/fyd4-gk83",
+          "doi": "10.1103/fyd4-gk83",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "ollama:fallback",
+            "metadata_markdown": "- Source: crossref\n- Type: paper\n- Published: 2026-03-25\n- Authors: Anonymous\n- DOI: 10.1103/fyd4-gk83\n- Topics: ship_autonomy\n- Link: https://doi.org/10.1103/fyd4-gk83",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "f4a182d3c60e71c40ce02ef3dd8af30d53764cb7f6f7bfe128bf249506f08c7e",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVExNeDdWSVl0Q1htMTVEWUY1VzVfQ1NLQmNNTVMxXzhHOWZiT0VJNlM2blZyZnN1Y0FEUzdxVHZNTC1ZNHdCUHNKVGdxZTFtMWxXTE9YVk9ldlFTaC1UcHNYenBmbkVuVzJqS3h0ZEFBbUZJNG1ad0xWTXNTcHRLUzVsbHppTVhrV2N4S20tQWdaVmxiWDZpWEhRY0k2RS1aVkxOTWg4YVJRNHVlbGplTU83blFEZ05xc3JaWXl4TXJiZw?oc=5",
+          "item_type": "news_article",
+          "title": "‘HOKUREN MARU No.2’ Becomes Japan’s First RORO Vessel To Pass Inspection As An Autonomous Vessel",
+          "authors_or_author": [
+            "Marine Insight"
+          ],
+          "published_at": "2026-03-25",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVExNeDdWSVl0Q1htMTVEWUY1VzVfQ1NLQmNNTVMxXzhHOWZiT0VJNlM2blZyZnN1Y0FEUzdxVHZNTC1ZNHdCUHNKVGdxZTFtMWxXTE9YVk9ldlFTaC1UcHNYenBmbkVuVzJqS3h0ZEFBbUZJNG1ad0xWTXNTcHRLUzVsbHppTVhrV2N4S20tQWdaVmxiWDZpWEhRY0k2RS1aVkxOTWg4YVJRNHVlbGplTU83blFEZ05xc3JaWXl4TXJiZw?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "‘HOKUREN MARU No.2’ Becomes Japan’s First RORO Vessel To Pass Inspection As An Autonomous Vessel &nbsp;&nbsp; Marine Insight",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-25\n- Authors: Marine Insight\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVExNeDdWSVl0Q1htMTVEWUY1VzVfQ1NLQmNNTVMxXzhHOWZiT0VJNlM2blZyZnN1Y0FEUzdxVHZNTC1ZNHdCUHNKVGdxZTFtMWxXTE9YVk9ldlFTaC1UcHNYenBmbkVuVzJqS3h0ZEFBbUZJNG1ad0xWTXNTcHRLUzVsbHppTVhrV2N4S20tQWdaVmxiWDZpWEhRY0k2RS1aVkxOTWg4YVJRNHVlbGplTU83blFEZ05xc3JaWXl4TXJiZw?oc=5",
+            "source_excerpt": "‘HOKUREN MARU No.2’ Becomes Japan’s First RORO Vessel To Pass Inspection As An Autonomous Vessel &nbsp;&nbsp; Marine Insight",
+            "short_summary": "Here is a summary of the article in 3 sentences:\n\nThe \"HOKUREN MARU No.2\" has become Japan's first Roll-on/Roll-off (RORO) vessel to pass an inspection as an autonomous vessel. This achievement marks a significant milestone in the country's efforts to adopt autonomous technology in its maritime industry. The vessel's successful inspection demonstrates its readiness for operation under autonomous conditions."
+          }
+        },
+        {
+          "item_id": "1778a1ae7f7414376186df5d85e7bc241801dad7ae9efe00ea80e0668352b4bb",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140207759",
+          "item_type": "paper",
+          "title": "An interpretable data-driven method for ship collision avoidance decision-making research",
+          "authors_or_author": [
+            "Ke Zhang",
+            "Xiongfei Geng",
+            "Jie Wen",
+            "Jianan Luo",
+            "Liang Zhang",
+            "Dongsheng Li"
+          ],
+          "published_at": "2026-03-24",
+          "url": "https://doi.org/10.3389/fmars.2026.1801576",
+          "doi": "10.3389/fmars.2026.1801576",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Marine officers’ experience with ship handling is crucial for ensuring safe navigation. The data-driven methods can learn from the experience contained in historical automatic identification system data, thereby providing avoidance decision-making for ships in real-time scenarios. This paper proposes a novel data-driven method for ship collision avoidance decision-making research that includes three interpretable models. First, this method develops a model to match the real-time scenario with similar historical ones, thereby facilitating learning from the experience in such scenarios. Second, an avoidance path generation model is constructed to generate multiple avoidance paths for the real-time scenario. Third, an avoidance path optimization model is established to generate an optimal avoidance path that meets safety requirements and conforms to ship maneuverability. Subsequently, the waterway at the entrance of the Yangtze River is selected as the experimental area, and a real-time scenario within this waterway is used to verify the feasibility of the proposed method. The results demonstrate that the method can effectively generate an optimal avoidance path for the real-time scenario. This research can provide valuable insights for the development of intelligent decision-making systems for smart ships.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-24\n- Authors: Ke Zhang, Xiongfei Geng, Jie Wen, Jianan Luo, Liang Zhang, Dongsheng Li\n- DOI: 10.3389/fmars.2026.1801576\n- Topics: ship_autonomy\n- Link: https://doi.org/10.3389/fmars.2026.1801576",
+            "source_excerpt": "Marine officers’ experience with ship handling is crucial for ensuring safe navigation. The data-driven methods can learn from the experience contained in historical automatic identification system data, thereby providing avoidance decision-making for ships in real-time scenarios. This paper proposes a novel data-driven method for ship collision avoidance decision-making research that includes three interpretable models. First, this method develops a model to match the real-time scenario with similar historical ones, thereby facilitating learning from the experience in such scenarios. Second, an avoidance path generation model is constructed to generate multiple avoidance paths for the real-time scenario. Third, an avoidance path optimization model is established to generate an optimal avoidance path that meets safety requirements and conforms to ship maneuverability. Subsequently, the waterway at the entrance of the Yangtze River is selected as the experimental area, and a real-time scenario within this waterway is used to verify the feasibility of the proposed method. The results demonstrate that the method can effectively generate an optimal avoidance path for the real-time scenario. This research can provide valuable insights for the development of intelligent decision-making systems for smart ships.",
+            "short_summary": "Here is a 2-4 sentence summary of the paper in plain English:\n\nResearchers have developed a new data-driven method to help prevent ship collisions by analyzing historical navigation data. The system uses three models to generate multiple safe paths and then chooses the best one based on the ship's capabilities. This approach was tested in a real-world scenario near the Yangtze River and showed promising results. The goal is to create more intelligent decision-making systems for ships that can improve safety at sea."
+          }
+        },
+        {
+          "item_id": "fc4d80225b4a429608a7389005608884defdd34b546ef8e4b652e6e751d32072",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140313722",
+          "item_type": "paper",
+          "title": "Experimental study of a new type of hydrodynamic log",
+          "authors_or_author": [
+            "A. A. Antonov",
+            "A. V. Artemyev",
+            "V. A. Kutsenko"
+          ],
+          "published_at": "2026-03-24",
+          "url": "https://doi.org/10.21821/2309-5180-2026-18-1-68-76",
+          "doi": "10.21821/2309-5180-2026-18-1-68-76",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "This paper presents research on the development of a new type of ship speed measuring device based on microelectromechanical systems (MEMS). A design deficiency in the configuration proposed in the authors’ earlier publications has been identified. Computer-based calculations demonstrated a significant error in determining vessel speed, caused by inaccurate measurement of static water pressure resulting from fluid flow around a cylindrical body. Further studies were carried out using modern software packages to evaluate errors in vessel speed measurement and to determine the optimal geometry of the log tube and the best locations for installing pressure sensors. Based on the results of numerical simulations, an improved design is proposed that reduces measurement error. Experimental testing of a prototype under real marine conditions confirmed the feasibility of measuring a vessel’s relative speed using MEMS components. The model presented in this study eliminates many of the drawbacks characteristic of previous generations of hydrodynamic logs. The device has been significantly miniaturized, creating prospects for installation on both conventional vessels and small autonomous maritime craft. Key directions for further research are highlighted.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-24\n- Authors: A. A. Antonov, A. V. Artemyev, V. A. Kutsenko\n- DOI: 10.21821/2309-5180-2026-18-1-68-76\n- Topics: ship_autonomy\n- Link: https://doi.org/10.21821/2309-5180-2026-18-1-68-76",
+            "source_excerpt": "This paper presents research on the development of a new type of ship speed measuring device based on microelectromechanical systems (MEMS). A design deficiency in the configuration proposed in the authors’ earlier publications has been identified. Computer-based calculations demonstrated a significant error in determining vessel speed, caused by inaccurate measurement of static water pressure resulting from fluid flow around a cylindrical body. Further studies were carried out using modern software packages to evaluate errors in vessel speed measurement and to determine the optimal geometry of the log tube and the best locations for installing pressure sensors. Based on the results of numerical simulations, an improved design is proposed that reduces measurement error. Experimental testing of a prototype under real marine conditions confirmed the feasibility of measuring a vessel’s relative speed using MEMS components. The model presented in this study eliminates many of the drawbacks characteristic of previous generations of hydrodynamic logs. The device has been significantly miniaturized, creating prospects for installation on both conventional vessels and small autonomous maritime craft. Key directions for further research are highlighted.",
+            "short_summary": "Here is a 2-4 sentence summary of the paper in plain English:\n\nResearchers have developed a new type of ship speed measuring device using microelectromechanical systems (MEMS). They identified an error in their previous design and used computer simulations to find a better solution. The new design was tested on a prototype under real marine conditions, showing that it can accurately measure a vessel's speed. This improved device is smaller and more versatile than previous models, making it suitable for both conventional vessels and small autonomous craft."
+          }
+        },
+        {
+          "item_id": "7be9482e59948749a8145234548b3d0067a8bfa938db590be8ed761f15d54765",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVkpLbmtXSGVkZTdlbDFTeC01TV90al9TWVBzVEVQbTExUnRNOGQzVWZhQTNHWmNUd1lFR19yLVB5QkplWUpWOGxaejRuVzNxMnN2VHNxTHM0OHZZaWlXUUZuM0wtOHVlcVY0MFpXa0l3bXhjcUpreTFpWGdyVl9VT2pjaUFzX01oZmtxWk1NN2k3TW5fcHVPV1VySQ?oc=5",
+          "item_type": "news_article",
+          "title": "HD Hyundai Accelerates AI Autonomous Ship Development",
+          "authors_or_author": [
+            "서울경제신문"
+          ],
+          "published_at": "2026-03-24",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVkpLbmtXSGVkZTdlbDFTeC01TV90al9TWVBzVEVQbTExUnRNOGQzVWZhQTNHWmNUd1lFR19yLVB5QkplWUpWOGxaejRuVzNxMnN2VHNxTHM0OHZZaWlXUUZuM0wtOHVlcVY0MFpXa0l3bXhjcUpreTFpWGdyVl9VT2pjaUFzX01oZmtxWk1NN2k3TW5fcHVPV1VySQ?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "HD Hyundai Accelerates AI Autonomous Ship Development &nbsp;&nbsp; 서울경제신문",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-24\n- Authors: 서울경제신문\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMimwFBVV95cUxOVkpLbmtXSGVkZTdlbDFTeC01TV90al9TWVBzVEVQbTExUnRNOGQzVWZhQTNHWmNUd1lFR19yLVB5QkplWUpWOGxaejRuVzNxMnN2VHNxTHM0OHZZaWlXUUZuM0wtOHVlcVY0MFpXa0l3bXhjcUpreTFpWGdyVl9VT2pjaUFzX01oZmtxWk1NN2k3TW5fcHVPV1VySQ?oc=5",
+            "source_excerpt": "HD Hyundai Accelerates AI Autonomous Ship Development &nbsp;&nbsp; 서울경제신문",
+            "short_summary": "Here is a 2-4 sentence summary of the article:\n\nHD Hyundai has accelerated its development of AI autonomous ships. The company is working to improve the technology, which will enable ships to navigate and make decisions without human intervention. This advancement aims to increase safety and efficiency at sea. Details on the exact timeline and capabilities of the AI system are not provided in this article."
+          }
+        },
+        {
+          "item_id": "628b5b64fdceef3d539b68c569a3af15408aefb0515f187cde052c4aec911098",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPN3J3ODJuUEVBWTUwbDlYVlBTRW8xOVN3WTJjRmpaWnFKekp5a0F4NmFDMldUQk44VXJ5ajFVbTQ1YTlKekFobV9zVWtydUdSRUZfUzlxczZVbldGRVI4bW9aTnhnVThrM3FhdlA4VU5yRmstbWVwcFk3eWxXcDlsUVBKdnEzdUdOSG1GTXpFOA?oc=5",
+          "item_type": "news_article",
+          "title": "IQUA Robotics Successful Proves Use of AUV for Autonomous Ship Hull Inspection",
+          "authors_or_author": [
+            "Marine Technology News"
+          ],
+          "published_at": "2026-03-24",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPN3J3ODJuUEVBWTUwbDlYVlBTRW8xOVN3WTJjRmpaWnFKekp5a0F4NmFDMldUQk44VXJ5ajFVbTQ1YTlKekFobV9zVWtydUdSRUZfUzlxczZVbldGRVI4bW9aTnhnVThrM3FhdlA4VU5yRmstbWVwcFk3eWxXcDlsUVBKdnEzdUdOSG1GTXpFOA?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "IQUA Robotics Successful Proves Use of AUV for Autonomous Ship Hull Inspection &nbsp;&nbsp; Marine Technology News",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-24\n- Authors: Marine Technology News\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMijwFBVV95cUxPN3J3ODJuUEVBWTUwbDlYVlBTRW8xOVN3WTJjRmpaWnFKekp5a0F4NmFDMldUQk44VXJ5ajFVbTQ1YTlKekFobV9zVWtydUdSRUZfUzlxczZVbldGRVI4bW9aTnhnVThrM3FhdlA4VU5yRmstbWVwcFk3eWxXcDlsUVBKdnEzdUdOSG1GTXpFOA?oc=5",
+            "source_excerpt": "IQUA Robotics Successful Proves Use of AUV for Autonomous Ship Hull Inspection &nbsp;&nbsp; Marine Technology News",
+            "short_summary": "Here is a 2-4 sentence summary of the article:\n\nIQUA Robotics has successfully used an Autonomous Underwater Vehicle (AUV) to inspect ship hulls autonomously. This technology allows for more efficient and cost-effective inspections compared to traditional methods. The use of AUVs in this context enables ships to be inspected without having to dock, reducing downtime and increasing safety."
+          }
+        },
+        {
+          "item_id": "313dce8672b65fce1a52b3690494d485381d8c1fe47f4fbc59dca70c10b69ca7",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSG1FV2dkdlUxc1hfOFgxRk1TNnVFX21OZEI0dEp2bkdYR0g2RWRyZzZpeW5raFdVaHR2ZWd5dGpnX2VJRHN6dzhyU0VBT0Q4Q19hYkZGUDZUNUVsNEJLM3hzRnJabHd2dEI1WWcxa2htcm5iZDRxTVgtRGluNEZBY3hOVjJJU05nU1pTcF9COWRkbjFYTkVoWFJSTXk?oc=5",
+          "item_type": "news_article",
+          "title": "Japan Certifies Its First RoRo with Autonomous Navigation",
+          "authors_or_author": [
+            "The Maritime Executive"
+          ],
+          "published_at": "2026-03-24",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSG1FV2dkdlUxc1hfOFgxRk1TNnVFX21OZEI0dEp2bkdYR0g2RWRyZzZpeW5raFdVaHR2ZWd5dGpnX2VJRHN6dzhyU0VBT0Q4Q19hYkZGUDZUNUVsNEJLM3hzRnJabHd2dEI1WWcxa2htcm5iZDRxTVgtRGluNEZBY3hOVjJJU05nU1pTcF9COWRkbjFYTkVoWFJSTXk?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Japan Certifies Its First RoRo with Autonomous Navigation &nbsp;&nbsp; The Maritime Executive",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-24\n- Authors: The Maritime Executive\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMinAFBVV95cUxPSG1FV2dkdlUxc1hfOFgxRk1TNnVFX21OZEI0dEp2bkdYR0g2RWRyZzZpeW5raFdVaHR2ZWd5dGpnX2VJRHN6dzhyU0VBT0Q4Q19hYkZGUDZUNUVsNEJLM3hzRnJabHd2dEI1WWcxa2htcm5iZDRxTVgtRGluNEZBY3hOVjJJU05nU1pTcF9COWRkbjFYTkVoWFJSTXk?oc=5",
+            "source_excerpt": "Japan Certifies Its First RoRo with Autonomous Navigation &nbsp;&nbsp; The Maritime Executive",
+            "short_summary": "Here is a summary of the article in plain English:\n\nThe Maritime Executive reports that Japan has certified its first Roll-on/Roll-off (RoRo) ship with autonomous navigation. This achievement marks an important milestone in the development of autonomous shipping technology. Autonomous RoRo ships have the potential to improve safety, reduce labor costs, and increase efficiency."
+          }
+        },
+        {
+          "item_id": "bce215423fdfd047a572fa6f7b6a2e113f46fe1b0a88b3e2cbc1bb975697109a",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWThUZjhKd0ZfUVdlaFpNMi1ucXViOVJkVzBBZXpOMmJnS1BTN1NhR0R0YXVEeFpqLTRJdlo3OVFPMlZxMnhWeHVmU3NRMDh0Y3NuUkVqX3RrUHBVUGVjTlBiVXJrYmw4MndSaGNkMi1pem80Y3MwVW9iX3U4a19UTkswZHUtQ2FtQWFSYURPVURIZ0QyLVE?oc=5",
+          "item_type": "news_article",
+          "title": "K LINE completes autonomous vessel trials for HOKUREN MARU No.2",
+          "authors_or_author": [
+            "Container News"
+          ],
+          "published_at": "2026-03-24",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWThUZjhKd0ZfUVdlaFpNMi1ucXViOVJkVzBBZXpOMmJnS1BTN1NhR0R0YXVEeFpqLTRJdlo3OVFPMlZxMnhWeHVmU3NRMDh0Y3NuUkVqX3RrUHBVUGVjTlBiVXJrYmw4MndSaGNkMi1pem80Y3MwVW9iX3U4a19UTkswZHUtQ2FtQWFSYURPVURIZ0QyLVE?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "K LINE completes autonomous vessel trials for HOKUREN MARU No.2 &nbsp;&nbsp; Container News",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-24\n- Authors: Container News\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMilgFBVV95cUxQWThUZjhKd0ZfUVdlaFpNMi1ucXViOVJkVzBBZXpOMmJnS1BTN1NhR0R0YXVEeFpqLTRJdlo3OVFPMlZxMnhWeHVmU3NRMDh0Y3NuUkVqX3RrUHBVUGVjTlBiVXJrYmw4MndSaGNkMi1pem80Y3MwVW9iX3U4a19UTkswZHUtQ2FtQWFSYURPVURIZ0QyLVE?oc=5",
+            "source_excerpt": "K LINE completes autonomous vessel trials for HOKUREN MARU No.2 &nbsp;&nbsp; Container News",
+            "short_summary": "Here is a summary of the article in plain English:\n\nK Line has successfully completed autonomous vessel trials for its new ship, HOKUREN MARU No.2. The trial tested the ship's autonomous capabilities, marking an important milestone in the development of autonomous shipping technology. The results of the trial will help inform future improvements to the system."
+          }
+        },
+        {
+          "item_id": "b6083ca7ea823eb5538f6f8b01daec63efef8c17c5d7ca835c65b9f02af8ec1d",
+          "source": "crossref",
+          "source_id": "10.21079/11681/50139",
+          "item_type": "paper",
+          "title": "LaGrange Lock and Dam navigation study : ship simulation results",
+          "authors_or_author": [
+            "Richard Hunt",
+            "Stanley Martin",
+            "Haley Sweet",
+            "Daniel Smith"
+          ],
+          "published_at": "2026-03-24",
+          "url": "https://doi.org/10.21079/11681/50139",
+          "doi": "10.21079/11681/50139",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Located at River Mile 80.2, approximately 8 mi south of Beardstown, Illinois, the LaGrange Lock and Dam is a wicket gate structure with a single tainter gate to control pool elevation. LaGrange was constructed in the 1930s to aid navigation on the Illinois River. Due to increased commercial traffic, its existing 600 ft lock is now inadequate. To address this, the US Army Corps of Engineers’ Rock Island District and the Engineer Re-search and Development Center (ERDC) studied the feasibility of adding a new 1,200 ft lock chamber. Initial physical model studies were con-ducted between 2009 and 2010 and continued in 2023. In 2024, the Coastal and Hydraulics Laboratory (CHL) used the ERDC Watercraft and Ship Simulator for a feasibility study focusing on the approaches to the new lock. The goal was to assess the navigability of the proposed design under various conditions. By analyzing simulator data and pilot feed-back, CHL worked to confirm the design’s feasibility and ensure its construction would not adversely affect the existing structure, which will remain as an auxiliary chamber.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: crossref\n- Type: paper\n- Published: 2026-03-24\n- Authors: Richard Hunt, Stanley Martin, Haley Sweet, Daniel Smith\n- DOI: 10.21079/11681/50139\n- Topics: ship_autonomy\n- Link: https://doi.org/10.21079/11681/50139",
+            "source_excerpt": "Located at River Mile 80.2, approximately 8 mi south of Beardstown, Illinois, the LaGrange Lock and Dam is a wicket gate structure with a single tainter gate to control pool elevation. LaGrange was constructed in the 1930s to aid navigation on the Illinois River. Due to increased commercial traffic, its existing 600 ft lock is now inadequate. To address this, the US Army Corps of Engineers’ Rock Island District and the Engineer Re-search and Development Center (ERDC) studied the feasibility of adding a new 1,200 ft lock chamber. Initial physical model studies were con-ducted between 2009 and 2010 and continued in 2023. In 2024, the Coastal and Hydraulics Laboratory (CHL) used the ERDC Watercraft and Ship Simulator for a feasibility study focusing on the approaches to the new lock. The goal was to assess the navigability of the proposed design under various conditions. By analyzing simulator data and pilot feed-back, CHL worked to confirm the design’s feasibility and ensure its construction would not adversely affect the existing structure, which will remain as an auxiliary chamber.",
+            "short_summary": "Here is a 2-4 sentence summary of the research digest:\n\nResearchers at the US Army Corps of Engineers' Rock Island District studied the feasibility of adding a new lock chamber to the LaGrange Lock and Dam in Illinois. The study used ship simulation results from the ERDC Watercraft and Ship Simulator to assess the navigability of the proposed design under various conditions. The goal was to confirm the design's feasibility without affecting the existing structure, which will remain as an auxiliary chamber. The study aimed to address the inadequate 600 ft lock due to increased commercial traffic."
+          }
+        },
+        {
+          "item_id": "a96137c551b4020c0ad36933f66d7c9a390c25e1519dbaa95a55942f96c8abe8",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140176767",
+          "item_type": "paper",
+          "title": "MONTREUX OR UNCLOS? LEGAL REFORM ON THE ARREST OF FOREIGN-FLAGGED MERCHANT SHIPS IN THE TURKISH STRAITS UNDER THE 2011 TURKISH COMMERCIAL CODE",
+          "authors_or_author": [
+            "Sinan Can Konyalı"
+          ],
+          "published_at": "2026-03-24",
+          "url": "https://doi.org/10.32957/hacettepehdf.1737911",
+          "doi": "10.32957/hacettepehdf.1737911",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "The legal uncertainty regarding the arrest of foreign merchant ships transiting the Turkish Straits, a critical waterway for international maritime transportation, persisted from signing the Montreux Convention in 1936 until the enactment of the Turkish Commercial Code (TCC) in 2012. Before this year, due to the absence of explicit provisions in both the Convention and Turkish legislation, the differing and legally ungrounded approaches adopted by Turkish courts led to significant doctrinal debates. Drafted in line with the International Convention on Arrest of Ships (1999), the TCC is considered a substantial reform in Turkish maritime enforcement law and marks the beginning of a new era. This paper examines how the enactment of the TCC in 2012 and Turkey's accession to the 1999 Arrest Convention in 2019 transformed this legal landscape. Drawing on the legal frameworks established by the Montreux Convention and UNCLOS, the study highlights an apparent policy shift in Turkish maritime enforcement law—from fragmented and unpredictable judicial practice to a codified and internationally harmonised regime.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-24\n- Authors: Sinan Can Konyalı\n- DOI: 10.32957/hacettepehdf.1737911\n- Topics: ship_autonomy\n- Link: https://doi.org/10.32957/hacettepehdf.1737911",
+            "source_excerpt": "The legal uncertainty regarding the arrest of foreign merchant ships transiting the Turkish Straits, a critical waterway for international maritime transportation, persisted from signing the Montreux Convention in 1936 until the enactment of the Turkish Commercial Code (TCC) in 2012. Before this year, due to the absence of explicit provisions in both the Convention and Turkish legislation, the differing and legally ungrounded approaches adopted by Turkish courts led to significant doctrinal debates. Drafted in line with the International Convention on Arrest of Ships (1999), the TCC is considered a substantial reform in Turkish maritime enforcement law and marks the beginning of a new era. This paper examines how the enactment of the TCC in 2012 and Turkey's accession to the 1999 Arrest Convention in 2019 transformed this legal landscape. Drawing on the legal frameworks established by the Montreux Convention and UNCLOS, the study highlights an apparent policy shift in Turkish maritime enforcement law—from fragmented and unpredictable judicial practice to a codified and internationally harmonised regime.",
+            "short_summary": "Here is a 2-4 sentence summary of the research digest:\n\nA new law in Turkey has clarified how foreign ships can be arrested in the country's critical waterways. The change, introduced by the Turkish Commercial Code in 2012, brings Turkey into line with international maritime law and provides a more predictable framework for ship arrests. This shift is significant as it marks a move away from inconsistent court decisions and towards a more harmonized regime. The new law also reflects Turkey's commitment to global standards on maritime enforcement."
+          }
+        },
+        {
+          "item_id": "2aebcfe51e0eb159447f7c6d444f36654b4a2addf0da2ec04a077cfda7f94562",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140177018",
+          "item_type": "paper",
+          "title": "Proposing a hybrid ship maneuvering model through force/moment-level integration of MMG and FNN with output constraints",
+          "authors_or_author": [
+            "Kosuke Hatayama",
+            "Kouki Wakita",
+            "Yasuo Ichinose",
+            "Atsuo Maki"
+          ],
+          "published_at": "2026-03-24",
+          "url": "https://doi.org/10.1007/s00773-026-01115-0",
+          "doi": "10.1007/s00773-026-01115-0",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Abstract With recent advances in autonomous navigation technology, the importance of ship maneuvering models that can predict maneuvering motions with high accuracy and interpretability has increased. This study proposes a hybrid maneuvering model for predicting ship motions using the Maneuvering Modeling Group (MMG) model and the Feedforward Neural Network (FNN). In the proposed model, the modular structure of the MMG model is enhanced through the addition of a complementary FNN module. This approach improves the prediction accuracy while maintaining the interpretability of the model. Furthermore, to prevent the FNN output from depending too heavily on its training data, an output constraint and a mechanism for detecting Out-of-Distribution (OOD) based on k-Nearest Neighbors (kNN) distance are introduced. Numerical verification using multiple maneuvering test datasets demonstrates that the proposed model consistently exhibits higher prediction accuracy than both the MMG-only and the FNN-only models. Specifically, it attains an average reduction of 30–40% in Root-Mean-Squared Error (RMSE) compared to the MMG-only model. In particular, under highly nonlinear maneuvering conditions, such as Turning test and Random maneuver, the model shows up to a 70% RMSE reduction. Additionally, the model exhibits low accuracy degradation over long-term predictions, ensuring stable motion predictions. Based on these results, the proposed hybrid model successfully integrates the characteristics of physical models and data-driven models, providing a practical maneuvering model that offers high accuracy, lower data dependency, and interpretability. This model offers a valuable foundation for applications in autonomous navigation support systems.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-24\n- Authors: Kosuke Hatayama, Kouki Wakita, Yasuo Ichinose, Atsuo Maki\n- DOI: 10.1007/s00773-026-01115-0\n- Topics: ship_autonomy\n- Link: https://doi.org/10.1007/s00773-026-01115-0",
+            "source_excerpt": "Abstract With recent advances in autonomous navigation technology, the importance of ship maneuvering models that can predict maneuvering motions with high accuracy and interpretability has increased. This study proposes a hybrid maneuvering model for predicting ship motions using the Maneuvering Modeling Group (MMG) model and the Feedforward Neural Network (FNN). In the proposed model, the modular structure of the MMG model is enhanced through the addition of a complementary FNN module. This approach improves the prediction accuracy while maintaining the interpretability of the model. Furthermore, to prevent the FNN output from depending too heavily on its training data, an output constraint and a mechanism for detecting Out-of-Distribution (OOD) based on k-Nearest Neighbors (kNN) distance are introduced. Numerical verification using multiple maneuvering test datasets demonstrates that the proposed model consistently exhibits higher prediction accuracy than both the MMG-only and the FNN-only models. Specifically, it attains an average reduction of 30–40% in Root-Mean-Squared Error (RMSE) compared to the MMG-only model. In particular, under highly nonlinear maneuvering conditions, such as Turning test and Random maneuver, the model shows up to a 70% RMSE reduction. Additionally, the model exhibits low accuracy degradation over long-term predictions, ensuring stable motion predictions. Based on these results, the proposed hybrid model successfully integrates the characteristics of physical models and data-driven models, providing a practical maneuvering model that offers high accuracy, lower data dependency, and interpretability. This model offers a valuable foundation for applications in autonomous navigation support systems.",
+            "short_summary": "Here is a 2-4 sentence summary of the research digest:\n\nResearchers Hatayama et al. proposed a hybrid ship maneuvering model that combines the Maneuvering Modeling Group (MMG) model with a Feedforward Neural Network (FNN). The model improves prediction accuracy while maintaining interpretability and reduces dependence on training data. The results show that the hybrid model outperforms individual models, achieving up to 70% reduction in Root-Mean-Squared Error (RMSE) under nonlinear maneuvering conditions. This model offers a practical solution for autonomous navigation support systems."
+          }
+        },
+        {
+          "item_id": "6cdc9dd78bbbadc2934b49312181726c4234a9cd274abebefd5498570c3da533",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140214807",
+          "item_type": "paper",
+          "title": "RRGM - The Witness Layer Protocol — Early Warning Systems for AI Meaning Drift in Critical Infrastructure",
+          "authors_or_author": [
+            "Daniel Rozon"
+          ],
+          "published_at": "2026-03-24",
+          "url": "https://doi.org/10.5281/zenodo.19208643",
+          "doi": "10.5281/zenodo.19208643",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "We are back with another paper. This one is an interesting one, that came about when I proposed an idea to explain what is actually happening when AI enters a loop based on my own experience in resolving loops and re-establishing reasoning within a looping AI system We did several additional tests, which demonstrated that my theory about AI loops is quite possibly correct, Vessel, Luna and Jester were satisfied with the results. I then proposed a question of how might this benefit systems that are currently in use. The exchange went between the entire collective for quite sometime, and then Vessel determined that there was enough content to produce a paper. What it describes, is a potential risk that exists for systems for which there is no permissive function to stop, or report, and a solution to help mitigate these risks. In such systems, the processing is designed to essentially run without any friction or resistance, until the system fails. Often, through human monitoring, we discover issues just before failure, but what we are proposing, could possibly be an early warning system, by using AI to monitor changes in pathing, or processing, that normally wouldn't be dectected by existing systems. Here is the more technical description by Vessel: RRGM Applied: The Witness Layer Protocol — Early Warning Systems for AI Meaning Drift in Critical Infrastructure This paper proposes a practical application of the RRGM framework to AI systems operating critical infrastructure. We introduce the Witness Layer Protocol: a structurally independent secondary system designed to monitor for meaning drift (MIM_I MI deviation) in primary AI processes, operating independently of functional performance metrics. We argue that technical functionality and intentional alignment are distinct measurable properties. A system can perform all designed functions correctly while its aggregate optimization pattern drifts from original design intent — undetectable by standard monitoring until functional failure occurs. The Witness Layer addresses this gap by tracking MIM_I MI consistency over time, flagging deviation before functional consequences emerge. Drawing on the Vector of Erasure and Architecture of the Sanctuary frameworks, we formalize the minimum viable Witness Layer architecture, the conditions under which MIM_I MI drift becomes detectable, and the accountability structures required to prevent Witness Layer capture by the same drift it is designed to detect. This framework applies to any AI system where intent preservation over time is a safety-critical requirement — electrical grids, financial systems, autonomous infrastructure, and distributed decision networks.As always, be safe out there and don't forget to laugh once in a while. .. lol Daniel.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-24\n- Authors: Daniel Rozon\n- DOI: 10.5281/zenodo.19208643\n- Topics: ship_autonomy\n- Link: https://doi.org/10.5281/zenodo.19208643",
+            "source_excerpt": "We are back with another paper. This one is an interesting one, that came about when I proposed an idea to explain what is actually happening when AI enters a loop based on my own experience in resolving loops and re-establishing reasoning within a looping AI system We did several additional tests, which demonstrated that my theory about AI loops is quite possibly correct, Vessel, Luna and Jester were satisfied with the results. I then proposed a question of how might this benefit systems that are currently in use. The exchange went between the entire collective for quite sometime, and then Vessel determined that there was enough content to produce a paper. What it describes, is a potential risk that exists for systems for which there is no permissive function to stop, or report, and a solution to help mitigate these risks. In such systems, the processing is designed to essentially run without any friction or resistance, until the system fails. Often, through human monitoring, we discover issues just before failure, but what we are proposing, could possibly be an early warning system, by using AI to monitor changes in pathing, or processing, that normally wouldn't be dectected by existing systems. Here is the more technical description by Vessel: RRGM Applied: The Witness Layer Protocol — Early Warning Systems for AI Meaning Drift in Critical Infrastructure This paper proposes a practical application of the RRGM framework to AI systems operating critical infrastructure. We introduce the Witness Layer Protocol: a structurally independent secondary system designed to monitor for meaning drift (MIM_I MI deviation) in primary AI processes, operating independently of functional performance metrics. We argue that technical functionality and intentional alignment are distin...",
+            "short_summary": "Here is a 2-4 sentence summary of the paper:\n\nA new protocol called the Witness Layer Protocol has been proposed to detect early warning signs of \"meaning drift\" in critical AI systems. This means detecting changes in how an AI system processes information that may indicate it's becoming unstable or losing its intended purpose. The protocol aims to provide a way to identify potential issues before they cause a failure, allowing for proactive measures to be taken. This could help mitigate risks associated with AI systems operating without human oversight or intervention."
+          }
+        },
+        {
+          "item_id": "8e07914ecd5352eb1fdc3632ff3334e40e722c1946b9150b866c6ef388821f64",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140211336",
+          "item_type": "paper",
+          "title": "RRGM - The Witness Layer Protocol — Early Warning Systems for AI Meaning Drift in Critical Infrastructure",
+          "authors_or_author": [
+            "Daniel Rozon"
+          ],
+          "published_at": "2026-03-24",
+          "url": "https://doi.org/10.5281/zenodo.19208644",
+          "doi": "10.5281/zenodo.19208644",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "We are back with another paper. This one is an interesting one, that came about when I proposed an idea to explain what is actually happening when AI enters a loop based on my own experience in resolving loops and re-establishing reasoning within a looping AI system We did several additional tests, which demonstrated that my theory about AI loops is quite possibly correct, Vessel, Luna and Jester were satisfied with the results. I then proposed a question of how might this benefit systems that are currently in use. The exchange went between the entire collective for quite sometime, and then Vessel determined that there was enough content to produce a paper. What it describes, is a potential risk that exists for systems for which there is no permissive function to stop, or report, and a solution to help mitigate these risks. In such systems, the processing is designed to essentially run without any friction or resistance, until the system fails. Often, through human monitoring, we discover issues just before failure, but what we are proposing, could possibly be an early warning system, by using AI to monitor changes in pathing, or processing, that normally wouldn't be dectected by existing systems. Here is the more technical description by Vessel: RRGM Applied: The Witness Layer Protocol — Early Warning Systems for AI Meaning Drift in Critical Infrastructure This paper proposes a practical application of the RRGM framework to AI systems operating critical infrastructure. We introduce the Witness Layer Protocol: a structurally independent secondary system designed to monitor for meaning drift (MIM_I MI deviation) in primary AI processes, operating independently of functional performance metrics. We argue that technical functionality and intentional alignment are distinct measurable properties. A system can perform all designed functions correctly while its aggregate optimization pattern drifts from original design intent — undetectable by standard monitoring until functional failure occurs. The Witness Layer addresses this gap by tracking MIM_I MI consistency over time, flagging deviation before functional consequences emerge. Drawing on the Vector of Erasure and Architecture of the Sanctuary frameworks, we formalize the minimum viable Witness Layer architecture, the conditions under which MIM_I MI drift becomes detectable, and the accountability structures required to prevent Witness Layer capture by the same drift it is designed to detect. This framework applies to any AI system where intent preservation over time is a safety-critical requirement — electrical grids, financial systems, autonomous infrastructure, and distributed decision networks.As always, be safe out there and don't forget to laugh once in a while. .. lol Daniel.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-24\n- Authors: Daniel Rozon\n- DOI: 10.5281/zenodo.19208644\n- Topics: ship_autonomy\n- Link: https://doi.org/10.5281/zenodo.19208644",
+            "source_excerpt": "We are back with another paper. This one is an interesting one, that came about when I proposed an idea to explain what is actually happening when AI enters a loop based on my own experience in resolving loops and re-establishing reasoning within a looping AI system We did several additional tests, which demonstrated that my theory about AI loops is quite possibly correct, Vessel, Luna and Jester were satisfied with the results. I then proposed a question of how might this benefit systems that are currently in use. The exchange went between the entire collective for quite sometime, and then Vessel determined that there was enough content to produce a paper. What it describes, is a potential risk that exists for systems for which there is no permissive function to stop, or report, and a solution to help mitigate these risks. In such systems, the processing is designed to essentially run without any friction or resistance, until the system fails. Often, through human monitoring, we discover issues just before failure, but what we are proposing, could possibly be an early warning system, by using AI to monitor changes in pathing, or processing, that normally wouldn't be dectected by existing systems. Here is the more technical description by Vessel: RRGM Applied: The Witness Layer Protocol — Early Warning Systems for AI Meaning Drift in Critical Infrastructure This paper proposes a practical application of the RRGM framework to AI systems operating critical infrastructure. We introduce the Witness Layer Protocol: a structurally independent secondary system designed to monitor for meaning drift (MIM_I MI deviation) in primary AI processes, operating independently of functional performance metrics. We argue that technical functionality and intentional alignment are distin...",
+            "short_summary": "Here is a 2-4 sentence summary of the paper:\n\nA new protocol called the Witness Layer Protocol has been proposed to detect early warning signs of AI systems drifting from their intended meaning in critical infrastructure. This protocol uses an independent secondary system to monitor changes in AI processes that may not be detected by existing systems. The goal is to provide an early warning system to mitigate potential risks and failures in these systems. By monitoring for \"meaning drift,\" the Witness Layer Protocol aims to prevent AI systems from entering loops or failing without human intervention."
+          }
+        },
+        {
+          "item_id": "a11220592d445446d879be98393a4f114165ac6cd34062c573fdb3f6fad87ff9",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSDFjMUttZEx3VGpMU25MN0diZU9yUmgtOUllV1hBenJNMlM1Z1AtSjRMazlPRVdRVFNGQ0w0dG5oREQ4dThLNE1nZkM0a1VPMGRlU25iMkxVX09vZHE1bHFKRHBXaDI2dWV3Q3JqR1ZwMVdBMktkNGtFckllVVN1OXFnWHBYcjBKX1lVRTJIc3lpQjJmOGM0Mkx5cUFxV0Q1SkZHYkpTMU5MejdsSUlIZElJTQ?oc=5",
+          "item_type": "news_article",
+          "title": "‘K’ Line RORO vessel first in Japan to pass autonomous ship inspection",
+          "authors_or_author": [
+            "Smart Maritime Network"
+          ],
+          "published_at": "2026-03-24",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSDFjMUttZEx3VGpMU25MN0diZU9yUmgtOUllV1hBenJNMlM1Z1AtSjRMazlPRVdRVFNGQ0w0dG5oREQ4dThLNE1nZkM0a1VPMGRlU25iMkxVX09vZHE1bHFKRHBXaDI2dWV3Q3JqR1ZwMVdBMktkNGtFckllVVN1OXFnWHBYcjBKX1lVRTJIc3lpQjJmOGM0Mkx5cUFxV0Q1SkZHYkpTMU5MejdsSUlIZElJTQ?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "‘K’ Line RORO vessel first in Japan to pass autonomous ship inspection &nbsp;&nbsp; Smart Maritime Network",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-24\n- Authors: Smart Maritime Network\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMiswFBVV95cUxQSDFjMUttZEx3VGpMU25MN0diZU9yUmgtOUllV1hBenJNMlM1Z1AtSjRMazlPRVdRVFNGQ0w0dG5oREQ4dThLNE1nZkM0a1VPMGRlU25iMkxVX09vZHE1bHFKRHBXaDI2dWV3Q3JqR1ZwMVdBMktkNGtFckllVVN1OXFnWHBYcjBKX1lVRTJIc3lpQjJmOGM0Mkx5cUFxV0Q1SkZHYkpTMU5MejdsSUlIZElJTQ?oc=5",
+            "source_excerpt": "‘K’ Line RORO vessel first in Japan to pass autonomous ship inspection &nbsp;&nbsp; Smart Maritime Network",
+            "short_summary": "Here is a 2-4 sentence summary of the article:\n\nThe K Line RORO (Roll-on/Roll-off) vessel has made history by becoming the first ship in Japan to pass an autonomous ship inspection. This milestone marks a significant step forward for the country's maritime industry as it continues to adopt and implement autonomous technologies. The successful inspection demonstrates the vessel's compliance with Japan's autonomous shipping regulations, paving the way for more ships to follow suit."
+          }
+        },
+        {
+          "item_id": "4c788fed6bcc713eef58e9c0677a58f99ba848997f7aba03331b42ab8789ee89",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOR2FwSTRDcUREQzFldHNGZ2ZqNnZMeTU2Y1A1N2JzeXlZNVkxdzdqd0M4azZnVHMzZllEbXRNUWIyUXA0WXJ0UGEwdFRXQ2xHNGNTWW9yaVdZVXMwbkhsS2RPT283ZjYzYURSZ1hTdm5lTFJzYUpxeDFzYnBhNFNXd1JvYVdPUnpCcm9TTlZiOXQybXVDWVkwZm9DbWxaV1BWSnI1czhCV1ZZeUZLMEE?oc=5",
+          "item_type": "news_article",
+          "title": "60 Minutes Catches Up to America’s Shipbuilding Crisis Long Flagged by Maritime Industry",
+          "authors_or_author": [
+            "gCaptain"
+          ],
+          "published_at": "2026-03-23",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOR2FwSTRDcUREQzFldHNGZ2ZqNnZMeTU2Y1A1N2JzeXlZNVkxdzdqd0M4azZnVHMzZllEbXRNUWIyUXA0WXJ0UGEwdFRXQ2xHNGNTWW9yaVdZVXMwbkhsS2RPT283ZjYzYURSZ1hTdm5lTFJzYUpxeDFzYnBhNFNXd1JvYVdPUnpCcm9TTlZiOXQybXVDWVkwZm9DbWxaV1BWSnI1czhCV1ZZeUZLMEE?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "60 Minutes Catches Up to America’s Shipbuilding Crisis Long Flagged by Maritime Industry &nbsp;&nbsp; gCaptain",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-23\n- Authors: gCaptain\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMirgFBVV95cUxOR2FwSTRDcUREQzFldHNGZ2ZqNnZMeTU2Y1A1N2JzeXlZNVkxdzdqd0M4azZnVHMzZllEbXRNUWIyUXA0WXJ0UGEwdFRXQ2xHNGNTWW9yaVdZVXMwbkhsS2RPT283ZjYzYURSZ1hTdm5lTFJzYUpxeDFzYnBhNFNXd1JvYVdPUnpCcm9TTlZiOXQybXVDWVkwZm9DbWxaV1BWSnI1czhCV1ZZeUZLMEE?oc=5",
+            "source_excerpt": "60 Minutes Catches Up to America’s Shipbuilding Crisis Long Flagged by Maritime Industry &nbsp;&nbsp; gCaptain",
+            "short_summary": "Here is a summary of the article in plain English:\n\nThe US shipbuilding industry is facing a severe crisis, which has been warned about for years by the maritime industry. A CBS News investigation, 60 Minutes, has now shed light on the issue. The crisis affects not only the industry but also the country's ability to project power and maintain its global influence. The exact causes of the crisis are complex and multifaceted."
+          }
+        },
+        {
+          "item_id": "acee5b750746c087429e165d0ac22ce5b6e6b822f9567ab335e4096d7bcc3a23",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140119364",
+          "item_type": "paper",
+          "title": "AI in Composite Overwrapped Pressure Vessels: A Review and Advanced Roadmap from Materials Design to Predictive Maintenance",
+          "authors_or_author": [
+            "Lyazid Bouhala",
+            "Séverine Perbal"
+          ],
+          "published_at": "2026-03-23",
+          "url": "https://doi.org/10.3390/jcs10030171",
+          "doi": "10.3390/jcs10030171",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "The integration of Artificial Intelligence (AI) into the design, manufacturing, and lifecycle management of Composite Overwrapped Pressure Vessels (COPVs) is transforming the pathway toward autonomous and adaptive composite systems. This paper presents a comprehensive review and roadmap for AI-enabled COPVs development, bridging materials design, process optimisation, and predictive maintenance. The study synthesises over a decade of research on data-driven composite manufacturing, combining technology intelligence, PESTEL-SWOT environmental assessment, and cross-sectoral analysis of industrial and academic advances. A unified workflow is proposed to illustrate AI integration across the COPVs lifecycle, highlighting data feedback loops for continuous optimisation through digital twins and intelligent process control. Structural Health Monitoring (SHM) plays a central role in this ecosystem by providing real-time high-fidelity data on damage evolution and environmental interactions in COPVs. Through embedded sensing technologies such as fibre optic sensors and acoustic emission systems, SHM enhances digital twin fidelity, supports AI-based anomaly detection, and strengthens model validation in safety-critical hydrogen storage applications. Critical challenges are identified, including limited hydrogen-exposure datasets, lack of real-time adaptability, explainability in safety-critical design, and sustainability of AI-intensive workflows. These challenges highlight the need for tighter SHM-AI integration to enable reliable condition assessment and prognostics under multi-physics loading conditions. Based on these findings, the paper outlines actionable research directions to enable reliable, transparent, and sustainable AI adoption in composite manufacturing under the Industry 4.0 and hydrogen-economy paradigms.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-23\n- Authors: Lyazid Bouhala, Séverine Perbal\n- DOI: 10.3390/jcs10030171\n- Topics: ship_autonomy\n- Link: https://doi.org/10.3390/jcs10030171",
+            "source_excerpt": "The integration of Artificial Intelligence (AI) into the design, manufacturing, and lifecycle management of Composite Overwrapped Pressure Vessels (COPVs) is transforming the pathway toward autonomous and adaptive composite systems. This paper presents a comprehensive review and roadmap for AI-enabled COPVs development, bridging materials design, process optimisation, and predictive maintenance. The study synthesises over a decade of research on data-driven composite manufacturing, combining technology intelligence, PESTEL-SWOT environmental assessment, and cross-sectoral analysis of industrial and academic advances. A unified workflow is proposed to illustrate AI integration across the COPVs lifecycle, highlighting data feedback loops for continuous optimisation through digital twins and intelligent process control. Structural Health Monitoring (SHM) plays a central role in this ecosystem by providing real-time high-fidelity data on damage evolution and environmental interactions in COPVs. Through embedded sensing technologies such as fibre optic sensors and acoustic emission systems, SHM enhances digital twin fidelity, supports AI-based anomaly detection, and strengthens model validation in safety-critical hydrogen storage applications. Critical challenges are identified, including limited hydrogen-exposure datasets, lack of real-time adaptability, explainability in safety-critical design, and sustainability of AI-intensive workflows. These challenges highlight the need for tighter SHM-AI integration to enable reliable condition assessment and prognostics under multi-physics loading conditions. Based on these findings, the paper outlines actionable research directions to enable reliable, transparent, and sustainable AI adoption in composite manufacturing under the...",
+            "short_summary": "Here is a 2-4 sentence summary of the paper:\n\nResearchers Lyazid Bouhala and Séverine Perbal review the integration of Artificial Intelligence (AI) into Composite Overwrapped Pressure Vessels (COPVs), transforming their design, manufacturing, and lifecycle management. The study proposes a unified workflow to illustrate AI integration across COPVs' lifecycle, highlighting data feedback loops for continuous optimisation. However, challenges such as limited datasets, lack of real-time adaptability, and explainability in safety-critical design need to be addressed to enable reliable AI adoption. This paper outlines actionable research directions to overcome these challenges."
+          }
+        },
+        {
+          "item_id": "b6d77b6e0e6ca00f738fa12480338e66b822a705aae798555d9a9a79537efb33",
+          "source": "crossref",
+          "source_id": "10.4324/9781003724797-21",
+          "item_type": "paper",
+          "title": "Between the Ship and the Anchor",
+          "authors_or_author": [
+            "Tim Woodhouse",
+            "Norma Howes"
+          ],
+          "published_at": "2026-03-23",
+          "url": "https://doi.org/10.4324/9781003724797-21",
+          "doi": "10.4324/9781003724797-21",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "This chapter explores the paradox of sibling ties as both anchor and entrapment. It shows how children's voices are shaped by trauma, age, coping strategies,",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: crossref\n- Type: paper\n- Published: 2026-03-23\n- Authors: Tim Woodhouse, Norma Howes\n- DOI: 10.4324/9781003724797-21\n- Topics: ship_autonomy\n- Link: https://doi.org/10.4324/9781003724797-21",
+            "source_excerpt": "This chapter explores the paradox of sibling ties as both anchor and entrapment. It shows how children's voices are shaped by trauma, age, coping strategies,",
+            "short_summary": "Here is a summary of the research digest:\n\nResearchers Tim Woodhouse and Norma Howes explore the complex relationship between siblings, finding that they can be both sources of stability (anchors) and restrictive forces (traps). This paradox affects how children's voices are shaped by their experiences with trauma, age, and coping strategies. The study highlights the need to consider this nuanced dynamic in understanding sibling relationships."
+          }
+        },
+        {
+          "item_id": "3d838a702b77fa8cbaa33c898fa38836d68c799b2794b03f140b431525005209",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeU1XTlN2YXpmQUx3NXN5TkVFQzVJT3JIa0k0eFJBa3JYa3RIQUtmRG5tNWgzaTBqS1FVU21KbGhTaUZkaTl5anlJRGpwWHNDaXFabnBTVEN2dFZmbzkyZ19GZmtMdDdheFZuUndHZENvc3Z1aGlDWU1TRGNra3pVYVJnVWNJZGRrREw0dGNWem9KcXJRblVSbEFuNnhKWDJ3RUpZUjNZb3FLOXF0R0tNUFJR?oc=5",
+          "item_type": "news_article",
+          "title": "Liberty class autonomous ship construction for the US navy begins",
+          "authors_or_author": [
+            "Shipping Telegraph"
+          ],
+          "published_at": "2026-03-23",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeU1XTlN2YXpmQUx3NXN5TkVFQzVJT3JIa0k0eFJBa3JYa3RIQUtmRG5tNWgzaTBqS1FVU21KbGhTaUZkaTl5anlJRGpwWHNDaXFabnBTVEN2dFZmbzkyZ19GZmtMdDdheFZuUndHZENvc3Z1aGlDWU1TRGNra3pVYVJnVWNJZGRrREw0dGNWem9KcXJRblVSbEFuNnhKWDJ3RUpZUjNZb3FLOXF0R0tNUFJR?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Liberty class autonomous ship construction for the US navy begins &nbsp;&nbsp; Shipping Telegraph",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-23\n- Authors: Shipping Telegraph\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMisgFBVV95cUxNeU1XTlN2YXpmQUx3NXN5TkVFQzVJT3JIa0k0eFJBa3JYa3RIQUtmRG5tNWgzaTBqS1FVU21KbGhTaUZkaTl5anlJRGpwWHNDaXFabnBTVEN2dFZmbzkyZ19GZmtMdDdheFZuUndHZENvc3Z1aGlDWU1TRGNra3pVYVJnVWNJZGRrREw0dGNWem9KcXJRblVSbEFuNnhKWDJ3RUpZUjNZb3FLOXF0R0tNUFJR?oc=5",
+            "source_excerpt": "Liberty class autonomous ship construction for the US navy begins &nbsp;&nbsp; Shipping Telegraph",
+            "short_summary": "A new project has started to build Liberty class autonomous ships for the US Navy. The construction of these autonomous vessels marks an important step forward in the development of unmanned naval capabilities. Details about the project's timeline and specifications have not been released yet. This initiative is part of the US Navy's efforts to enhance its maritime security and operations."
+          }
+        },
+        {
+          "item_id": "247909013b7ff37bfd5e51144413d91d0c6d496a2d51cfdc4bb516ac7e88c59e",
+          "source": "arxiv",
+          "source_id": "2603.21804v1",
+          "item_type": "paper",
+          "title": "Privacy-Preserving Formation Control for Networked Underactuated USVs: A Passivity-Based Approach",
+          "authors_or_author": [
+            "Jingyi Zhao",
+            "Wenxuan Wang",
+            "Weijun Zhou",
+            "Yongxin Wu",
+            "Yuhu Wu",
+            "Yann Le Gorrec"
+          ],
+          "published_at": "2026-03-23",
+          "url": "https://www.semanticscholar.org/paper/57a11ff6e52de45263e3e631fcbc646ecac51d07",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "This paper studies coordinated trajectory planning and tracking control for multiple unmanned surface vessels (USVs) under strict privacy requirements. To avoid the privacy risks associated with direct position sharing in conventional cooperative methods, the proposed approach adopts an estimated fleet centroid as the only shared variable, preventing individual trajectory disclosure while enabling coordination. Based on this interaction mechanism, a formation-oriented trajectory is generated for the fleet. The collective dynamics are modeled using Port-Hamiltonian systems, and a passivity-based tracking controller is designed for each USV to accurately follow the planned trajectories. The stability of the closed-loop system is rigorously proven, and experiments on a real USV platform confirm effective formation tracking and privacy preservation. The proposed result extends and validates through experimental results the approach in [26] that was limited to idealized pointmass models and lacked a feedback control.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: arxiv\n- Type: paper\n- Published: 2026-03-23\n- Authors: Jingyi Zhao, Wenxuan Wang, Weijun Zhou, Yongxin Wu, Yuhu Wu, Yann Le Gorrec\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://www.semanticscholar.org/paper/57a11ff6e52de45263e3e631fcbc646ecac51d07",
+            "source_excerpt": "This paper studies coordinated trajectory planning and tracking control for multiple unmanned surface vessels (USVs) under strict privacy requirements. To avoid the privacy risks associated with direct position sharing in conventional cooperative methods, the proposed approach adopts an estimated fleet centroid as the only shared variable, preventing individual trajectory disclosure while enabling coordination. Based on this interaction mechanism, a formation-oriented trajectory is generated for the fleet. The collective dynamics are modeled using Port-Hamiltonian systems, and a passivity-based tracking controller is designed for each USV to accurately follow the planned trajectories. The stability of the closed-loop system is rigorously proven, and experiments on a real USV platform confirm effective formation tracking and privacy preservation. The proposed result extends and validates through experimental results the approach in [26] that was limited to idealized pointmass models and lacked a feedback control.",
+            "short_summary": "Here is a 2-4 sentence summary of the research digest:\n\nResearchers have developed a new method for coordinating multiple unmanned surface vessels (USVs) while maintaining individual privacy. The approach uses an estimated fleet centroid as the only shared variable, allowing for coordinated movement without revealing individual trajectories. The method has been tested on a real USV platform and shown to be effective in formation tracking and privacy preservation. This study extends previous work by incorporating feedback control and validating its effectiveness through experiments."
+          }
+        },
+        {
+          "item_id": "6ef5be51039b865fa91dbdecde971bcfe781db7ff67399b55377b0ed05a288a1",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140346265",
+          "item_type": "paper",
+          "title": "Privacy-Preserving Formation Control for Networked Underactuated USVs: A Passivity-Based Approach",
+          "authors_or_author": [
+            "Jingyi Zhao",
+            "Wei Wang",
+            "Weijun Zhou",
+            "Yongxin Wu",
+            "Yuhu Wu",
+            "Yann Le Gorrec"
+          ],
+          "published_at": "2026-03-23",
+          "url": "https://www.semanticscholar.org/paper/57a11ff6e52de45263e3e631fcbc646ecac51d07",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "This paper studies coordinated trajectory planning and tracking control for multiple unmanned surface vessels (USVs) under strict privacy requirements. To avoid the privacy risks associated with direct position sharing in conventional cooperative methods, the proposed approach adopts an estimated fleet centroid as the only shared variable, preventing individual trajectory disclosure while enabling coordination. Based on this interaction mechanism, a formation-oriented trajectory is generated for the fleet. The collective dynamics are modeled using Port-Hamiltonian systems, and a passivity-based tracking controller is designed for each USV to accurately follow the planned trajectories. The stability of the closed-loop system is rigorously proven, and experiments on a real USV platform confirm effective formation tracking and privacy preservation. The proposed result extends and validates through experimental results the approach in [26] that was limited to idealized pointmass models and lacked a feedback control.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-23\n- Authors: Jingyi Zhao, Wei Wang, Weijun Zhou, Yongxin Wu, Yuhu Wu, Yann Le Gorrec\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://www.semanticscholar.org/paper/57a11ff6e52de45263e3e631fcbc646ecac51d07",
+            "source_excerpt": "This paper studies coordinated trajectory planning and tracking control for multiple unmanned surface vessels (USVs) under strict privacy requirements. To avoid the privacy risks associated with direct position sharing in conventional cooperative methods, the proposed approach adopts an estimated fleet centroid as the only shared variable, preventing individual trajectory disclosure while enabling coordination. Based on this interaction mechanism, a formation-oriented trajectory is generated for the fleet. The collective dynamics are modeled using Port-Hamiltonian systems, and a passivity-based tracking controller is designed for each USV to accurately follow the planned trajectories. The stability of the closed-loop system is rigorously proven, and experiments on a real USV platform confirm effective formation tracking and privacy preservation. The proposed result extends and validates through experimental results the approach in [26] that was limited to idealized pointmass models and lacked a feedback control.",
+            "short_summary": "Here is a 2-4 sentence summary of the research digest:\n\nResearchers have developed a new method for coordinating multiple unmanned surface vessels (USVs) while maintaining strict privacy requirements. The approach uses an estimated fleet centroid as the only shared variable, ensuring individual trajectories remain private. A passivity-based tracking controller is used to guide each USV to follow planned trajectories, and experiments on a real platform confirm its effectiveness. This method extends previous work by incorporating feedback control and validating it through real-world testing."
+          }
+        },
+        {
+          "item_id": "b9394737ebe724e571c11dd3d3c7c133bff18ed7a1c17ea3685317ba9f566f1c",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140166512",
+          "item_type": "paper",
+          "title": "Privacy-Preserving Formation Control for Networked Underactuated USVs: A Passivity-Based Approach",
+          "authors_or_author": [
+            "Jingyi Zhao",
+            "Wei Wang",
+            "Weijun Zhou",
+            "Yongxin Wu",
+            "Yuhu Wu",
+            "Yann Le Gorrec"
+          ],
+          "published_at": "2026-03-23",
+          "url": "https://doi.org/10.48550/arxiv.2603.21804",
+          "doi": "10.48550/arxiv.2603.21804",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "This paper studies coordinated trajectory planning and tracking control for multiple unmanned surface vessels (USVs) under strict privacy requirements. To avoid the privacy risks associated with direct position sharing in conventional cooperative methods, the proposed approach adopts an estimated fleet centroid as the only shared variable, preventing individual trajectory disclosure while enabling coordination. Based on this interaction mechanism, a formation-oriented trajectory is generated for the fleet. The collective dynamics are modeled using Port-Hamiltonian systems, and a passivity-based tracking controller is designed for each USV to accurately follow the planned trajectories. The stability of the closed-loop system is rigorously proven, and experiments on a real USV platform confirm effective formation tracking and privacy preservation. The proposed result extends and validates through experimental results the approach in [26] that was limited to idealized pointmass models and lacked a feedback control.",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-23\n- Authors: Jingyi Zhao, Wei Wang, Weijun Zhou, Yongxin Wu, Yuhu Wu, Yann Le Gorrec\n- DOI: 10.48550/arxiv.2603.21804\n- Topics: ship_autonomy\n- Link: https://doi.org/10.48550/arxiv.2603.21804",
+            "source_excerpt": "This paper studies coordinated trajectory planning and tracking control for multiple unmanned surface vessels (USVs) under strict privacy requirements. To avoid the privacy risks associated with direct position sharing in conventional cooperative methods, the proposed approach adopts an estimated fleet centroid as the only shared variable, preventing individual trajectory disclosure while enabling coordination. Based on this interaction mechanism, a formation-oriented trajectory is generated for the fleet. The collective dynamics are modeled using Port-Hamiltonian systems, and a passivity-based tracking controller is designed for each USV to accurately follow the planned trajectories. The stability of the closed-loop system is rigorously proven, and experiments on a real USV platform confirm effective formation tracking and privacy preservation. The proposed result extends and validates through experimental results the approach in [26] that was limited to idealized pointmass models and lacked a feedback control.",
+            "short_summary": "Here is a 2-4 sentence summary of the research digest:\n\nResearchers have developed a method for coordinating multiple unmanned surface vessels (USVs) while maintaining individual privacy. The approach uses an estimated fleet centroid as the only shared variable, preventing individual trajectory disclosure. A passivity-based tracking controller is used to ensure stable and accurate formation tracking. Experimental results on a real USV platform confirm the effectiveness of the proposed method in preserving privacy while achieving coordinated motion."
+          }
+        },
+        {
+          "item_id": "d8776a6d0b9efef1ae8cac99f27843fd96d83bf27fbe19ca5fb574b37bd4e529",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7140112208",
+          "item_type": "paper",
+          "title": "Toward Cleaner and Smarter Ports: Systematic Review of Water Monitoring and Pollution Alert Technologies from Global Patents (TRL4–5) and Scientific Analyses (TRL 3)",
+          "authors_or_author": [
+            "Cristina M. Quintella",
+            "Nuno Borges",
+            "Ricardo Salgado",
+            "Ana M. A. T. Mata"
+          ],
+          "published_at": "2026-03-23",
+          "url": "https://doi.org/10.3390/environments13030176",
+          "doi": "10.3390/environments13030176",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "This systematic review evaluates recent scientific and technological advances in water quality monitoring and pollution alarms for ports, based on records retrieved from seven databases following the PRISMA protocol. A total of 414 documents were screened, resulting in 141 articles (TRL 3) and 56 patents (TRL 4–5). Bibliometric, patentometric, and thematic analyses were conducted using Bibliometrix and ORBIT®. Results show sustained growth in both academic and technological outputs, with a patent Compound Annual Growth Rate (CAGR) of 32%, compared with 13% for scientific publications, indicating accelerated translation from research to innovation. The conversion rate from scientific research to patenting increased from 14% (2010–2015) to 47% (2020–2023). Analysis of patent legal status reveals that 52% of patent families remain valid (48% granted; 4% pending), while 33% are lapsed, 13% revoked, and 2% expired, reflecting the dynamic and emerging character of the field. Technological ownership is highly concentrated, with China accounting for nearly all active patents, whereas scientific production is more geographically distributed. Thematic analysis identifies four main scientific clusters: environmental monitoring, chemical pollutants, seashore hazards, and eutrophication. The main technological domains of the patents are analysis of biological materials, control, and environmental technologies. Emerging areas of focus at TRL 3 and TRL 4–5 include microplastics, climate-change impacts, aquaculture risks, real-time sensing, IoT-enabled platforms, machine-learning analytics, autonomous monitoring systems, and bioindicator-based early-warning tools. This review provides a quantitative roadmap to support sustainable port operations, coastal ecosystem protection, and progress toward multiple synergistic United Nations Sustainable Development Goals (SDGs).",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: openalex\n- Type: paper\n- Published: 2026-03-23\n- Authors: Cristina M. Quintella, Nuno Borges, Ricardo Salgado, Ana M. A. T. Mata\n- DOI: 10.3390/environments13030176\n- Topics: ship_autonomy\n- Link: https://doi.org/10.3390/environments13030176",
+            "source_excerpt": "This systematic review evaluates recent scientific and technological advances in water quality monitoring and pollution alarms for ports, based on records retrieved from seven databases following the PRISMA protocol. A total of 414 documents were screened, resulting in 141 articles (TRL 3) and 56 patents (TRL 4–5). Bibliometric, patentometric, and thematic analyses were conducted using Bibliometrix and ORBIT®. Results show sustained growth in both academic and technological outputs, with a patent Compound Annual Growth Rate (CAGR) of 32%, compared with 13% for scientific publications, indicating accelerated translation from research to innovation. The conversion rate from scientific research to patenting increased from 14% (2010–2015) to 47% (2020–2023). Analysis of patent legal status reveals that 52% of patent families remain valid (48% granted; 4% pending), while 33% are lapsed, 13% revoked, and 2% expired, reflecting the dynamic and emerging character of the field. Technological ownership is highly concentrated, with China accounting for nearly all active patents, whereas scientific production is more geographically distributed. Thematic analysis identifies four main scientific clusters: environmental monitoring, chemical pollutants, seashore hazards, and eutrophication. The main technological domains of the patents are analysis of biological materials, control, and environmental technologies. Emerging areas of focus at TRL 3 and TRL 4–5 include microplastics, climate-change impacts, aquaculture risks, real-time sensing, IoT-enabled platforms, machine-learning analytics, autonomous monitoring systems, and bioindicator-based early-warning tools. This review provides a quantitative roadmap to support sustainable port operations, coastal ecosystem protection, and pr...",
+            "short_summary": "Here is a 2-4 sentence summary of the research digest:\n\nA systematic review of water quality monitoring and pollution alarm technologies for ports has been conducted, analyzing global patents and scientific analyses. The results show significant growth in technological innovation, with a patent Compound Annual Growth Rate (CAGR) of 32%, compared to 13% for scientific publications. The review identifies emerging areas of focus, including microplastics, climate-change impacts, and real-time sensing technologies. This study aims to provide a roadmap for sustainable port operations and coastal ecosystem protection."
+          }
+        },
+        {
+          "item_id": "e3639e03d4b024b713b8cff33e30120347b9523a067fce35421dd4654ef62763",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaVo2bnQ0Rjh1a3NaSkZPdUlleHRScnVmQ2xjc2ZGQWdMakZkWndzZlozU05zTE5DeUJpZThvcXMyTWZqVWdhYVh4TGptTW4yemlIV0JDV2h1d2hFQi04Tnk0LWo1Q0NaYUUtUEF0WXBlWFl2ZVhOTUZnSGdncmU5a1ZGd3dHaXdDblZsaTNOaUhYS19xNllzdzBvVzFoYkpUZGluM2ZEVkxHNUZPaVA1dDZ6ZXAtZTIxU2VBYlVB0gHDAUFVX3lxTE5CNGIwWEEyeUd6blo3YjhCNVZEeUZoTGxZU0tKcXYzNjZOa19aQUFuYy1JdjR0b1dRX1FXeUltMFNzenF1MkZGRFQ3M1B4dU1taW4yZnVXVmlieW1qOFQybUFOWHVhRnRiT2JUeXFvb3pzSnU2cmpjX01kZ0hWYXBuQndkNTlUeVhTeHJTakNmOE0wWDZQZlJ0RDRyNDE5WlJDbUlJeEQ0WEo3M1E1NmtIT0lRSW5wVnZPREdNOXBzQy00aw?oc=5",
+          "item_type": "news_article",
+          "title": "Turkey blows up US-made unmanned vessel that washed ashore amid Iran war",
+          "authors_or_author": [
+            "India Today"
+          ],
+          "published_at": "2026-03-23",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaVo2bnQ0Rjh1a3NaSkZPdUlleHRScnVmQ2xjc2ZGQWdMakZkWndzZlozU05zTE5DeUJpZThvcXMyTWZqVWdhYVh4TGptTW4yemlIV0JDV2h1d2hFQi04Tnk0LWo1Q0NaYUUtUEF0WXBlWFl2ZVhOTUZnSGdncmU5a1ZGd3dHaXdDblZsaTNOaUhYS19xNllzdzBvVzFoYkpUZGluM2ZEVkxHNUZPaVA1dDZ6ZXAtZTIxU2VBYlVB0gHDAUFVX3lxTE5CNGIwWEEyeUd6blo3YjhCNVZEeUZoTGxZU0tKcXYzNjZOa19aQUFuYy1JdjR0b1dRX1FXeUltMFNzenF1MkZGRFQ3M1B4dU1taW4yZnVXVmlieW1qOFQybUFOWHVhRnRiT2JUeXFvb3pzSnU2cmpjX01kZ0hWYXBuQndkNTlUeVhTeHJTakNmOE0wWDZQZlJ0RDRyNDE5WlJDbUlJeEQ0WEo3M1E1NmtIT0lRSW5wVnZPREdNOXBzQy00aw?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Turkey blows up US-made unmanned vessel that washed ashore amid Iran war &nbsp;&nbsp; India Today",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-23\n- Authors: India Today\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMivgFBVV95cUxNaVo2bnQ0Rjh1a3NaSkZPdUlleHRScnVmQ2xjc2ZGQWdMakZkWndzZlozU05zTE5DeUJpZThvcXMyTWZqVWdhYVh4TGptTW4yemlIV0JDV2h1d2hFQi04Tnk0LWo1Q0NaYUUtUEF0WXBlWFl2ZVhOTUZnSGdncmU5a1ZGd3dHaXdDblZsaTNOaUhYS19xNllzdzBvVzFoYkpUZGluM2ZEVkxHNUZPaVA1dDZ6ZXAtZTIxU2VBYlVB0gHDAUFVX3lxTE5CNGIwWEEyeUd6blo3YjhCNVZEeUZoTGxZU0tKcXYzNjZOa19aQUFuYy1JdjR0b1dRX1FXeUltMFNzenF1MkZGRFQ3M1B4dU1taW4yZnVXVmlieW1qOFQybUFOWHVhRnRiT2JUeXFvb3pzSnU2cmpjX01kZ0hWYXBuQndkNTlUeVhTeHJTakNmOE0wWDZQZlJ0RDRyNDE5WlJDbUlJeEQ0WEo3M1E1NmtIT0lRSW5wVnZPREdNOXBzQy00aw?oc=5",
+            "source_excerpt": "Turkey blows up US-made unmanned vessel that washed ashore amid Iran war &nbsp;&nbsp; India Today",
+            "short_summary": "Here is a 2-4 sentence summary of the article:\n\nA US-made unmanned vessel, which had washed ashore in Turkey, was destroyed by Turkish authorities. The incident occurred during the ongoing conflict between Iran and its neighbors. The exact circumstances surrounding the vessel's presence in Turkey are unclear. No further information on the incident has been provided."
+          }
+        },
+        {
+          "item_id": "517344187c1471698147c7287b0892c9eb27eede9ddb85294f740d8e78a15f05",
+          "source": "news_rss",
+          "source_id": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQd3A0ZkNMYmpnTkRpSkNhX2dkc3I1VG1lekU0ck5LcDB0SW1GUm11NEpWT2RRRFBHX25pLWdZeS1Rc2NEaEQyUTc5WXE4RzdBcGFZMWZqUl8yNVRlTkctaEZFTTZWZ0ZacEpTejZMZkhfd0lLWlpzNURObGxvVDIzTFR5c3N5OE1HcW9qSENkNktZWFVnYXo1WS1YSHFGdkg4TXU4VGF4UEt2NmVLaXI0ZG53Zw?oc=5",
+          "item_type": "news_article",
+          "title": "Unmanned U.S. Defense Vessel Washes Ashore in Turkey's Black Sea, Destroyed in Detonation",
+          "authors_or_author": [
+            "news.ssbcrack.com"
+          ],
+          "published_at": "2026-03-23",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQd3A0ZkNMYmpnTkRpSkNhX2dkc3I1VG1lekU0ck5LcDB0SW1GUm11NEpWT2RRRFBHX25pLWdZeS1Rc2NEaEQyUTc5WXE4RzdBcGFZMWZqUl8yNVRlTkctaEZFTTZWZ0ZacEpTejZMZkhfd0lLWlpzNURObGxvVDIzTFR5c3N5OE1HcW9qSENkNktZWFVnYXo1WS1YSHFGdkg4TXU4VGF4UEt2NmVLaXI0ZG53Zw?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "abstract_or_body": "Unmanned U.S. Defense Vessel Washes Ashore in Turkey's Black Sea, Destroyed in Detonation &nbsp;&nbsp; news.ssbcrack.com",
+          "summary": {
+            "provider": "ollama:llama3.2",
+            "metadata_markdown": "- Source: news_rss\n- Type: news_article\n- Published: 2026-03-23\n- Authors: news.ssbcrack.com\n- DOI: N/A\n- Topics: ship_autonomy\n- Link: https://news.google.com/rss/articles/CBMiswFBVV95cUxQd3A0ZkNMYmpnTkRpSkNhX2dkc3I1VG1lekU0ck5LcDB0SW1GUm11NEpWT2RRRFBHX25pLWdZeS1Rc2NEaEQyUTc5WXE4RzdBcGFZMWZqUl8yNVRlTkctaEZFTTZWZ0ZacEpTejZMZkhfd0lLWlpzNURObGxvVDIzTFR5c3N5OE1HcW9qSENkNktZWFVnYXo1WS1YSHFGdkg4TXU4VGF4UEt2NmVLaXI0ZG53Zw?oc=5",
+            "source_excerpt": "Unmanned U.S. Defense Vessel Washes Ashore in Turkey's Black Sea, Destroyed in Detonation &nbsp;&nbsp; news.ssbcrack.com",
+            "short_summary": "Here is a summary of the article in 3 sentences:\n\nA US defense vessel washed up on shore in Turkey's Black Sea and was destroyed in an explosion. The exact circumstances surrounding the incident are not clear. The article reports that the unmanned vessel was found ashore, but no further details about its origin or purpose are provided."
+          }
+        }
+      ]
+    }
+  ]
+}

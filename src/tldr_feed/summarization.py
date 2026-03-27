@@ -224,7 +224,7 @@ def build_summary_prompt(item: NormalizedItem, excerpt: str) -> str:
         "You are writing a precise weekly research digest.\n"
         "Use only the supplied title, authors, date, and abstract/body text.\n"
         "Do not invent results, methods, or claims beyond the text.\n"
-        "Write 2 to 4 sentences in plain English.\n\n"
+        "Write 2 to 4 sentences in plain English. Do not include any introductory phrases like 'Here is a summary' or conversational filler. Start directly with the summary.\n\n"
         f"Title: {item.title}\n"
         f"Authors: {authors}\n"
         f"Published: {published_at}\n"
