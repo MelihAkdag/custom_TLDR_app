@@ -9,6 +9,10 @@ from typing import Any
 from .models import AppConfig, NormalizedItem, RunRecord, SummaryRecord
 from .utils import ensure_directory, to_iso_date
 
+try:
+    from wordcloud import WordCloud  # type: ignore
+except ImportError:
+    WordCloud = None
 
 class ReportWriter(ABC):
     @abstractmethod
@@ -46,7 +50,9 @@ class MarkdownJsonReportWriter(ReportWriter):
             ("news_article", "news.md", "News Report"),
             ("social_post", "social_posts.md", "LinkedIn Posts Report"),
         ]:
-            md_content = self._build_markdown_for_type(config, run, items_with_summaries, item_type, title)
+            md_content = self._build_markdown_for_type(
+                config, run, items_with_summaries, item_type, title, target_dir
+            )
             md_path = target_dir / filename
             md_path.write_text(md_content, encoding="utf-8")
             paths[item_type] = str(md_path)
@@ -60,6 +66,7 @@ class MarkdownJsonReportWriter(ReportWriter):
         items_with_summaries: list[dict[str, Any]],
         item_type_filter: str,
         report_title: str,
+        target_dir: Path,
     ) -> str:
         grouped = self._group_by_topic(config, items_with_summaries)
         lines = [
@@ -79,6 +86,51 @@ class MarkdownJsonReportWriter(ReportWriter):
             lines.extend(["", "## Warnings", ""])
             lines.extend([f"- {warning}" for warning in run.warnings])
 
+        wordcloud_text_chunks = []
+        for topic in config.topics:
+            topic_records = grouped.get(topic.topic_id, [])
+            matches = [record for record in topic_records if record["item"].item_type == item_type_filter]
+            for record in matches:
+                item = record["item"]
+                if item.title:
+                    wordcloud_text_chunks.append(str(item.title))
+                if item.abstract_or_body:
+                    wordcloud_text_chunks.append(str(item.abstract_or_body))
+
+        we_have_text = len(wordcloud_text_chunks) > 0
+        if we_have_text:
+            full_text = " ".join(wordcloud_text_chunks)
+            wc_filename = f"wordcloud_{item_type_filter}.png"
+            wc_path = target_dir / wc_filename
+            has_wordcloud = self._generate_wordcloud(full_text, wc_path)
+            
+            if has_wordcloud:
+                lines.extend([
+                    "",
+                    "## Week's Trend",
+                    "",
+                    f"![Word Cloud]({wc_filename})",
+                    ""
+                ])
+
+        toc_lines = ["", "## Table of Contents"]
+        has_items_in_report = False
+
+        for topic in config.topics:
+            topic_records = grouped.get(topic.topic_id, [])
+            matches = [record for record in topic_records if record["item"].item_type == item_type_filter]
+            if matches:
+                has_items_in_report = True
+                toc_lines.extend(["", f"### {topic.display_name}"])
+                for idx, record in enumerate(matches, 1):
+                    item = record["item"]
+                    safe_id = str(item.item_id).replace(":", "-").replace(".", "-").replace("/", "-")
+                    toc_lines.append(f"{idx}. [{item.title}](#{safe_id})")
+
+        if has_items_in_report:
+            lines.extend(toc_lines)
+
+
         for topic in config.topics:
             topic_records = grouped.get(topic.topic_id, [])
             matches = [record for record in topic_records if record["item"].item_type == item_type_filter]
@@ -91,8 +143,10 @@ class MarkdownJsonReportWriter(ReportWriter):
             for record in matches:
                 item: NormalizedItem = record["item"]
                 summary: SummaryRecord | None = record["summary"]
+                safe_id = str(item.item_id).replace(":", "-").replace(".", "-").replace("/", "-")
                 lines.append("---")
                 lines.append("")
+                lines.append(f"<a id=\"{safe_id}\"></a>")
                 lines.append(f"### {item.title}")
                 lines.append("")
                 if summary:
@@ -113,6 +167,24 @@ class MarkdownJsonReportWriter(ReportWriter):
                     lines.append("- Summary: Not generated.")
                 lines.append("")
         return "\n".join(lines).rstrip() + "\n"
+
+    def _generate_wordcloud(self, text: str, output_path: Path) -> bool:
+        if not text.strip():
+            return False
+        if WordCloud is None:
+            return False
+        try:
+            wordcloud = WordCloud(
+                width=800,
+                height=400,
+                background_color="white",
+                max_words=100,
+                collocations=False
+            ).generate(text)
+            wordcloud.to_file(str(output_path))
+            return True
+        except Exception:
+            return False
 
     def _build_json_payload(
         self,
