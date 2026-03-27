@@ -32,28 +32,38 @@ class MarkdownJsonReportWriter(ReportWriter):
     ) -> dict[str, str]:
         iso_year, iso_week = run.window_end.isocalendar()[:2]
         target_dir = ensure_directory(output_root / str(iso_year) / f"{iso_week:02d}")
-        markdown_path = target_dir / "weekly_report.md"
         json_path = target_dir / "weekly_report.json"
 
-        markdown_path.write_text(
-            self._build_markdown(config, run, items_with_summaries),
-            encoding="utf-8",
-        )
         json_path.write_text(
             json.dumps(self._build_json_payload(config, run, items_with_summaries), indent=2, ensure_ascii=False),
             encoding="utf-8",
         )
-        return {"markdown": str(markdown_path), "json": str(json_path)}
+        
+        paths = {"json": str(json_path)}
+        
+        for item_type, filename, title in [
+            ("paper", "papers.md", "Papers Report"),
+            ("news_article", "news.md", "News Report"),
+            ("social_post", "social_posts.md", "LinkedIn Posts Report"),
+        ]:
+            md_content = self._build_markdown_for_type(config, run, items_with_summaries, item_type, title)
+            md_path = target_dir / filename
+            md_path.write_text(md_content, encoding="utf-8")
+            paths[item_type] = str(md_path)
+            
+        return paths
 
-    def _build_markdown(
+    def _build_markdown_for_type(
         self,
         config: AppConfig,
         run: RunRecord,
         items_with_summaries: list[dict[str, Any]],
+        item_type_filter: str,
+        report_title: str,
     ) -> str:
         grouped = self._group_by_topic(config, items_with_summaries)
         lines = [
-            "# Weekly TLDR Report",
+            f"# {report_title}",
             "",
             f"- Run ID: `{run.run_id}`",
             f"- Week: `{run.requested_week}`",
@@ -71,44 +81,37 @@ class MarkdownJsonReportWriter(ReportWriter):
 
         for topic in config.topics:
             topic_records = grouped.get(topic.topic_id, [])
+            matches = [record for record in topic_records if record["item"].item_type == item_type_filter]
+            
             lines.extend(["", f"## {topic.display_name}", ""])
-            if not topic_records:
+            if not matches:
                 lines.append("No new items for this topic.")
                 continue
-            for item_type, label in [
-                ("paper", "Papers"),
-                ("news_article", "News"),
-                ("social_post", "LinkedIn Posts"),
-            ]:
-                matches = [record for record in topic_records if record["item"].item_type == item_type]
-                lines.extend(["", f"### {label}", ""])
-                if not matches:
-                    lines.append("None.")
-                    continue
-                for record in matches:
-                    item: NormalizedItem = record["item"]
-                    summary: SummaryRecord | None = record["summary"]
-                    lines.append("---")
+
+            for record in matches:
+                item: NormalizedItem = record["item"]
+                summary: SummaryRecord | None = record["summary"]
+                lines.append("---")
+                lines.append("")
+                lines.append(f"### {item.title}")
+                lines.append("")
+                if summary:
+                    lines.append("**Metadata**")
                     lines.append("")
-                    lines.append(f"### {item.title}")
+                    lines.append(summary.metadata_markdown)
                     lines.append("")
-                    if summary:
-                        lines.append("**Metadata**")
-                        lines.append("")
-                        lines.append(summary.metadata_markdown)
-                        lines.append("")
-                        lines.append("**AI Summary**")
-                        lines.append("")
-                        lines.append(summary.short_summary)
-                        lines.append("")
-                        if summary.source_excerpt:
-                            lines.append("**Abstract / Source Text**")
-                            lines.append("")
-                            lines.append(f"> {summary.source_excerpt}")
-                            lines.append("")
-                    else:
-                        lines.append("- Summary: Not generated.")
+                    lines.append("**AI Summary**")
                     lines.append("")
+                    lines.append(summary.short_summary)
+                    lines.append("")
+                    if summary.source_excerpt:
+                        lines.append("**Abstract / Source Text**")
+                        lines.append("")
+                        lines.append(f"> {summary.source_excerpt}")
+                        lines.append("")
+                else:
+                    lines.append("- Summary: Not generated.")
+                lines.append("")
         return "\n".join(lines).rstrip() + "\n"
 
     def _build_json_payload(
@@ -152,6 +155,10 @@ class MarkdownJsonReportWriter(ReportWriter):
             for topic_id in item.topic_ids:
                 if topic_id in known_topics:
                     grouped[topic_id].append(record)
+        for topic_id in grouped:
+            grouped[topic_id].sort(
+                key=lambda r: r["item"].raw_payload.get("_relevance_score", 0.0), reverse=True
+            )
         return grouped
 
     def _record_to_json(self, record: dict[str, Any]) -> dict[str, Any]:

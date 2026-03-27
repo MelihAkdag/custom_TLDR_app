@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import time
 from abc import ABC, abstractmethod
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
@@ -25,10 +26,12 @@ def build_summarizer_from_env() -> Summarizer:
         return AzureOpenAISummarizer()
     if provider == "ollama":
         return OllamaSummarizer()
+    if provider == "gemini":
+        return GeminiSummarizer()
     if provider in {"deterministic", "local"}:
         return DeterministicSummarizer()
     raise ValueError(
-        "Unsupported SUMMARIZER_PROVIDER. Expected one of: azure_openai, ollama, deterministic."
+        "Unsupported SUMMARIZER_PROVIDER. Expected one of: azure_openai, ollama, gemini, deterministic."
     )
 
 
@@ -106,10 +109,10 @@ class AzureOpenAISummarizer(Summarizer):
         ]
         payload: dict[str, object] = {"messages": messages}
         if self._uses_gpt5_style_tokens():
-            payload["max_completion_tokens"] = 240
+            payload["max_completion_tokens"] = 1024
         else:
             payload["temperature"] = 0.2
-            payload["max_tokens"] = 240
+            payload["max_tokens"] = 1024
         return payload
 
     def _uses_gpt5_style_tokens(self) -> bool:
@@ -176,8 +179,77 @@ class OllamaSummarizer(Summarizer):
             "stream": False,
             "options": {
                 "temperature": 0.2,
-                "num_predict": 240,
+                "num_predict": 1024,
             },
+        }
+
+
+class GeminiSummarizer(Summarizer):
+    provider_name = "gemini"
+
+    def __init__(self) -> None:
+        self.api_key = os.getenv("GEMINI_API_KEY", "")
+        self.model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+        if not self.api_key:
+            raise ValueError("Missing Gemini environment variable: GEMINI_API_KEY")
+
+    def summarize(self, item: NormalizedItem) -> SummaryRecord:
+        metadata_markdown = build_metadata_markdown(item)
+        excerpt = truncate_text(item.abstract_or_body, limit=2000)
+        if not excerpt:
+            return _build_metadata_only_summary(item, metadata_markdown, self.provider_name)
+
+        prompt = build_summary_prompt(item, excerpt)
+        short_summary = self._request_summary(prompt)
+        return SummaryRecord(
+            item_id=item.item_id or "",
+            provider=f"{self.provider_name}:{self.model}",
+            metadata_markdown=metadata_markdown,
+            source_excerpt=excerpt,
+            short_summary=short_summary,
+            generated_at=utc_now(),
+        )
+
+    def _request_summary(self, prompt: str) -> str:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent?key={self.api_key}"
+        body = json.dumps(self._build_request_payload(prompt)).encode("utf-8")
+        request = Request(
+            url,
+            data=body,
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        for attempt in range(5):
+            try:
+                with urlopen(request, timeout=45) as response:
+                    payload = json.loads(response.read().decode("utf-8"))
+                    break
+            except HTTPError as exc:
+                if exc.code == 429 and attempt < 4:
+                    time.sleep(15 * (attempt + 1))
+                    continue
+                error_body = exc.read().decode("utf-8", errors="replace")
+                raise RuntimeError(f"Gemini API request failed with HTTP {exc.code}. Response body: {error_body}") from exc
+            except URLError as exc:
+                raise RuntimeError("Gemini API request failed to connect.") from exc
+
+        try:
+            message = payload["candidates"][0]["content"]["parts"][0]["text"]
+        except (KeyError, IndexError) as exc:
+             raise RuntimeError(f"Unexpected response format from Gemini: {payload}") from exc
+        return str(message).strip()
+
+    def _build_request_payload(self, prompt: str) -> dict[str, object]:
+        return {
+            "contents": [{"parts": [{"text": prompt}]}],
+            "systemInstruction": {
+                "role": "system",
+                "parts": [{"text": "Summarize only from the provided text. Keep it concise and factual."}]
+            },
+            "generationConfig": {
+                "temperature": 0.2,
+                "maxOutputTokens": 1024,
+            }
         }
 
 
@@ -206,12 +278,9 @@ class DeterministicSummarizer(Summarizer):
 
 def build_metadata_markdown(item: NormalizedItem) -> str:
     lines = [
-        f"- Source: {item.source}",
-        f"- Type: {item.item_type}",
-        f"- Published: {item.published_at.isoformat() if item.published_at else 'Unknown'}",
+        f"- Date: {item.published_at.isoformat() if item.published_at else 'Unknown'}",
         f"- Authors: {', '.join(item.authors_or_author) if item.authors_or_author else 'Unknown'}",
         f"- DOI: {item.doi or 'N/A'}",
-        f"- Topics: {', '.join(item.topic_ids)}",
         f"- Link: {item.url}",
     ]
     return "\n".join(lines)

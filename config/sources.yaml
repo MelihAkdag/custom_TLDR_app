@@ -1,17 +1,17 @@
 sources:
   arxiv:
     enabled: true
-    max_results: 10
+    max_results: 5
     timeout_seconds: 20
   
   openalex:
     enabled: true
-    max_results: 10
+    max_results: 5
     timeout_seconds: 20
   
   crossref:
     enabled: true
-    max_results: 10
+    max_results: 5
     timeout_seconds: 20
   
   semantic_scholar:
