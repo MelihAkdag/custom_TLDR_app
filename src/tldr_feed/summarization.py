@@ -55,9 +55,31 @@ def build_summarizer_from_env() -> Summarizer:
         return GeminiSummarizer()
     if provider in {"deterministic", "local"}:
         return DeterministicSummarizer()
+    if provider == "noop":
+        return NoopSummarizer()
     raise ValueError(
-        "Unsupported SUMMARIZER_PROVIDER. Expected one of: azure_openai, ollama, gemini, deterministic."
+        "Unsupported SUMMARIZER_PROVIDER. Expected one of: azure_openai, ollama, gemini, deterministic, noop."
     )
+
+
+class NoopSummarizer(Summarizer):
+    @property
+    def provider_name(self) -> str:
+        return "noop"
+
+    def _request_summary(self, prompt: str) -> str:
+        raise NotImplementedError("NoopSummarizer does not use _request_summary")
+
+    def summarize(self, item: NormalizedItem) -> SummaryRecord:
+        metadata_markdown = build_metadata_markdown(item)
+        return SummaryRecord(
+            item_id=item.item_id or "",
+            provider=self.provider_name,
+            metadata_markdown=metadata_markdown,
+            source_excerpt=truncate_text(item.abstract_or_body, limit=100000),
+            short_summary="[AI Summary disabled for development]",
+            generated_at=utc_now(),
+        )
 
 
 class AzureOpenAISummarizer(Summarizer):

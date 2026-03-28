@@ -97,14 +97,21 @@ def canonicalize_title(title: str) -> str:
     return lowered.strip()
 
 
-def build_identity_key(title: str, doi: str | None, url: str | None) -> str:
-    normalized_doi = normalize_doi(doi)
-    if normalized_doi:
-        return f"doi:{normalized_doi}"
-    normalized_url = canonicalize_url(url)
-    if normalized_url:
-        return f"url:{normalized_url}"
-    return f"title:{canonicalize_title(title)}"
+def build_identity_key(title: str, doi: str | None, url: str | None, abstract: str | None = None) -> str:
+    """
+    Build a unique key for an item to prevent duplicates.
+    Uses a normalized title as the primary identifier. This ensures that the same
+    paper found across different sources (with different DOIs, URLs, or abstract availability)
+    is correctly merged into a single entry.
+    """
+    clean_title = canonicalize_title(title)
+    
+    # We use a hash of the cleaned title. For research papers and news, 
+    # titles are generally unique enough within a weekly window.
+    content_blob = clean_title.encode("utf-8")
+    content_hash = hashlib.sha256(content_blob).hexdigest()
+    
+    return f"title_hash:{content_hash}"
 
 
 def make_item_id(identity_key: str) -> str:

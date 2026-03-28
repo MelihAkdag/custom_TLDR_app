@@ -122,7 +122,7 @@ def write_report(
 
 def normalize_raw_item(raw_item: RawItem) -> NormalizedItem:
     normalized_doi = normalize_doi(raw_item.doi)
-    identity_key = build_identity_key(raw_item.title, normalized_doi, raw_item.url)
+    identity_key = build_identity_key(raw_item.title, normalized_doi, raw_item.url, raw_item.abstract_or_body)
     raw_hash = stable_json_hash(raw_item.raw_payload)
     return NormalizedItem(
         item_id=make_item_id(identity_key),

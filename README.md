@@ -101,12 +101,6 @@ OLLAMA_MODEL=llama3.1:8b
 OLLAMA_TIMEOUT_SECONDS=120
 ```
 
-Optional:
-
-```env
-SEMANTIC_SCHOLAR_API_KEY=
-```
-
 ## Topics Configuration
 
 `config/topics.yaml` defines what the system should monitor.
@@ -362,20 +356,15 @@ PY
 
 Reports are written to:
 
-- `reports/YYYY/WW/weekly_report.md`
+- `reports/YYYY/WW/papers.md`
+- `reports/YYYY/WW/news.md`
 - `reports/YYYY/WW/weekly_report.json`
 
-The Markdown report is organized by:
-- topic
-- section (`Papers`, `News`)
-- entry
-
-Each entry currently includes:
-- large title heading
-- metadata
+Each entry includes:
+- Title
+- Metadata
 - AI summary
-- abstract or source text
-- separator between entries
+- Abstract or source text
 
 ## Current Relevance Method
 
@@ -439,7 +428,3 @@ python3 -m compileall src tests
 
 The next planned phase is periodic automation. Before that, the recommended path is:
 
-1. tune topics and source settings
-2. validate relevance and report quality
-3. confirm manual runs are stable
-4. then schedule the pipeline

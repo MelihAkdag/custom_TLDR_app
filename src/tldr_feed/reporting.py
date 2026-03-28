@@ -70,19 +70,26 @@ class MarkdownJsonReportWriter(ReportWriter):
     ) -> str:
         grouped = self._group_by_topic(config, items_with_summaries)
         type_sources = []
-        type_new_items = 0
+        unique_item_ids = set()
+        
+        for topic in config.topics:
+            topic_records = grouped.get(topic.topic_id, [])
+            for record in topic_records:
+                item = record["item"]
+                if item.item_type == item_type_filter:
+                    unique_item_ids.add(item.item_id)
+
         for src, stats in run.source_stats.items():
             adapter_cls = SOURCE_REGISTRY.get(src)
             if adapter_cls and getattr(adapter_cls, "item_type", None) == item_type_filter:
                 type_sources.append(src)
-                type_new_items += stats.get("new_items", 0)
 
         lines = [
             f"# {report_title}",
             "",
             f"- Window: `{run.window_start.isoformat()}` to `{run.window_end.isoformat()}`",
             f"- Sources queried: {', '.join(sorted(type_sources)) if type_sources else 'None'}",
-            f"- New items found: {type_new_items}",
+            f"- Items in report: {len(unique_item_ids)}",
         ]
         if run.errors:
             lines.extend(["", "## Partial Failures", ""])
@@ -161,10 +168,11 @@ class MarkdownJsonReportWriter(ReportWriter):
                     lines.append("")
                     lines.append(summary.metadata_markdown)
                     lines.append("")
-                    lines.append("**AI Summary**")
-                    lines.append("")
-                    lines.append(summary.short_summary)
-                    lines.append("")
+                    if summary.provider != "noop":
+                        lines.append("**AI Summary**")
+                        lines.append("")
+                        lines.append(summary.short_summary)
+                        lines.append("")
                     if summary.source_excerpt:
                         lines.append("**Abstract / Source Text**")
                         lines.append("")

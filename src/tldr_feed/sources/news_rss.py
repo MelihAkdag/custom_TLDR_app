@@ -20,26 +20,34 @@ class NewsRssAdapter(SourceAdapter):
 
         if bool(self.settings.extra.get("use_search_feed", True)):
             for keyword in topic.keywords:
-                payload = self._get_text(
-                    self.settings.base_url or self.default_base_url,
-                    params={
-                        "q": self._build_query(keyword),
-                        "hl": self.settings.extra.get("hl", "en-US"),
-                        "gl": self.settings.extra.get("gl", "US"),
-                        "ceid": self.settings.extra.get("ceid", "US:en"),
-                    },
-                )
-                for item in self.parse_response(payload, topic.topic_id):
-                    self._add_if_relevant(items, item, start_date, end_date)
+                try:
+                    payload = self._get_text(
+                        self.settings.base_url or self.default_base_url,
+                        params={
+                            "q": self._build_query(keyword),
+                            "hl": self.settings.extra.get("hl", "en-US"),
+                            "gl": self.settings.extra.get("gl", "US"),
+                            "ceid": self.settings.extra.get("ceid", "US:en"),
+                        },
+                    )
+                    for item in self.parse_response(payload, topic.topic_id):
+                        self._add_if_relevant(items, item, start_date, end_date)
+                except Exception:
+                    # Log or skip, but don't crash the entire source search
+                    pass
 
         for feed_config in self._custom_feed_configs():
-            payload = self._get_text(feed_config["url"], params={})
-            for item in self.parse_response(
-                payload,
-                topic.topic_id,
-                fallback_source=feed_config.get("source_name"),
-            ):
-                self._add_if_relevant(items, item, start_date, end_date)
+            try:
+                payload = self._get_text(feed_config["url"], params={})
+                for item in self.parse_response(
+                    payload,
+                    topic.topic_id,
+                    fallback_source=feed_config.get("source_name"),
+                ):
+                    self._add_if_relevant(items, item, start_date, end_date)
+            except Exception:
+                # Log or skip, but don't crash the entire source search
+                pass
 
         return list(items.values())
 
