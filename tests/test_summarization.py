@@ -56,7 +56,7 @@ class SummarizationTests(unittest.TestCase):
             summarizer = AzureOpenAISummarizer()
             payload = summarizer._build_request_payload("Test prompt")
 
-            self.assertEqual(payload["max_completion_tokens"], 240)
+            self.assertEqual(payload["max_completion_tokens"], 1024)
             self.assertNotIn("max_tokens", payload)
             self.assertNotIn("temperature", payload)
         finally:
@@ -73,7 +73,7 @@ class SummarizationTests(unittest.TestCase):
             summarizer = AzureOpenAISummarizer()
             payload = summarizer._build_request_payload("Test prompt")
 
-            self.assertEqual(payload["max_tokens"], 240)
+            self.assertEqual(payload["max_tokens"], 1024)
             self.assertEqual(payload["temperature"], 0.2)
             self.assertNotIn("max_completion_tokens", payload)
         finally:
@@ -103,7 +103,7 @@ class SummarizationTests(unittest.TestCase):
             self.assertEqual(payload["prompt"], "Test prompt")
             self.assertEqual(payload["stream"], False)
             self.assertEqual(payload["options"]["temperature"], 0.2)
-            self.assertEqual(payload["options"]["num_predict"], 240)
+            self.assertEqual(payload["options"]["num_predict"], 1024)
         finally:
             _restore_env(previous)
 

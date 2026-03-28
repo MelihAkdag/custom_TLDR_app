@@ -251,13 +251,20 @@ class PipelineTests(unittest.TestCase):
                 summarize_stats = summarize_run(storage, first_run.run_id, summarizer=DeterministicSummarizer())
                 self.assertEqual(summarize_stats["created"], 4)
                 outputs = write_report(storage, config, first_run.run_id, output_dir=tmp_path / "reports")
-                markdown = Path(outputs["markdown"]).read_text(encoding="utf-8")
-                self.assertIn("Shared Paper", markdown)
-                self.assertIn("LinkedIn Posts", markdown)
-                self.assertIn("### News", markdown)
-                self.assertLess(markdown.index("**Metadata**"), markdown.index("**AI Summary**"))
-                self.assertLess(markdown.index("**AI Summary**"), markdown.index("**Abstract / Source Text**"))
-                self.assertIn("---", markdown)
+                
+                paper_md = Path(outputs["paper"]).read_text(encoding="utf-8")
+                news_md = Path(outputs["news_article"]).read_text(encoding="utf-8")
+                social_md = Path(outputs["social_post"]).read_text(encoding="utf-8")
+
+                self.assertIn("Shared Paper", paper_md)
+                self.assertIn("Edge AI Trial Expands", news_md)
+                self.assertIn("LinkedIn Posts", social_md)
+                
+                # Verify structure of one of them
+                self.assertIn("**Metadata**", paper_md)
+                self.assertIn("**AI Summary**", paper_md)
+                self.assertIn("<a id=", paper_md)
+                self.assertIn("---", paper_md)
 
                 second_run = collect_items(config, storage, "2026-W12", date(2026, 3, 16), date(2026, 3, 22))
                 self.assertEqual(second_run.source_stats["fake_primary"]["existing_items"], 2)

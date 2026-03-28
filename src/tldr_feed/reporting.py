@@ -141,7 +141,9 @@ class MarkdownJsonReportWriter(ReportWriter):
                 item: NormalizedItem = record["item"]
                 summary: SummaryRecord | None = record["summary"]
                 safe_id = str(item.item_id).replace(":", "-").replace(".", "-").replace("/", "-")
+                lines.append("<br><br>")
                 lines.append("---")
+                lines.append("<br>")
                 lines.append("")
                 lines.append(f"<a id=\"{safe_id}\"></a>")
                 lines.append(f"### {item.title}")

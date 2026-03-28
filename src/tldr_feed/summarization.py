@@ -13,11 +13,36 @@ from .utils import truncate_text, utc_now
 
 
 class Summarizer(ABC):
-    provider_name: str
+    @property
+    @abstractmethod
+    def provider_name(self) -> str:
+        raise NotImplementedError
+
+    @property
+    def full_provider_name(self) -> str:
+        return self.provider_name
+
+    def summarize(self, item: NormalizedItem) -> SummaryRecord:
+        metadata_markdown = build_metadata_markdown(item)
+        excerpt = truncate_text(item.abstract_or_body, limit=100000)
+        if not excerpt:
+            return _build_metadata_only_summary(item, metadata_markdown, self.full_provider_name)
+
+        prompt = build_summary_prompt(item, excerpt)
+        short_summary = self._request_summary(prompt)
+        return SummaryRecord(
+            item_id=item.item_id or "",
+            provider=self.full_provider_name,
+            metadata_markdown=metadata_markdown,
+            source_excerpt=excerpt,
+            short_summary=short_summary,
+            generated_at=utc_now(),
+        )
 
     @abstractmethod
-    def summarize(self, item: NormalizedItem) -> SummaryRecord:
+    def _request_summary(self, prompt: str) -> str:
         raise NotImplementedError
+
 
 
 def build_summarizer_from_env() -> Summarizer:
@@ -56,22 +81,9 @@ class AzureOpenAISummarizer(Summarizer):
         if missing:
             raise ValueError(f"Missing Azure OpenAI environment variables: {', '.join(missing)}")
 
-    def summarize(self, item: NormalizedItem) -> SummaryRecord:
-        metadata_markdown = build_metadata_markdown(item)
-        excerpt = truncate_text(item.abstract_or_body, limit=1800)
-        if not excerpt:
-            return _build_metadata_only_summary(item, metadata_markdown, self.provider_name)
-
-        prompt = build_summary_prompt(item, excerpt)
-        short_summary = self._request_summary(prompt)
-        return SummaryRecord(
-            item_id=item.item_id or "",
-            provider=self.provider_name,
-            metadata_markdown=metadata_markdown,
-            source_excerpt=excerpt,
-            short_summary=short_summary,
-            generated_at=utc_now(),
-        )
+    @property
+    def provider_name(self) -> str:
+        return "azure_openai"
 
     def _request_summary(self, prompt: str) -> str:
         url = (
@@ -121,7 +133,13 @@ class AzureOpenAISummarizer(Summarizer):
 
 
 class OllamaSummarizer(Summarizer):
-    provider_name = "ollama"
+    @property
+    def provider_name(self) -> str:
+        return "ollama"
+
+    @property
+    def full_provider_name(self) -> str:
+        return f"{self.provider_name}:{self.model}"
 
     def __init__(self) -> None:
         self.base_url = os.getenv("OLLAMA_BASE_URL", "http://127.0.0.1:11434").rstrip("/")
@@ -131,22 +149,6 @@ class OllamaSummarizer(Summarizer):
         if missing:
             raise ValueError(f"Missing Ollama environment variables: {', '.join(missing)}")
 
-    def summarize(self, item: NormalizedItem) -> SummaryRecord:
-        metadata_markdown = build_metadata_markdown(item)
-        excerpt = truncate_text(item.abstract_or_body, limit=1800)
-        if not excerpt:
-            return _build_metadata_only_summary(item, metadata_markdown, self.provider_name)
-
-        prompt = build_summary_prompt(item, excerpt)
-        short_summary = self._request_summary(prompt)
-        return SummaryRecord(
-            item_id=item.item_id or "",
-            provider=f"{self.provider_name}:{self.model}",
-            metadata_markdown=metadata_markdown,
-            source_excerpt=excerpt,
-            short_summary=short_summary,
-            generated_at=utc_now(),
-        )
 
     def _request_summary(self, prompt: str) -> str:
         body = json.dumps(self._build_request_payload(prompt)).encode("utf-8")
@@ -185,7 +187,13 @@ class OllamaSummarizer(Summarizer):
 
 
 class GeminiSummarizer(Summarizer):
-    provider_name = "gemini"
+    @property
+    def provider_name(self) -> str:
+        return "gemini"
+
+    @property
+    def full_provider_name(self) -> str:
+        return f"{self.provider_name}:{self.model}"
 
     def __init__(self) -> None:
         self.api_key = os.getenv("GEMINI_API_KEY", "")
@@ -193,22 +201,6 @@ class GeminiSummarizer(Summarizer):
         if not self.api_key:
             raise ValueError("Missing Gemini environment variable: GEMINI_API_KEY")
 
-    def summarize(self, item: NormalizedItem) -> SummaryRecord:
-        metadata_markdown = build_metadata_markdown(item)
-        excerpt = truncate_text(item.abstract_or_body, limit=2000)
-        if not excerpt:
-            return _build_metadata_only_summary(item, metadata_markdown, self.provider_name)
-
-        prompt = build_summary_prompt(item, excerpt)
-        short_summary = self._request_summary(prompt)
-        return SummaryRecord(
-            item_id=item.item_id or "",
-            provider=f"{self.provider_name}:{self.model}",
-            metadata_markdown=metadata_markdown,
-            source_excerpt=excerpt,
-            short_summary=short_summary,
-            generated_at=utc_now(),
-        )
 
     def _request_summary(self, prompt: str) -> str:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent?key={self.api_key}"
@@ -254,11 +246,16 @@ class GeminiSummarizer(Summarizer):
 
 
 class DeterministicSummarizer(Summarizer):
-    provider_name = "deterministic"
+    @property
+    def provider_name(self) -> str:
+        return "deterministic"
+
+    def _request_summary(self, prompt: str) -> str:
+        raise NotImplementedError("DeterministicSummarizer does not use _request_summary")
 
     def summarize(self, item: NormalizedItem) -> SummaryRecord:
         metadata_markdown = build_metadata_markdown(item)
-        excerpt = truncate_text(item.abstract_or_body, limit=900)
+        excerpt = truncate_text(item.abstract_or_body, limit=100000)
         if excerpt:
             summary = (
                 f"{item.title} is included in this week's digest for {', '.join(item.topic_ids)}. "

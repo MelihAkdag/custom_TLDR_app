@@ -7,3 +7,6 @@ __pycache__/
 .env
 data/*.db
 data/*.sqlite3
+reports/*
+config/sources.yaml
+config/topics.yaml

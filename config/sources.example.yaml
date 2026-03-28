@@ -1,56 +1,48 @@
 sources:
   arxiv:
     enabled: true
-    max_results: 15
+    max_results: 5
     timeout_seconds: 20
-    verify_ssl: true
-    # ca_bundle: "/absolute/path/to/company-root-ca.pem"
+  
   openalex:
     enabled: true
-    max_results: 15
+    max_results: 5
     timeout_seconds: 20
-    verify_ssl: true
-    # ca_bundle: "/absolute/path/to/company-root-ca.pem"
+  
   crossref:
     enabled: true
-    max_results: 15
+    max_results: 5
     timeout_seconds: 20
-    verify_ssl: true
-    # ca_bundle: "/absolute/path/to/company-root-ca.pem"
+  
+  semantic_scholar:
+    enabled: true
+    timeout_seconds: 20
+  
+  google_scholar:
+    enabled: false
+    
+  scopus:
+    enabled: false
+  
   news_rss:
     enabled: true
     max_results: 10
     timeout_seconds: 20
-    verify_ssl: true
-    # ca_bundle: "/absolute/path/to/company-root-ca.pem"
-    use_search_feed: true
     hl: "en-US"
     gl: "US"
     ceid: "US:en"
     window_days: 7
-    allowed_domains: []
-    blocked_domains: []
-    custom_rss_feeds:
-      - url: "https://gcaptain.com/feed/"
-        source_name: "gCaptain"
-  semantic_scholar:
-    enabled: true
-    timeout_seconds: 20
-  landing_page:
-    enabled: true
-    timeout_seconds: 20
+
   linkedin_import:
-    enabled: true
+    enabled: false
     import_dir: "imports/linkedin"
+
   linkedin_posts:
     enabled: false
     timeout_seconds: 20
     max_results: 10
     linkedin_version: "202601"
     access_token_env: "LINKEDIN_ACCESS_TOKEN"
-    organization_urns: []
+    organization_urns:
+      - "urn:li:organization:123456"
     person_urns: []
-  google_scholar:
-    enabled: false
-  scopus:
-    enabled: false

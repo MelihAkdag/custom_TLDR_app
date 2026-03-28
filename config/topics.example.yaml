@@ -1,17 +1,40 @@
 topics:
-  - topic_id: "edge_ai"
-    display_name: "Edge AI"
-    keywords: ["edge AI", "on-device learning", "tinyml"]
-    include_terms: ["inference", "deployment"]
-    exclude_terms: ["job posting"]
+  - topic_id: "ship_autonomy"
+    display_name: "Ship Autonomy"
+    keywords:
+      - "autonomous ship"
+      - "autonomous vessel"
+      - "autonomous surface vessel"
+      - "unmanned surface vessel"
+      - "maritime autonomous surface ship"
+      - "remotely operated ship"
+      - "maritime autonomous navigation"
+    include_terms:
+      - "maritime"
+      - "ship"
+      - "vessel"
+      - "collision avoidance"
+      - "autonomous navigation"
+      - "situational awareness"
+      - "sensor fusion"
+      - "path planning"
+      - "COLREG"
+      - "COLREGs"
+      - "remote monitoring"
+      - "autonomous control"
+      - "decision-making"
+      - "marine radar"
+      - "AIS"
+    exclude_terms:
+      - "ground vehicle"
+      - "road vehicle"
+      - "aerial"
+      - "drone"
+      - "uav"
+      - "aircraft"
+      - "satellite"
+      - "medical"
+      - "biology"
     allowed_paper_languages: ["en"]
-    min_relevance_score: 2.5
-    sources: ["arxiv", "openalex", "crossref", "news_rss", "linkedin_import"]
-  - topic_id: "renewable_hydrogen"
-    display_name: "Renewable Hydrogen"
-    keywords: ["renewable hydrogen", "green hydrogen", "electrolyzer optimization"]
-    include_terms: ["electrolysis"]
-    exclude_terms: ["stock analysis"]
-    allowed_paper_languages: ["en"]
-    min_relevance_score: 2.5
+    min_relevance_score: 3.0
     sources: ["arxiv", "openalex", "crossref", "news_rss"]

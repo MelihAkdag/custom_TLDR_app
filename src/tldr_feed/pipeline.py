@@ -94,10 +94,12 @@ def collect_items(
 
 def summarize_run(storage: Storage, run_id: str, summarizer: Summarizer | None = None) -> dict[str, int]:
     summarizer = summarizer or build_summarizer_from_env()
+    current_provider = summarizer.full_provider_name
     created = 0
     skipped = 0
     for item in storage.list_items_for_run(run_id):
-        if storage.get_summary(item.item_id or "") is not None:
+        existing = storage.get_summary(item.item_id or "")
+        if existing and existing.provider == current_provider:
             skipped += 1
             continue
         summary = summarizer.summarize(item)
