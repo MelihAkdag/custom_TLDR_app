@@ -5,8 +5,6 @@ from .arxiv import ArxivAdapter
 from .base import SourceAdapter
 from .crossref import CrossrefAdapter
 from .google_scholar import GoogleScholarAdapter
-from .linkedin_import import LinkedInImportAdapter
-from .linkedin_posts import LinkedInPostsAdapter
 from .news_rss import NewsRssAdapter
 from .openalex import OpenAlexAdapter
 from .scopus import ScopusAdapter
@@ -16,8 +14,6 @@ SOURCE_REGISTRY: dict[str, type[SourceAdapter]] = {
     "arxiv": ArxivAdapter,
     "openalex": OpenAlexAdapter,
     "crossref": CrossrefAdapter,
-    "linkedin_import": LinkedInImportAdapter,
-    "linkedin_posts": LinkedInPostsAdapter,
     "news_rss": NewsRssAdapter,
     "google_scholar": GoogleScholarAdapter,
     "scopus": ScopusAdapter,

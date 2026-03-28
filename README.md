@@ -3,7 +3,6 @@
 Generic weekly research monitoring for:
 - scientific papers
 - keyword-based news
-- optional LinkedIn inputs
 
 The project fetches candidates from configured sources, filters them by topic relevance, stores normalized records in SQLite, summarizes the kept items with a configurable LLM provider, and writes a Markdown/JSON digest.
 
@@ -23,14 +22,10 @@ Working today:
 - Ollama local-model summarization
 - Markdown and JSON weekly reports
 
-Available but optional:
-- `linkedin_import` for manually supplied LinkedIn posts
-- `linkedin_posts` for official LinkedIn API access to configured authors/pages
 
 Not implemented in v1:
 - Google Scholar collection
 - Scopus collection
-- broad LinkedIn keyword search across the public network
 - scheduled automation/orchestration
 
 ## Pipeline
@@ -47,7 +42,6 @@ The pipeline is:
 Current item types:
 - `paper`
 - `news_article`
-- `social_post`
 
 ## Project Layout
 
@@ -56,8 +50,6 @@ config/
   topics.example.yaml
   sources.example.yaml
 data/
-imports/
-  linkedin/
 reports/
 src/tldr_feed/
 tests/
@@ -115,7 +107,6 @@ Optional:
 
 ```env
 SEMANTIC_SCHOLAR_API_KEY=
-LINKEDIN_ACCESS_TOKEN=
 ```
 
 ## Topics Configuration
@@ -182,9 +173,6 @@ Common sources:
 - `semantic_scholar`
 - `landing_page`
 
-Optional LinkedIn sources:
-- `linkedin_import`
-- `linkedin_posts`
 
 Recommended paper + news setup:
 
@@ -220,13 +208,6 @@ sources:
 
   landing_page:
     enabled: true
-    timeout_seconds: 20
-
-  linkedin_import:
-    enabled: false
-
-  linkedin_posts:
-    enabled: false
 ```
 
 Source notes:
@@ -235,7 +216,6 @@ Source notes:
 - `news_rss` supports `allowed_domains`, `blocked_domains`, and `custom_rss_feeds`.
 - Keep `verify_ssl: true` for normal use. If your environment uses a corporate HTTPS inspection proxy, set `ca_bundle` per source or `TLDR_FEED_CA_BUNDLE`/`SSL_CERT_FILE` to your organization's trusted CA bundle.
 - `landing_page` tries to extract missing abstracts from HTML pages.
-- `linkedin_posts` requires an official LinkedIn token and configured author/page URNs.
 
 Example `news_rss` tuning for maritime sites:
 
@@ -389,7 +369,7 @@ Reports are written to:
 
 The Markdown report is organized by:
 - topic
-- section (`Papers`, `News`, `LinkedIn Posts`)
+- section (`Papers`, `News`)
 - entry
 
 Each entry currently includes:
@@ -411,14 +391,6 @@ The collector keeps an item only if it passes:
 - `min_relevance_score`
 
 The LLM is used after filtering, for summarization only.
-
-## LinkedIn
-
-For personal experimentation, the practical options are:
-- `linkedin_import`: manual CSV, JSON, or URL input
-- `linkedin_posts`: official API access for configured authors/pages, if you have a valid token
-
-This project does not currently support broad public LinkedIn keyword search.
 
 ## Troubleshooting
 

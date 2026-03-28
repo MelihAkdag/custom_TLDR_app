@@ -208,20 +208,6 @@ class PipelineTests(unittest.TestCase):
     def test_collect_summarize_report_and_rerun(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:
             tmp_path = Path(tmp_dir)
-            import_dir = tmp_path / "imports" / "linkedin"
-            import_dir.mkdir(parents=True)
-            with (import_dir / "posts.csv").open("w", encoding="utf-8", newline="") as handle:
-                writer = csv.DictWriter(handle, fieldnames=["url", "title", "author", "published_at", "body"])
-                writer.writeheader()
-                writer.writerow(
-                    {
-                        "url": "https://www.linkedin.com/posts/example-edge-ai",
-                        "title": "Edge AI field notes",
-                        "author": "Dana",
-                        "published_at": "2026-03-20",
-                        "body": "Edge AI deployment lessons from field testing.",
-                    }
-                )
 
             config = AppConfig(
                 topics=[
@@ -231,7 +217,7 @@ class PipelineTests(unittest.TestCase):
                         keywords=["edge ai"],
                         include_terms=[],
                         exclude_terms=[],
-                        sources=["fake_primary", "fake_secondary", "fake_news", "linkedin_import"],
+                        sources=["fake_primary", "fake_secondary", "fake_news"],
                         min_relevance_score=2.0,
                     )
                 ],
@@ -239,7 +225,6 @@ class PipelineTests(unittest.TestCase):
                     "fake_primary": SourceSettings(name="fake_primary"),
                     "fake_secondary": SourceSettings(name="fake_secondary"),
                     "fake_news": SourceSettings(name="fake_news"),
-                    "linkedin_import": SourceSettings(name="linkedin_import", extra={"import_dir": str(import_dir)}),
                 },
                 config_dir=str(tmp_path / "config"),
             )
@@ -247,18 +232,16 @@ class PipelineTests(unittest.TestCase):
             try:
                 first_run = collect_items(config, storage, "2026-W12", date(2026, 3, 16), date(2026, 3, 22))
                 first_items = storage.list_items_for_run(first_run.run_id)
-                self.assertEqual(len(first_items), 4)
+                self.assertEqual(len(first_items), 3)
                 summarize_stats = summarize_run(storage, first_run.run_id, summarizer=DeterministicSummarizer())
-                self.assertEqual(summarize_stats["created"], 4)
+                self.assertEqual(summarize_stats["created"], 3)
                 outputs = write_report(storage, config, first_run.run_id, output_dir=tmp_path / "reports")
                 
                 paper_md = Path(outputs["paper"]).read_text(encoding="utf-8")
                 news_md = Path(outputs["news_article"]).read_text(encoding="utf-8")
-                social_md = Path(outputs["social_post"]).read_text(encoding="utf-8")
 
                 self.assertIn("Shared Paper", paper_md)
                 self.assertIn("Edge AI Trial Expands", news_md)
-                self.assertIn("LinkedIn Posts", social_md)
                 
                 # Verify structure of one of them
                 self.assertIn("**Metadata**", paper_md)

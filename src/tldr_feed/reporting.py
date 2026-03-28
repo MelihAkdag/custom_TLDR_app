@@ -48,7 +48,6 @@ class MarkdownJsonReportWriter(ReportWriter):
         for item_type, filename, title in [
             ("paper", "papers.md", "Papers Report"),
             ("news_article", "news.md", "News Report"),
-            ("social_post", "social_posts.md", "LinkedIn Posts Report"),
         ]:
             md_content = self._build_markdown_for_type(
                 config, run, items_with_summaries, item_type, title, target_dir

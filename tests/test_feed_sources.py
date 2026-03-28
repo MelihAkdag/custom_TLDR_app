@@ -11,7 +11,6 @@ if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
 from tldr_feed.models import SourceSettings, TopicProfile
-from tldr_feed.sources.linkedin_posts import LinkedInPostsAdapter
 from tldr_feed.sources.news_rss import NewsRssAdapter
 
 
@@ -114,21 +113,3 @@ class FeedSourceTests(unittest.TestCase):
         self.assertEqual(len(items), 1)
         self.assertEqual(items[0].authors_or_author, ["gCaptain"])
 
-    def test_linkedin_posts_parser_builds_social_posts(self) -> None:
-        payload = {
-            "elements": [
-                {
-                    "id": "123",
-                    "author": "urn:li:organization:999",
-                    "commentary": {"text": "Autonomous vessel trial with new collision avoidance data."},
-                    "publishedAt": 1774000800000,
-                    "urn": "urn:li:share:123",
-                }
-            ]
-        }
-        items = LinkedInPostsAdapter.parse_response(payload, "ship_autonomy", "urn:li:organization:999")
-        self.assertEqual(len(items), 1)
-        self.assertEqual(items[0].item_type, "social_post")
-        self.assertIn("Autonomous vessel trial", items[0].title)
-        self.assertEqual(items[0].authors_or_author, ["urn:li:organization:999"])
-        self.assertEqual(items[0].url, "https://www.linkedin.com/feed/update/urn:li:share:123/")

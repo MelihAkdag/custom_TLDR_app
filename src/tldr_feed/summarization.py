@@ -24,7 +24,7 @@ class Summarizer(ABC):
 
     def summarize(self, item: NormalizedItem) -> SummaryRecord:
         metadata_markdown = build_metadata_markdown(item)
-        excerpt = truncate_text(item.abstract_or_body, limit=100000)
+        excerpt = truncate_text(item.abstract_or_body, limit=10000)
         if not excerpt:
             return _build_metadata_only_summary(item, metadata_markdown, self.full_provider_name)
 
@@ -255,7 +255,7 @@ class DeterministicSummarizer(Summarizer):
 
     def summarize(self, item: NormalizedItem) -> SummaryRecord:
         metadata_markdown = build_metadata_markdown(item)
-        excerpt = truncate_text(item.abstract_or_body, limit=100000)
+        excerpt = truncate_text(item.abstract_or_body, limit=10000)
         if excerpt:
             summary = (
                 f"{item.title} is included in this week's digest for {', '.join(item.topic_ids)}. "

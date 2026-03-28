@@ -32,17 +32,24 @@ sources:
     gl: "US"
     ceid: "US:en"
     window_days: 7
+    custom_rss_feeds:
+      - url: "https://www.maritime-executive.com/articles.rss"
+        source_name: "The Maritime Executive"
+      - url: "https://www.marineinsight.com/feed/"
+        source_name: "Marine Insight"
+      - url: "https://gcaptain.com/feed/"
+        source_name: "gCaptain"
+      - url: "https://www.marinelink.com/news/rss"
+        source_name: "Marine Link"
+      - url: "https://lloydslist.maritimeintelligence.informa.com/rss/all"
+        source_name: "Lloyd's List"
+      - url: "https://www.tradewindsnews.com/rss/all"
+        source_name: "TradeWinds"
+      - url: "https://news.google.com/rss/search?q=site:imo.org+when:7d"
+        source_name: "IMO"
+      - url: "https://news.google.com/rss/search?q=site:emsa.europa.eu+when:7d"
+        source_name: "EMSA"
+      - url: "https://news.google.com/rss/search?q=site:sdir.no+when:7d"
+        source_name: "Norwegian Maritime Authority"
 
-  linkedin_import:
-    enabled: false
-    import_dir: "imports/linkedin"
 
-  linkedin_posts:
-    enabled: false
-    timeout_seconds: 20
-    max_results: 10
-    linkedin_version: "202601"
-    access_token_env: "LINKEDIN_ACCESS_TOKEN"
-    organization_urns:
-      - "urn:li:organization:123456"
-    person_urns: []
