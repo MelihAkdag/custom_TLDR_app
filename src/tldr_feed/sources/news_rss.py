@@ -3,7 +3,8 @@ from __future__ import annotations
 import email.utils
 import xml.etree.ElementTree as ET
 from datetime import date
-from urllib.parse import urlparse
+import re
+from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 
 from ..models import RawItem, TopicProfile
 from ..utils import truncate_text, utc_now
@@ -24,7 +25,7 @@ class NewsRssAdapter(SourceAdapter):
                     payload = self._get_text(
                         self.settings.base_url or self.default_base_url,
                         params={
-                            "q": self._build_query(keyword),
+                            "q": self._build_query(keyword, start_date, end_date),
                             "hl": self.settings.extra.get("hl", "en-US"),
                             "gl": self.settings.extra.get("gl", "US"),
                             "ceid": self.settings.extra.get("ceid", "US:en"),
@@ -38,7 +39,8 @@ class NewsRssAdapter(SourceAdapter):
 
         for feed_config in self._custom_feed_configs():
             try:
-                payload = self._get_text(feed_config["url"], params={})
+                url = self._prepare_custom_url(feed_config["url"], start_date, end_date)
+                payload = self._get_text(url, params={})
                 for item in self.parse_response(
                     payload,
                     topic.topic_id,
@@ -103,9 +105,45 @@ class NewsRssAdapter(SourceAdapter):
             return []
         return [self._normalize_domain(str(value)) for value in raw_values if str(value).strip()]
 
-    def _build_query(self, keyword: str) -> str:
-        days = int(self.settings.extra.get("window_days", 7))
-        return f'"{keyword}" when:{days}d'
+    def _build_query(self, keyword: str, start_date: date | None = None, end_date: date | None = None) -> str:
+        query = f'"{keyword}"'
+        if start_date:
+            query += f" after:{start_date.isoformat()}"
+        if end_date:
+            query += f" before:{end_date.isoformat()}"
+        
+        # Fallback to when:Xd if no dates provided (for backward compatibility if called elsewhere)
+        if not start_date and not end_date:
+            days = int(self.settings.extra.get("window_days", 7))
+            query += f" when:{days}d"
+            
+        return query
+
+    def _prepare_custom_url(self, url: str, start_date: date, end_date: date) -> str:
+        """
+        Rewrites Google News search URLs to use absolute date ranges if they contain 'when:Xd'.
+        """
+        if "news.google.com/rss/search" not in url:
+            return url
+
+        parsed = urlparse(url)
+        params = parse_qs(parsed.query)
+        
+        if "q" not in params:
+            return url
+            
+        q = params["q"][0]
+        # Remove any existing 'when:Xd'
+        q = re.sub(r"\s*when:\d+d", "", q).strip()
+        
+        # Add absolute date filters
+        q += f" after:{start_date.isoformat()} before:{end_date.isoformat()}"
+        
+        params["q"] = [q]
+        
+        # Rebuild URL
+        new_query = urlencode(params, doseq=True)
+        return urlunparse(parsed._replace(query=new_query))
 
     @classmethod
     def parse_response(cls, payload: str, topic_id: str, fallback_source: str | None = None) -> list[RawItem]:
@@ -125,7 +163,7 @@ class NewsRssAdapter(SourceAdapter):
             source_id = link or title
             items.append(
                 RawItem(
-                    source="news_rss",
+                    source=source or "news_rss",
                     source_id=source_id,
                     item_type="news_article",
                     title=title,

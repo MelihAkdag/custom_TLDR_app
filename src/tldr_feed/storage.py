@@ -72,6 +72,7 @@ class Storage:
                 item_id TEXT NOT NULL,
                 source TEXT NOT NULL,
                 is_new INTEGER NOT NULL,
+                relevance_score REAL NOT NULL DEFAULT 0.0,
                 PRIMARY KEY (run_id, item_id)
             );
 
@@ -85,7 +86,19 @@ class Storage:
             );
             """
         )
+        self._migrate()
         self.connection.commit()
+
+    def _migrate(self) -> None:
+        """Apply incremental schema migrations for existing databases."""
+        existing_cols = {
+            row[1]
+            for row in self.connection.execute("PRAGMA table_info(run_items)").fetchall()
+        }
+        if "relevance_score" not in existing_cols:
+            self.connection.execute(
+                "ALTER TABLE run_items ADD COLUMN relevance_score REAL NOT NULL DEFAULT 0.0"
+            )
 
     def create_run(self, requested_week: str, window_start: date, window_end: date) -> RunRecord:
         run_id = uuid.uuid4().hex
@@ -246,10 +259,10 @@ class Storage:
         ):
             abstract_or_body = new_item.abstract_or_body
         return NormalizedItem(
-            source=str(existing["source"] or new_item.source),
-            source_id=str(existing["source_id"] or new_item.source_id),
-            item_type=str(existing["item_type"] or new_item.item_type),
-            title=str(existing["title"] or new_item.title),
+            source=str(new_item.source or existing["source"]),
+            source_id=str(new_item.source_id or existing["source_id"]),
+            item_type=str(new_item.item_type or existing["item_type"]),
+            title=str(new_item.title or existing["title"]),
             authors_or_author=existing_authors or new_item.authors_or_author,
             published_at=parse_date(existing["published_at"]) or new_item.published_at,
             discovered_at=parse_iso_datetime(existing["discovered_at"]) or new_item.discovered_at,
@@ -263,19 +276,22 @@ class Storage:
             item_id=str(existing["item_id"]),
         )
 
-    def attach_item_to_run(self, run_id: str, item_id: str, source: str, is_new: bool) -> None:
+    def attach_item_to_run(
+        self, run_id: str, item_id: str, source: str, is_new: bool, relevance_score: float = 0.0
+    ) -> None:
         self.connection.execute(
             """
-            INSERT INTO run_items (run_id, item_id, source, is_new)
-            VALUES (?, ?, ?, ?)
+            INSERT INTO run_items (run_id, item_id, source, is_new, relevance_score)
+            VALUES (?, ?, ?, ?, ?)
             ON CONFLICT(run_id, item_id) DO UPDATE SET
                 source = excluded.source,
+                relevance_score = MAX(run_items.relevance_score, excluded.relevance_score),
                 is_new = CASE
                     WHEN run_items.is_new = 1 OR excluded.is_new = 1 THEN 1
                     ELSE 0
                 END
             """,
-            (run_id, item_id, source, 1 if is_new else 0),
+            (run_id, item_id, source, 1 if is_new else 0, relevance_score),
         )
         self.connection.commit()
 
@@ -351,7 +367,8 @@ class Storage:
     def list_run_items_with_summaries(self, run_id: str) -> list[dict[str, Any]]:
         rows = self.connection.execute(
             """
-            SELECT i.*, s.provider, s.metadata_markdown, s.source_excerpt, s.short_summary, s.generated_at, ri.is_new
+            SELECT i.*, s.provider, s.metadata_markdown, s.source_excerpt, s.short_summary, s.generated_at,
+                   ri.is_new, ri.relevance_score
             FROM items i
             JOIN run_items ri ON ri.item_id = i.item_id
             LEFT JOIN summaries s ON s.item_id = i.item_id
@@ -362,9 +379,28 @@ class Storage:
         ).fetchall()
         records: list[dict[str, Any]] = []
         for row in rows:
+            item = self._row_to_item(row)
+            item = NormalizedItem(
+                item_id=item.item_id,
+                source=item.source,
+                source_id=item.source_id,
+                item_type=item.item_type,
+                title=item.title,
+                authors_or_author=item.authors_or_author,
+                published_at=item.published_at,
+                discovered_at=item.discovered_at,
+                abstract_or_body=item.abstract_or_body,
+                url=item.url,
+                doi=item.doi,
+                topic_ids=item.topic_ids,
+                raw_hash=item.raw_hash,
+                raw_payload=item.raw_payload,
+                identity_key=item.identity_key,
+                relevance_score=float(row["relevance_score"]),
+            )
             records.append(
                 {
-                    "item": self._row_to_item(row),
+                    "item": item,
                     "summary": self.get_summary(str(row["item_id"])),
                     "is_new": bool(row["is_new"]),
                 }

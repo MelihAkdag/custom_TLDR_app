@@ -57,11 +57,10 @@ def collect_items(
                 source_stats[source_name]["fetched"] += len(raw_items)
                 for raw_item in raw_items:
                     relevance_score = score_item_relevance(raw_item, topic)
-                    raw_item.raw_payload = {**raw_item.raw_payload, "_relevance_score": relevance_score}
                     if not _matches_topic_filters(raw_item, topic, relevance_score):
                         source_stats[source_name]["filtered_out"] += 1
                         continue
-                    normalized = normalize_raw_item(raw_item)
+                    normalized = normalize_raw_item(raw_item, relevance_score)
                     if enricher is not None and normalized.item_type == "paper" and (
                         not normalized.abstract_or_body or not normalized.doi
                     ):
@@ -69,7 +68,7 @@ def collect_items(
                     if landing_page_fetcher is not None and normalized.item_type == "paper" and not normalized.abstract_or_body:
                         normalized = landing_page_fetcher.enrich(normalized)
                     item_id, is_new = storage.upsert_item(normalized)
-                    storage.attach_item_to_run(run.run_id, item_id, source_name, is_new)
+                    storage.attach_item_to_run(run.run_id, item_id, source_name, is_new, normalized.relevance_score)
                     if is_new:
                         source_stats[source_name]["new_items"] += 1
                     else:
@@ -120,7 +119,7 @@ def write_report(
     return writer.write(Path(output_dir), config, run, records)
 
 
-def normalize_raw_item(raw_item: RawItem) -> NormalizedItem:
+def normalize_raw_item(raw_item: RawItem, relevance_score: float = 0.0) -> NormalizedItem:
     normalized_doi = normalize_doi(raw_item.doi)
     identity_key = build_identity_key(raw_item.title, normalized_doi, raw_item.url, raw_item.abstract_or_body)
     raw_hash = stable_json_hash(raw_item.raw_payload)
@@ -140,11 +139,14 @@ def normalize_raw_item(raw_item: RawItem) -> NormalizedItem:
         raw_hash=raw_hash,
         raw_payload=raw_item.raw_payload,
         identity_key=identity_key,
+        relevance_score=relevance_score,
     )
 
 
 def _matches_topic_filters(raw_item: RawItem, topic: TopicProfile, relevance_score: float) -> bool:
-    haystack = " ".join(part for part in [raw_item.title, raw_item.abstract_or_body or ""] if part).casefold()
+    if relevance_score < topic.min_relevance_score:
+        return False
+
     if raw_item.item_type == "paper" and topic.allowed_paper_languages and not item_matches_allowed_languages(
         raw_item.raw_payload,
         raw_item.title,
@@ -152,8 +154,14 @@ def _matches_topic_filters(raw_item: RawItem, topic: TopicProfile, relevance_sco
         topic.allowed_paper_languages,
     ):
         return False
+
+    if not topic.include_terms and not topic.exclude_terms:
+        return True
+
+    haystack = " ".join(part for part in [raw_item.title, raw_item.abstract_or_body or ""] if part).casefold()
     if topic.include_terms and not any(term.casefold() in haystack for term in topic.include_terms):
         return False
     if topic.exclude_terms and any(term.casefold() in haystack for term in topic.exclude_terms):
         return False
-    return relevance_score >= topic.min_relevance_score
+
+    return True

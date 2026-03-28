@@ -191,7 +191,7 @@ class PipelineTests(unittest.TestCase):
         SOURCE_REGISTRY.clear()
         SOURCE_REGISTRY.update(self._original_registry)
 
-    def test_normalize_prefers_doi_then_url_then_title(self) -> None:
+    def test_normalize_prefers_title_hash_for_all_sources(self) -> None:
         item = normalize_raw_item(
             RawItem(
                 source="x",
@@ -208,7 +208,8 @@ class PipelineTests(unittest.TestCase):
                 raw_payload={"id": 1},
             )
         )
-        self.assertEqual(item.identity_key, "doi:10.1000/abc")
+        # title_hash for 'example title' is e2c174d019abd41e0bb3952b204d67a1ef57255dced93050d5375531b7e71f9d
+        self.assertEqual(item.identity_key, "title_hash:e2c174d019abd41e0bb3952b204d67a1ef57255dced93050d5375531b7e71f9d")
 
     def test_collect_summarize_report_and_rerun(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:

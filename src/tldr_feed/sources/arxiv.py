@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import time
 import xml.etree.ElementTree as ET
 from datetime import date
 
@@ -15,7 +16,10 @@ class ArxivAdapter(SourceAdapter):
 
     def search(self, topic: TopicProfile, start_date: date, end_date: date) -> list[RawItem]:
         results: dict[str, RawItem] = {}
-        for keyword in topic.keywords:
+        for idx, keyword in enumerate(topic.keywords):
+            if idx > 0:
+                time.sleep(3)  # Respect Arxiv rate limits (1 req/sec)
+            
             payload = self._get_text(
                 self.settings.base_url or self.default_base_url,
                 params={

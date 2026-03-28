@@ -67,6 +67,7 @@ class NormalizedItem:
     raw_hash: str
     raw_payload: dict[str, Any]
     identity_key: str
+    relevance_score: float = 0.0
     item_id: str | None = None
 
 

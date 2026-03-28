@@ -8,7 +8,7 @@ from typing import Any
 
 from .models import AppConfig, NormalizedItem, RunRecord, SummaryRecord
 from .sources import SOURCE_REGISTRY
-from .utils import ensure_directory, to_iso_date
+from .utils import ensure_directory, make_safe_id, to_iso_date
 
 try:
     from wordcloud import WordCloud  # type: ignore
@@ -69,28 +69,57 @@ class MarkdownJsonReportWriter(ReportWriter):
         target_dir: Path,
     ) -> str:
         grouped = self._group_by_topic(config, items_with_summaries)
-        type_sources = []
-        unique_item_ids = set()
         
-        for topic in config.topics:
-            topic_records = grouped.get(topic.topic_id, [])
-            for record in topic_records:
-                item = record["item"]
-                if item.item_type == item_type_filter:
-                    unique_item_ids.add(item.item_id)
-
+        # 1. Filter and prepare data for this report type
+        type_sources = []
         for src, stats in run.source_stats.items():
             adapter_cls = SOURCE_REGISTRY.get(src)
             if adapter_cls and getattr(adapter_cls, "item_type", None) == item_type_filter:
                 type_sources.append(src)
 
+        report_items = []
+        wordcloud_text_chunks = []
+        unique_item_ids = set()
+
+        # Single pass to build data structures
+        for topic in config.topics:
+            topic_records = grouped.get(topic.topic_id, [])
+            matches = [r for r in topic_records if r["item"].item_type == item_type_filter]
+            if not matches:
+                continue
+                
+            topic_data = {"display_name": topic.display_name, "items": []}
+            for record in matches:
+                item: NormalizedItem = record["item"]
+                unique_item_ids.add(item.item_id)
+                safe_id = make_safe_id(item.item_id)
+                
+                # For WordCloud
+                if item.title:
+                    wordcloud_text_chunks.append(str(item.title))
+                if item.abstract_or_body:
+                    wordcloud_text_chunks.append(str(item.abstract_or_body))
+                    
+                topic_data["items"].append({
+                    "record": record,
+                    "safe_id": safe_id
+                })
+            report_items.append(topic_data)
+
+        # 2. Build Header
+        # Collect descriptive source names from items for visibility
+        item_source_names = {item_data["record"]["item"].source for topic_data in report_items for item_data in topic_data["items"] if item_data["record"]["item"].source}
+        # If no items, fallback to adapter names
+        header_sources = sorted(list(item_source_names)) if item_source_names else sorted(type_sources)
+
         lines = [
             f"# {report_title}",
             "",
             f"- Window: `{run.window_start.isoformat()}` to `{run.window_end.isoformat()}`",
-            f"- Sources queried: {', '.join(sorted(type_sources)) if type_sources else 'None'}",
+            f"- Sources queried: {', '.join(header_sources) if header_sources else 'None'}",
             f"- Items in report: {len(unique_item_ids)}",
         ]
+        
         if run.errors:
             lines.extend(["", "## Partial Failures", ""])
             lines.extend([f"- {error}" for error in run.errors])
@@ -98,89 +127,52 @@ class MarkdownJsonReportWriter(ReportWriter):
             lines.extend(["", "## Warnings", ""])
             lines.extend([f"- {warning}" for warning in run.warnings])
 
-        wordcloud_text_chunks = []
-        for topic in config.topics:
-            topic_records = grouped.get(topic.topic_id, [])
-            matches = [record for record in topic_records if record["item"].item_type == item_type_filter]
-            for record in matches:
-                item = record["item"]
-                if item.title:
-                    wordcloud_text_chunks.append(str(item.title))
-                if item.abstract_or_body:
-                    wordcloud_text_chunks.append(str(item.abstract_or_body))
-
-        we_have_text = len(wordcloud_text_chunks) > 0
-        if we_have_text:
+        # 3. Trend / WordCloud
+        if wordcloud_text_chunks:
             full_text = " ".join(wordcloud_text_chunks)
             wc_filename = f"wordcloud_{item_type_filter}.png"
-            wc_path = target_dir / wc_filename
-            has_wordcloud = self._generate_wordcloud(full_text, wc_path)
-            
-            if has_wordcloud:
-                lines.extend([
-                    "",
-                    "## Week's Trend",
-                    "",
-                    f"![Word Cloud]({wc_filename})",
-                    ""
-                ])
+            if self._generate_wordcloud(full_text, target_dir / wc_filename):
+                lines.extend(["", "## Week's Trend", "", f"![Word Cloud]({wc_filename})", ""])
 
-        toc_lines = ["", "## Table of Contents"]
-        has_items_in_report = False
+        # 4. Table of Contents
+        if report_items:
+            lines.extend(["", "## Table of Contents"])
+            for topic_data in report_items:
+                lines.extend(["", f"### {topic_data['display_name']}"])
+                for idx, item_data in enumerate(topic_data["items"], 1):
+                    item = item_data["record"]["item"]
+                    lines.append(f"{idx}. [{item.title}](#{item_data['safe_id']})")
 
-        for topic in config.topics:
-            topic_records = grouped.get(topic.topic_id, [])
-            matches = [record for record in topic_records if record["item"].item_type == item_type_filter]
-            if matches:
-                has_items_in_report = True
-                toc_lines.extend(["", f"### {topic.display_name}"])
-                for idx, record in enumerate(matches, 1):
-                    item = record["item"]
-                    safe_id = str(item.item_id).replace(":", "-").replace(".", "-").replace("/", "-")
-                    toc_lines.append(f"{idx}. [{item.title}](#{safe_id})")
-
-        if has_items_in_report:
-            lines.extend(toc_lines)
-
-
-        for topic in config.topics:
-            topic_records = grouped.get(topic.topic_id, [])
-            matches = [record for record in topic_records if record["item"].item_type == item_type_filter]
-            
-            lines.extend(["", f"## {topic.display_name}", ""])
-            if not matches:
-                lines.append("No new items for this topic.")
-                continue
-
-            for record in matches:
+        # 5. Main Content
+        for topic_data in report_items:
+            lines.extend(["", f"## {topic_data['display_name']}", ""])
+            for item_data in topic_data["items"]:
+                record = item_data["record"]
                 item: NormalizedItem = record["item"]
                 summary: SummaryRecord | None = record["summary"]
-                safe_id = str(item.item_id).replace(":", "-").replace(".", "-").replace("/", "-")
-                lines.append("<br>")
-                lines.append("---")
-                lines.append("<br>")
-                lines.append("")
-                lines.append(f"<a id=\"{safe_id}\"></a>")
+                
+                lines.extend(["<br>", "---", "<br>", ""])
+                lines.append(f"<a id=\"{item_data['safe_id']}\"></a>")
                 lines.append(f"### {item.title}")
                 lines.append("")
+                
                 if summary:
-                    lines.append("**Metadata**")
-                    lines.append("")
-                    lines.append(summary.metadata_markdown)
-                    lines.append("")
+                    topic_cfg = next((t for t in config.topics if t.topic_id in item.topic_ids), None)
+                    max_score = 4.0 * len(topic_cfg.keywords) if topic_cfg and topic_cfg.keywords else 4.0
+                    relevance_pct = min(round(item.relevance_score / max_score * 100), 100)
+                    metadata_with_relevance = (
+                        summary.metadata_markdown
+                        + f"\n- Relevance: {item.relevance_score:.1f} ({relevance_pct}%)"
+                    )
+                    lines.extend(["**Metadata**", "", metadata_with_relevance, ""])
                     if summary.provider != "noop":
-                        lines.append("**AI Summary**")
-                        lines.append("")
-                        lines.append(summary.short_summary)
-                        lines.append("")
+                        lines.extend(["**AI Summary**", "", summary.short_summary, ""])
                     if summary.source_excerpt:
-                        lines.append("**Abstract / Source Text**")
-                        lines.append("")
-                        lines.append(f"> {summary.source_excerpt}")
-                        lines.append("")
+                        lines.extend(["**Abstract / Source Text**", "", f"> {summary.source_excerpt}", ""])
                 else:
                     lines.append("- Summary: Not generated.")
                 lines.append("")
+                
         return "\n".join(lines).rstrip() + "\n"
 
     def _generate_wordcloud(self, text: str, output_path: Path) -> bool:
@@ -243,9 +235,7 @@ class MarkdownJsonReportWriter(ReportWriter):
                 if topic_id in known_topics:
                     grouped[topic_id].append(record)
         for topic_id in grouped:
-            grouped[topic_id].sort(
-                key=lambda r: r["item"].raw_payload.get("_relevance_score", 0.0), reverse=True
-            )
+            grouped[topic_id].sort(key=lambda r: r["item"].relevance_score, reverse=True)
         return grouped
 
     def _record_to_json(self, record: dict[str, Any]) -> dict[str, Any]:
@@ -262,6 +252,7 @@ class MarkdownJsonReportWriter(ReportWriter):
             "url": item.url,
             "doi": item.doi,
             "topic_ids": item.topic_ids,
+            "relevance_score": item.relevance_score,
             "abstract_or_body": item.abstract_or_body,
             "summary": {
                 "provider": summary.provider,

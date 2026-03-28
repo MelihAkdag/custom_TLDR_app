@@ -100,17 +100,12 @@ def canonicalize_title(title: str) -> str:
 def build_identity_key(title: str, doi: str | None, url: str | None, abstract: str | None = None) -> str:
     """
     Build a unique key for an item to prevent duplicates.
-    Uses a normalized title as the primary identifier. This ensures that the same
-    paper found across different sources (with different DOIs, URLs, or abstract availability)
-    is correctly merged into a single entry.
+    Prioritizes a hash of the cleaned title to ensure cross-source deduplication
+    even when DOIs or URLs differ.
     """
     clean_title = canonicalize_title(title)
-    
-    # We use a hash of the cleaned title. For research papers and news, 
-    # titles are generally unique enough within a weekly window.
     content_blob = clean_title.encode("utf-8")
     content_hash = hashlib.sha256(content_blob).hexdigest()
-    
     return f"title_hash:{content_hash}"
 
 
@@ -142,3 +137,8 @@ def strip_html(value: str | None) -> str | None:
     if not value:
         return None
     return re.sub(r"<[^>]+>", " ", value).replace("\n", " ").strip()
+
+
+def make_safe_id(value: str | Any) -> str:
+    """Sanitize a string (like an item_id or title) for use as a Markdown/HTML header anchor."""
+    return str(value).replace(":", "-").replace(".", "-").replace("/", "-").replace(" ", "-")
