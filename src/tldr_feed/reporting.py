@@ -72,10 +72,7 @@ class MarkdownJsonReportWriter(ReportWriter):
         lines = [
             f"# {report_title}",
             "",
-            f"- Run ID: `{run.run_id}`",
-            f"- Week: `{run.requested_week}`",
             f"- Window: `{run.window_start.isoformat()}` to `{run.window_end.isoformat()}`",
-            f"- Status: `{run.status}`",
             f"- Sources queried: {', '.join(sorted(run.source_stats)) if run.source_stats else 'None'}",
             f"- New items found: {sum(stats.get('new_items', 0) for stats in run.source_stats.values())}",
         ]
