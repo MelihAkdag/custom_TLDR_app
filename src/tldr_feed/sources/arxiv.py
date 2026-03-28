@@ -10,6 +10,7 @@ from .base import SourceAdapter
 
 class ArxivAdapter(SourceAdapter):
     source_name = "arxiv"
+    item_type = "paper"
     default_base_url = "https://export.arxiv.org/api/query"
 
     def search(self, topic: TopicProfile, start_date: date, end_date: date) -> list[RawItem]:

@@ -15,6 +15,7 @@ from ..models import RawItem, SourceSettings, TopicProfile
 
 class SourceAdapter(ABC):
     source_name: str
+    item_type: str
 
     def __init__(self, settings: SourceSettings) -> None:
         self.settings = settings

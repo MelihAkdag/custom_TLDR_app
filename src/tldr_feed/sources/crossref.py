@@ -9,6 +9,7 @@ from .base import SourceAdapter
 
 class CrossrefAdapter(SourceAdapter):
     source_name = "crossref"
+    item_type = "paper"
     default_base_url = "https://api.crossref.org/works"
 
     def search(self, topic: TopicProfile, start_date: date, end_date: date) -> list[RawItem]:

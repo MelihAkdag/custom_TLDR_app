@@ -12,6 +12,7 @@ from .base import SourceAdapter
 
 class NewsRssAdapter(SourceAdapter):
     source_name = "news_rss"
+    item_type = "news_article"
     default_base_url = "https://news.google.com/rss/search"
 
     def search(self, topic: TopicProfile, start_date: date, end_date: date) -> list[RawItem]:

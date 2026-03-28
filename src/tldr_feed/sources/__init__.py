@@ -4,10 +4,8 @@ from ..models import SourceSettings
 from .arxiv import ArxivAdapter
 from .base import SourceAdapter
 from .crossref import CrossrefAdapter
-from .google_scholar import GoogleScholarAdapter
 from .news_rss import NewsRssAdapter
 from .openalex import OpenAlexAdapter
-from .scopus import ScopusAdapter
 
 
 SOURCE_REGISTRY: dict[str, type[SourceAdapter]] = {
@@ -15,8 +13,6 @@ SOURCE_REGISTRY: dict[str, type[SourceAdapter]] = {
     "openalex": OpenAlexAdapter,
     "crossref": CrossrefAdapter,
     "news_rss": NewsRssAdapter,
-    "google_scholar": GoogleScholarAdapter,
-    "scopus": ScopusAdapter,
 }
 
 

@@ -24,6 +24,7 @@ from tldr_feed.utils import utc_now
 
 class FakePrimaryAdapter(SourceAdapter):
     source_name = "fake_primary"
+    item_type = "paper"
 
     def search(self, topic: TopicProfile, start_date: date, end_date: date) -> list[RawItem]:
         return [
@@ -60,6 +61,7 @@ class FakePrimaryAdapter(SourceAdapter):
 
 class FakeSecondaryAdapter(SourceAdapter):
     source_name = "fake_secondary"
+    item_type = "paper"
 
     def search(self, topic: TopicProfile, start_date: date, end_date: date) -> list[RawItem]:
         return [
@@ -82,6 +84,7 @@ class FakeSecondaryAdapter(SourceAdapter):
 
 class BrokenAdapter(SourceAdapter):
     source_name = "broken_source"
+    item_type = "paper"
 
     def search(self, topic: TopicProfile, start_date: date, end_date: date) -> list[RawItem]:
         raise RuntimeError("boom")
@@ -89,6 +92,7 @@ class BrokenAdapter(SourceAdapter):
 
 class FakeNewsAdapter(SourceAdapter):
     source_name = "fake_news"
+    item_type = "news_article"
 
     def search(self, topic: TopicProfile, start_date: date, end_date: date) -> list[RawItem]:
         return [
@@ -111,6 +115,7 @@ class FakeNewsAdapter(SourceAdapter):
 
 class FakeLanguageAdapter(SourceAdapter):
     source_name = "fake_language"
+    item_type = "paper"
 
     def search(self, topic: TopicProfile, start_date: date, end_date: date) -> list[RawItem]:
         return [

@@ -18,12 +18,6 @@ sources:
     enabled: true
     timeout_seconds: 20
   
-  google_scholar:
-    enabled: false
-    
-  scopus:
-    enabled: false
-  
   news_rss:
     enabled: true
     max_results: 10

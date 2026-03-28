@@ -24,8 +24,6 @@ Working today:
 
 
 Not implemented in v1:
-- Google Scholar collection
-- Scopus collection
 - scheduled automation/orchestration
 
 ## Pipeline

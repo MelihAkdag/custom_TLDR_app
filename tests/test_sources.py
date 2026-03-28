@@ -79,6 +79,7 @@ class SourceParsingTests(unittest.TestCase):
 
 class DummyAdapter(SourceAdapter):
     source_name = "dummy"
+    item_type = "paper"
 
     def search(self, topic: TopicProfile, start_date, end_date):
         return []

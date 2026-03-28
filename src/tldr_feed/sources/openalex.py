@@ -9,6 +9,7 @@ from .base import SourceAdapter
 
 class OpenAlexAdapter(SourceAdapter):
     source_name = "openalex"
+    item_type = "paper"
     default_base_url = "https://api.openalex.org/works"
 
     def search(self, topic: TopicProfile, start_date: date, end_date: date) -> list[RawItem]:

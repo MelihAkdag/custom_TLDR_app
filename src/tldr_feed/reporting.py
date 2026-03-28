@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from .models import AppConfig, NormalizedItem, RunRecord, SummaryRecord
+from .sources import SOURCE_REGISTRY
 from .utils import ensure_directory, to_iso_date
 
 try:
@@ -68,12 +69,20 @@ class MarkdownJsonReportWriter(ReportWriter):
         target_dir: Path,
     ) -> str:
         grouped = self._group_by_topic(config, items_with_summaries)
+        type_sources = []
+        type_new_items = 0
+        for src, stats in run.source_stats.items():
+            adapter_cls = SOURCE_REGISTRY.get(src)
+            if adapter_cls and getattr(adapter_cls, "item_type", None) == item_type_filter:
+                type_sources.append(src)
+                type_new_items += stats.get("new_items", 0)
+
         lines = [
             f"# {report_title}",
             "",
             f"- Window: `{run.window_start.isoformat()}` to `{run.window_end.isoformat()}`",
-            f"- Sources queried: {', '.join(sorted(run.source_stats)) if run.source_stats else 'None'}",
-            f"- New items found: {sum(stats.get('new_items', 0) for stats in run.source_stats.values())}",
+            f"- Sources queried: {', '.join(sorted(type_sources)) if type_sources else 'None'}",
+            f"- New items found: {type_new_items}",
         ]
         if run.errors:
             lines.extend(["", "## Partial Failures", ""])
@@ -140,7 +149,7 @@ class MarkdownJsonReportWriter(ReportWriter):
                 item: NormalizedItem = record["item"]
                 summary: SummaryRecord | None = record["summary"]
                 safe_id = str(item.item_id).replace(":", "-").replace(".", "-").replace("/", "-")
-                lines.append("<br><br>")
+                lines.append("<br>")
                 lines.append("---")
                 lines.append("<br>")
                 lines.append("")
