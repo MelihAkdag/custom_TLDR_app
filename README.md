@@ -8,23 +8,17 @@ The project fetches candidates from configured sources, filters them by topic re
 
 ## Current Status
 
-The current implementation is intended for manual validation before periodic automation.
-
-Working today:
 - arXiv collection
 - OpenAlex collection
 - Crossref collection
 - `news_rss` keyword news collection
-- relevance filtering before summarization
+- Relevance filtering before summarization
 - Semantic Scholar metadata enrichment
-- landing-page abstract fallback for papers missing API abstracts
-- Azure OpenAI summarization
-- Ollama local-model summarization
+- Landing-page abstract fallback for papers missing API abstracts
+- OpenAI, Azure OpenAI, Gemini, Ollama, and deterministic summarization
 - Markdown and JSON weekly reports
-
-
-Not implemented in v1:
-- scheduled automation/orchestration
+- Scheduled automation via crontab
+- Email reports delivery using embedded HTML
 
 ## Pipeline
 
@@ -82,6 +76,14 @@ cp .env.example .env
 
 If your shell environment already provides summarizer variables, `.env` is optional. Otherwise set one of these options.
 
+OpenAI:
+
+```env
+SUMMARIZER_PROVIDER=openai
+OPENAI_API_KEY=sk-...
+OPENAI_MODEL=gpt-4o-mini
+```
+
 Azure OpenAI:
 
 ```env
@@ -92,6 +94,14 @@ AZURE_OPENAI_API_VERSION=2024-10-21
 AZURE_OPENAI_DEPLOYMENT=...
 ```
 
+Gemini:
+
+```env
+SUMMARIZER_PROVIDER=gemini
+GEMINI_API_KEY=...
+GEMINI_MODEL=gemini-2.5-flash
+```
+
 Ollama:
 
 ```env
@@ -99,6 +109,17 @@ SUMMARIZER_PROVIDER=ollama
 OLLAMA_BASE_URL=http://127.0.0.1:11434
 OLLAMA_MODEL=llama3.1:8b
 OLLAMA_TIMEOUT_SECONDS=120
+```
+
+Email Settings (Optional):
+
+```env
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USERNAME=your-email@gmail.com
+SMTP_PASSWORD=your-app-password
+EMAIL_FROM=your-email@gmail.com
+EMAIL_TO=recipient1@example.com,recipient2@example.com
 ```
 
 ## Topics Configuration
@@ -233,43 +254,6 @@ news_rss:
 
 ## Manual Pipeline
 
-This is the current recommended workflow.
-
-### Corporate Network TLS Setup
-
-If you are on a work network that inspects HTTPS traffic, keep SSL verification enabled and point the collector to the company CA bundle.
-
-One-time shell setup for the current terminal:
-
-```bash
-export TLDR_FEED_CA_BUNDLE=/absolute/path/to/company-root-ca.pem
-```
-
-If you prefer to keep it in your local `.env`, add:
-
-```env
-TLDR_FEED_CA_BUNDLE=/absolute/path/to/company-root-ca.pem
-```
-
-You can also pin the same CA bundle in `config/sources.yaml`:
-
-```yaml
-sources:
-  openalex:
-    enabled: true
-    verify_ssl: true
-    ca_bundle: "/absolute/path/to/company-root-ca.pem"
-```
-
-Recommended manual commands on a corporate network:
-
-```bash
-export TLDR_FEED_CA_BUNDLE=/absolute/path/to/company-root-ca.pem
-PYTHONPATH=src python3 -m tldr_feed.cli collect --week 2026-W13
-PYTHONPATH=src python3 -m tldr_feed.cli summarize --run-id <RUN_ID>
-PYTHONPATH=src python3 -m tldr_feed.cli report --run-id <RUN_ID>
-```
-
 ### 1. Start Fresh
 
 If you want a clean test run:
@@ -324,13 +308,31 @@ PYTHONPATH=src python3 -m tldr_feed.cli report --run-id <RUN_ID>
 
 This does not fetch or summarize again. It only rebuilds the report from existing stored data.
 
-### 5. One-Command Run
+### 5. One-Command Run (with Email)
 
-If you want the whole flow in one command:
+If you want the whole flow in one command and have emailing configured:
 
 ```bash
-PYTHONPATH=src python3 -m tldr_feed.cli run-weekly --week 2026-W12
+PYTHONPATH=src python3 -m tldr_feed.cli run-weekly --week 2026-W12 --email
 ```
+
+Or just use the provided script to ensure virtual environments are active:
+```bash
+./scripts/run_and_email.sh
+```
+
+## Scheduled Automation
+
+To run the pipeline automatically, such as every Monday at 8 AM, use the provided `run_and_email.sh` with a cronjob.
+
+1. Edit your crontab:
+   ```bash
+   crontab -e
+   ```
+2. Insert the following entry (adjust your absolute paths):
+   ```cron
+   0 8 * * 1 /Users/yourusername/Projects/custom_TLDR_app/scripts/run_and_email.sh >> /tmp/tldr_cron.log 2>&1
+   ```
 
 ## Inspecting Progress
 
@@ -381,22 +383,16 @@ The LLM is used after filtering, for summarization only.
 
 ## Troubleshooting
 
-If summarize fails with Azure errors:
-- confirm `.env` or shell variables are present
-- confirm `SUMMARIZER_PROVIDER=azure_openai`
-- confirm `AZURE_OPENAI_API_VERSION` is set
-- confirm the deployment name is correct
-
 If summarize fails with Ollama errors:
 - confirm `SUMMARIZER_PROVIDER=ollama`
 - confirm Ollama is running locally
 - confirm `OLLAMA_MODEL` matches a model installed in Ollama
 - confirm `OLLAMA_BASE_URL` points to the running Ollama server
 
-If collect fails with `SSL verification failed`:
-- confirm you are using the company CA bundle, not disabling verification
-- export `TLDR_FEED_CA_BUNDLE=/absolute/path/to/company-root-ca.pem`
-- rerun `PYTHONPATH=src python3 -m tldr_feed.cli collect --week 2026-W13`
+If summarize fails with Azure/OpenAI/Gemini errors:
+- confirm `.env` or shell variables are present
+- confirm `SUMMARIZER_PROVIDER` is set correctly
+- confirm the deployment name is correct
 
 If the report is noisy:
 - raise `min_relevance_score`
@@ -407,7 +403,6 @@ If the report is noisy:
 If many papers have no abstract:
 - keep `semantic_scholar.enabled: true`
 - keep `landing_page.enabled: true`
-- note that some publishers block scraping or only expose the abstract through JavaScript/login walls
 
 If you only want to regenerate Markdown:
 
@@ -424,7 +419,8 @@ python3 -m unittest discover -s tests
 python3 -m compileall src tests
 ```
 
-## Next Step
+## Author
 
-The next planned phase is periodic automation. Before that, the recommended path is:
+- Melih Akdağ
+- Date: 2026-04-07
 

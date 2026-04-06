@@ -18,6 +18,7 @@ from tldr_feed.summarization import (
     AzureOpenAISummarizer,
     DeterministicSummarizer,
     OllamaSummarizer,
+    OpenAISummarizer,
     build_summarizer_from_env,
 )
 from tldr_feed.utils import utc_now
@@ -79,6 +80,54 @@ class SummarizationTests(unittest.TestCase):
         finally:
             _restore_env(previous)
 
+    def test_build_summarizer_from_env_selects_openai(self) -> None:
+        previous = {key: os.environ.get(key) for key in _SUMMARIZER_ENV_KEYS}
+        try:
+            os.environ["SUMMARIZER_PROVIDER"] = "openai"
+            os.environ["OPENAI_API_KEY"] = "test-sk"
+
+            summarizer = build_summarizer_from_env()
+
+            self.assertIsInstance(summarizer, OpenAISummarizer)
+        finally:
+            _restore_env(previous)
+
+    def test_openai_payload_uses_chat_completion_shape(self) -> None:
+        previous = {key: os.environ.get(key) for key in _SUMMARIZER_ENV_KEYS}
+        try:
+            os.environ["OPENAI_API_KEY"] = "test-sk"
+            os.environ["OPENAI_MODEL"] = "gpt-4o"
+
+            summarizer = OpenAISummarizer()
+            payload = summarizer._build_request_payload("Test prompt")
+
+            self.assertEqual(payload["model"], "gpt-4o")
+            self.assertEqual(payload["max_tokens"], 1024)
+            self.assertEqual(payload["temperature"], 0.2)
+            self.assertEqual(payload["messages"][1]["content"], "Test prompt")
+            self.assertNotIn("max_completion_tokens", payload)
+        finally:
+            _restore_env(previous)
+
+    def test_openai_summary_uses_response_field(self) -> None:
+        previous = {key: os.environ.get(key) for key in _SUMMARIZER_ENV_KEYS}
+        try:
+            os.environ["OPENAI_API_KEY"] = "test-sk"
+            os.environ["OPENAI_MODEL"] = "gpt-4o-mini"
+            summarizer = OpenAISummarizer()
+            item = _build_item(abstract_or_body="A short abstract about autonomous vessels.")
+
+            fake_payload = {
+                "choices": [{"message": {"content": "Standard API summary"}}]
+            }
+            with patch("tldr_feed.summarization.urlopen", return_value=_FakeResponse(fake_payload)):
+                summary = summarizer.summarize(item)
+
+            self.assertEqual(summary.short_summary, "Standard API summary")
+            self.assertEqual(summary.provider, "openai:gpt-4o-mini")
+        finally:
+            _restore_env(previous)
+
     def test_build_summarizer_from_env_selects_ollama(self) -> None:
         previous = {key: os.environ.get(key) for key in _SUMMARIZER_ENV_KEYS}
         try:
@@ -135,6 +184,8 @@ _SUMMARIZER_ENV_KEYS = _AZURE_ENV_KEYS + [
     "OLLAMA_BASE_URL",
     "OLLAMA_MODEL",
     "OLLAMA_TIMEOUT_SECONDS",
+    "OPENAI_API_KEY",
+    "OPENAI_MODEL",
 ]
 
 

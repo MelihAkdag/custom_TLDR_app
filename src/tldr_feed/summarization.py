@@ -49,6 +49,8 @@ def build_summarizer_from_env() -> Summarizer:
     provider = os.getenv("SUMMARIZER_PROVIDER", "azure_openai").strip().casefold()
     if provider in {"azure", "azure_openai"}:
         return AzureOpenAISummarizer()
+    if provider == "openai":
+        return OpenAISummarizer()
     if provider == "ollama":
         return OllamaSummarizer()
     if provider == "gemini":
@@ -58,7 +60,7 @@ def build_summarizer_from_env() -> Summarizer:
     if provider == "noop":
         return NoopSummarizer()
     raise ValueError(
-        "Unsupported SUMMARIZER_PROVIDER. Expected one of: azure_openai, ollama, gemini, deterministic, noop."
+        "Unsupported SUMMARIZER_PROVIDER. Expected one of: azure_openai, openai, ollama, gemini, deterministic, noop."
     )
 
 
@@ -152,6 +154,69 @@ class AzureOpenAISummarizer(Summarizer):
     def _uses_gpt5_style_tokens(self) -> bool:
         deployment = self.deployment.casefold()
         return deployment.startswith(("gpt-5", "o1", "o3", "o4"))
+
+
+class OpenAISummarizer(Summarizer):
+    @property
+    def provider_name(self) -> str:
+        return "openai"
+
+    @property
+    def full_provider_name(self) -> str:
+        return f"openai:{self.model}"
+
+    def __init__(self) -> None:
+        self.api_key = os.getenv("OPENAI_API_KEY", "")
+        self.model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+        if not self.api_key:
+            raise ValueError("Missing OpenAI environment variable: OPENAI_API_KEY")
+
+    def _request_summary(self, prompt: str) -> str:
+        url = "https://api.openai.com/v1/chat/completions"
+        body = json.dumps(self._build_request_payload(prompt)).encode("utf-8")
+        request = Request(
+            url,
+            data=body,
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {self.api_key}",
+            },
+            method="POST",
+        )
+        try:
+            with urlopen(request, timeout=45) as response:
+                payload = json.loads(response.read().decode("utf-8"))
+        except HTTPError as exc:
+            error_body = exc.read().decode("utf-8", errors="replace")
+            raise RuntimeError(
+                f"OpenAI request failed with HTTP {exc.code}. Response body: {error_body}"
+            ) from exc
+        
+        message = payload["choices"][0]["message"]["content"]
+        return str(message).strip()
+
+    def _build_request_payload(self, prompt: str) -> dict[str, object]:
+        messages = [
+            {
+                "role": "system",
+                "content": "Summarize only from the provided text. Keep it concise and factual.",
+            },
+            {"role": "user", "content": prompt},
+        ]
+        payload: dict[str, object] = {
+            "model": self.model,
+            "messages": messages
+        }
+        if self._uses_o_series_tokens():
+            payload["max_completion_tokens"] = 1024
+        else:
+            payload["temperature"] = 0.2
+            payload["max_tokens"] = 1024
+        return payload
+
+    def _uses_o_series_tokens(self) -> bool:
+        model_name = self.model.casefold()
+        return model_name.startswith(("o1", "o3", "o4"))
 
 
 class OllamaSummarizer(Summarizer):
