@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 from typing import Any
 
-from .models import AppConfig, SourceSettings, TopicProfile
+from .models import AppConfig, SourceSettings, TopicProfile, EmailSettings
 
 
 def load_dotenv(dotenv_path: Path) -> None:
@@ -189,7 +189,20 @@ def load_config(config_dir: str | Path = "config") -> AppConfig:
 
     topics = _build_topics(topics_payload.get("topics", []))
     sources = _build_sources(sources_payload.get("sources", {}))
-    return AppConfig(topics=topics, sources=sources, config_dir=str(config_path))
+    
+    email_settings = None
+    smtp_host = os.environ.get("SMTP_HOST")
+    if smtp_host:
+        email_settings = EmailSettings(
+            smtp_host=smtp_host,
+            smtp_port=int(os.environ.get("SMTP_PORT", 587)),
+            smtp_username=os.environ.get("SMTP_USERNAME", ""),
+            smtp_password=os.environ.get("SMTP_PASSWORD", ""),
+            email_from=os.environ.get("EMAIL_FROM", os.environ.get("SMTP_USERNAME", "")),
+            email_to=[e.strip() for e in os.environ.get("EMAIL_TO", "").split(",") if e.strip()],
+        )
+
+    return AppConfig(topics=topics, sources=sources, config_dir=str(config_path), email=email_settings)
 
 
 def _resolve_config_path(config_dir: Path, stem: str) -> Path:

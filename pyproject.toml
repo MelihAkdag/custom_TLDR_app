@@ -8,6 +8,9 @@ version = "0.1.0"
 description = "Generic weekly research TLDR automation for papers and social posts."
 readme = "README.md"
 requires-python = ">=3.12"
+dependencies = [
+    "markdown>=3.0.0"
+]
 authors = [{ name = "Codex" }]
 
 [project.scripts]

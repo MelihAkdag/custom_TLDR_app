@@ -29,10 +29,21 @@ class SourceSettings:
 
 
 @dataclass(slots=True)
+class EmailSettings:
+    smtp_host: str
+    smtp_port: int
+    smtp_username: str
+    smtp_password: str
+    email_from: str
+    email_to: list[str]
+
+
+@dataclass(slots=True)
 class AppConfig:
     topics: list[TopicProfile]
     sources: dict[str, SourceSettings]
     config_dir: str
+    email: EmailSettings | None = None
 
 
 @dataclass(slots=True)

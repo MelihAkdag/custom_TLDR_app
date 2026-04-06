@@ -33,6 +33,7 @@ def build_parser() -> argparse.ArgumentParser:
     run_weekly = subparsers.add_parser("run-weekly", help="Collect, summarize, and report in one command.")
     run_weekly.add_argument("--week", help="ISO week in YYYY-WW or YYYY-W## format")
     run_weekly.add_argument("--output-dir", default="reports")
+    run_weekly.add_argument("--email", action="store_true", help="Email the report after generating it.")
     return parser
 
 
@@ -70,7 +71,13 @@ def main() -> None:
             run = collect_items(config, storage, requested_week, start_date, end_date)
             summarize_stats = summarize_run(storage, run.run_id, summarizer=build_summarizer_from_env())
             outputs = write_report(storage, config, run.run_id, output_dir=args.output_dir)
-            print({"run_id": run.run_id, "summaries": summarize_stats, "reports": outputs})
+            
+            email_sent = False
+            if getattr(args, "email", False):
+                from .emailing import send_email_report
+                email_sent = send_email_report(config, outputs, run)
+                
+            print({"run_id": run.run_id, "summaries": summarize_stats, "reports": outputs, "email_sent": email_sent})
             return
     finally:
         storage.close()
