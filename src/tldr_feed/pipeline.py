@@ -112,11 +112,12 @@ def write_report(
     config: AppConfig,
     run_id: str,
     output_dir: str | Path = "reports",
+    summarizer: Summarizer | None = None,
 ) -> dict[str, str]:
     writer = MarkdownJsonReportWriter()
     run = storage.get_run(run_id)
     records = storage.list_run_items_with_summaries(run_id)
-    return writer.write(Path(output_dir), config, run, records)
+    return writer.write(Path(output_dir), config, run, records, summarizer)
 
 
 def normalize_raw_item(raw_item: RawItem, relevance_score: float = 0.0) -> NormalizedItem:

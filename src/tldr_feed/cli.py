@@ -62,15 +62,17 @@ def main() -> None:
             return
 
         if args.command == "report":
-            outputs = write_report(storage, config, args.run_id, output_dir=args.output_dir)
+            summarizer = build_summarizer_from_env()
+            outputs = write_report(storage, config, args.run_id, output_dir=args.output_dir, summarizer=summarizer)
             print(outputs)
             return
 
         if args.command == "run-weekly":
             requested_week, start_date, end_date = _resolve_window(week=args.week)
             run = collect_items(config, storage, requested_week, start_date, end_date)
-            summarize_stats = summarize_run(storage, run.run_id, summarizer=build_summarizer_from_env())
-            outputs = write_report(storage, config, run.run_id, output_dir=args.output_dir)
+            summarizer = build_summarizer_from_env()
+            summarize_stats = summarize_run(storage, run.run_id, summarizer=summarizer)
+            outputs = write_report(storage, config, run.run_id, output_dir=args.output_dir, summarizer=summarizer)
             
             email_sent = False
             if getattr(args, "email", False):

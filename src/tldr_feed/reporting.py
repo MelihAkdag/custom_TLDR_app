@@ -8,6 +8,7 @@ from typing import Any
 
 from .models import AppConfig, NormalizedItem, RunRecord, SummaryRecord
 from .sources import SOURCE_REGISTRY
+from .summarization import Summarizer
 from .utils import ensure_directory, make_safe_id, to_iso_date
 
 try:
@@ -23,6 +24,7 @@ class ReportWriter(ABC):
         config: AppConfig,
         run: RunRecord,
         items_with_summaries: list[dict[str, Any]],
+        summarizer: Summarizer | None = None,
     ) -> dict[str, str]:
         raise NotImplementedError
 
@@ -34,6 +36,7 @@ class MarkdownJsonReportWriter(ReportWriter):
         config: AppConfig,
         run: RunRecord,
         items_with_summaries: list[dict[str, Any]],
+        summarizer: Summarizer | None = None,
     ) -> dict[str, str]:
         iso_year, iso_week = run.window_end.isocalendar()[:2]
         target_dir = ensure_directory(output_root / str(iso_year) / f"{iso_week:02d}")
@@ -51,7 +54,7 @@ class MarkdownJsonReportWriter(ReportWriter):
             ("news_article", "news.md", "News Report"),
         ]:
             md_content = self._build_markdown_for_type(
-                config, run, items_with_summaries, item_type, title, target_dir
+                config, run, items_with_summaries, item_type, title, target_dir, summarizer
             )
             md_path = target_dir / filename
             md_path.write_text(md_content, encoding="utf-8")
@@ -67,6 +70,7 @@ class MarkdownJsonReportWriter(ReportWriter):
         item_type_filter: str,
         report_title: str,
         target_dir: Path,
+        summarizer: Summarizer | None = None,
     ) -> str:
         grouped = self._group_by_topic(config, items_with_summaries)
         
@@ -127,14 +131,27 @@ class MarkdownJsonReportWriter(ReportWriter):
             lines.extend(["", "## Warnings", ""])
             lines.extend([f"- {warning}" for warning in run.warnings])
 
-        # 3. Trend / WordCloud
+        # 3. Executive Summary (API providers only)
+        if summarizer and summarizer.supports_executive_summary and report_items:
+            all_type_records = [
+                item_data["record"]
+                for topic_data in report_items
+                for item_data in topic_data["items"]
+            ]
+            try:
+                exec_summary = summarizer.generate_executive_summary(all_type_records, item_type_filter)
+                lines.extend(["", "## Executive Summary", "", exec_summary, ""])
+            except Exception:
+                pass
+
+        # 4. Trend / WordCloud
         if wordcloud_text_chunks:
             full_text = " ".join(wordcloud_text_chunks)
             wc_filename = f"wordcloud_{item_type_filter}.png"
             if self._generate_wordcloud(full_text, target_dir / wc_filename):
                 lines.extend(["", "## Week's Trend", "", f"![Word Cloud]({wc_filename})", ""])
 
-        # 4. Table of Contents
+        # 5. Table of Contents
         if report_items:
             lines.extend(["", "## Table of Contents"])
             for topic_data in report_items:
@@ -143,7 +160,7 @@ class MarkdownJsonReportWriter(ReportWriter):
                     item = item_data["record"]["item"]
                     lines.append(f"{idx}. [{item.title}](#{item_data['safe_id']})")
 
-        # 5. Main Content
+        # 6. Main Content
         for topic_data in report_items:
             lines.extend(["", f"## {topic_data['display_name']}", ""])
             for item_data in topic_data["items"]:
@@ -167,7 +184,7 @@ class MarkdownJsonReportWriter(ReportWriter):
                     lines.extend(["**Metadata**", "", metadata_with_relevance, ""])
                     if summary.provider != "noop":
                         lines.extend(["**AI Summary**", "", summary.short_summary, ""])
-                    if summary.source_excerpt:
+                    if summary.source_excerpt and item_type_filter != "news_article":
                         lines.extend(["**Abstract / Source Text**", "", f"> {summary.source_excerpt}", ""])
                 else:
                     lines.append("- Summary: Not generated.")

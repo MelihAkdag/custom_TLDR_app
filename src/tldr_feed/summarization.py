@@ -22,6 +22,14 @@ class Summarizer(ABC):
     def full_provider_name(self) -> str:
         return self.provider_name
 
+    @property
+    def supports_executive_summary(self) -> bool:
+        return False
+
+    def generate_executive_summary(self, items: list[dict], item_type: str) -> str:
+        prompt = build_executive_summary_prompt(items, item_type)
+        return self._request_summary(prompt)
+
     def summarize(self, item: NormalizedItem) -> SummaryRecord:
         metadata_markdown = build_metadata_markdown(item)
         excerpt = truncate_text(item.abstract_or_body, limit=10000)
@@ -55,12 +63,16 @@ def build_summarizer_from_env() -> Summarizer:
         return OllamaSummarizer()
     if provider == "gemini":
         return GeminiSummarizer()
+    if provider in {"claude", "anthropic"}:
+        return ClaudeAISummarizer()
+    if provider == "mistral":
+        return MistralSummarizer()
     if provider in {"deterministic", "local"}:
         return DeterministicSummarizer()
     if provider == "noop":
         return NoopSummarizer()
     raise ValueError(
-        "Unsupported SUMMARIZER_PROVIDER. Expected one of: azure_openai, openai, ollama, gemini, deterministic, noop."
+        "Unsupported SUMMARIZER_PROVIDER. Expected one of: azure_openai, openai, ollama, gemini, claude, mistral, deterministic, noop."
     )
 
 
@@ -86,6 +98,7 @@ class NoopSummarizer(Summarizer):
 
 class AzureOpenAISummarizer(Summarizer):
     provider_name = "azure_openai"
+    supports_executive_summary = True
 
     def __init__(self) -> None:
         self.endpoint = os.getenv("AZURE_OPENAI_ENDPOINT", "").rstrip("/")
@@ -157,6 +170,8 @@ class AzureOpenAISummarizer(Summarizer):
 
 
 class OpenAISummarizer(Summarizer):
+    supports_executive_summary = True
+
     @property
     def provider_name(self) -> str:
         return "openai"
@@ -274,6 +289,8 @@ class OllamaSummarizer(Summarizer):
 
 
 class GeminiSummarizer(Summarizer):
+    supports_executive_summary = True
+
     @property
     def provider_name(self) -> str:
         return "gemini"
@@ -332,6 +349,94 @@ class GeminiSummarizer(Summarizer):
         }
 
 
+class ClaudeAISummarizer(Summarizer):
+    supports_executive_summary = True
+
+    @property
+    def provider_name(self) -> str:
+        return "claude"
+
+    @property
+    def full_provider_name(self) -> str:
+        return f"{self.provider_name}:{self.model}"
+
+    def __init__(self) -> None:
+        self.api_key = os.getenv("ANTHROPIC_API_KEY", "")
+        self.model = os.getenv("CLAUDE_MODEL", "claude-opus-4-6")
+        if not self.api_key:
+            raise ValueError("Missing Anthropic environment variable: ANTHROPIC_API_KEY")
+
+    def _request_summary(self, prompt: str) -> str:
+        try:
+            import anthropic
+        except ImportError as exc:
+            raise ImportError(
+                "The 'anthropic' package is required for ClaudeAISummarizer. "
+                "Install it with: pip install anthropic"
+            ) from exc
+
+        client = anthropic.Anthropic(api_key=self.api_key)
+        response = client.messages.create(
+            model=self.model,
+            max_tokens=1024,
+            system="Summarize only from the provided text. Keep it concise and factual.",
+            messages=[{"role": "user", "content": prompt}],
+        )
+        return str(response.content[0].text).strip()
+
+
+class MistralSummarizer(Summarizer):
+    supports_executive_summary = True
+
+    @property
+    def provider_name(self) -> str:
+        return "mistral"
+
+    @property
+    def full_provider_name(self) -> str:
+        return f"{self.provider_name}:{self.model}"
+
+    def __init__(self) -> None:
+        self.api_key = os.getenv("MISTRAL_API_KEY", "")
+        self.model = os.getenv("MISTRAL_MODEL", "mistral-small-latest")
+        if not self.api_key:
+            raise ValueError("Missing Mistral environment variable: MISTRAL_API_KEY")
+
+    def _request_summary(self, prompt: str) -> str:
+        url = "https://api.mistral.ai/v1/chat/completions"
+        body = json.dumps({
+            "model": self.model,
+            "messages": [
+                {
+                    "role": "system",
+                    "content": "Summarize only from the provided text. Keep it concise and factual.",
+                },
+                {"role": "user", "content": prompt},
+            ],
+            "temperature": 0.2,
+            "max_tokens": 1024,
+        }).encode("utf-8")
+        request = Request(
+            url,
+            data=body,
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {self.api_key}",
+            },
+            method="POST",
+        )
+        try:
+            with urlopen(request, timeout=45) as response:
+                payload = json.loads(response.read().decode("utf-8"))
+        except HTTPError as exc:
+            error_body = exc.read().decode("utf-8", errors="replace")
+            raise RuntimeError(
+                f"Mistral request failed with HTTP {exc.code}. Response body: {error_body}"
+            ) from exc
+        message = payload["choices"][0]["message"]["content"]
+        return str(message).strip()
+
+
 class DeterministicSummarizer(Summarizer):
     @property
     def provider_name(self) -> str:
@@ -368,6 +473,32 @@ def build_metadata_markdown(item: NormalizedItem) -> str:
         f"- Link: {item.url}",
     ]
     return "\n".join(lines)
+
+
+def build_executive_summary_prompt(items: list[dict], item_type: str) -> str:
+    type_label = "research papers" if item_type == "paper" else "news articles"
+    entries = []
+    for record in items:
+        item: NormalizedItem = record["item"]
+        summary: SummaryRecord | None = record["summary"]
+        summary_text = (
+            summary.short_summary
+            if summary and summary.provider != "noop" and summary.short_summary
+            else ""
+        )
+        entry = f"- {item.title}"
+        if summary_text:
+            entry += f": {summary_text}"
+        entries.append(entry)
+    entries_text = "\n".join(entries)
+    return (
+        f"You are writing the executive summary section of a weekly research digest covering {type_label}.\n"
+        f"Below is a list of {len(items)} items with their titles and AI-generated summaries.\n"
+        f"Write a concise executive summary (3-5 sentences) that captures the main themes, key findings, "
+        f"and notable developments across all items. Do not list individual items—synthesize across them.\n"
+        f"Do not include any introductory phrases like 'Here is a summary'. Start directly with the content.\n\n"
+        f"Items:\n{entries_text}"
+    )
 
 
 def build_summary_prompt(item: NormalizedItem, excerpt: str) -> str:
