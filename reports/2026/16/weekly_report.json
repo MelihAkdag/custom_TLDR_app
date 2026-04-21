@@ -1,20 +1,20 @@
 {
-  "run_id": "25c316075b8048bf86a83eb976ff9ee0",
+  "run_id": "b4c276a9658e405494c9823936bf8016",
   "requested_week": "2026-W16",
   "window_start": "2026-04-13",
   "window_end": "2026-04-19",
   "status": "success",
   "source_stats": {
     "crossref": {
-      "existing_items": 15,
+      "existing_items": 14,
       "fetched": 27,
-      "filtered_out": 12,
+      "filtered_out": 13,
       "new_items": 0
     },
     "news_rss": {
       "existing_items": 14,
-      "fetched": 48,
-      "filtered_out": 34,
+      "fetched": 49,
+      "filtered_out": 35,
       "new_items": 0
     },
     "openalex": {
@@ -579,35 +579,6 @@
             "metadata_markdown": "- Date: 2026-04-18\n- Authors: Marine Insight\n- DOI: N/A\n- Link: https://www.marineinsight.com/us-flagged-cargo-ship-goes-missing-with-six-crew-after-engine-failure-near-saipan/?utm_source=rss&utm_medium=rss&utm_campaign=us-flagged-cargo-ship-goes-missing-with-six-crew-after-engine-failure-near-saipan",
             "source_excerpt": "The 145-foot dry cargo vessel reported a disabled starboard engine while operating about 140 nautical miles north-northwest of Saipan.",
             "short_summary": "A 145-foot U.S.-flagged cargo ship with six crew members went missing after reporting a disabled starboard engine. The vessel was operating approximately 140 nautical miles north-northwest of Saipan when the failure occurred. No further contact has been made since the distress signal. Search efforts are underway."
-          }
-        },
-        {
-          "item_id": "ed2dfe7f3c02237fe7f4461baa539869a5803eeea07dd93ed433f8db736b792a",
-          "source": "crossref",
-          "source_id": "10.21203/rs.3.rs-9257406/v1",
-          "item_type": "paper",
-          "title": "Laser Scanning-Based Parameter Extraction for Ship Butt Weld Joints",
-          "authors_or_author": [
-            "Yi Shen",
-            "Sheng Zhang",
-            "Tao Ma",
-            "Yuanchao Lin",
-            "Lijia Tao",
-            "Mingxin Yuan"
-          ],
-          "published_at": "2026-04-15",
-          "url": "https://doi.org/10.21203/rs.3.rs-9257406/v1",
-          "doi": "10.21203/rs.3.rs-9257406/v1",
-          "topic_ids": [
-            "ship_autonomy"
-          ],
-          "relevance_score": 6.0,
-          "abstract_or_body": "Abstract                   To address the need for efficient and high-precision extraction of geometric parameters for three types of ship butt welds (I-groove, X-groove, and K-groove), an automatic weld parameter extraction algorithm based on laser scanning is proposed. First, point cloud surface separation is achieved through DBSCAN density clustering for I-groove welds and point cloud normal vector method for X-groove and K-groove welds. Subsequently, a universal parameter extraction module is constructed, incorporating a robust plate thickness calculation method and an adaptive groove angle extraction strategy. Finally, specialized parameter extraction strategies are designed according to the geometric characteristics of each weld type, forming a unified processing framework for multiple types of butt welds. Experimental results demonstrate that the mean absolute errors (MAE) for plate thickness and root gap of I-groove welds are 0.66 mm and 0.58 mm, respectively; the MAE for groove angles of X-groove and K-groove welds is maintained within 4°, while MAE for other parameters is controlled within 1 mm. Comparative experiments show that the proposed algorithm achieves superior measurement accuracy across all three weld types compared to traditional algorithms, with an 81.8% improvement over the slope analysis method, a 73.9% improvement over the height transition feature method, and an overall average accuracy improvement of approximately 77.9%.",
-          "summary": {
-            "provider": "mistral:mistral-large-latest",
-            "metadata_markdown": "- Date: 2026-04-15\n- Authors: Yi Shen, Sheng Zhang, Tao Ma, Yuanchao Lin, Lijia Tao, Mingxin Yuan\n- DOI: [10.21203/rs.3.rs-9257406/v1](https://doi.org/10.21203/rs.3.rs-9257406/v1)\n- Link: [https://doi.org/10.21203/rs.3.rs-9257406/v1](https://doi.org/10.21203/rs.3.rs-9257406/v1)",
-            "source_excerpt": "Abstract To address the need for efficient and high-precision extraction of geometric parameters for three types of ship butt welds (I-groove, X-groove, and K-groove), an automatic weld parameter extraction algorithm based on laser scanning is proposed. First, point cloud surface separation is achieved through DBSCAN density clustering for I-groove welds and point cloud normal vector method for X-groove and K-groove welds. Subsequently, a universal parameter extraction module is constructed, incorporating a robust plate thickness calculation method and an adaptive groove angle extraction strategy. Finally, specialized parameter extraction strategies are designed according to the geometric characteristics of each weld type, forming a unified processing framework for multiple types of butt welds. Experimental results demonstrate that the mean absolute errors (MAE) for plate thickness and root gap of I-groove welds are 0.66 mm and 0.58 mm, respectively; the MAE for groove angles of X-groove and K-groove welds is maintained within 4°, while MAE for other parameters is controlled within 1 mm. Comparative experiments show that the proposed algorithm achieves superior measurement accuracy across all three weld types compared to traditional algorithms, with an 81.8% improvement over the slope analysis method, a 73.9% improvement over the height transition feature method, and an overall average accuracy improvement of approximately 77.9%.",
-            "short_summary": "This paper presents an automated algorithm using laser scanning to extract geometric parameters for I-groove, X-groove, and K-groove ship butt welds. The method employs density clustering and normal vector techniques for surface separation, followed by a universal parameter extraction module with adaptive strategies for each weld type. Experimental results show mean absolute errors (MAE) of 0.66 mm for plate thickness and 0.58 mm for root gap in I-groove welds, while groove angle MAE for X-groove and K-groove welds remains under 4°. The algorithm outperforms traditional methods, achieving an average accuracy improvement of 77.9%."
           }
         },
         {

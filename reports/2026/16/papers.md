@@ -2,11 +2,11 @@
 
 - Window: `2026-04-13` to `2026-04-19`
 - Sources queried: crossref, openalex
-- Items in report: 22
+- Items in report: 21
 
 ## Executive Summary
 
-Recent research advances highlight key developments in autonomous maritime systems, AI-driven safety frameworks, and adaptive control technologies. Studies on **Maritime Autonomous Surface Ships (MASS)** dominate, with innovations in berth selection (e.g., Kaohsiung Port’s optimal mooring sites), risk assessment frameworks (STPA-FTA integration), and autonomous berthing systems achieving **62% trajectory error reduction** under harsh conditions. Safety and performance evaluations, such as the **EUM Database**, systematically quantify MASS claims, while dynamic obstacle avoidance and multi-object tracking (e.g., **MAAT**) enhance real-time navigation for unmanned vessels. Beyond maritime, AI’s societal impacts are explored, including **reduced prosocial behavior in automated retail** and **professional agency shifts in software engineering**, alongside technical breakthroughs like **adaptive fuzzy PID controllers** for mobile robots and **SOTIF-oriented safety frameworks** for autonomous vehicles. Emerging applications span **cooperative localization (BIND-USBL)**, energy-efficient electric vehicles, and **tissue engineering via PDGFRα-positive stem cells**, underscoring interdisciplinary progress in automation, resilience, and human-AI collaboration.
+Recent research highlights advancements in autonomous maritime and vehicle systems, emphasizing safety, efficiency, and adaptive control. Studies on **Maritime Autonomous Surface Ships (MASS)** focus on risk assessment frameworks (e.g., STPA-FTA), optimal berthing solutions, and dynamic trajectory tracking, with innovations like four-quadrant hydrodynamics reducing errors by up to 62%. Multi-object tracking (e.g., MAAT) and obstacle avoidance algorithms enhance real-time navigation for unmanned vessels, while cooperative localization (e.g., BIND-USBL) mitigates inertial drift in GPS-denied environments. **Autonomous vehicles** benefit from energy-optimized control (MPC) and safety frameworks (FTA-BN) addressing functional insufficiencies, with case studies identifying weather and occlusion as key failure contributors. **AI’s societal impact** is explored in retail (reduced prosocial behavior) and software engineering (junior vs. senior developer agency), alongside technical applications like retinal disease classification (V-MNet) and fault-tolerant USV formation control. Emerging themes include **human-AI collaboration**, **resilient system design**, and **data-driven decision-making**, with tools like the EUM database standardizing MASS performance claims.
 
 
 ## Table of Contents
@@ -24,18 +24,17 @@ Recent research advances highlight key developments in autonomous maritime syste
 10. [Dynamic Obstacle Avoidance Algorithm for Unmanned Vessels Based on FDWA and IBA*—IGWO Fusion](#b13b331cee1b81342b450832caaede4fbcad7ab3956deea1c7668ab336265ea2)
 11. [BIND-USBL: Bounding IMU Navigation Drift using USBL in Heterogeneous ASV-AUV Teams](#0778e5678779faafa0ca2146226307cb1157ef8026df997b64464b09841a4e62)
 12. [Model Predictive Control-Based Optimal Energy Management of Autonomous Electric Vehicles Under Cold Temperatures](#6339ee563e0536343086c9ad076ded6d4d6556198d3daf2b1874dcb68b54d3d1)
-13. [Laser Scanning-Based Parameter Extraction for Ship Butt Weld Joints](#ed2dfe7f3c02237fe7f4461baa539869a5803eeea07dd93ed433f8db736b792a)
-14. [From Junior to Senior: Allocating Agency and Navigating Professional Growth in Agentic AI-Mediated Software Engineering](#21faf04bf7cbd2989ad7fe17f8f395cb37a9375b46b72ca6bea4f4fb4bb9e092)
-15. [A vessel-guided multi-task deep learning framework with visual interpretability for simultaneous retinal vessel segmentation and multi-disease classification from fundus images](#d3f8f8c8809a6565c7c59bcb1805edb51a0e0776837cc2dc9e0f335f2206f3ed)
-16. [Design of Distributed Ship Systems in the Early Stage Design of Complex Vessels Through a Submarine Example](#b1ff874172e6468e753d398898edc617135cb7cef3667e2e81549e841aa99e8b)
-17. [Strategi Pengamanan Wilayah Laut oleh TNI AL Guna Pengawasan Kegiatan Ship-To-Ship Pulau Nipah Dalam Rangka Peningkatan Keamanan Maritim](#e1d628ae9357e2e27f4f18fbabc5ef7da7a2baf4c4b0f4e18d23c6910311e169)
-18. [Training for Merchant Ship Engineers and Wireless Operators](#f6552c8e48201562a6a9219a2417f2e5feee59afcf49b8104895fe0eaed8e3b2)
-19. [Book Review:
+13. [From Junior to Senior: Allocating Agency and Navigating Professional Growth in Agentic AI-Mediated Software Engineering](#21faf04bf7cbd2989ad7fe17f8f395cb37a9375b46b72ca6bea4f4fb4bb9e092)
+14. [A vessel-guided multi-task deep learning framework with visual interpretability for simultaneous retinal vessel segmentation and multi-disease classification from fundus images](#d3f8f8c8809a6565c7c59bcb1805edb51a0e0776837cc2dc9e0f335f2206f3ed)
+15. [Design of Distributed Ship Systems in the Early Stage Design of Complex Vessels Through a Submarine Example](#b1ff874172e6468e753d398898edc617135cb7cef3667e2e81549e841aa99e8b)
+16. [Strategi Pengamanan Wilayah Laut oleh TNI AL Guna Pengawasan Kegiatan Ship-To-Ship Pulau Nipah Dalam Rangka Peningkatan Keamanan Maritim](#e1d628ae9357e2e27f4f18fbabc5ef7da7a2baf4c4b0f4e18d23c6910311e169)
+17. [Training for Merchant Ship Engineers and Wireless Operators](#f6552c8e48201562a6a9219a2417f2e5feee59afcf49b8104895fe0eaed8e3b2)
+18. [Book Review:
                     <i>The Edwin Fox: How an Ordinary Sailing Ship Connected the World in the Age of Globalization, 1850–1914</i>
                     by Boyd Cothran and Adrian Shubert CothranBoydShubertAdrian. The Edwin Fox: How an Ordinary Sailing Ship Connected the World in the Age of Globalization, 1850–1914. Chapel Hill, NC: University of North Carolina Press, 2023. 296 pp., illustrations, maps, notes, bibliography, index. ISBN 978-1-4696-7655-5, $35 (hbk).](#62e3adab3046b09e697815e7457a190c858087814f3ec8cfc301d3a5c78174f3)
-20. [A multi-task reinforcement learning framework for resilient autonomous USV navigation](#b3a0405734b18fc9a5cf5b6590b91f24e37a9028f84f63dd68aca09114f4ecc0)
-21. [Cooperative Learning NN-Based Fault-Tolerant Formation of Networked Unmanned Surface Vehicles with Input Saturation and Prescribed Performance](#ec32510eb38dd2d182ed59cfcbce401ef5b80fc4e70d46d70211ccfa9e4166f7)
-22. [Determination of Tensile Strain Capacity of Girth-Welded X70 and X100 Grade Pipelines With Surface Cracks Under Tension and Bending](#ff33da088b609ee7404e885b9e80ec3e733c1284a4e3da1038e8c8330c6e9f67)
+19. [A multi-task reinforcement learning framework for resilient autonomous USV navigation](#b3a0405734b18fc9a5cf5b6590b91f24e37a9028f84f63dd68aca09114f4ecc0)
+20. [Cooperative Learning NN-Based Fault-Tolerant Formation of Networked Unmanned Surface Vehicles with Input Saturation and Prescribed Performance](#ec32510eb38dd2d182ed59cfcbce401ef5b80fc4e70d46d70211ccfa9e4166f7)
+21. [Determination of Tensile Strain Capacity of Girth-Welded X70 and X100 Grade Pipelines With Surface Cracks Under Tension and Bending](#ff33da088b609ee7404e885b9e80ec3e733c1284a4e3da1038e8c8330c6e9f67)
 
 ## Ship Autonomy
 
@@ -325,30 +324,6 @@ This paper presents a real-time Model Predictive Control (MPC) approach for opti
 **Abstract / Source Text**
 
 > Abstract In autonomous electric vehicles (AEVs), battery energy must be judiciously allocated to satisfy primary propulsion demands and secondary auxiliary demands, particularly the Heating, Ventilation, and Air Conditioning (HVAC) system. This becomes especially critical when the battery is in a low state of charge under cold ambient conditions, and cabin heating and battery preconditioning (prior to actual charging) can consume a significant percentage of available energy, directly impacting the driving range. In such cases, one usually prioritizes propulsion or applies heuristic rules for thermal management, often resulting in suboptimal energy utilization. There is a pressing need for a principled approach that can dynamically allocate battery power in a way that balances thermal comfort, battery health and preconditioning, along with range preservation. This paper attempts to address this issue using real-time Model Predictive Control to optimize the power consumption between the propulsion, HVAC, and battery temperature preparation so that it can be charged immediately once the destination is reached.
-
-
-<br>
----
-<br>
-
-<a id="ed2dfe7f3c02237fe7f4461baa539869a5803eeea07dd93ed433f8db736b792a"></a>
-### Laser Scanning-Based Parameter Extraction for Ship Butt Weld Joints
-
-**Metadata**
-
-- Date: 2026-04-15
-- Authors: Yi Shen, Sheng Zhang, Tao Ma, Yuanchao Lin, Lijia Tao, Mingxin Yuan
-- DOI: [10.21203/rs.3.rs-9257406/v1](https://doi.org/10.21203/rs.3.rs-9257406/v1)
-- Link: [https://doi.org/10.21203/rs.3.rs-9257406/v1](https://doi.org/10.21203/rs.3.rs-9257406/v1)
-- Relevance: 6.0 (21%)
-
-**AI Summary**
-
-This paper presents an automated algorithm using laser scanning to extract geometric parameters for I-groove, X-groove, and K-groove ship butt welds. The method employs density clustering and normal vector techniques for surface separation, followed by a universal parameter extraction module with adaptive strategies for each weld type. Experimental results show mean absolute errors (MAE) of 0.66 mm for plate thickness and 0.58 mm for root gap in I-groove welds, while groove angle MAE for X-groove and K-groove welds remains under 4°. The algorithm outperforms traditional methods, achieving an average accuracy improvement of 77.9%.
-
-**Abstract / Source Text**
-
-> Abstract To address the need for efficient and high-precision extraction of geometric parameters for three types of ship butt welds (I-groove, X-groove, and K-groove), an automatic weld parameter extraction algorithm based on laser scanning is proposed. First, point cloud surface separation is achieved through DBSCAN density clustering for I-groove welds and point cloud normal vector method for X-groove and K-groove welds. Subsequently, a universal parameter extraction module is constructed, incorporating a robust plate thickness calculation method and an adaptive groove angle extraction strategy. Finally, specialized parameter extraction strategies are designed according to the geometric characteristics of each weld type, forming a unified processing framework for multiple types of butt welds. Experimental results demonstrate that the mean absolute errors (MAE) for plate thickness and root gap of I-groove welds are 0.66 mm and 0.58 mm, respectively; the MAE for groove angles of X-groove and K-groove welds is maintained within 4°, while MAE for other parameters is controlled within 1 mm. Comparative experiments show that the proposed algorithm achieves superior measurement accuracy across all three weld types compared to traditional algorithms, with an 81.8% improvement over the slope analysis method, a 73.9% improvement over the height transition feature method, and an overall average accuracy improvement of approximately 77.9%.
 
 
 <br>

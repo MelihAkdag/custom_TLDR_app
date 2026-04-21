@@ -8,7 +8,7 @@ from typing import Any
 
 from .models import AppConfig, NormalizedItem, RunRecord, SummaryRecord
 from .sources import SOURCE_REGISTRY
-from .summarization import Summarizer
+from .summarization import Summarizer, build_metadata_markdown
 from .utils import ensure_directory, make_safe_id, to_iso_date
 
 try:
@@ -164,7 +164,7 @@ class MarkdownJsonReportWriter(ReportWriter):
                     max_score = 4.0 * len(topic_cfg.keywords) if topic_cfg and topic_cfg.keywords else 4.0
                     relevance_pct = min(round(item.relevance_score / max_score * 100), 100)
                     metadata_with_relevance = (
-                        summary.metadata_markdown
+                        build_metadata_markdown(item)
                         + f"\n- Relevance: {item.relevance_score:.1f} ({relevance_pct}%)"
                     )
                     lines.extend(["**Metadata**", "", metadata_with_relevance, ""])

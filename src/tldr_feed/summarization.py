@@ -474,11 +474,12 @@ def build_metadata_markdown(item: NormalizedItem) -> str:
     doi_entry = (
         f"[{item.doi}](https://doi.org/{item.doi})" if item.doi else "N/A"
     )
+    link_entry = f"[View Article]({item.url})" if item.url else "N/A"
     lines = [
         f"- Date: {item.published_at.isoformat() if item.published_at else 'Unknown'}",
         f"- Authors: {', '.join(item.authors_or_author) if item.authors_or_author else 'Unknown'}",
         f"- DOI: {doi_entry}",
-        f"- Link: [{item.url}]({item.url})",
+        f"- Link: {link_entry}",
     ]
     return "\n".join(lines)
 

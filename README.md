@@ -334,6 +334,25 @@ To run the pipeline automatically, such as every Monday at 8 AM, use the provide
    0 8 * * 1 /Users/yourusername/Projects/custom_TLDR_app/scripts/run_and_email.sh >> /tmp/tldr_cron.log 2>&1
    ```
 
+## GitHub Pages
+
+Reports can be automatically published to GitHub Pages after every run.
+
+### First-time setup
+
+1. In `jekyll/_config.yml`, set `baseurl` to your repository name (e.g. `/my-tldr-app`) and `url` to `https://<your-github-username>.github.io`.
+2. Push the repository to GitHub.
+3. Go to **Settings → Pages** in your GitHub repository.
+4. Under **Source**, select **Deploy from a branch**, set **Branch** to `gh-pages` and folder to `/ (root)`, then save.
+
+The `gh-pages` branch is created automatically on the first workflow run.
+
+### How publishing works
+
+`scripts/run_and_email.sh` commits and pushes new report files after every weekly run. The GitHub Actions workflow (`.github/workflows/publish-reports.yml`) detects the push, runs `scripts/build_jekyll_site.py` to generate Jekyll source from the `reports/` directory, builds the site with Jekyll, and deploys the output to the `gh-pages` branch. The site is live within ~2 minutes of the push.
+
+You can also trigger a manual rebuild from **Actions → Publish Reports to GitHub Pages → Run workflow**.
+
 ## Inspecting Progress
 
 While summarization is running, check progress in another terminal:
