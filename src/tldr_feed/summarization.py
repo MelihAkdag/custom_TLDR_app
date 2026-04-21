@@ -321,7 +321,7 @@ class GeminiSummarizer(Summarizer):
                     payload = json.loads(response.read().decode("utf-8"))
                     break
             except HTTPError as exc:
-                if exc.code == 429 and attempt < 4:
+                if exc.code in (429, 503) and attempt < 10:
                     time.sleep(15 * (attempt + 1))
                     continue
                 error_body = exc.read().decode("utf-8", errors="replace")
@@ -425,14 +425,19 @@ class MistralSummarizer(Summarizer):
             },
             method="POST",
         )
-        try:
-            with urlopen(request, timeout=45) as response:
-                payload = json.loads(response.read().decode("utf-8"))
-        except HTTPError as exc:
-            error_body = exc.read().decode("utf-8", errors="replace")
-            raise RuntimeError(
-                f"Mistral request failed with HTTP {exc.code}. Response body: {error_body}"
-            ) from exc
+        for attempt in range(5):
+            try:
+                with urlopen(request, timeout=45) as response:
+                    payload = json.loads(response.read().decode("utf-8"))
+                    break
+            except HTTPError as exc:
+                if exc.code in (429, 503) and attempt < 10:
+                    time.sleep(15 * (attempt + 1))
+                    continue
+                error_body = exc.read().decode("utf-8", errors="replace")
+                raise RuntimeError(
+                    f"Mistral request failed with HTTP {exc.code}. Response body: {error_body}"
+                ) from exc
         message = payload["choices"][0]["message"]["content"]
         return str(message).strip()
 
@@ -466,11 +471,14 @@ class DeterministicSummarizer(Summarizer):
 
 
 def build_metadata_markdown(item: NormalizedItem) -> str:
+    doi_entry = (
+        f"[{item.doi}](https://doi.org/{item.doi})" if item.doi else "N/A"
+    )
     lines = [
         f"- Date: {item.published_at.isoformat() if item.published_at else 'Unknown'}",
         f"- Authors: {', '.join(item.authors_or_author) if item.authors_or_author else 'Unknown'}",
-        f"- DOI: {item.doi or 'N/A'}",
-        f"- Link: {item.url}",
+        f"- DOI: {doi_entry}",
+        f"- Link: [{item.url}]({item.url})",
     ]
     return "\n".join(lines)
 

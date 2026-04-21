@@ -15,6 +15,7 @@ class TopicProfile:
     allowed_paper_languages: list[str] = field(default_factory=list)
     sources: list[str] = field(default_factory=list)
     min_relevance_score: float = 2.0
+    min_relevance_score_news: float = 4.0
 
 
 @dataclass(slots=True)

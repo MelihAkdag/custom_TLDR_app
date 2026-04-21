@@ -240,6 +240,7 @@ def _build_topics(raw_topics: list[dict[str, Any]]) -> list[TopicProfile]:
                 ],
                 sources=[str(value).strip() for value in entry.get("sources", []) if str(value).strip()],
                 min_relevance_score=float(entry.get("min_relevance_score", 2.0)),
+                min_relevance_score_news=float(entry.get("min_relevance_score_news", 4.0)),
             )
         )
     return topics

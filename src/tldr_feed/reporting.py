@@ -82,7 +82,6 @@ class MarkdownJsonReportWriter(ReportWriter):
                 type_sources.append(src)
 
         report_items = []
-        wordcloud_text_chunks = []
         unique_item_ids = set()
 
         # Single pass to build data structures
@@ -91,19 +90,13 @@ class MarkdownJsonReportWriter(ReportWriter):
             matches = [r for r in topic_records if r["item"].item_type == item_type_filter]
             if not matches:
                 continue
-                
+
             topic_data = {"display_name": topic.display_name, "items": []}
             for record in matches:
                 item: NormalizedItem = record["item"]
                 unique_item_ids.add(item.item_id)
                 safe_id = make_safe_id(item.item_id)
-                
-                # For WordCloud
-                if item.title:
-                    wordcloud_text_chunks.append(str(item.title))
-                if item.abstract_or_body:
-                    wordcloud_text_chunks.append(str(item.abstract_or_body))
-                    
+
                 topic_data["items"].append({
                     "record": record,
                     "safe_id": safe_id
@@ -144,14 +137,7 @@ class MarkdownJsonReportWriter(ReportWriter):
             except Exception:
                 pass
 
-        # 4. Trend / WordCloud
-        if wordcloud_text_chunks:
-            full_text = " ".join(wordcloud_text_chunks)
-            wc_filename = f"wordcloud_{item_type_filter}.png"
-            if self._generate_wordcloud(full_text, target_dir / wc_filename):
-                lines.extend(["", "## Week's Trend", "", f"![Word Cloud]({wc_filename})", ""])
-
-        # 5. Table of Contents
+        # 4. Table of Contents
         if report_items:
             lines.extend(["", "## Table of Contents"])
             for topic_data in report_items:

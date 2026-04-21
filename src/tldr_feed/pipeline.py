@@ -92,19 +92,27 @@ def collect_items(
 
 
 def summarize_run(storage: Storage, run_id: str, summarizer: Summarizer | None = None) -> dict[str, int]:
+    from .summarization import DeterministicSummarizer
     summarizer = summarizer or build_summarizer_from_env()
+    fallback = DeterministicSummarizer()
     current_provider = summarizer.full_provider_name
     created = 0
     skipped = 0
+    failed = 0
     for item in storage.list_items_for_run(run_id):
         existing = storage.get_summary(item.item_id or "")
         if existing and existing.provider == current_provider:
             skipped += 1
             continue
-        summary = summarizer.summarize(item)
+        try:
+            summary = summarizer.summarize(item)
+        except Exception as exc:
+            print(f"[warning] Summarizer failed for item {item.item_id}: {exc}. Using deterministic fallback.")
+            summary = fallback.summarize(item)
+            failed += 1
         storage.save_summary(summary)
         created += 1
-    return {"created": created, "skipped": skipped}
+    return {"created": created, "skipped": skipped, "failed": failed}
 
 
 def write_report(
@@ -145,7 +153,8 @@ def normalize_raw_item(raw_item: RawItem, relevance_score: float = 0.0) -> Norma
 
 
 def _matches_topic_filters(raw_item: RawItem, topic: TopicProfile, relevance_score: float) -> bool:
-    if relevance_score < topic.min_relevance_score:
+    threshold = topic.min_relevance_score_news if raw_item.item_type == "news_article" else topic.min_relevance_score
+    if relevance_score < threshold:
         return False
 
     if raw_item.item_type == "paper" and topic.allowed_paper_languages and not item_matches_allowed_languages(

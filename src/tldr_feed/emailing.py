@@ -28,8 +28,7 @@ def send_email_report(config: AppConfig, report_paths: dict[str, str], run: RunR
         h1 { border-bottom: 2px solid #eaecef; padding-bottom: 0.3em; margin-top: 1.5em; }
         h2 { border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-top: 1.2em; }
         h3 { margin-top: 1em; }
-        a { color: #0366d6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        a { color: #0366d6; text-decoration: underline; }
         blockquote { padding: 0 1em; color: #6a737d; border-left: 0.25em solid #dfe2e5; margin: 0 0 16px 0; }
         hr { border: 0; background-color: #e1e4e8; height: 1px; margin: 24px 0; }
         img { max-width: 100%; box-sizing: border-box; }
@@ -80,6 +79,11 @@ def send_email_report(config: AppConfig, report_paths: dict[str, str], run: RunR
 
             # Convert markdown to html
             html_content = markdown.markdown(content, extensions=['tables', 'fenced_code'])
+
+            # Outlook Desktop ignores <style> blocks — inline styles are required for links to appear clickable
+            html_content = html_content.replace(
+                '<a ', '<a style="color: #0366d6; text-decoration: underline;" '
+            )
 
             # Replace local src attributes with cid: references
             cids = {}
