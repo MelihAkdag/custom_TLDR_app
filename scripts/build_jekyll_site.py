@@ -33,8 +33,28 @@ def extract_window(text: str) -> tuple[str | None, str | None]:
     return (m.group(1), m.group(2)) if m else (None, None)
 
 
+# Matches markdown links [text](url) OR bare http(s) URLs.
+# Used to linkify bare URLs while leaving already-formatted links untouched.
+_LINK_OR_URL_RE = re.compile(r"\[.*?\]\(.*?\)|(https?://[^\s\)\]>\"']+)")
+
+
+def linkify_bare_urls(text: str) -> str:
+    """Wrap bare http(s) URLs in [View Article](url); leave existing markdown links alone."""
+    result: list[str] = []
+    pos = 0
+    for m in _LINK_OR_URL_RE.finditer(text):
+        result.append(text[pos : m.start()])
+        if m.group(1):  # bare URL (capture group 1 fires only when no [text](url) matched)
+            result.append(f"[View Article]({m.group(1)})")
+        else:  # already a markdown link — keep as-is
+            result.append(m.group(0))
+        pos = m.end()
+    result.append(text[pos:])
+    return "".join(result)
+
+
 def write_with_front_matter(src: Path, dst: Path, front_matter: dict) -> None:
-    content = src.read_text(encoding="utf-8")
+    content = linkify_bare_urls(src.read_text(encoding="utf-8"))
     lines = ["---"]
     for key, value in front_matter.items():
         if isinstance(value, str):

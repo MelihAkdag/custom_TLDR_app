@@ -1,35 +1,54 @@
 # News Report
 
 - Window: `2026-04-13` to `2026-04-19`
-- Sources queried: Asian Military Review, Bayelsa Watch, Clearance Jobs, International Maritime Organization, Marine Insight, Marine News Magazine, Maritime Fairtrade, UK Defence Journal, WorkBoat, Yahoo Finance
-- Items in report: 14
+- Sources queried: Asian Military Review, Bayelsa Watch, Clearance Jobs, International Maritime Organization, Marine Insight, Marine News Magazine, Maritime Fairtrade, UK Defence Journal, WorkBoat, Yahoo Finance, vocal.media
+- Items in report: 15
 
 ## Executive Summary
 
-Global advancements in maritime autonomy dominated this week’s developments, with defense contractors, governments, and private firms accelerating unmanned vessel technologies. Autonomous ships demonstrated superior performance in surveys and operations, while industry-first innovations—such as the Autohook system and the world’s first MASS notation for a container ship—highlighted progress in automation, safety, and regulatory compliance. Significant funding, including Saronic’s $1.75 billion Series D round, underscored investor confidence in autonomous naval systems, while Australia’s new maritime autonomous unit reflected growing military integration of uncrewed capabilities.
-
-Operational and regulatory updates also featured prominently, with the IMO approving new ship registration guidelines and launching a decarbonization assistance program for passenger ships. Meanwhile, geopolitical and logistical challenges persisted, including the resumption of Strait of Hormuz transits after a 47-day halt and the disappearance of a U.S.-flagged cargo ship near Saipan. These events underscore both the rapid evolution and persistent risks in modern maritime operations.
+The maritime industry is advancing rapidly in autonomous and unmanned technologies, with significant growth projected in AI-driven navigation, collision avoidance, and vessel recovery systems. Key developments include the introduction of industry-first autonomous recovery interfaces, the certification of the world’s first Maritime Autonomous Surface Ship (MASS), and substantial investments in autonomous warship development, such as Saronic’s $1.75 billion funding round. Military and commercial sectors are increasingly adopting unmanned systems, demonstrated by Australia’s new maritime autonomous unit and findings that autonomous vessels outperform crewed surveys in efficiency. Meanwhile, regulatory updates—such as the IMO’s new ship registration guidelines and decarbonization feasibility studies—reflect efforts to enhance transparency, sustainability, and operational standards. Regional maritime activity also saw notable shifts, including the resumption of transit through the Strait of Hormuz and ongoing search efforts for a missing U.S.-flagged cargo ship.
 
 
 ## Table of Contents
 
 ### Ship Autonomy
-1. [Autonomous Ships, Ukraine Will Help Boost This Up-and-Coming Defense Contractor](#3589c75207124b40b2728a6a5d4cf4e6277db113ab6d9c47ba83714dbc27985c)
-2. [Fairbanks Morse Defense’s Vestdavit Unveils Industry-First Autohook for Fully Autonomous Vessel Recovery Interface](#d22714195ef11f9b35002304cfc380cd3709c7c16dc48476dee5d5df1146d49e)
-3. [Australia sets up maritime autonomous unit amidst unmanned push](#82ad2fe3976f45dd0420e5241887709fea4f1f82c978aaee118156ce70128e0e)
-4. [Autonomous vessels outperform crewed surveys, UDT hears](#15bdb453abea3427bbbc3d8319919ae81e61674ee6b9efe1d5f9764eecd52a2b)
-5. [Saronic Closes $1.75B Series D: America's Autonomous Warship Maker Just Became a $9.25B Giant](#f31235459601f17940d5f2837188b146e7373c637d8965d67bef11faecbacdf1)
-6. [Malta-Flagged Cruise Ship Becomes First To Transit Strait Of Hormuz After 47-Day Standstill](#f03d36289f3f94a07009f9c46e7ee9a37b11def84be6d2d0385d69a40948084e)
-7. [ClassNK awards world’s first MASS notation to domestic container ship “Genbu”](#46d0c1aeb948248ff56e6625e53ec5a045a36272f18e2ce657725bbf80b6d982)
-8. [FMD's Vestdavit introduces autonomous recovery system for unmanned vessels](#b01328136cbd6a1f9639e5b2e0c1d154675df7340e84bb5de3f7fb6cff09afb7)
-9. [US-Flagged Cargo Ship Goes Missing With Six Crew After Engine Failure Near Saipan](#ca7977f6205ce7b602f5900591f971c90c64abfef974f0b5f97f00fb69bd12da)
-10. [FMD Introduces Fully Autonomous USV Recovery System](#e823d76f208458170f523afacf350b0f57d2dcc1deea75fb9af5261b81fc67b9)
-11. [IMO approves new guidelines on ship registration](#e79109fb90643c0ae73fa044678046a4ca6920db9cfce2d2fc80fdabc54fa40d)
-12. [Applications open: technical assistance for passenger ship decarbonization feasibility studies](#58bfdb86e2f5372a7c33daad019bc748310986704dc948ef306b53f88aaa18f6)
-13. [Monthly data on transits of ships through the Strait of Hormuz](#6aa6aefe2239c04ad5f2378f2fcc55643dd4ce0aff060fd2700cf6bfdb5750ba)
-14. [Freire Shipyard Launches Armada Diving Support Vessel](#08c57c6f45c1b4ffd645f5811975a0449fb835d41f7afda25aa1194678419045)
+1. [Autonomous Ships Market Trends: Collision Avoidance, AI Control Systems & Industry Forecast to 2033](#84b331bdf9631827280d616376f60b2dc9b0dafffd2a312eb815afc1f9fd8bb0)
+2. [Autonomous Ships, Ukraine Will Help Boost This Up-and-Coming Defense Contractor](#3589c75207124b40b2728a6a5d4cf4e6277db113ab6d9c47ba83714dbc27985c)
+3. [Fairbanks Morse Defense’s Vestdavit Unveils Industry-First Autohook for Fully Autonomous Vessel Recovery Interface](#d22714195ef11f9b35002304cfc380cd3709c7c16dc48476dee5d5df1146d49e)
+4. [Australia sets up maritime autonomous unit amidst unmanned push](#82ad2fe3976f45dd0420e5241887709fea4f1f82c978aaee118156ce70128e0e)
+5. [Autonomous vessels outperform crewed surveys, UDT hears](#15bdb453abea3427bbbc3d8319919ae81e61674ee6b9efe1d5f9764eecd52a2b)
+6. [Saronic Closes $1.75B Series D: America's Autonomous Warship Maker Just Became a $9.25B Giant](#f31235459601f17940d5f2837188b146e7373c637d8965d67bef11faecbacdf1)
+7. [Malta-Flagged Cruise Ship Becomes First To Transit Strait Of Hormuz After 47-Day Standstill](#f03d36289f3f94a07009f9c46e7ee9a37b11def84be6d2d0385d69a40948084e)
+8. [ClassNK awards world’s first MASS notation to domestic container ship “Genbu”](#46d0c1aeb948248ff56e6625e53ec5a045a36272f18e2ce657725bbf80b6d982)
+9. [FMD's Vestdavit introduces autonomous recovery system for unmanned vessels](#b01328136cbd6a1f9639e5b2e0c1d154675df7340e84bb5de3f7fb6cff09afb7)
+10. [US-Flagged Cargo Ship Goes Missing With Six Crew After Engine Failure Near Saipan](#ca7977f6205ce7b602f5900591f971c90c64abfef974f0b5f97f00fb69bd12da)
+11. [FMD Introduces Fully Autonomous USV Recovery System](#e823d76f208458170f523afacf350b0f57d2dcc1deea75fb9af5261b81fc67b9)
+12. [IMO approves new guidelines on ship registration](#e79109fb90643c0ae73fa044678046a4ca6920db9cfce2d2fc80fdabc54fa40d)
+13. [Applications open: technical assistance for passenger ship decarbonization feasibility studies](#58bfdb86e2f5372a7c33daad019bc748310986704dc948ef306b53f88aaa18f6)
+14. [Monthly data on transits of ships through the Strait of Hormuz](#6aa6aefe2239c04ad5f2378f2fcc55643dd4ce0aff060fd2700cf6bfdb5750ba)
+15. [Freire Shipyard Launches Armada Diving Support Vessel](#08c57c6f45c1b4ffd645f5811975a0449fb835d41f7afda25aa1194678419045)
 
 ## Ship Autonomy
+
+<br>
+---
+<br>
+
+<a id="84b331bdf9631827280d616376f60b2dc9b0dafffd2a312eb815afc1f9fd8bb0"></a>
+### Autonomous Ships Market Trends: Collision Avoidance, AI Control Systems & Industry Forecast to 2033
+
+**Metadata**
+
+- Date: 2026-04-08
+- Authors: vocal.media
+- DOI: N/A
+- Link: [View Article](https://news.google.com/rss/articles/CBMixwFBVV95cUxNd1ozeHZPV05vYzBDYmhNYUs4dVRLeVRrYy11U055ckwxRFN4dmZJZHRadVVTLVZON3dKeExGUjdWdFMxYlRFamkzZHM1NEcyWjZkNUt5bmlJM0QwTTlmSDdDbl96dU8zUlp2SzM2NTdwRWpaZWN0dE5xdHFuT2dnY2Zwam43LU9ESU5nSXhOY0YwQXJHMTI0TWU0SEgxcG9WaFpmckdUanRPd2tqakVTdHAtOXpvaExFVUNIWGxCSDdwNmJqX0JB?oc=5)
+- Relevance: 13.0 (46%)
+
+**AI Summary**
+
+The autonomous ships market is projected to grow significantly by 2033, driven by advancements in collision avoidance and AI control systems. Key trends include increased adoption of automation to improve maritime safety and efficiency. The report highlights industry forecasts, emphasizing the role of AI in enhancing navigation and operational decision-making. Market expansion is expected across commercial and defense sectors.
+
 
 <br>
 ---
@@ -43,7 +62,7 @@ Operational and regulatory updates also featured prominently, with the IMO appro
 - Date: 2026-04-17
 - Authors: Clearance Jobs
 - DOI: N/A
-- Link: https://news.google.com/rss/articles/CBMivgFBVV95cUxNUXg4RkU0a2FQdUlsclhGWGd1aGg4MFhwRzhRSEpfR3MzdlVGX0JyUVZ0WW5FdzB5REhxU2x5OGhzek13MDVieEZQR1ctRVVoUHRXTzBtMFFlT2FpV3hPamJsYmFMS3ZYbkZtWnBDenRERTc4eXpVenVCVWdOLTl6YmlXMTBEeERvTld4VFRlTWxFX1NoRzBtRGFlTFB6NWFnWkxZUTIyRGRZNUEyUjZfYW05TDNiLWhrbGlDQkNR?oc=5
+- Link: [View Article](https://news.google.com/rss/articles/CBMivgFBVV95cUxNUXg4RkU0a2FQdUlsclhGWGd1aGg4MFhwRzhRSEpfR3MzdlVGX0JyUVZ0WW5FdzB5REhxU2x5OGhzek13MDVieEZQR1ctRVVoUHRXTzBtMFFlT2FpV3hPamJsYmFMS3ZYbkZtWnBDenRERTc4eXpVenVCVWdOLTl6YmlXMTBEeERvTld4VFRlTWxFX1NoRzBtRGFlTFB6NWFnWkxZUTIyRGRZNUEyUjZfYW05TDNiLWhrbGlDQkNR?oc=5)
 - Relevance: 11.5 (41%)
 
 **AI Summary**
@@ -63,7 +82,7 @@ A defense contractor is expected to grow due to increased demand for autonomous 
 - Date: 2026-04-14
 - Authors: Yahoo Finance
 - DOI: N/A
-- Link: https://news.google.com/rss/articles/CBMirwFBVV95cUxNdHVRSXludDRTMmZhWDB6czVSV2VoM0NCWi1LYUpxZmJCYkVYaG82X1U4R0tXZ2ZPdjE0Q25lcldiX0E4dTRqRWQ3WFdKYldXYjh2T3REM0JiVEVUbmxLUzE0SE9TQ29WR3dLRzFsZUctd0J2MUlGQlJRTENfdlBvdGYzNjYtejMtT2pkVXVma2ZNNVcxMzVvNUZ6c045azVBNFJ4NlEwUDQ2UVRIV0ZB?oc=5
+- Link: [View Article](https://news.google.com/rss/articles/CBMirwFBVV95cUxNdHVRSXludDRTMmZhWDB6czVSV2VoM0NCWi1LYUpxZmJCYkVYaG82X1U4R0tXZ2ZPdjE0Q25lcldiX0E4dTRqRWQ3WFdKYldXYjh2T3REM0JiVEVUbmxLUzE0SE9TQ29WR3dLRzFsZUctd0J2MUlGQlJRTENfdlBvdGYzNjYtejMtT2pkVXVma2ZNNVcxMzVvNUZ6c045azVBNFJ4NlEwUDQ2UVRIV0ZB?oc=5)
 - Relevance: 11.5 (41%)
 
 **AI Summary**
@@ -83,7 +102,7 @@ Fairbanks Morse Defense’s Vestdavit introduced the first industry Autohook sys
 - Date: 2026-04-17
 - Authors: Asian Military Review
 - DOI: N/A
-- Link: https://news.google.com/rss/articles/CBMisgFBVV95cUxNMzFjS2lpX0lKZEhxNWRTUjVZd1B3Yy1sbm1rS3ZSNWdBTzlRWHotLUlmTnlKdnRpYVN4M2pzaTVfWmRaWXlNZGtEMmRqRXFsMXdEOXRVbW5IS1NUcy02WnRJRkM3VDZhRVpQbEMxN0J2a1VydWxVeXpUQTBiTTF0STVBd0FJUHJwVWpFbXlnbEZDdm9Ja2twRGo1VEkyUzRQRkZsLVdtLWF6N3ZiYWxPTzlB?oc=5
+- Link: [View Article](https://news.google.com/rss/articles/CBMisgFBVV95cUxNMzFjS2lpX0lKZEhxNWRTUjVZd1B3Yy1sbm1rS3ZSNWdBTzlRWHotLUlmTnlKdnRpYVN4M2pzaTVfWmRaWXlNZGtEMmRqRXFsMXdEOXRVbW5IS1NUcy02WnRJRkM3VDZhRVpQbEMxN0J2a1VydWxVeXpUQTBiTTF0STVBd0FJUHJwVWpFbXlnbEZDdm9Ja2twRGo1VEkyUzRQRkZsLVdtLWF6N3ZiYWxPTzlB?oc=5)
 - Relevance: 10.0 (36%)
 
 **AI Summary**
@@ -103,7 +122,7 @@ Australia established a dedicated maritime autonomous unit as part of its push t
 - Date: 2026-04-15
 - Authors: UK Defence Journal
 - DOI: N/A
-- Link: https://news.google.com/rss/articles/CBMikAFBVV95cUxPTUtPSWZJS2JLWmlxNUQ1QVV1amhWbGRObklaNGZfdEZ2V2JqMzlNZHl1RFJvN3ZGU3JPOTNBOE02Y2dKeW5QUGhFUHRncnFnTVRfa2trSnRXWk5EOGlUa0ZFelNZRU5OT21vNXAydFFwNE5NRFdQbklnZGhTc09xeWpUdXJNN0VOekwwX2QwSG4?oc=5
+- Link: [View Article](https://news.google.com/rss/articles/CBMikAFBVV95cUxPTUtPSWZJS2JLWmlxNUQ1QVV1amhWbGRObklaNGZfdEZ2V2JqMzlNZHl1RFJvN3ZGU3JPOTNBOE02Y2dKeW5QUGhFUHRncnFnTVRfa2trSnRXWk5EOGlUa0ZFelNZRU5OT21vNXAydFFwNE5NRFdQbklnZGhTc09xeWpUdXJNN0VOekwwX2QwSG4?oc=5)
 - Relevance: 8.5 (30%)
 
 **AI Summary**
@@ -123,7 +142,7 @@ Autonomous vessels demonstrated superior performance compared to crewed surveys 
 - Date: 2026-04-13
 - Authors: Bayelsa Watch
 - DOI: N/A
-- Link: https://news.google.com/rss/articles/CBMiY0FVX3lxTE1MTjFKd1d1S1ZCTlU5dWhwSV82Q21zYWxjZ1A1em5xSDRXUFZzcnhiSkVOdFUyZnZkNTRuZi00VUx4ejl0dlVvakEzeUp4Xy1VTGtlQ3pnNFFyZmlMV1BSb1VwUQ?oc=5
+- Link: [View Article](https://news.google.com/rss/articles/CBMiY0FVX3lxTE1MTjFKd1d1S1ZCTlU5dWhwSV82Q21zYWxjZ1A1em5xSDRXUFZzcnhiSkVOdFUyZnZkNTRuZi00VUx4ejl0dlVvakEzeUp4Xy1VTGtlQ3pnNFFyZmlMV1BSb1VwUQ?oc=5)
 - Relevance: 7.5 (27%)
 
 **AI Summary**
@@ -143,7 +162,7 @@ Saronic, a U.S. company developing autonomous warships, secured $1.75 billion in
 - Date: 2026-04-18
 - Authors: Marine Insight
 - DOI: N/A
-- Link: https://www.marineinsight.com/malta-flagged-cruise-ship-becomes-first-to-transit-strait-of-hormuz-after-47-day-standstill/?utm_source=rss&utm_medium=rss&utm_campaign=malta-flagged-cruise-ship-becomes-first-to-transit-strait-of-hormuz-after-47-day-standstill
+- Link: [View Article](https://www.marineinsight.com/malta-flagged-cruise-ship-becomes-first-to-transit-strait-of-hormuz-after-47-day-standstill/?utm_source=rss&utm_medium=rss&utm_campaign=malta-flagged-cruise-ship-becomes-first-to-transit-strait-of-hormuz-after-47-day-standstill)
 - Relevance: 7.0 (25%)
 
 **AI Summary**
@@ -163,7 +182,7 @@ A Malta-flagged cruise ship became the first to transit the Strait of Hormuz aft
 - Date: 2026-04-04
 - Authors: India Shipping News
 - DOI: N/A
-- Link: https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbDJjVGtONWZjUFJVQ1EyQlVGRGdCUUg4MmRCU0xTNlVNUzNrRFFDYnV0SWppcUxhRWtmUTFPWmdjb050MTlDYmZLNDRYMm1aaHBMM0poNDJwZkg4QVEwbkNFYUhOLW1wQmlsOGJSVUFqVW9hcTROVDB0M0pmRC0teGNiSmFlcndDTGtabGN0S2RPbHFwMlRHLTd1elNOZURWNDExOWJKak8?oc=5
+- Link: [View Article](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbDJjVGtONWZjUFJVQ1EyQlVGRGdCUUg4MmRCU0xTNlVNUzNrRFFDYnV0SWppcUxhRWtmUTFPWmdjb050MTlDYmZLNDRYMm1aaHBMM0poNDJwZkg4QVEwbkNFYUhOLW1wQmlsOGJSVUFqVW9hcTROVDB0M0pmRC0teGNiSmFlcndDTGtabGN0S2RPbHFwMlRHLTd1elNOZURWNDExOWJKak8?oc=5)
 - Relevance: 7.0 (25%)
 
 **AI Summary**
@@ -183,7 +202,7 @@ ClassNK granted the world’s first Maritime Autonomous Surface Ship (MASS) nota
 - Date: 2026-04-14
 - Authors: WorkBoat
 - DOI: N/A
-- Link: https://news.google.com/rss/articles/CBMimAFBVV95cUxPUzBPX0ZCRGZCN2hhZ0VFQkl4WU5OUzFiNUFnZXh4cXJveHpHTzlIT1dMUkZMY3BsdUUyU29uOHAzb29uRnpEV0ItOTU0dVNPdlk1cFR0YTV4S0NRR215bk0waXlpYnljSUtUTGZpYzdLQ1BsUUhRWV9FQ2JLaGRxMFlyTHlFdjJMejhoOVJ5cVhBTHBWaUxfdA?oc=5
+- Link: [View Article](https://news.google.com/rss/articles/CBMimAFBVV95cUxPUzBPX0ZCRGZCN2hhZ0VFQkl4WU5OUzFiNUFnZXh4cXJveHpHTzlIT1dMUkZMY3BsdUUyU29uOHAzb29uRnpEV0ItOTU0dVNPdlk1cFR0YTV4S0NRR215bk0waXlpYnljSUtUTGZpYzdLQ1BsUUhRWV9FQ2JLaGRxMFlyTHlFdjJMejhoOVJ5cVhBTHBWaUxfdA?oc=5)
 - Relevance: 6.5 (23%)
 
 **AI Summary**
@@ -203,7 +222,7 @@ Vestdavit, a division of FMD, has launched an autonomous recovery system designe
 - Date: 2026-04-18
 - Authors: Marine Insight
 - DOI: N/A
-- Link: https://www.marineinsight.com/us-flagged-cargo-ship-goes-missing-with-six-crew-after-engine-failure-near-saipan/?utm_source=rss&utm_medium=rss&utm_campaign=us-flagged-cargo-ship-goes-missing-with-six-crew-after-engine-failure-near-saipan
+- Link: [View Article](https://www.marineinsight.com/us-flagged-cargo-ship-goes-missing-with-six-crew-after-engine-failure-near-saipan/?utm_source=rss&utm_medium=rss&utm_campaign=us-flagged-cargo-ship-goes-missing-with-six-crew-after-engine-failure-near-saipan)
 - Relevance: 6.0 (21%)
 
 **AI Summary**
@@ -223,7 +242,7 @@ A 145-foot U.S.-flagged cargo ship with six crew members went missing after repo
 - Date: 2026-04-14
 - Authors: Marine News Magazine
 - DOI: N/A
-- Link: https://news.google.com/rss/articles/CBMif0FVX3lxTE5xaTltVzJPWVdSUUZITVBjV1AybWpRSUhwVkY1UFQzR1Z6amNRcFZjaEZJYXNTdHhub0lONjBCSmhpbGJTN25JbGpNN2hseEYya2o5eVZpOHVtRzhmT2xWMXp4MndIYVRHYUtYZzZXY3YxTjdtS19OcWx1VTlvR0E?oc=5
+- Link: [View Article](https://news.google.com/rss/articles/CBMif0FVX3lxTE5xaTltVzJPWVdSUUZITVBjV1AybWpRSUhwVkY1UFQzR1Z6amNRcFZjaEZJYXNTdHhub0lONjBCSmhpbGJTN25JbGpNN2hseEYya2o5eVZpOHVtRzhmT2xWMXp4MndIYVRHYUtYZzZXY3YxTjdtS19OcWx1VTlvR0E?oc=5)
 - Relevance: 6.0 (21%)
 
 **AI Summary**
@@ -243,7 +262,7 @@ FMD has developed a fully autonomous system for recovering uncrewed surface vess
 - Date: 2026-04-17
 - Authors: International Maritime Organization
 - DOI: N/A
-- Link: https://news.google.com/rss/articles/CBMirgFBVV95cUxPSkF2UUlXYzVyMmRqOG1yMVE3RHp4ZTRHbDR0Wl85ajFzR0JoS0paeFlONzlocXR0TV9CX19TY2dwVEE5eFRCVWkwZy1PYzRrTzRHMTBEcl90RmtmLVBCTmJodU03cUJpV0I0RXNDSzJ4aTlLbEw0ZUNfWjFXQWdWUGVqOUEzMmx4UkZZa3lzOUpwYTNvaGduR0ZzTDUxd2tzOWhtNjBkQjNUcHdBWWc?oc=5
+- Link: [View Article](https://news.google.com/rss/articles/CBMirgFBVV95cUxPSkF2UUlXYzVyMmRqOG1yMVE3RHp4ZTRHbDR0Wl85ajFzR0JoS0paeFlONzlocXR0TV9CX19TY2dwVEE5eFRCVWkwZy1PYzRrTzRHMTBEcl90RmtmLVBCTmJodU03cUJpV0I0RXNDSzJ4aTlLbEw0ZUNfWjFXQWdWUGVqOUEzMmx4UkZZa3lzOUpwYTNvaGduR0ZzTDUxd2tzOWhtNjBkQjNUcHdBWWc?oc=5)
 - Relevance: 5.5 (20%)
 
 **AI Summary**
@@ -263,7 +282,7 @@ The International Maritime Organization (IMO) approved new guidelines on ship re
 - Date: 2026-04-15
 - Authors: International Maritime Organization
 - DOI: N/A
-- Link: https://news.google.com/rss/articles/CBMia0FVX3lxTE5HZmxHQ0VPckJvQWc0a2lMcldBNzhLRUYyMms1a041YXhwa2d1SjI5N0tOWnJkUEdQNGdLWnRfWWZ4R0pCNVJiWVNTT0lPeDRTQXNLeXdINnJjbDJSWUs1ZGthaDRRX0U0OVQw?oc=5
+- Link: [View Article](https://news.google.com/rss/articles/CBMia0FVX3lxTE5HZmxHQ0VPckJvQWc0a2lMcldBNzhLRUYyMms1a041YXhwa2d1SjI5N0tOWnJkUEdQNGdLWnRfWWZ4R0pCNVJiWVNTT0lPeDRTQXNLeXdINnJjbDJSWUs1ZGthaDRRX0U0OVQw?oc=5)
 - Relevance: 5.5 (20%)
 
 **AI Summary**
@@ -283,7 +302,7 @@ The International Maritime Organization (IMO) is accepting applications for tech
 - Date: 2026-04-17
 - Authors: International Maritime Organization
 - DOI: N/A
-- Link: https://news.google.com/rss/articles/CBMikwFBVV95cUxPUFZuTHEtdWFFUGl2eFdoYzRTckxzM1lQNTFwdnRWLUN6ZG15X3o5c3BwNVd4c296d3BjZmtyT2NkcVJ0VWJmMWZicldiZkk1VDUtZFpWS1kteG03N1Q3NkZhU3lxRmlPN2l0bmU3YW8xUkdMRlFXdFRWMGpwcElZdm42YkNvYnBlelhzNkFkTzlnbG8?oc=5
+- Link: [View Article](https://news.google.com/rss/articles/CBMikwFBVV95cUxPUFZuTHEtdWFFUGl2eFdoYzRTckxzM1lQNTFwdnRWLUN6ZG15X3o5c3BwNVd4c296d3BjZmtyT2NkcVJ0VWJmMWZicldiZkk1VDUtZFpWS1kteG03N1Q3NkZhU3lxRmlPN2l0bmU3YW8xUkdMRlFXdFRWMGpwcElZdm42YkNvYnBlelhzNkFkTzlnbG8?oc=5)
 - Relevance: 5.0 (18%)
 
 **AI Summary**
@@ -303,7 +322,7 @@ The International Maritime Organization released monthly data tracking ship tran
 - Date: 2026-04-13
 - Authors: Marine News Magazine
 - DOI: N/A
-- Link: https://news.google.com/rss/articles/CBMigwFBVV95cUxOOUI0RUtxbEQtOG5YNmhRX3F3ZWxHa3RLVDlRR2ZmSVM4clVlU1lxTmc2WkJpem0tSGRJNVJ4UlByM0FiakNTRERPalZaczdkYlVPeTV5VkpTVVFjRXlSWlFqNm1KUF9MOGtfaEo4NWdtcm1wWWdzZEJXd0lxbUtqVGpNOA?oc=5
+- Link: [View Article](https://news.google.com/rss/articles/CBMigwFBVV95cUxOOUI0RUtxbEQtOG5YNmhRX3F3ZWxHa3RLVDlRR2ZmSVM4clVlU1lxTmc2WkJpem0tSGRJNVJ4UlByM0FiakNTRERPalZaczdkYlVPeTV5VkpTVVFjRXlSWlFqNm1KUF9MOGtfaEo4NWdtcm1wWWdzZEJXd0lxbUtqVGpNOA?oc=5)
 - Relevance: 4.0 (14%)
 
 **AI Summary**

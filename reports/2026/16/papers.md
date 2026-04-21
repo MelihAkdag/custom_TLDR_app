@@ -2,11 +2,13 @@
 
 - Window: `2026-04-13` to `2026-04-19`
 - Sources queried: crossref, openalex
-- Items in report: 21
+- Items in report: 22
 
 ## Executive Summary
 
-Recent research highlights advancements in autonomous maritime and vehicle systems, emphasizing safety, efficiency, and adaptive control. Studies on **Maritime Autonomous Surface Ships (MASS)** focus on risk assessment frameworks (e.g., STPA-FTA), optimal berthing solutions, and dynamic trajectory tracking, with innovations like four-quadrant hydrodynamics reducing errors by up to 62%. Multi-object tracking (e.g., MAAT) and obstacle avoidance algorithms enhance real-time navigation for unmanned vessels, while cooperative localization (e.g., BIND-USBL) mitigates inertial drift in GPS-denied environments. **Autonomous vehicles** benefit from energy-optimized control (MPC) and safety frameworks (FTA-BN) addressing functional insufficiencies, with case studies identifying weather and occlusion as key failure contributors. **AI’s societal impact** is explored in retail (reduced prosocial behavior) and software engineering (junior vs. senior developer agency), alongside technical applications like retinal disease classification (V-MNet) and fault-tolerant USV formation control. Emerging themes include **human-AI collaboration**, **resilient system design**, and **data-driven decision-making**, with tools like the EUM database standardizing MASS performance claims.
+Recent research advances highlight key developments in autonomous maritime systems, robotics, and AI-driven technologies. Studies on **Maritime Autonomous Surface Ships (MASS)** dominate, with innovations in **berth selection, risk assessment, and autonomous berthing**, leveraging hybrid qualitative-quantitative methods (e.g., AHP-AIS, STPA-FTA) and dynamic control systems to improve safety and efficiency in ports like Kaohsiung and Yangshan. **Multi-object tracking (MAAT)** and **obstacle avoidance algorithms** (e.g., FDWA-IBA*–IGWO) enhance real-time navigation for unmanned vessels, while **cooperative localization (BIND-USBL)** addresses drift in GPS-denied underwater environments. **AI’s societal impacts** are explored, including reduced prosocial behavior in automated retail and shifts in professional agency among software engineers, alongside **safety frameworks** (e.g., SOTIF-oriented FTA-BN) for autonomous vehicles.
+
+Technical breakthroughs extend to **energy management** (MPC for electric vehicles), **weld inspection** (laser-based parameter extraction), and **tissue engineering** (PDGFRα-positive MSCs for vascularized implants). **Multi-task deep learning** (V-MNet) demonstrates clinical applications in retinal diagnostics, while **network theory** (UCL NBA) optimizes early-stage ship design. **Fault-tolerant formation control** for USVs and **pipeline strain capacity analysis** further underscore advancements in resilience and material science. Collectively, these findings reflect a push toward **autonomous, adaptive, and interconnected systems**, though challenges like **human-AI interaction** and **operational safety** remain critical focus areas.
 
 
 ## Table of Contents
@@ -24,17 +26,18 @@ Recent research highlights advancements in autonomous maritime and vehicle syste
 10. [Dynamic Obstacle Avoidance Algorithm for Unmanned Vessels Based on FDWA and IBA*—IGWO Fusion](#b13b331cee1b81342b450832caaede4fbcad7ab3956deea1c7668ab336265ea2)
 11. [BIND-USBL: Bounding IMU Navigation Drift using USBL in Heterogeneous ASV-AUV Teams](#0778e5678779faafa0ca2146226307cb1157ef8026df997b64464b09841a4e62)
 12. [Model Predictive Control-Based Optimal Energy Management of Autonomous Electric Vehicles Under Cold Temperatures](#6339ee563e0536343086c9ad076ded6d4d6556198d3daf2b1874dcb68b54d3d1)
-13. [From Junior to Senior: Allocating Agency and Navigating Professional Growth in Agentic AI-Mediated Software Engineering](#21faf04bf7cbd2989ad7fe17f8f395cb37a9375b46b72ca6bea4f4fb4bb9e092)
-14. [A vessel-guided multi-task deep learning framework with visual interpretability for simultaneous retinal vessel segmentation and multi-disease classification from fundus images](#d3f8f8c8809a6565c7c59bcb1805edb51a0e0776837cc2dc9e0f335f2206f3ed)
-15. [Design of Distributed Ship Systems in the Early Stage Design of Complex Vessels Through a Submarine Example](#b1ff874172e6468e753d398898edc617135cb7cef3667e2e81549e841aa99e8b)
-16. [Strategi Pengamanan Wilayah Laut oleh TNI AL Guna Pengawasan Kegiatan Ship-To-Ship Pulau Nipah Dalam Rangka Peningkatan Keamanan Maritim](#e1d628ae9357e2e27f4f18fbabc5ef7da7a2baf4c4b0f4e18d23c6910311e169)
-17. [Training for Merchant Ship Engineers and Wireless Operators](#f6552c8e48201562a6a9219a2417f2e5feee59afcf49b8104895fe0eaed8e3b2)
-18. [Book Review:
+13. [Laser Scanning-Based Parameter Extraction for Ship Butt Weld Joints](#ed2dfe7f3c02237fe7f4461baa539869a5803eeea07dd93ed433f8db736b792a)
+14. [From Junior to Senior: Allocating Agency and Navigating Professional Growth in Agentic AI-Mediated Software Engineering](#21faf04bf7cbd2989ad7fe17f8f395cb37a9375b46b72ca6bea4f4fb4bb9e092)
+15. [A vessel-guided multi-task deep learning framework with visual interpretability for simultaneous retinal vessel segmentation and multi-disease classification from fundus images](#d3f8f8c8809a6565c7c59bcb1805edb51a0e0776837cc2dc9e0f335f2206f3ed)
+16. [Design of Distributed Ship Systems in the Early Stage Design of Complex Vessels Through a Submarine Example](#b1ff874172e6468e753d398898edc617135cb7cef3667e2e81549e841aa99e8b)
+17. [Strategi Pengamanan Wilayah Laut oleh TNI AL Guna Pengawasan Kegiatan Ship-To-Ship Pulau Nipah Dalam Rangka Peningkatan Keamanan Maritim](#e1d628ae9357e2e27f4f18fbabc5ef7da7a2baf4c4b0f4e18d23c6910311e169)
+18. [Training for Merchant Ship Engineers and Wireless Operators](#f6552c8e48201562a6a9219a2417f2e5feee59afcf49b8104895fe0eaed8e3b2)
+19. [Book Review:
                     <i>The Edwin Fox: How an Ordinary Sailing Ship Connected the World in the Age of Globalization, 1850–1914</i>
                     by Boyd Cothran and Adrian Shubert CothranBoydShubertAdrian. The Edwin Fox: How an Ordinary Sailing Ship Connected the World in the Age of Globalization, 1850–1914. Chapel Hill, NC: University of North Carolina Press, 2023. 296 pp., illustrations, maps, notes, bibliography, index. ISBN 978-1-4696-7655-5, $35 (hbk).](#62e3adab3046b09e697815e7457a190c858087814f3ec8cfc301d3a5c78174f3)
-19. [A multi-task reinforcement learning framework for resilient autonomous USV navigation](#b3a0405734b18fc9a5cf5b6590b91f24e37a9028f84f63dd68aca09114f4ecc0)
-20. [Cooperative Learning NN-Based Fault-Tolerant Formation of Networked Unmanned Surface Vehicles with Input Saturation and Prescribed Performance](#ec32510eb38dd2d182ed59cfcbce401ef5b80fc4e70d46d70211ccfa9e4166f7)
-21. [Determination of Tensile Strain Capacity of Girth-Welded X70 and X100 Grade Pipelines With Surface Cracks Under Tension and Bending](#ff33da088b609ee7404e885b9e80ec3e733c1284a4e3da1038e8c8330c6e9f67)
+20. [A multi-task reinforcement learning framework for resilient autonomous USV navigation](#b3a0405734b18fc9a5cf5b6590b91f24e37a9028f84f63dd68aca09114f4ecc0)
+21. [Cooperative Learning NN-Based Fault-Tolerant Formation of Networked Unmanned Surface Vehicles with Input Saturation and Prescribed Performance](#ec32510eb38dd2d182ed59cfcbce401ef5b80fc4e70d46d70211ccfa9e4166f7)
+22. [Determination of Tensile Strain Capacity of Girth-Welded X70 and X100 Grade Pipelines With Surface Cracks Under Tension and Bending](#ff33da088b609ee7404e885b9e80ec3e733c1284a4e3da1038e8c8330c6e9f67)
 
 ## Ship Autonomy
 
@@ -49,8 +52,8 @@ Recent research highlights advancements in autonomous maritime and vehicle syste
 
 - Date: 2026-04-17
 - Authors: Chien-Chang Chou, Miao-Ying Chen, Ren-Jun Huang, Hsien‐Pin Hsu, Chia-Nan Wang, Ji‐Feng Ding
-- DOI: 10.5750/ijme.v167ia2.1308
-- Link: https://doi.org/10.5750/ijme.v167ia2.1308
+- DOI: [10.5750/ijme.v167ia2.1308](https://doi.org/10.5750/ijme.v167ia2.1308)
+- Link: [View Article](https://doi.org/10.5750/ijme.v167ia2.1308)
 - Relevance: 19.5 (70%)
 
 **AI Summary**
@@ -73,8 +76,8 @@ This study evaluates berth locations at Kaohsiung Port for mooring Maritime Auto
 
 - Date: 2026-04-19
 - Authors: Konstantinos Voutzoulidis, Ioannis Tigkas
-- DOI: 10.3390/jmse14080748
-- Link: https://doi.org/10.3390/jmse14080748
+- DOI: [10.3390/jmse14080748](https://doi.org/10.3390/jmse14080748)
+- Link: [View Article](https://doi.org/10.3390/jmse14080748)
 - Relevance: 18.0 (64%)
 
 **AI Summary**
@@ -97,8 +100,8 @@ This paper presents a combined risk assessment framework for Maritime Autonomous
 
 - Date: 2026-04-14
 - Authors: Chen-Wei Chen, Jiahao Yin, Jialin Lu, Chin-Yin Chen, Ningmin Yan, Zhuo Feng
-- DOI: 10.3390/jmse14080724
-- Link: https://doi.org/10.3390/jmse14080724
+- DOI: [10.3390/jmse14080724](https://doi.org/10.3390/jmse14080724)
+- Link: [View Article](https://doi.org/10.3390/jmse14080724)
 - Relevance: 13.0 (46%)
 
 **AI Summary**
@@ -121,8 +124,8 @@ This paper introduces an autonomous berthing control system for large container 
 
 - Date: 2026-04-07
 - Authors: Wahidul Sheikh Sheikh
-- DOI: 10.17632/tfdrdvwyr7.1
-- Link: https://doi.org/10.17632/tfdrdvwyr7.1
+- DOI: [10.17632/tfdrdvwyr7.1](https://doi.org/10.17632/tfdrdvwyr7.1)
+- Link: [View Article](https://doi.org/10.17632/tfdrdvwyr7.1)
 - Relevance: 11.5 (41%)
 
 **AI Summary**
@@ -145,8 +148,8 @@ The **Evidence-Unit Mapping (EUM) Database** breaks down 67 studies on Maritime 
 
 - Date: 2026-04-18
 - Authors: Helmy M. El Zoghby, Soliman M. Sharaf, Ahmed F. Bendary, Ahmed Hessien
-- DOI: 10.1038/s41598-026-45772-y
-- Link: https://doi.org/10.1038/s41598-026-45772-y
+- DOI: [10.1038/s41598-026-45772-y](https://doi.org/10.1038/s41598-026-45772-y)
+- Link: [View Article](https://doi.org/10.1038/s41598-026-45772-y)
 - Relevance: 9.5 (34%)
 
 **AI Summary**
@@ -169,8 +172,8 @@ This paper introduces an adaptive fuzzy PID controller to improve trajectory tra
 
 - Date: 2026-04-16
 - Authors: Xinjie Han, Qi Han, Yunsheng Fan, Dongdong Mu
-- DOI: 10.3390/jmse14080738
-- Link: https://doi.org/10.3390/jmse14080738
+- DOI: [10.3390/jmse14080738](https://doi.org/10.3390/jmse14080738)
+- Link: [View Article](https://doi.org/10.3390/jmse14080738)
 - Relevance: 9.5 (34%)
 
 **AI Summary**
@@ -193,8 +196,8 @@ The paper introduces MAAT (Marine-Aware Adaptive Tracker), a multi-object tracki
 
 - Date: 2026-04-17
 - Authors: Lansu Dai, Burak Kantarci
-- DOI: 10.1145/3810950
-- Link: https://doi.org/10.1145/3810950
+- DOI: [10.1145/3810950](https://doi.org/10.1145/3810950)
+- Link: [View Article](https://doi.org/10.1145/3810950)
 - Relevance: 8.0 (29%)
 
 **AI Summary**
@@ -217,8 +220,8 @@ This paper introduces a safety assessment framework for autonomous vehicles by c
 
 - Date: 2026-04-13
 - Authors: Xiaoyan (Jenny) Liu, Chi Hoang, Sharon Ng
-- DOI: 10.1177/00222429261445436
-- Link: https://doi.org/10.1177/00222429261445436
+- DOI: [10.1177/00222429261445436](https://doi.org/10.1177/00222429261445436)
+- Link: [View Article](https://doi.org/10.1177/00222429261445436)
 - Relevance: 8.0 (29%)
 
 **AI Summary**
@@ -241,8 +244,8 @@ This study examines how AI-driven autonomous stores affect prosocial behavior, f
 
 - Date: 2026-04-16
 - Authors: Satoru Morikawa, Masaki Yoda, Takehito Ouchi, Takazumi Yasui, Kazumasa Fukuda, Michiru Sugimoto, Rintaro Harada, Tatsuaki Matsumoto, Yo Mabuchi, Osahiko Tsuji, Narihito Nagoshi, Yoshitaka Kase, Hideyuki Okano, Yuko Kitagawa, Masaya Nakamura, Taneaki Nakagawa, Yasuhide Nakayama
-- DOI: 10.1371/journal.pone.0347197
-- Link: https://doi.org/10.1371/journal.pone.0347197
+- DOI: [10.1371/journal.pone.0347197](https://doi.org/10.1371/journal.pone.0347197)
+- Link: [View Article](https://doi.org/10.1371/journal.pone.0347197)
 - Relevance: 7.0 (25%)
 
 **AI Summary**
@@ -265,8 +268,8 @@ This study explores how PDGFRα-positive mesenchymal stem/stromal cells (MSCs) e
 
 - Date: 2026-04-14
 - Authors: Min Wang, Jinwen Gao, Chenhao Li, Mei Hong, Huaihai Guo, Hanfei Xie, Minghang Shi
-- DOI: 10.3390/jmse14080722
-- Link: https://doi.org/10.3390/jmse14080722
+- DOI: [10.3390/jmse14080722](https://doi.org/10.3390/jmse14080722)
+- Link: [View Article](https://doi.org/10.3390/jmse14080722)
 - Relevance: 7.0 (25%)
 
 **AI Summary**
@@ -289,8 +292,8 @@ This paper introduces a dynamic obstacle-avoidance algorithm for unmanned surfac
 
 - Date: 2026-04-13
 - Authors: Pranav Kedia, Rajini Makam, Heiko Hamann, Suresh Sundaram
-- DOI: 10.48550/arxiv.2604.11861
-- Link: https://www.semanticscholar.org/paper/d2f1293f01d5aa59a3e1fef8af1bd4f5d286b90b
+- DOI: [10.48550/arxiv.2604.11861](https://doi.org/10.48550/arxiv.2604.11861)
+- Link: [View Article](https://www.semanticscholar.org/paper/d2f1293f01d5aa59a3e1fef8af1bd4f5d286b90b)
 - Relevance: 7.0 (25%)
 
 **AI Summary**
@@ -313,8 +316,8 @@ The paper *BIND-USBL* introduces a cooperative localization system for Autonomou
 
 - Date: 2026-04-13
 - Authors: Shanthan K. Padisala, Satadru Dey
-- DOI: 10.1115/1.4071649
-- Link: https://doi.org/10.1115/1.4071649
+- DOI: [10.1115/1.4071649](https://doi.org/10.1115/1.4071649)
+- Link: [View Article](https://doi.org/10.1115/1.4071649)
 - Relevance: 7.0 (25%)
 
 **AI Summary**
@@ -330,6 +333,30 @@ This paper presents a real-time Model Predictive Control (MPC) approach for opti
 ---
 <br>
 
+<a id="ed2dfe7f3c02237fe7f4461baa539869a5803eeea07dd93ed433f8db736b792a"></a>
+### Laser Scanning-Based Parameter Extraction for Ship Butt Weld Joints
+
+**Metadata**
+
+- Date: 2026-04-15
+- Authors: Yi Shen, Sheng Zhang, Tao Ma, Yuanchao Lin, Lijia Tao, Mingxin Yuan
+- DOI: [10.21203/rs.3.rs-9257406/v1](https://doi.org/10.21203/rs.3.rs-9257406/v1)
+- Link: [View Article](https://doi.org/10.21203/rs.3.rs-9257406/v1)
+- Relevance: 6.0 (21%)
+
+**AI Summary**
+
+This paper presents an automated algorithm using laser scanning to extract geometric parameters for I-groove, X-groove, and K-groove ship butt welds. The method employs density clustering and normal vector techniques for surface separation, followed by a universal parameter extraction module with adaptive strategies for each weld type. Experimental results show mean absolute errors (MAE) of 0.66 mm for plate thickness and 0.58 mm for root gap in I-groove welds, while groove angle MAE for X-groove and K-groove welds remains under 4°. The algorithm outperforms traditional methods, achieving an average accuracy improvement of 77.9%.
+
+**Abstract / Source Text**
+
+> Abstract To address the need for efficient and high-precision extraction of geometric parameters for three types of ship butt welds (I-groove, X-groove, and K-groove), an automatic weld parameter extraction algorithm based on laser scanning is proposed. First, point cloud surface separation is achieved through DBSCAN density clustering for I-groove welds and point cloud normal vector method for X-groove and K-groove welds. Subsequently, a universal parameter extraction module is constructed, incorporating a robust plate thickness calculation method and an adaptive groove angle extraction strategy. Finally, specialized parameter extraction strategies are designed according to the geometric characteristics of each weld type, forming a unified processing framework for multiple types of butt welds. Experimental results demonstrate that the mean absolute errors (MAE) for plate thickness and root gap of I-groove welds are 0.66 mm and 0.58 mm, respectively; the MAE for groove angles of X-groove and K-groove welds is maintained within 4°, while MAE for other parameters is controlled within 1 mm. Comparative experiments show that the proposed algorithm achieves superior measurement accuracy across all three weld types compared to traditional algorithms, with an 81.8% improvement over the slope analysis method, a 73.9% improvement over the height transition feature method, and an overall average accuracy improvement of approximately 77.9%.
+
+
+<br>
+---
+<br>
+
 <a id="21faf04bf7cbd2989ad7fe17f8f395cb37a9375b46b72ca6bea4f4fb4bb9e092"></a>
 ### From Junior to Senior: Allocating Agency and Navigating Professional Growth in Agentic AI-Mediated Software Engineering
 
@@ -337,8 +364,8 @@ This paper presents a real-time Model Predictive Control (MPC) approach for opti
 
 - Date: 2026-04-13
 - Authors: Dana Feng, Bhada Yun, April Wang
-- DOI: 10.1145/3772318.3791642
-- Link: https://doi.org/10.1145/3772318.3791642
+- DOI: [10.1145/3772318.3791642](https://doi.org/10.1145/3772318.3791642)
+- Link: [View Article](https://doi.org/10.1145/3772318.3791642)
 - Relevance: 6.0 (21%)
 
 **AI Summary**
@@ -361,8 +388,8 @@ This study examines how agentic AI affects professional agency in software engin
 
 - Date: 2026-04-17
 - Authors: Qi Li, Liming Tao
-- DOI: 10.3389/fmed.2026.1799745
-- Link: https://doi.org/10.3389/fmed.2026.1799745
+- DOI: [10.3389/fmed.2026.1799745](https://doi.org/10.3389/fmed.2026.1799745)
+- Link: [View Article](https://doi.org/10.3389/fmed.2026.1799745)
 - Relevance: 5.5 (20%)
 
 **AI Summary**
@@ -385,8 +412,8 @@ Qi Li and Liming Tao (2026) developed V-MNet, a deep learning framework that sim
 
 - Date: 2026-04-17
 - Authors: Muhammad Hary Mukti, Rachel Jean Pawling, David John Andrews
-- DOI: 10.5750/ijme.v167ia2.1503
-- Link: https://doi.org/10.5750/ijme.v167ia2.1503
+- DOI: [10.5750/ijme.v167ia2.1503](https://doi.org/10.5750/ijme.v167ia2.1503)
+- Link: [View Article](https://doi.org/10.5750/ijme.v167ia2.1503)
 - Relevance: 5.0 (18%)
 
 **AI Summary**
@@ -409,8 +436,8 @@ This paper expands on earlier work applying network theory to submarine power an
 
 - Date: 2026-04-13
 - Authors: Aang Zaenal Mutaqin, Niko Oktoria, Tony Priyo Utomo
-- DOI: 10.54371/jiip.v9i4.11227
-- Link: https://doi.org/10.54371/jiip.v9i4.11227
+- DOI: [10.54371/jiip.v9i4.11227](https://doi.org/10.54371/jiip.v9i4.11227)
+- Link: [View Article](https://doi.org/10.54371/jiip.v9i4.11227)
 - Relevance: 5.0 (18%)
 
 **AI Summary**
@@ -434,7 +461,7 @@ This study examines the Indonesian Navy's (TNI AL) strategies for securing marit
 - Date: 2026-04-14
 - Authors: Unknown
 - DOI: [10.2307/jj.38191935.14](https://doi.org/10.2307/jj.38191935.14)
-- Link: [https://doi.org/10.2307/jj.38191935.14](https://doi.org/10.2307/jj.38191935.14)
+- Link: [View Article](https://doi.org/10.2307/jj.38191935.14)
 - Relevance: 4.5 (16%)
 
 **AI Summary**
@@ -456,7 +483,7 @@ No abstract or body text was available, so this entry is reported from metadata 
 - Date: 2026-04-13
 - Authors: Martin Dusinberre
 - DOI: [10.1177/08438714261437556](https://doi.org/10.1177/08438714261437556)
-- Link: [https://doi.org/10.1177/08438714261437556](https://doi.org/10.1177/08438714261437556)
+- Link: [View Article](https://doi.org/10.1177/08438714261437556)
 - Relevance: 4.5 (16%)
 
 **AI Summary**
@@ -476,7 +503,7 @@ No abstract or body text was available, so this entry is reported from metadata 
 - Date: 2026-04-17
 - Authors: Theodore Tranos, Piyabhum Chaysri, Christos Spatharis, Konstantinos Blekas
 - DOI: [10.1016/j.oceaneng.2026.125549](https://doi.org/10.1016/j.oceaneng.2026.125549)
-- Link: [https://doi.org/10.1016/j.oceaneng.2026.125549](https://doi.org/10.1016/j.oceaneng.2026.125549)
+- Link: [View Article](https://doi.org/10.1016/j.oceaneng.2026.125549)
 - Relevance: 4.0 (14%)
 
 **AI Summary**
@@ -495,8 +522,8 @@ No abstract or body text was available, so this entry is reported from metadata 
 
 - Date: 2026-04-19
 - Authors: Yunhao Zhang, Huafeng Ding
-- DOI: 10.3390/machines14040452
-- Link: https://doi.org/10.3390/machines14040452
+- DOI: [10.3390/machines14040452](https://doi.org/10.3390/machines14040452)
+- Link: [View Article](https://doi.org/10.3390/machines14040452)
 - Relevance: 3.5 (12%)
 
 **AI Summary**
@@ -519,8 +546,8 @@ This paper presents a fault-tolerant control (FTC) algorithm for unmanned surfac
 
 - Date: 2026-10-01
 - Authors: Xinping Yu, Dong-Yeob Park, Xin Wang
-- DOI: 10.1115/1.4071499
-- Link: https://doi.org/10.1115/1.4071499
+- DOI: [10.1115/1.4071499](https://doi.org/10.1115/1.4071499)
+- Link: [View Article](https://doi.org/10.1115/1.4071499)
 - Relevance: 3.0 (11%)
 
 **AI Summary**
