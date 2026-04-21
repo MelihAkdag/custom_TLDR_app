@@ -1,0 +1,260 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #0f766e;
+  --accent-hover: #0d9488;
+  --accent-light: #f0fdfa;
+  --max-width: 920px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ── Header ── */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.site-title:hover {
+  color: var(--accent-hover);
+}
+
+.site-description {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.1rem;
+}
+
+/* ── Main / Footer ── */
+main.container {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.25rem 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.site-footer a {
+  color: var(--accent);
+}
+
+/* ── Index page ── */
+.index-heading {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.index-description {
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+th {
+  text-align: left;
+  padding: 0.7rem 1rem;
+  background: var(--accent-light);
+  font-weight: 600;
+  color: var(--accent);
+  border-bottom: 2px solid var(--border);
+}
+
+td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+tr:hover td {
+  background: #f9fafb;
+}
+
+td a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* ── Report tabs ── */
+.report-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.tab {
+  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+}
+
+a.tab {
+  color: var(--muted);
+}
+
+a.tab:hover {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+span.tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ── Word cloud ── */
+.wordcloud {
+  text-align: center;
+  background: var(--accent-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 0 0 2rem;
+}
+
+.wordcloud img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.wordcloud figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ── Report content typography ── */
+.report-content h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.report-content h2 {
+  font-size: 1.2rem;
+  margin: 2.5rem 0 0.75rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+  color: var(--text);
+}
+
+.report-content h3 {
+  font-size: 1rem;
+  margin: 1.75rem 0 0.4rem;
+  color: var(--text);
+}
+
+.report-content p {
+  margin-bottom: 0.9rem;
+}
+
+.report-content ul,
+.report-content ol {
+  margin: 0.5rem 0 1rem 1.5rem;
+}
+
+.report-content li {
+  margin-bottom: 0.2rem;
+}
+
+.report-content blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background: var(--accent-light);
+  color: var(--muted);
+  font-style: italic;
+  border-radius: 0 4px 4px 0;
+}
+
+.report-content code {
+  background: #f3f4f6;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+}
+
+.report-content a {
+  color: var(--accent);
+}
+
+.report-content a:hover {
+  text-decoration: underline;
+}
+
+.report-content strong {
+  font-weight: 600;
+}
+
+.report-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.5rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */

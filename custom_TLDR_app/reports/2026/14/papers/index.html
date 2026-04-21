@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 14 (2026) — Papers | TLDR Weekly Reports</title>
+  <link rel="stylesheet" href="/custom_TLDR_app/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="site-title" href="/custom_TLDR_app/">TLDR Weekly Reports</a>
+      <p class="site-description">Curated weekly AI-summarized maritime research and news</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb">
+  <a href="/custom_TLDR_app/">All Reports</a>
+  &rsaquo; 2026, Week 14
+  &rsaquo; Papers
+</nav>
+
+
+
+
+
+
+
+<nav class="report-tabs">
+  
+  <a class="tab" href="/custom_TLDR_app/reports/2026/14/news/">News</a>
+  <span class="tab active">Papers</span>
+  
+</nav>
+
+
+
+
+
+<figure class="wordcloud">
+  <img src="/custom_TLDR_app/reports/2026/14/wordcloud_paper.png" alt="Word Cloud for week 14">
+  <figcaption>Word Cloud — Week 14, 2026</figcaption>
+</figure>
+
+<article class="report-content">
+  <h1 id="papers-report">Papers Report</h1>
+
+<ul>
+  <li>Window: <code class="language-plaintext highlighter-rouge">2026-03-30</code> to <code class="language-plaintext highlighter-rouge">2026-04-05</code></li>
+  <li>Sources queried: crossref, openalex</li>
+  <li>Items in report: 30</li>
+</ul>
+
+<h2 id="executive-summary">Executive Summary</h2>
+
+<p>This week’s research digest highlights advancements in autonomous maritime systems, focusing on safety, navigation, and regulatory frameworks. Key developments include AI-driven frameworks for generating realistic maritime encounter scenarios, negotiation models for collision avoidance in mixed fleets, and time-dynamic path planning algorithms for extreme sea conditions. Legal and regulatory challenges for autonomous ships are addressed, with recommendations for regional cooperation. Additionally, innovations in bathymetric data modeling, adversarial control for unmanned vessels, and data-driven risk mitigation for piracy underscore the sector’s technological and operational progress. Emerging themes include the integration of AI, machine learning, and system-theoretic safety approaches to enhance autonomy, efficiency, and sustainability in maritime operations.</p>
+
+<h2 id="weeks-trend">Week’s Trend</h2>
+
+<p><img src="wordcloud_paper.png" alt="Word Cloud" /></p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<h3 id="ship-autonomy">Ship Autonomy</h3>
+<ol>
+  <li><a href="#73dce9e1472504d27eb85e7ca7847da23b0b6b51fd793f69b3b35836dd709041">From Vessel Trajectories to Safety-Critical Encounter Scenarios: A Generative AI Framework for Autonomous Ship Digital Testing</a></li>
+  <li><a href="#9148d854b78ac51bf7a1342cacbf1b3fcb2b7f9cfc682a1344ef875eccb96d70">Legal Challenges of Maritime Autonomous Surface Ships: A Comparative Study of Neighboring States and Implications for Vietnam</a></li>
+  <li><a href="#1ae8af95d0d6e2c65b9102558e3e311120add50c37bb0668e2438ef01fd1f3ca">A negotiation method for cooperative collision avoidance between ships in mixed navigation scenarios: model construction, strategy driving, and unilateral learning</a></li>
+  <li><a href="#4c92d8a54f9fe0633cd953b673d5c037d899c66e5ba0632dd036603273be4acd">Research on Autonomous Ship Route Planning Based on Time-Dynamic Theta* Algorithm Under Complex and Extreme Sea Conditions</a></li>
+  <li><a href="#4d5774ffa49c94cef750a72ba208c20887c5aad6a693e5a217fad16045146467">Development of collision-case-based testing scenarios for validating autonomous ship collision-avoidance algorithms</a></li>
+  <li><a href="#c8d286af5d4855c9cd8db18660fa6db80394eb88f40a77afbeed467c4d00d92f">Comprehensive literature review of systemic safety analysis: trends and development in the maritime sector☆</a></li>
+  <li><a href="#3151e93d44a08487b98a3d7be30ebcf74135a57cc2af11a4be2961ae4c5fc5d1">Maritime autonomous surface ship for experimental trajectory tracking in the ocean</a></li>
+  <li><a href="#d2b228555b2bd2f2b6bf8b7fb558bebea114463ffa7f60d250c71817bec12cab">A High-Density Bathymetric Data Model and System Construction Approach Integrated with S-100 for Unmanned Surface Vessel Intelligent Navigation</a></li>
+  <li><a href="#0bc76d0f4ac996c9247631707d92e5341e02221d21f8907518e77e0d1b5a91b3">Approximate optimal fast terminal sliding mode control for autonomous surface vessels subject to input constraints and uncertainties</a></li>
+  <li><a href="#76b3b8e06ae3c0124538be2ade00bd8c56f0526a5665c7710839fd0bee3f8745">Lightweight Visual Localization of Steel Surface Defects for Autonomous Inspection Robots Based on Improved YOLOv10n</a></li>
+  <li><a href="#1a0d5a18a889b4c0b89836a7b37201ed795634ceee3566f801cebcfda26f2167">Data-driven risk mitigation of Southeast Asian maritime security</a></li>
+  <li><a href="#3c8701cf7b2524014640a9a751ac52270beb896b928d2cb24897a8eb0a36a173">Ensemble-Based Machine Learning with PSO and GA for Ship Coating Detection Using Portable Vis/NIR</a></li>
+  <li><a href="#2478bdda69b137cd68692c12996a14221591c0460a268fec83f24a2f6773523d">Game-Based Adversarial Control for Unmanned Surface Vessels via Fully Actuated System Approach</a></li>
+  <li><a href="#23c5d6a1dffa3419b14f82ecb1f7e42e1675fae7e4cf35bb7456a9af431598d3">An Integrated Controller System For Unmanned Surface Vehicles (USV)</a></li>
+  <li><a href="#c8abc59e05e4a661d7c7581f1e934e9cfd935297c7e77463c687ad34a3a629be">The Case for Powered Propellers on Ship Wingsails</a></li>
+  <li><a href="#10f1bea091c66cf324ca2d28b6b0af4b4d9556c9295fc868c28d86fce9f57441">Conceptualization of information and communication system development for remotely operated maritime transport in Arctic region</a></li>
+  <li><a href="#e5184fdce262ae3f4b9fff1d689152f8ab4a008153e0f8dfd9f1418302866fbb">A hierarchical learning-based autonomous berthing trajectory planner for unmanned surface vehicle</a></li>
+  <li><a href="#7419546d8049bd8489d08d0565dc88126b03fdb84523c1a5e3e0aa981ba70364">Powering Change: Electrically Operated Subsea Safety Module for Future Well Intervention</a></li>
+  <li><a href="#04f1779cfbd1802c4e7eb08d21653221db623d2f395e03449c9e77d8b20395d8">Global navigation-local operation: Pose optimization and multi-sensory guidance strategy for autonomous mobile manipulators</a></li>
+  <li><a href="#e80afc34cac7b4a6e3d414e6324a1f4d0d14935de9b46db7c015805c7e84f87b">LiDAR-based vehicle detection and tracking for autonomous racing</a></li>
+  <li><a href="#4e472496b56f0d3ba58cdfaf1573b88eb96fd4009fae1dea2a3fa9f2092a474f">Shared control for autonomous robotic navigation: A review</a></li>
+  <li><a href="#b518d22469f702afe4f8d22510f450233c5865c6513482c5e196f280bbc2a9ef">Optimal Design of Type 2 High Pressure Vessel for CNG Vehicles</a></li>
+  <li><a href="#1e174cf4c0e8bc0c0741641e62a6204153625ff4a75c6b27abcdf0ae8da264a1">IQ-RRT*: A heuristic approach to path planning for unmanned surface vehicles</a></li>
+  <li><a href="#559b4fc6c5e1ae023b431e52436d8020c5af9c363981e4acddb3aaa444011de5">Influence of local hydrodynamics on ship drift leading to ship-bridge allisions</a></li>
+  <li><a href="#f6d3ab885b4ac3918683d17df0f80b78e36d078d16c256438f58bb7f00207fd0">Hierarchical Vessel Safe Operation in A Port through CBF, MPC and RRT-like Spatiotemporal Path Planning</a></li>
+  <li><a href="#dd2ebeb8be25e8292fec1c9f07b1201a5ddf5923955acf71ebbaf18b220ce7c8">AIVV: Neuro-Symbolic LLM Agent-Integrated Verification and Validation for Trustworthy Autonomous Systems</a></li>
+  <li><a href="#4cf9ad4f336cf1b80da671f29f6f02ab0fd6240f5f9c2003014f4328300b045f">Data-driven event-triggered heading control for autonomous surface vehicles based on an adaptive observer</a></li>
+  <li><a href="#28082749b93f8c22dbad3999afa23e6a5709c037e77429829b7f087636efb827">Nonlinear stability analysis of autonomous container ship under environmental disturbances using hardware-in-the-loop validation</a></li>
+  <li><a href="#8730dc53022eec6d85507fbdeaf841dc52171a9b91affb28bb73e2b090e0ffdb">Regulation of maritime autonomous surface ships on carbon emissions and marine pollution: Context, challenges, responses</a></li>
+  <li><a href="#bb3fcf5bf6f0853ed00a7fc36b9b18b6a6bf7233b3a104cac2f098914baeb524">Heterogeneous multi-scale enhanced YOLOv8 for real-time maritime obstacle detection on unmanned surface vessels</a></li>
+</ol>
+
+<h2 id="ship-autonomy-1">Ship Autonomy</h2>
+
+<h2><br /></h2>
+<p><br /></p>
+
+<p><a id="73dce9e1472504d27eb85e7ca7847da23b0b6b51fd793f69b3b35836dd709041"></a></p>
+<h3 id="from-vessel-trajectories-to-safety-critical-encounter-scenarios-a-generative-ai-framework-for-autonomous-ship-digital-testing">From Vessel Trajectories to Safety-Critical Encounter Scenarios: A Generative AI Framework for Autonomous Ship Digital Testing</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-30</li>
+  <li>Authors: S. Sun, Liangbin Zhao, Ming Deng, Xiuju Fu</li>
+  <li>DOI: 10.48550/arxiv.2603.28067</li>
+  <li>Link: https://www.semanticscholar.org/paper/29008416c0dad1c9efd9b32306f25a31a71d09ec</li>
+  <li>Relevance: 19.5 (70%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>The paper introduces a generative AI framework that converts real-world ship trajectories from AIS data into realistic safety-critical encounter scenarios for testing autonomous maritime navigation systems. It uses a multi-scale temporal variational autoencoder to improve trajectory realism and robustness, even with noisy AIS data. The method enables scalable generation of diverse high-risk scenarios beyond historical records, supporting digital testing and safety assessments. Code for the framework is publicly available.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>Digital testing has emerged as a key paradigm for the development and verification of autonomous maritime navigation systems, yet the availability of realistic and diverse safety-critical encounter scenarios remains limited. Existing approaches either rely on handcrafted templates, which lack realism, or extract cases directly from historical data, which cannot systematically expand rare high-risk situations. This paper proposes a data-driven framework that converts large-scale Automatic Identification System (AIS) trajectories into structured safety-critical encounter scenarios. The framework combines generative trajectory modeling with automated encounter pairing and temporal parameterization to enable scalable scenario construction while preserving real traffic characteristics. To enhance trajectory realism and robustness under noisy AIS observations, a multi-scale temporal variational autoencoder is introduced to capture vessel motion dynamics across different temporal resolutions. Experiments on real-world maritime traffic flows demonstrate that the proposed method improves trajectory fidelity and smoothness, maintains statistical consistency with observed data, and enables the generation of diverse safety-critical encounter scenarios beyond those directly recorded. The resulting framework provides a practical pathway for building scenario libraries to support digital testing, benchmarking, and safety assessment of autonomous navigation and intelligent maritime traffic management systems. Code is available at https://anonymous.4open.science/r/traj-gen-anonymous-review.</p>
+</blockquote>
+
+<h2 id="-1"><br /></h2>
+<p><br /></p>
+
+<p><a id="9148d854b78ac51bf7a1342cacbf1b3fcb2b7f9cfc682a1344ef875eccb96d70"></a></p>
+<h3 id="legal-challenges-of-maritime-autonomous-surface-ships-a-comparative-study-of-neighboring-states-and-implications-for-vietnam">Legal Challenges of Maritime Autonomous Surface Ships: A Comparative Study of Neighboring States and Implications for Vietnam</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-30</li>
+  <li>Authors: Van Truong Nguyen, Xuan Long Nguyen, Dang Thai Vu, Hanh Hoang Thi Hong</li>
+  <li>DOI: 10.65154/ijmst.14</li>
+  <li>Link: https://doi.org/10.65154/ijmst.14</li>
+  <li>Relevance: 18.0 (64%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>The study examines legal challenges posed by Maritime Autonomous Surface Ships (MASS), highlighting benefits and unresolved issues. It reviews regional policies, including standards, test areas, and sandboxes, from neighboring countries, while assessing the adequacy of international conventions. Recommendations are provided for Vietnam and other ASEAN nations to expedite MASS regulation development and testing strategies. The paper also stresses the importance of enhanced regional cooperation in ASEAN.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>International Maritime Organization and countries have been paying special attention to Maritime Autonomous Surface Vessels (MASS). MASS is assessed to be able to bring benefits to the world maritime industry, but it also raises legal issues that need to be further studied and improved. Countries in the region have many activities related to MASS, typically issuing MASS standards, building MASS test sea areas, smart ports, sandboxes, etc. This study analyzes and evaluates in detail the policies, strategies and regulations of some typical countries in the region on MASS. In addition, the article also analyzes and synthesizes the current regulations of international conventions, whether or not they are suitable for MASS. From that analysis, the article presents experiences for Vietnam as well as other countries in the region to shorten the time to build and improve regulations for MASS. Develop action strategies for the construction, testing and development of MASS in practice. At the same time, the article also emphasizes the need to further strengthen regional cooperation in the ASEAN region.</p>
+</blockquote>
+
+<h2 id="-2"><br /></h2>
+<p><br /></p>
+
+<p><a id="1ae8af95d0d6e2c65b9102558e3e311120add50c37bb0668e2438ef01fd1f3ca"></a></p>
+<h3 id="a-negotiation-method-for-cooperative-collision-avoidance-between-ships-in-mixed-navigation-scenarios-model-construction-strategy-driving-and-unilateral-learning">A negotiation method for cooperative collision avoidance between ships in mixed navigation scenarios: model construction, strategy driving, and unilateral learning</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-06-30</li>
+  <li>Authors: Xiaohui Wang, Yingjun Zhang, Shaobo Wang, Zhiyuan Jiang</li>
+  <li>DOI: 10.21278/brod77203</li>
+  <li>Link: https://doi.org/10.21278/brod77203</li>
+  <li>Relevance: 15.0 (54%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>The study introduces a bilateral negotiation model to enable autonomous and conventional ships to coordinate collision avoidance in mixed navigation scenarios. Using the Zeuthen strategy for bargaining and unilateral Bayesian learning for information estimation, the method improves negotiation efficiency with minimal data exchange from conventional ships. Simulation results show it resolves uncoordinated encounters, reduces unnecessary evasive maneuvers by autonomous ships, and enhances navigational safety. The approach addresses gaps in collaborative collision avoidance for heterogeneous fleets.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>With the gradual development of Maritime Autonomous Surface Ships (MASS), sea traffic is expected to remain in mixed navigation scenarios where autonomous and conventional ships operate concurrently. General collision avoidance methods and autonomous algorithms resolve encounter situations independently, but disparities in decision-making logic and approaches leave uncoordinated collision risks. This study constructs a bilateral negotiation model that enables autonomous and conventional ships to resolve uncoordinated collision avoidance through negotiation. The Zeuthen strategy is applied to ensure convergence and consensus in bargaining, while unilateral Bayesian learning is embedded to allow autonomous ships to estimate relevant information from conventional ships for improved negotiation capacity. The method exploits the computational capability of autonomous ships while imposing only lightweight information exchange requirements on conventional ships. Simulation experiments in representative mixed navigation scenarios demonstrate that the method resolves previously uncoordinated encounters, eliminates unnecessary evasive maneuvers by autonomous ships, and significantly improves overall navigational safety. This research addresses the limited studies on collaborative collision avoidance in such scenarios, reduces unnecessary active avoidance by autonomous ships, enhances the safety of decision-making for heterogeneous fleets, and provides a reference for the design and optimization of mixed navigation methods.</p>
+</blockquote>
+
+<h2 id="-3"><br /></h2>
+<p><br /></p>
+
+<p><a id="4c92d8a54f9fe0633cd953b673d5c037d899c66e5ba0632dd036603273be4acd"></a></p>
+<h3 id="research-on-autonomous-ship-route-planning-based-on-time-dynamic-theta-algorithm-under-complex-and-extreme-sea-conditions">Research on Autonomous Ship Route Planning Based on Time-Dynamic Theta* Algorithm Under Complex and Extreme Sea Conditions</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-30</li>
+  <li>Authors: Junwei Dong, Ze Sun, Peng Zhang, Jiale Zhang, Chen Chen, Run Qian</li>
+  <li>DOI: 10.3390/app16073328</li>
+  <li>Link: https://doi.org/10.3390/app16073328</li>
+  <li>Relevance: 14.5 (52%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>The study introduces a Time-Dynamic Theta* (TDM-Theta*) algorithm to improve autonomous ship route planning in complex and extreme sea conditions. The method combines traditional any-angle path planning with a temporal dimension and incorporates real-time significant wave height as a dynamic constraint. Simulation tests across nine cases showed the algorithm efficiently generates optimal paths in static terrains and achieves 100% proactive risk avoidance in extreme weather scenarios with multiple typhoons, with minimal computational overhead. The research supports real-time safe route decision-making for intelligent ships in volatile maritime environments.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>In complex marine environments, the safety and efficiency of ship navigation face dual challenges from static obstacles, such as shallow waters and islands, and extreme dynamic meteorological threats, such as typhoons. Existing path-planning algorithms often struggle to achieve an optimal balance between computational efficiency and risk-avoidance effectiveness when addressing high-frequency dynamic meteorological changes. To address this limitation, this study proposes a Time-Dynamic Theta* (TDM-Theta<em>) approach. From an algorithmic perspective, this method extends traditional any-angle path planning by introducing a temporal dimension to the search space. For maritime application, it integrates real-time significant wave height as a spatio-temporal dynamic constraint, thereby dynamically evaluating the actual impact of marine meteorology on ship navigability. Simulation tests were conducted through nine experimental cases designed under three typical navigation scenarios: unrestricted waters, complex terrains, and typhoon transits. The results demonstrate that the TDM-Theta</em> algorithm not only efficiently generates the shortest paths in statically complex terrains but also achieves a 100% proactive risk avoidance rate within the boundaries of the evaluated extreme weather scenarios with multiple concurrent typhoons, incurring negligible computational overhead and low path costs. This research provides robust theoretical and methodological support for real-time safe route decision-making for intelligent ships in complex and volatile environments.</p>
+</blockquote>
+
+<h2 id="-4"><br /></h2>
+<p><br /></p>
+
+<p><a id="4d5774ffa49c94cef750a72ba208c20887c5aad6a693e5a217fad16045146467"></a></p>
+<h3 id="development-of-collision-case-based-testing-scenarios-for-validating-autonomous-ship-collision-avoidance-algorithms">Development of collision-case-based testing scenarios for validating autonomous ship collision-avoidance algorithms</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-06-30</li>
+  <li>Authors: Jae-Yong Lee, Ho Namgung, Joo-Sung Kim</li>
+  <li>DOI: 10.21278/brod77204</li>
+  <li>Link: https://doi.org/10.21278/brod77204</li>
+  <li>Relevance: 13.5 (48%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>This study introduces a framework for creating realistic collision-avoidance testing scenarios for autonomous ships by analyzing actual collision cases. The framework involves collecting collision data, extracting ship trajectories, and developing diverse encounter situations by adjusting ship roles and positions. The resulting scenarios reflect real-world complexities, such as rule violations, dynamic encounters, speed changes, and environmental factors. These scenarios aim to improve the validation of collision-avoidance algorithms and enhance maritime safety.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>The criticality of collision-avoidance technology for ensuring safe navigation of autonomous ships necessitates diverse testing scenarios that reflect complex maritime environments. However, previous testing scenarios, often based on virtual trajectories or simplified encounters, have shown limitations in adequately representing real-world conditions. This study proposes a novel framework for developing collision-avoidance testing scenarios based on actual collision cases. The framework consists of three stages: collision case collection, trajectory extraction, and scenario development. Relevant data were extracted from selected cases, and the trajectories of ships influencing the collision were combined to reconstruct the circumstances at the time of the incident. Encounter situations were then diversified by altering the roles and positions of own and target ships, and finally systematically categorised into a structured testing set. Unlike previous testing scenarios, the developed scenarios exhibit distinctive characteristics derived from actual collision cases, including situations where navigation rules cannot be strictly applied, dynamic encounters, speed variations, and environmental conditions. By reflecting real maritime environments, these scenarios provide a solid basis for validating and improving collision-avoidance algorithms. The proposed framework is expected to contribute not only to the advancement of autonomous-ship technology but also to the enhancement of maritime safety.</p>
+</blockquote>
+
+<h2 id="-5"><br /></h2>
+<p><br /></p>
+
+<p><a id="c8d286af5d4855c9cd8db18660fa6db80394eb88f40a77afbeed467c4d00d92f"></a></p>
+<h3 id="comprehensive-literature-review-of-systemic-safety-analysis-trends-and-development-in-the-maritime-sector">Comprehensive literature review of systemic safety analysis: trends and development in the maritime sector☆</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-31</li>
+  <li>Authors: Dwitya Harits Waskito, Rafet Emek Kurt, Osman Turan</li>
+  <li>DOI: 10.1016/j.ssci.2026.107208</li>
+  <li>Link: https://doi.org/10.1016/j.ssci.2026.107208</li>
+  <li>Relevance: 13.5 (48%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>This study reviews system-theoretic safety approaches (STAMP, STPA, CAST) in the maritime sector using a hybrid methodology combining PRISMA, bibliometrics, and scoping. STPA is identified as the dominant method, particularly for Maritime Autonomous Surface Ships (MASS) and remote operations. Key gaps include limited validation, inconsistent loss scenario treatment, and weak integration of human and organizational factors. The review of 76 papers (2015–2024) highlights STPA’s growing use and its integration with quantitative methods like QRA.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>• This study presents the first comprehensive systematic literature review of system-theoretic safety approaches (STAMP, STPA, CAST) in the maritime sector. • A hybrid review methodology was employed, combining the PRISMA method, bibliometric analysis, and structured scoping based on cross-domain review. • STPA is considered the dominant system-theoretic method in maritime safety. • In terms of maritime system and operation, the system-theoretic method was used for Maritime Autonomous Surface Ships (MASS), and also for remote operations of maritime niche applications. • Key research gaps are highlighted, including limited validation, inconsistent treatment of loss scenarios, and underdeveloped integration of human and organisational factors. With the growing complexity of sociotechnical systems in maritime transportation, system-theoretic approaches such as STPA, STAMP, and CAST have emerged as effective tools through their focus on control problems. To strengthen both theoretical foundations and practical implementation in the industry, it is necessary to review the development of systems theory within this domain, addressing current limitations and outlining future research directions. This article presents a comprehensive review of system-theory applications in maritime transportation, encompassing modelling processes, application areas, and associated challenges. A bibliometric analysis of 76 papers published between 2015 and 2024 was conducted to identify thematic clusters, keywords, and research trends. The review examined how systems theory has been applied, the data sources employed to generate models, and how these methods are integrated with conventional risk assessment approaches. Findings indicate that STPA is the most widely adopted technique in the maritime sector for systems-based safety analysis. More than half of the reviewed studies applied systems theory to risk analysis for autonomous vessels, demonstrating researchers’ confidence in STPA’s capacity to address the challenges of highly complex systems such as autonomous ships. At the same time, there is a growing interest in combining STPA with other methodologies to produce quantifiable results for safety assessments. Consequently, an increasing proportion of studies are evolving towards integration with computational methods, algorithms, and Quantitative Risk Assessment (QRA). Overall, this paper provides a critical overview of system-theory applications in the maritime domain, highlighting limitations while offering recommendations to guide future research and practice.</p>
+</blockquote>
+
+<h2 id="-6"><br /></h2>
+<p><br /></p>
+
+<p><a id="3151e93d44a08487b98a3d7be30ebcf74135a57cc2af11a4be2961ae4c5fc5d1"></a></p>
+<h3 id="maritime-autonomous-surface-ship-for-experimental-trajectory-tracking-in-the-ocean">Maritime autonomous surface ship for experimental trajectory tracking in the ocean</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-04-01</li>
+  <li>Authors: Sang-Do Lee, Gi-Seon Jeong</li>
+  <li>DOI: 10.1016/j.oceaneng.2026.124727</li>
+  <li>Link: https://doi.org/10.1016/j.oceaneng.2026.124727</li>
+  <li>Relevance: 12.5 (45%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>No abstract or body text was available, so this entry is reported from metadata only.</p>
+
+<h2 id="-7"><br /></h2>
+<p><br /></p>
+
+<p><a id="d2b228555b2bd2f2b6bf8b7fb558bebea114463ffa7f60d250c71817bec12cab"></a></p>
+<h3 id="a-high-density-bathymetric-data-model-and-system-construction-approach-integrated-with-s-100-for-unmanned-surface-vessel-intelligent-navigation">A High-Density Bathymetric Data Model and System Construction Approach Integrated with S-100 for Unmanned Surface Vessel Intelligent Navigation</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-30</li>
+  <li>Authors: Jianan Luo, Zhichen Liu, Haifeng Tang, Chenchen Jiao, Xiongfei Geng, Hua Guo</li>
+  <li>DOI: 10.3390/jmse14070633</li>
+  <li>Link: https://doi.org/10.3390/jmse14070633</li>
+  <li>Relevance: 10.0 (36%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>The study introduces a new method for modeling and managing high-density bathymetric data using the S-100 framework, specifically the IHO S-102 standard. It employs a relational database and a three-level indexing system to organize and retrieve data efficiently throughout its lifecycle. The approach includes convex hull-based geometric constraints for interpolating water depth data and an HDF5-based storage model with block storage and version control, reducing storage space by 83.6%. Field tests in the East China Sea confirmed the generated S-102 data met international standards and achieved high terrain restoration accuracy.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>Intelligent vessel navigation increasingly demands high-density bathymetric data. To resolve the limitations of traditional standards and overcome existing management bottlenecks, this study proposes a novel methodology for high-density bathymetric data modeling and system construction integrated with the S-100 framework. Centered on the International Hydrographic Organization (IHO) S-102 standard, this methodology pioneers a strongly correlated management paradigm for datasets, data, and metadata. Leveraging a relational database architecture and a three-level indexing mechanism, it enables the structured organization and efficient retrieval of data throughout its entire life cycle. At the data production stage, geometric feature constraints based on convex hulls are innovatively incorporated to facilitate the interpolation of high-density water depth data and the generation of grid arrays. A data organization and structured storage model based on the three-tier logical architecture of the Hierarchical Data Format version 5 (HDF5) is proposed, which couples the technologies of block-based storage and refined version control to achieve the synergistic optimization of storage costs and access efficiency for high-density water depth data. Validation via field measurements in selected sea areas of the East China Sea demonstrated that the generated S-102 bathymetric data complied with international specifications and achieved excellent terrain restoration accuracy. Meanwhile, the proposed HDF5-based storage strategy achieves a storage space reduction of 83.6%. This research provides authoritative and efficient data support for scenarios such as intelligent navigation and port digitalization, and contributes to the construction of an intelligent shipping ecosystem.</p>
+</blockquote>
+
+<h2 id="-8"><br /></h2>
+<p><br /></p>
+
+<p><a id="0bc76d0f4ac996c9247631707d92e5341e02221d21f8907518e77e0d1b5a91b3"></a></p>
+<h3 id="approximate-optimal-fast-terminal-sliding-mode-control-for-autonomous-surface-vessels-subject-to-input-constraints-and-uncertainties">Approximate optimal fast terminal sliding mode control for autonomous surface vessels subject to input constraints and uncertainties</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-04-04</li>
+  <li>Authors: Jianchun Liao, Bin Guo, Songyi DIAN, Xiangai Miao, Ting Zheng</li>
+  <li>DOI: 10.1016/j.ins.2026.123466</li>
+  <li>Link: https://doi.org/10.1016/j.ins.2026.123466</li>
+  <li>Relevance: 9.5 (34%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>No abstract or body text was available, so this entry is reported from metadata only.</p>
+
+<h2 id="-9"><br /></h2>
+<p><br /></p>
+
+<p><a id="76b3b8e06ae3c0124538be2ade00bd8c56f0526a5665c7710839fd0bee3f8745"></a></p>
+<h3 id="lightweight-visual-localization-of-steel-surface-defects-for-autonomous-inspection-robots-based-on-improved-yolov10n">Lightweight Visual Localization of Steel Surface Defects for Autonomous Inspection Robots Based on Improved YOLOv10n</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-30</li>
+  <li>Authors: Jinwu Tong, Xin Zhang, Xinyun Lu, Han Cao, Lengtao Yao, Bingbing Gao</li>
+  <li>DOI: 10.3390/s26072132</li>
+  <li>Link: https://doi.org/10.3390/s26072132</li>
+  <li>Relevance: 9.5 (34%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p><strong>Summary:</strong> This paper introduces KDM-YOLO, a lightweight visual localization method for detecting steel surface defects, built on YOLOv10n. The approach improves feature extraction, context modeling, and multi-scale fusion using KWConv, C2f-DRB, and an MSAF module. Results show Precision, Recall, and mAP@50 of 91.0%, 93.9%, and 95.4%, with 3.29M parameters and 155.6 f/s inference speed.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>To address the challenges of steel surface defect detection—characterized by fine-grained textures, substantial scale variations, and complex background interference—conventional lightweight detectors often struggle to balance real-time navigation requirements with high-precision spatial localization on mobile inspection platforms. In this work, we propose KDM-YOLO, a lightweight visual localization and detection method built upon YOLOv10n, designed to provide an efficient perception engine for autonomous inspection robots. The proposed approach enhances the baseline through three key perspectives: feature extraction, context modeling, and multi-scale fusion. Specifically, KWConv is introduced to strengthen the representation of fine-grained texture and edge cues; C2f-DRB is employed to enlarge the effective receptive field and improve long-range dependency perception to reduce missed detections; and a multi-scale attention fusion (MSAF) module is inserted before the detection head to adaptively integrate spatial details with semantic context while suppressing redundant background responses. Ablation studies confirm that each module contributes to performance gains, and their combination yields the best overall results. Comparative experiments further demonstrate that KDM-YOLO significantly improves detection performance while retaining a compact model size and high inference speed. Compared with the YOLOv10n baseline, Precision, Recall and mAP@50 are increased to 91.0%, 93.9%, and 95.4%, respectively, with a parameter count of 3.29 M and an inference speed of 155.6 f/s. These results indicate that KDM-YOLO achieves an ideal balance between the accuracy and computational efficiency required for embedded navigation platforms, providing an effective solution for online autonomous inspection and real-time localization of steel surface defects.</p>
+</blockquote>
+
+<h2 id="-10"><br /></h2>
+<p><br /></p>
+
+<p><a id="1a0d5a18a889b4c0b89836a7b37201ed795634ceee3566f801cebcfda26f2167"></a></p>
+<h3 id="data-driven-risk-mitigation-of-southeast-asian-maritime-security">Data-driven risk mitigation of Southeast Asian maritime security</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-04-03</li>
+  <li>Authors: Muhammad Ilham Fahreza, Enna Hirata, Kazuhiko ISHIGURO, Kevin X. Li</li>
+  <li>DOI: 10.1108/mabr-08-2025-0078</li>
+  <li>Link: https://doi.org/10.1108/mabr-08-2025-0078</li>
+  <li>Relevance: 6.5 (23%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>The study introduces a data-driven framework combining Bayesian networks (BN) and TOPSIS to analyze and mitigate piracy risks in the Strait of Malacca. Key risk factors like “ship area boarded” and “crew response” were identified, with ship-level interventions proving more effective than broader measures like joint patrols. Despite existing measures, the model estimates a 57% probability of successful piracy, underscoring the need for improved strategies. The framework offers policymakers a quantitative tool for prioritizing anti-piracy actions, though it currently excludes socio-political factors and is tailored to Southeast Asia.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>Purpose The aim of this research is to develop a comprehensive, data-driven framework for analyzing and mitigating piracy and armed robbery incidents in high-risk maritime corridors, particularly the Strait of Malacca. The study integrates Bayesian network (BN) analysis with the Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) to objectively identify key risk factors, simulate various scenarios and rank effective strategies for reducing piracy incidents. Design/methodology/approach The study employs a combined BN-TOPSIS approach. First, a tree-augmented Bayesian network model is constructed using influential risk factors related to piracy attacks, extracted from historical incident data, to determine probabilistic dependencies. Sensitivity analyses then identify the mutual information values that are used as objective weights for the criteria in the TOPSIS multi-criteria decision-making model. TOPSIS is then applied to systematically evaluate and rank potential intervention strategies under multiple simulated scenarios. Findings The integrated BN-TOPSIS framework effectively identifies critical factors, such as “ship area boarded” and “crew response,” as high-impact variables. Among the proposed solutions, ship-level interventions, such as improved crew readiness and physical ship security, are significantly more effective at reducing successful attacks than broader external coordination measures, such as joint patrols. The model confirms that, despite current preventive measures, the probability of successful piracy remains high (approximately 57%), highlighting the urgent need for strategic improvements. Research limitations/implications The model presently focuses on technical and operational factors extracted from incident reports, omitting broader socio-political and economic dimensions influencing piracy risks. Additionally, it is tailored to Southeast Asian maritime conditions and requires customization before applying to other piracy-prone regions. Future work should incorporate macro-level variables and adapt the framework for generalized geographic contexts. Practical implications This integrated BN-TOPSIS framework provides policymakers and maritime security stakeholders with a robust, evidence-based tool for prioritizing anti-piracy measures. The quantitative insights promote the effective allocation of resources toward ship-specific defenses and crew training, enabling faster, data-supported decision-making. Streamlining reporting systems and enhancing joint task forces can complement these core interventions, further strengthening maritime safety and resilience in critical trade routes. Originality/value By combining the probabilistic modeling capabilities of BN with the objective ranking abilities of TOPSIS, the approach overcomes the limitations of each method when used individually. Unlike previous approaches that relied heavily on subjective expert judgment, this framework uses real-world incident data and a quantitative method to provide an unbiased evaluation of risk and strategy. It also enables scenario-based testing to prioritize interventions quantitatively, which is a novel approach in maritime security research.</p>
+</blockquote>
+
+<h2 id="-11"><br /></h2>
+<p><br /></p>
+
+<p><a id="3c8701cf7b2524014640a9a751ac52270beb896b928d2cb24897a8eb0a36a173"></a></p>
+<h3 id="ensemble-based-machine-learning-with-pso-and-ga-for-ship-coating-detection-using-portable-visnir">Ensemble-Based Machine Learning with PSO and GA for Ship Coating Detection Using Portable Vis/NIR</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-31</li>
+  <li>Authors: Ali Khumaidi, Ridwan Raafi’udin, Nusa Setiani Triastuti, Linda Marlinda</li>
+  <li>DOI: 10.47839/ijc.25.1.4496</li>
+  <li>Link: https://doi.org/10.47839/ijc.25.1.4496</li>
+  <li>Relevance: 6.5 (23%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>This study introduces a method for detecting ship coating quality using portable Vis/NIR spectroscopy and machine learning. The approach combines spectral transformation (Nippy) with feature selection techniques (PSO and GA) and ensemble learning models. Results indicate that the proposed method outperforms single baseline models and traditional feature selection methods, achieving 99.33% accuracy with LDA when using Nippy and PSO. The ensemble models maintained stable performance across different preprocessing and feature selection stages.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>This study presents a method for detecting ship coating quality using a portable Vis/NIR spectroscopy system combined with machine learning. To improve accuracy, we integrated spectral transformation (Nippy), feature selection methods (PSO and GA), and ensemble learning models. The experiments involved four coating quality levels, producing 148 spectral samples. Results show that the proposed approach consistently outperforms single baseline models and traditional feature selection methods such as PCA and IFS. The best performance was achieved by combining Nippy with PSO, where the LDA algorithm reached 99.33% accuracy, while GA also showed strong results with both single and ensemble models. We also examined ensemble results at different stages of preprocessing and feature selection, showing that the ensemble maintained stable performance throughout the process. These findings demonstrate that the integration of spectral transformation and metaheuristic feature selection can enhance model robustness, providing more reliable and accurate coating quality detection for maritime applications.</p>
+</blockquote>
+
+<h2 id="-12"><br /></h2>
+<p><br /></p>
+
+<p><a id="2478bdda69b137cd68692c12996a14221591c0460a268fec83f24a2f6773523d"></a></p>
+<h3 id="game-based-adversarial-control-for-unmanned-surface-vessels-via-fully-actuated-system-approach">Game-Based Adversarial Control for Unmanned Surface Vessels via Fully Actuated System Approach</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-31</li>
+  <li>Authors: Yu-Zhu Xiang, Zhengrong Xiang</li>
+  <li>DOI: 10.1142/s2301385028500021</li>
+  <li>Link: https://doi.org/10.1142/s2301385028500021</li>
+  <li>Relevance: 6.0 (21%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>The paper presents a zero-sum game-based adversarial control method for unmanned surface vessels (USVs) using a fully actuated system approach (FASA) to handle disturbances. A reinforcement learning algorithm with an actor-critic architecture and policy iteration is introduced, eliminating the need for precise system dynamics through off-policy learning with neural networks. The study shows that the evaluation function converges toward optimality while neural network weights remain bounded. Simulation results validate the effectiveness of the proposed approach.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>This paper focuses on zero-sum game-based adversarial control for unmanned surface vehicles (USVs) against disturbances. By using the fully actuated system approach (FASA), the underactuated USV dynamics can be transformed into an equivalent fully actuated form. To solve the zero-sum game between the controller and disturbances, a reinforcement learning approach based on actor-critic architecture and policy iteration is proposed. The method avoids reliance on exact system dynamics by employing an off-policy learning scheme, where neural networks serve as function approximators for the cost function, control policies, and disturbance strategies. It is demonstrated that the iterative evaluation function gradually approaches the optimal value, while the combined weight matrix of all neural networks remains uniformly ultimately bounded. Simulations are conducted to demonstrate the efficacy of the proposed algorithm.</p>
+</blockquote>
+
+<h2 id="-13"><br /></h2>
+<p><br /></p>
+
+<p><a id="23c5d6a1dffa3419b14f82ecb1f7e42e1675fae7e4cf35bb7456a9af431598d3"></a></p>
+<h3 id="an-integrated-controller-system-for-unmanned-surface-vehicles-usv">An Integrated Controller System For Unmanned Surface Vehicles (USV)</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-31</li>
+  <li>Authors: Nazreen Rusli, Zulkifli Zainal Abidin, Muhammad Aiman Norazuddin, Taufik Yunahar</li>
+  <li>DOI: 10.33093/ijoras.2026.8.1.2</li>
+  <li>Link: https://doi.org/10.33093/ijoras.2026.8.1.2</li>
+  <li>Relevance: 5.5 (20%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>Nazreen Rusli, Zulkifli Zainal Abidin, Muhammad Aiman Norazuddin, and Taufik Yunahar (2026) present an integrated controller system for Unmanned Surface Vehicles (USVs), designed to enhance maritime operations in environmental monitoring, resource exploration, and security. The “CxSense” controller, developed by IIUM’s Centre for Unmanned Technologies and Prostrain Technologies, meets high industry standards (IPx8, ESD, and vibration tests) for robustness and reliability. Battery-powered USVs, like those using CxSense, reduce environmental impact by eliminating direct water pollutants compared to traditional fuel-powered vessels. The system aims to improve maritime safety, efficiency, and sustainability in Malaysia and neighboring regions.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>Unmanned Surface Vehicles (USVs) are extensive used in several industries, such as environmental monitoring, offshore resource exploration, and maritime security. The benefits of USV for risk minimization and prolonged operational endurance cause an increase in demand. USVs are essential for administering marine security laws since they can remotely monitor traffic. Their ability to navigate well and avoid collisions improves the efficiency and safety of marine traffic. The incorporation of cutting-edge sensors and battery-powered vehicles enhances the dependability and operating capacities while minimizing environmental impact. Unlike traditional fuel-powered vessels, battery-operated USVs produce no direct water pollutants, contributing to cleaner oceans and more sustainable maritime operations. In response to these technological advancements and the unique maritime needs of Malaysia and neighboring oceanic nations, Centre for Unmanned Technologies (CUTe) at the International Islamic University Malaysia (IIUM) collaborated with Prostrain Technologies to develop a robust controller for USVs called “CxSense”. The controller board of CxSense has been designed to meet the stringent compliance requirements of IPx8, ESD test, and vibrations test, demonstrating their robustness, reliability, stability, and adherence to industry standards for high-level protection. This invention has the potential to significantly improve the efficiency and safety of maritime operations in Malaysia and the surrounding oceanic nations.</p>
+</blockquote>
+
+<h2 id="-14"><br /></h2>
+<p><br /></p>
+
+<p><a id="c8abc59e05e4a661d7c7581f1e934e9cfd935297c7e77463c687ad34a3a629be"></a></p>
+<h3 id="the-case-for-powered-propellers-on-ship-wingsails">The Case for Powered Propellers on Ship Wingsails</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-30</li>
+  <li>Authors: Sergio E. Perez</li>
+  <li>DOI: 10.5957/jst/2026.11.1.115</li>
+  <li>Link: https://doi.org/10.5957/jst/2026.11.1.115</li>
+  <li>Relevance: 5.5 (20%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>The study proposes installing powered propellers on ship wingsails to enhance maneuverability and lift, comparing their power consumption with unpowered wingsails, Flettner rotors, and conventional ships using a velocity prediction program (VPP). Powered wingsails, termed Propeller-Sails or Powered Wingsails, can generate greater lift than conventional wingsails and function like azimuth thrusters for improved ship control. Model testing demonstrates the extreme maneuverability achievable with wingsail-mounted propellers. The research highlights the potential fuel savings and operational benefits of this hybrid propulsion system.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>Abstract It is well-known that wingsails operating as auxiliary propulsion on cargo ships can reduce fuel consumption. But the wingsail’s utility can be further increased by installing powered propellers on the wings, which can serve as highly effective ship maneuvering tools, much like azimuth thrusters. In addition, the powered wingsails, referred to as Propeller-Sails or Powered Wingsails, can offer greater lift forces than conventional wingsails. In this work, a velocity prediction program (VPP) is used to compare the power consumption of powered and unpowered wingsails, Flettner rotors and normally powered ships. Finally, limited model testing is used to show the extreme maneuverability possible by the wingsail-mounted propellers. Keywords propeller-sail; Flettner rotor; high-lift device; velocity prediction program; sailing cargo ship; powered wingsail</p>
+</blockquote>
+
+<h2 id="-15"><br /></h2>
+<p><br /></p>
+
+<p><a id="10f1bea091c66cf324ca2d28b6b0af4b4d9556c9295fc868c28d86fce9f57441"></a></p>
+<h3 id="conceptualization-of-information-and-communication-system-development-for-remotely-operated-maritime-transport-in-arctic-region">Conceptualization of information and communication system development for remotely operated maritime transport in Arctic region</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-31</li>
+  <li>Authors: Konstantin Prostakevich, Igor’ Sikarev, Igor’ Yurin, Yuriy Kozlov, Valeriy Abramov</li>
+  <li>DOI: 10.20295/1815-588x-2026-1-229-238</li>
+  <li>Link: https://doi.org/10.20295/1815-588x-2026-1-229-238</li>
+  <li>Relevance: 5.0 (18%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>The study by Prostakevich et al. (2026) outlines strategic directions for developing information and communication systems for remotely operated Arctic maritime transport, focusing on information security. Using methods like foresight technologies and OSINT, the authors propose signal-relay architectures to maintain connectivity between vessels and remote control centers amid information threats. The research highlights practical recommendations for implementing these communication systems in Arctic conditions.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>Objective: to develop strategic directions for conceptualizing information and communication systems for remotely operated Arctic maritime transport, with particular emphasis on ensuring information security within contemporary project designs. Methods: analogy and abstraction methods, foresight-technologies, and open-source scanning techniques (OSINT) were applied. Results: prospective directions for information and communication system development tailored to remotely operated Arctic maritime transport have been outlined. The proposals advocate deploying communication signal-relay architectures that sustain connectivity between vessels with external crews and remote control centers under conditions of information threat, while concurrently satisfying information security requirements. Practical significance: the research offers recommendations on applying diverse signal-relay communication architectures.</p>
+</blockquote>
+
+<h2 id="-16"><br /></h2>
+<p><br /></p>
+
+<p><a id="e5184fdce262ae3f4b9fff1d689152f8ab4a008153e0f8dfd9f1418302866fbb"></a></p>
+<h3 id="a-hierarchical-learning-based-autonomous-berthing-trajectory-planner-for-unmanned-surface-vehicle">A hierarchical learning-based autonomous berthing trajectory planner for unmanned surface vehicle</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-31</li>
+  <li>Authors: Yuqi Dou, Zhilong Deng, Xueling Yi, LEI WANG, Lu He, Yunsheng Fan, Xinwei Wang</li>
+  <li>DOI: 10.1016/j.oceaneng.2026.125266</li>
+  <li>Link: https://doi.org/10.1016/j.oceaneng.2026.125266</li>
+  <li>Relevance: 4.5 (16%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>No abstract or body text was available, so this entry is reported from metadata only.</p>
+
+<h2 id="-17"><br /></h2>
+<p><br /></p>
+
+<p><a id="7419546d8049bd8489d08d0565dc88126b03fdb84523c1a5e3e0aa981ba70364"></a></p>
+<h3 id="powering-change-electrically-operated-subsea-safety-module-for-future-well-intervention">Powering Change: Electrically Operated Subsea Safety Module for Future Well Intervention</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-30</li>
+  <li>Authors: C. J. Berry</li>
+  <li>DOI: 10.4043/36557-ms</li>
+  <li>Link: https://doi.org/10.4043/36557-ms</li>
+  <li>Relevance: 4.5 (16%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>This paper discusses the need for hydraulic intervention in oil and gas wells, which uses chemicals or fluids under pressure for maintenance, remediation, or stimulation. It highlights the challenges of delivering fluids to subsea wells, requiring dedicated intervention vessels with remotely operated vehicles (ROVs) and specialized equipment like a subsea safety module (SSM). The SSM, as per API recommended practice 17G2, provides isolation valves, downline connection points, and an injection connection point for safe well intervention. Fluids can be injected at various locations, such as the subsea Christmas Tree or retrievable choke, depending on access availability.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>At all stages of a well’s life, be it surface or subsea, there may be a need for hydraulic intervention. Unlike mechanical intervention requiring tools deployed on wire or coiled tubing, hydraulic intervention relies on the reactivity of the chemicals or benign fluids or gasses under pressure for a variety of purposes to perform the operation. Maintenance, remediation, or stimulation may be required to treat wells for build ups of scale, wax, asphaltenes, hydrates etc to restore productivity or injectivity or remove blockages. They are also used to enhance production by treating the reservoir directly. The intervention may be sub-surface in the tubing or reservoir or downstream into flowlines or other subsea infrastructure. Hydraulic pressure can also be used to enable startup of new systems by breaking glass plugs and cycling completion valves. In emergency or end of life situations fluids can be pumped to overbalance the well and regain control or kill the system. During these operations it is required to connect to the live well and establish and maintain well barrier safety to always ensure correct control. It may be possible to use existing chemical delivery methods such as chemical lines in the XT umbilical or reverse flow chemicals into production flowlines from surface. These methods are likely to be limited in flow rates or unappealing due to temporary cessation of production or injection. For remote wells they may be unfeasible due to metallurgy and lengths of flowlines to purge and pump through, Efficient delivery of fluids to subsea assets may need dedicated intervention to achieve required flow rates and minimise nonproducing time. For subsea wells, fluids need to be injected from an intervention vessel that has remotely operated vehicles (ROVs), a subsea crane, deck space for pumps, HPUs and reelers to deploy downlines to the subsea well. Vessels may have chemical storage tanks however smaller vessels or wells requiring high volumes will require a stim vessel to supply the intervention fluids for pumping subsea. The dynamic heaving nature of the vessel at surface requires downline management as well as means to safely disconnect if the vessel were to drift or drive off location. On the seabed a means to isolate the well and safely attach fluid downlines is required if a disconnect were to occur. This takes the form of a seabed or tree mounted skid or subsea safety module (SSM) that contains isolation valves, downline connection points, and an injection connection point. SSMs are included in API recommended practice 17G2 as part of a subsea pumping well intervention system (SPWIS). A full riser based well control package (WCP) can be used to safely control the fluids into a well however are much larger and over spec’d for this the job. These types of systems require larger vessels/drill ships or rigs to be deployed from. As there is no wireline or coiled tubing being run into the well there is no need for the SSM valves to be capable of shearing so lighter fluid only valves can be used. The SSM is therefore an efficient and fit for purpose tool to safely enable intervention control of the well. Fluids can be injected at multiple locations into the subsea system (figure 1). Options are dependent on access availability; the subsea Christmas Tree (XT) type, whether the XT has a purpose designed high flow access connection or if access can be enabled by an alternative location. One such access point is the subsea retrievable choke which has been successfully used as an injection point after temporarily replacement with a short or long term unit. Choke inserts are particularly advantageous as they are installed downstream of main XT isolation valves and provide full bore access. Choke access deployment on horizontal XTs mitigates requirement for crown plug retrieval and leaves USVs undisturbed. On vertical XTs injection directly into the system via the re-entry mandrel may be a preferred option.</p>
+</blockquote>
+
+<h2 id="-18"><br /></h2>
+<p><br /></p>
+
+<p><a id="04f1779cfbd1802c4e7eb08d21653221db623d2f395e03449c9e77d8b20395d8"></a></p>
+<h3 id="global-navigation-local-operation-pose-optimization-and-multi-sensory-guidance-strategy-for-autonomous-mobile-manipulators">Global navigation-local operation: Pose optimization and multi-sensory guidance strategy for autonomous mobile manipulators</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-04-01</li>
+  <li>Authors: Dianfan Zhang, Yujie Zhu, Shuhong Cheng, Chao Zhang, Zedai Wang, Shijun Zhang</li>
+  <li>DOI: 10.1016/j.robot.2025.105307</li>
+  <li>Link: https://doi.org/10.1016/j.robot.2025.105307</li>
+  <li>Relevance: 4.0 (14%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>No abstract or body text was available, so this entry is reported from metadata only.</p>
+
+<h2 id="-19"><br /></h2>
+<p><br /></p>
+
+<p><a id="e80afc34cac7b4a6e3d414e6324a1f4d0d14935de9b46db7c015805c7e84f87b"></a></p>
+<h3 id="lidar-based-vehicle-detection-and-tracking-for-autonomous-racing">LiDAR-based vehicle detection and tracking for autonomous racing</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-04-01</li>
+  <li>Authors: Marcello Cellina, Matteo Corno, Sergio Matteo Savaresi</li>
+  <li>DOI: 10.1016/j.robot.2026.105472</li>
+  <li>Link: https://doi.org/10.1016/j.robot.2026.105472</li>
+  <li>Relevance: 4.0 (14%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>No abstract or body text was available, so this entry is reported from metadata only.</p>
+
+<h2 id="-20"><br /></h2>
+<p><br /></p>
+
+<p><a id="4e472496b56f0d3ba58cdfaf1573b88eb96fd4009fae1dea2a3fa9f2092a474f"></a></p>
+<h3 id="shared-control-for-autonomous-robotic-navigation-a-review">Shared control for autonomous robotic navigation: A review</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-04-01</li>
+  <li>Authors: Haojie Zhang, Chuankai Liu, Yikang Liu, Qing Li</li>
+  <li>DOI: 10.1016/j.robot.2026.105467</li>
+  <li>Link: https://doi.org/10.1016/j.robot.2026.105467</li>
+  <li>Relevance: 4.0 (14%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>No abstract or body text was available, so this entry is reported from metadata only.</p>
+
+<h2 id="-21"><br /></h2>
+<p><br /></p>
+
+<p><a id="b518d22469f702afe4f8d22510f450233c5865c6513482c5e196f280bbc2a9ef"></a></p>
+<h3 id="optimal-design-of-type-2-high-pressure-vessel-for-cng-vehicles">Optimal Design of Type 2 High Pressure Vessel for CNG Vehicles</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-30</li>
+  <li>Authors: Taeyoung Kim, Hwa Y. Kim</li>
+  <li>DOI: 10.1115/1.4071551</li>
+  <li>Link: https://doi.org/10.1115/1.4071551</li>
+  <li>Relevance: 3.5 (12%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>The study by Kim and Kim (2026) optimized the design of Type 2 high-pressure CNG vessels for vehicles by adjusting liner and composite thicknesses to reduce weight while maintaining safety. Using ANSYS Workbench, they analyzed stress behavior and applied autofrettage pressure to enhance fatigue life and durability against buckling and burst. The optimized design achieved a 6.6% weight reduction compared to current commercial CNG vessels while meeting structural safety, durability, and cost criteria.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>Abstract Compressed Natural Gas (CNG) pressure vessels are used for fuel storage in eco-friendly vehicles, providing a safe fuel supply under high pressure. Lightweighting of CNG pressure vessels while ensuring structural safety is an essential factor. In this study, liner and composite thickness designs were performed to reduce the weight of CNG pressure vessels. The stress behavior based on liner and composite thicknesses was analyzed using the commercial finite element analysis software, ANSYS Workbench. To improve fatigue life and durability, considering failure due to buckling and burst, autofrettage pressure was applied. Using optimal design, a minimum-weight pressure vessel was achieved, meeting criteria for structural safety, fatigue life, and cost reduction. Therefore, a 6.6% reduction in weight was achieved compared to CNG pressure vessels currently manufactured in the field.</p>
+</blockquote>
+
+<h2 id="-22"><br /></h2>
+<p><br /></p>
+
+<p><a id="1e174cf4c0e8bc0c0741641e62a6204153625ff4a75c6b27abcdf0ae8da264a1"></a></p>
+<h3 id="iq-rrt-a-heuristic-approach-to-path-planning-for-unmanned-surface-vehicles">IQ-RRT*: A heuristic approach to path planning for unmanned surface vehicles</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-04-01</li>
+  <li>Authors: Lianbo Li, Dixin Zhong, Shaobo Wang, Handi Wei</li>
+  <li>DOI: 10.1016/j.oceaneng.2026.124613</li>
+  <li>Link: https://doi.org/10.1016/j.oceaneng.2026.124613</li>
+  <li>Relevance: 3.0 (11%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>No abstract or body text was available, so this entry is reported from metadata only.</p>
+
+<h2 id="-23"><br /></h2>
+<p><br /></p>
+
+<p><a id="559b4fc6c5e1ae023b431e52436d8020c5af9c363981e4acddb3aaa444011de5"></a></p>
+<h3 id="influence-of-local-hydrodynamics-on-ship-drift-leading-to-ship-bridge-allisions">Influence of local hydrodynamics on ship drift leading to ship-bridge allisions</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-04-01</li>
+  <li>Authors: Tomoaki Nakamura, J.C. Dietrich, Yonghwan Cho, J.E. San Juan, G. Haikal, Takashi Tomita</li>
+  <li>DOI: 10.1016/j.oceaneng.2026.124459</li>
+  <li>Link: https://doi.org/10.1016/j.oceaneng.2026.124459</li>
+  <li>Relevance: 3.0 (11%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>No abstract or body text was available, so this entry is reported from metadata only.</p>
+
+<h2 id="-24"><br /></h2>
+<p><br /></p>
+
+<p><a id="f6d3ab885b4ac3918683d17df0f80b78e36d078d16c256438f58bb7f00207fd0"></a></p>
+<h3 id="hierarchical-vessel-safe-operation-in-a-port-through-cbf-mpc-and-rrt-like-spatiotemporal-path-planning">Hierarchical Vessel Safe Operation in A Port through CBF, MPC and RRT-like Spatiotemporal Path Planning</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-04-03</li>
+  <li>Authors: 大月 智史, S. Otsuki, 八田 直樹, N. Hatta, Hanif Muhammad, M. M. Hanif, 舩田 陸, R. Funada, K. Nakashima, 畑中 健志, T. Hatanaka</li>
+  <li>DOI: N/A</li>
+  <li>Link: http://t2r2.star.titech.ac.jp/cgi-bin/publicationinfo.cgi?q_publication_content_number=CTT100941892</li>
+  <li>Relevance: 0.0 (0%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>This paper presents a hierarchical framework for ensuring safe vessel operations in ports using Control Barrier Functions (CBF), Model Predictive Control (MPC), and a Rapidly-exploring Random Tree (RRT)-like spatiotemporal path planning method. The approach integrates real-time collision avoidance and optimal trajectory planning to enhance navigation safety. The authors demonstrate the system’s effectiveness through simulations and experiments in port environments. The proposed method aims to reduce risks and improve operational efficiency for autonomous or semi-autonomous vessels.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>, Hierarchical Vessel Safe Operation in A Port through CBF, MPC and RRT-like Spatiotemporal Path Planning</p>
+</blockquote>
+
+<h2 id="-25"><br /></h2>
+<p><br /></p>
+
+<p><a id="dd2ebeb8be25e8292fec1c9f07b1201a5ddf5923955acf71ebbaf18b220ce7c8"></a></p>
+<h3 id="aivv-neuro-symbolic-llm-agent-integrated-verification-and-validation-for-trustworthy-autonomous-systems">AIVV: Neuro-Symbolic LLM Agent-Integrated Verification and Validation for Trustworthy Autonomous Systems</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-04-02</li>
+  <li>Authors: Jiyong Kwon, Ujin Jeon, Sooji Lee, Guang Lin</li>
+  <li>DOI: N/A</li>
+  <li>Link: https://www.semanticscholar.org/paper/92b56767b008656639bf872ed305118c88e04c03</li>
+  <li>Relevance: 0.0 (0%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>AIVV introduces a hybrid framework using Large Language Models (LLMs) to automate Verification and Validation (V&amp;V) for autonomous systems. It addresses limitations of deep learning models in anomaly classification by deploying a role-specialized LLM council to collaboratively validate faults and assess system responses against natural-language requirements. The framework generates actionable V&amp;V artifacts, such as gain-tuning proposals, and was tested successfully on a time-series simulator for Unmanned Underwater Vehicles (UUVs). AIVV aims to replace manual Human-in-the-Loop (HITL) processes, offering a scalable solution for system oversight.</p>
+
+<p><strong>Abstract / Source Text</strong></p>
+
+<blockquote>
+  <p>Deep learning models excel at detecting anomaly patterns in normal data. However, they do not provide a direct solution for anomaly classification and scalability across diverse control systems, frequently failing to distinguish genuine faults from nuisance faults caused by noise or the control system’s large transient response. Consequently, because algorithmic fault validation remains unscalable, full Verification and Validation (V\&amp;V) operations are still managed by Human-in-the-Loop (HITL) analysis, resulting in an unsustainable manual workload. To automate this essential oversight, we propose Agent-Integrated Verification and Validation (AIVV), a hybrid framework that deploys Large Language Models (LLMs) as a deliberative outer loop. Because rigorous system verification strictly depends on accurate validation, AIVV escalates mathematically flagged anomalies to a role-specialized LLM council. The council agents perform collaborative validation by semantically validating nuisance and true failures based on natural-language (NL) requirements to secure a high-fidelity system-verification baseline. Building on this foundation, the council then performs system verification by assessing post-fault responses against NL operational tolerances, ultimately generating actionable V\&amp;V artifacts, such as gain-tuning proposals. Experiments on a time-series simulator for Unmanned Underwater Vehicles (UUVs) demonstrate that AIVV successfully digitizes the HITL V\&amp;V process, overcoming the limitations of rule-based fault classification and offering a scalable blueprint for LLM-mediated oversight in time-series data domains.</p>
+</blockquote>
+
+<h2 id="-26"><br /></h2>
+<p><br /></p>
+
+<p><a id="4cf9ad4f336cf1b80da671f29f6f02ab0fd6240f5f9c2003014f4328300b045f"></a></p>
+<h3 id="data-driven-event-triggered-heading-control-for-autonomous-surface-vehicles-based-on-an-adaptive-observer">Data-driven event-triggered heading control for autonomous surface vehicles based on an adaptive observer</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-04-01</li>
+  <li>Authors: Yihang Zhao, Yongchao Liu, Shuaixi Li, Shubo Wang</li>
+  <li>DOI: 10.1016/j.oceaneng.2026.124669</li>
+  <li>Link: https://www.semanticscholar.org/paper/1119f5cb3d4640611a6a34310bcdc70a539f48ef</li>
+  <li>Relevance: 0.0 (0%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>No abstract or body text was available, so this entry is reported from metadata only.</p>
+
+<h2 id="-27"><br /></h2>
+<p><br /></p>
+
+<p><a id="28082749b93f8c22dbad3999afa23e6a5709c037e77429829b7f087636efb827"></a></p>
+<h3 id="nonlinear-stability-analysis-of-autonomous-container-ship-under-environmental-disturbances-using-hardware-in-the-loop-validation">Nonlinear stability analysis of autonomous container ship under environmental disturbances using hardware-in-the-loop validation</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-04-01</li>
+  <li>Authors: Abdurrahim Bilal Ozcan, Ismail Bayezit, Omer Kemal Kinaci, Junaid Khan</li>
+  <li>DOI: 10.1016/j.oceaneng.2026.124201</li>
+  <li>Link: https://www.semanticscholar.org/paper/c65184c9fb20f3106d01f67094b9cafe9d9fd484</li>
+  <li>Relevance: 0.0 (0%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>No abstract or body text was available, so this entry is reported from metadata only.</p>
+
+<h2 id="-28"><br /></h2>
+<p><br /></p>
+
+<p><a id="8730dc53022eec6d85507fbdeaf841dc52171a9b91affb28bb73e2b090e0ffdb"></a></p>
+<h3 id="regulation-of-maritime-autonomous-surface-ships-on-carbon-emissions-and-marine-pollution-context-challenges-responses">Regulation of maritime autonomous surface ships on carbon emissions and marine pollution: Context, challenges, responses</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-04-01</li>
+  <li>Authors: Jinpeng Wang, Mengyao Yuan</li>
+  <li>DOI: 10.1016/j.marpol.2025.107020</li>
+  <li>Link: https://www.semanticscholar.org/paper/f9e3e30ddb7a5a8150236890a5c2bf77772d90de</li>
+  <li>Relevance: 0.0 (0%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>No abstract or body text was available, so this entry is reported from metadata only.</p>
+
+<h2 id="-29"><br /></h2>
+<p><br /></p>
+
+<p><a id="bb3fcf5bf6f0853ed00a7fc36b9b18b6a6bf7233b3a104cac2f098914baeb524"></a></p>
+<h3 id="heterogeneous-multi-scale-enhanced-yolov8-for-real-time-maritime-obstacle-detection-on-unmanned-surface-vessels">Heterogeneous multi-scale enhanced YOLOv8 for real-time maritime obstacle detection on unmanned surface vessels</h3>
+
+<p><strong>Metadata</strong></p>
+
+<ul>
+  <li>Date: 2026-03-30</li>
+  <li>Authors: Runbing Wu, Yani Cui, Zijian Hu, Jia Ren, Yan Zhang, Bei Li</li>
+  <li>DOI: 10.1016/j.eswa.2026.132244</li>
+  <li>Link: https://www.semanticscholar.org/paper/ff8caa1fdc77976f8c338cbe130f2b6d299701ad</li>
+  <li>Relevance: 0.0 (0%)</li>
+</ul>
+
+<p><strong>AI Summary</strong></p>
+
+<p>No abstract or body text was available, so this entry is reported from metadata only.</p>
+
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      Generated by <a href="https://github.com/MelihAkdag/custom_TLDR_app">custom_TLDR_app</a>
+    </div>
+  </footer>
+</body>
+</html>
