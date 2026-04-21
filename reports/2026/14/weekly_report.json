@@ -1,0 +1,1430 @@
+{
+  "run_id": "15545294da304dde868e1a5e9ee13942",
+  "requested_week": "2026-W14",
+  "window_start": "2026-03-30",
+  "window_end": "2026-04-05",
+  "status": "success",
+  "source_stats": {
+    "crossref": {
+      "existing_items": 5,
+      "fetched": 27,
+      "filtered_out": 7,
+      "new_items": 15
+    },
+    "news_rss": {
+      "existing_items": 0,
+      "fetched": 49,
+      "filtered_out": 25,
+      "new_items": 24
+    },
+    "openalex": {
+      "existing_items": 1,
+      "fetched": 22,
+      "filtered_out": 6,
+      "new_items": 15
+    }
+  },
+  "warnings": [],
+  "errors": [],
+  "topics": [
+    {
+      "topic_id": "ship_autonomy",
+      "display_name": "Ship Autonomy",
+      "items": [
+        {
+          "item_id": "73dce9e1472504d27eb85e7ca7847da23b0b6b51fd793f69b3b35836dd709041",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7147213976",
+          "item_type": "paper",
+          "title": "From Vessel Trajectories to Safety-Critical Encounter Scenarios: A Generative AI Framework for Autonomous Ship Digital Testing",
+          "authors_or_author": [
+            "S. Sun",
+            "Liangbin Zhao",
+            "Ming Deng",
+            "Xiuju Fu"
+          ],
+          "published_at": "2026-03-30",
+          "url": "https://www.semanticscholar.org/paper/29008416c0dad1c9efd9b32306f25a31a71d09ec",
+          "doi": "10.48550/arxiv.2603.28067",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 19.5,
+          "abstract_or_body": "Digital testing has emerged as a key paradigm for the development and verification of autonomous maritime navigation systems, yet the availability of realistic and diverse safety-critical encounter scenarios remains limited. Existing approaches either rely on handcrafted templates, which lack realism, or extract cases directly from historical data, which cannot systematically expand rare high-risk situations. This paper proposes a data-driven framework that converts large-scale Automatic Identification System (AIS) trajectories into structured safety-critical encounter scenarios. The framework combines generative trajectory modeling with automated encounter pairing and temporal parameterization to enable scalable scenario construction while preserving real traffic characteristics. To enhance trajectory realism and robustness under noisy AIS observations, a multi-scale temporal variational autoencoder is introduced to capture vessel motion dynamics across different temporal resolutions. Experiments on real-world maritime traffic flows demonstrate that the proposed method improves trajectory fidelity and smoothness, maintains statistical consistency with observed data, and enables the generation of diverse safety-critical encounter scenarios beyond those directly recorded. The resulting framework provides a practical pathway for building scenario libraries to support digital testing, benchmarking, and safety assessment of autonomous navigation and intelligent maritime traffic management systems. Code is available at https://anonymous.4open.science/r/traj-gen-anonymous-review.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-30\n- Authors: S. Sun, Liangbin Zhao, Ming Deng, Xiuju Fu\n- DOI: 10.48550/arxiv.2603.28067\n- Link: https://www.semanticscholar.org/paper/29008416c0dad1c9efd9b32306f25a31a71d09ec",
+            "source_excerpt": "Digital testing has emerged as a key paradigm for the development and verification of autonomous maritime navigation systems, yet the availability of realistic and diverse safety-critical encounter scenarios remains limited. Existing approaches either rely on handcrafted templates, which lack realism, or extract cases directly from historical data, which cannot systematically expand rare high-risk situations. This paper proposes a data-driven framework that converts large-scale Automatic Identification System (AIS) trajectories into structured safety-critical encounter scenarios. The framework combines generative trajectory modeling with automated encounter pairing and temporal parameterization to enable scalable scenario construction while preserving real traffic characteristics. To enhance trajectory realism and robustness under noisy AIS observations, a multi-scale temporal variational autoencoder is introduced to capture vessel motion dynamics across different temporal resolutions. Experiments on real-world maritime traffic flows demonstrate that the proposed method improves trajectory fidelity and smoothness, maintains statistical consistency with observed data, and enables the generation of diverse safety-critical encounter scenarios beyond those directly recorded. The resulting framework provides a practical pathway for building scenario libraries to support digital testing, benchmarking, and safety assessment of autonomous navigation and intelligent maritime traffic management systems. Code is available at https://anonymous.4open.science/r/traj-gen-anonymous-review.",
+            "short_summary": "The paper introduces a generative AI framework that converts real-world ship trajectories from AIS data into realistic safety-critical encounter scenarios for testing autonomous maritime navigation systems. It uses a multi-scale temporal variational autoencoder to improve trajectory realism and robustness, even with noisy AIS data. The method enables scalable generation of diverse high-risk scenarios beyond historical records, supporting digital testing and safety assessments. Code for the framework is publicly available."
+          }
+        },
+        {
+          "item_id": "41a4e89e9e7beed1bb1bc5443eb09fcbe47144005a6fb570031eff58db7cfb7e",
+          "source": "Inside Unmanned Systems",
+          "source_id": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaG1FWEJOUlJ1RUpVWHVGa29vbTNEYnFoZlUzU1puc3dDYnBBT3JlZko5M1FYQmVGN1kzYVM5WXNyWWEyTXhrN1JadjJKbmphRGRPUU9LVUhKNjJCZVpjY2tiQVZnajhPOGFpTG1ZbTVsa044MEp5eXJGUUlDWkd5cnN6MDUwelluQVBDY0JCcTJ6b0ZrWFdmdE16T2w4ZlJRWDdQb3Q3SXFMZy0zUGNITUJjZE9YQ1k1TnZXbVotRGhUUUpqUXJfLXlfd0I0Y2RUZlRseUk1M3RyS1k?oc=5",
+          "item_type": "news_article",
+          "title": "Saronic Raises $1.75B, Expands Louisiana Shipbuilding Footprint as Autonomous Surface Vessel Production Scales",
+          "authors_or_author": [
+            "Inside Unmanned Systems"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaG1FWEJOUlJ1RUpVWHVGa29vbTNEYnFoZlUzU1puc3dDYnBBT3JlZko5M1FYQmVGN1kzYVM5WXNyWWEyTXhrN1JadjJKbmphRGRPUU9LVUhKNjJCZVpjY2tiQVZnajhPOGFpTG1ZbTVsa044MEp5eXJGUUlDWkd5cnN6MDUwelluQVBDY0JCcTJ6b0ZrWFdmdE16T2w4ZlJRWDdQb3Q3SXFMZy0zUGNITUJjZE9YQ1k1TnZXbVotRGhUUUpqUXJfLXlfd0I0Y2RUZlRseUk1M3RyS1k?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 18.5,
+          "abstract_or_body": "Saronic Raises $1.75B, Expands Louisiana Shipbuilding Footprint as Autonomous Surface Vessel Production Scales &nbsp;&nbsp; Inside Unmanned Systems",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: Inside Unmanned Systems\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaG1FWEJOUlJ1RUpVWHVGa29vbTNEYnFoZlUzU1puc3dDYnBBT3JlZko5M1FYQmVGN1kzYVM5WXNyWWEyTXhrN1JadjJKbmphRGRPUU9LVUhKNjJCZVpjY2tiQVZnajhPOGFpTG1ZbTVsa044MEp5eXJGUUlDWkd5cnN6MDUwelluQVBDY0JCcTJ6b0ZrWFdmdE16T2w4ZlJRWDdQb3Q3SXFMZy0zUGNITUJjZE9YQ1k1TnZXbVotRGhUUUpqUXJfLXlfd0I0Y2RUZlRseUk1M3RyS1k?oc=5",
+            "source_excerpt": "Saronic Raises $1.75B, Expands Louisiana Shipbuilding Footprint as Autonomous Surface Vessel Production Scales &nbsp;&nbsp; Inside Unmanned Systems",
+            "short_summary": "Saronic secured $1.75 billion in funding and expanded its shipbuilding operations in Louisiana to scale up production of autonomous surface vessels. The company aims to enhance its manufacturing capabilities in the region as demand for unmanned maritime systems grows. This expansion supports the scaling of autonomous vessel production."
+          }
+        },
+        {
+          "item_id": "9148d854b78ac51bf7a1342cacbf1b3fcb2b7f9cfc682a1344ef875eccb96d70",
+          "source": "crossref",
+          "source_id": "10.65154/ijmst.14",
+          "item_type": "paper",
+          "title": "Legal Challenges of Maritime Autonomous Surface Ships: A Comparative Study of Neighboring States and Implications for Vietnam",
+          "authors_or_author": [
+            "Van Truong Nguyen",
+            "Xuan Long Nguyen",
+            "Dang Thai Vu",
+            "Hanh Hoang Thi Hong"
+          ],
+          "published_at": "2026-03-30",
+          "url": "https://doi.org/10.65154/ijmst.14",
+          "doi": "10.65154/ijmst.14",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 18.0,
+          "abstract_or_body": "International Maritime Organization and countries have been paying special attention to Maritime Autonomous Surface Vessels (MASS). MASS is assessed to be able to bring benefits to the world maritime industry, but it also raises legal issues that need to be further studied and improved. Countries in the region have many activities related to MASS, typically issuing MASS standards, building MASS test sea areas, smart ports, sandboxes, etc. This study analyzes and evaluates in detail the policies, strategies and regulations of some typical countries in the region on MASS. In addition, the article also analyzes and synthesizes the current regulations of international conventions, whether or not they are suitable for MASS. From that analysis, the article presents experiences for Vietnam as well as other countries in the region to shorten the time to build and improve regulations for MASS. Develop action strategies for the construction, testing and development of MASS in practice. At the same time, the article also emphasizes the need to further strengthen regional cooperation in the ASEAN region.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-30\n- Authors: Van Truong Nguyen, Xuan Long Nguyen, Dang Thai Vu, Hanh Hoang Thi Hong\n- DOI: 10.65154/ijmst.14\n- Link: https://doi.org/10.65154/ijmst.14",
+            "source_excerpt": "International Maritime Organization and countries have been paying special attention to Maritime Autonomous Surface Vessels (MASS). MASS is assessed to be able to bring benefits to the world maritime industry, but it also raises legal issues that need to be further studied and improved. Countries in the region have many activities related to MASS, typically issuing MASS standards, building MASS test sea areas, smart ports, sandboxes, etc. This study analyzes and evaluates in detail the policies, strategies and regulations of some typical countries in the region on MASS. In addition, the article also analyzes and synthesizes the current regulations of international conventions, whether or not they are suitable for MASS. From that analysis, the article presents experiences for Vietnam as well as other countries in the region to shorten the time to build and improve regulations for MASS. Develop action strategies for the construction, testing and development of MASS in practice. At the same time, the article also emphasizes the need to further strengthen regional cooperation in the ASEAN region.",
+            "short_summary": "The study examines legal challenges posed by Maritime Autonomous Surface Ships (MASS), highlighting benefits and unresolved issues. It reviews regional policies, including standards, test areas, and sandboxes, from neighboring countries, while assessing the adequacy of international conventions. Recommendations are provided for Vietnam and other ASEAN nations to expedite MASS regulation development and testing strategies. The paper also stresses the importance of enhanced regional cooperation in ASEAN."
+          }
+        },
+        {
+          "item_id": "1ae8af95d0d6e2c65b9102558e3e311120add50c37bb0668e2438ef01fd1f3ca",
+          "source": "crossref",
+          "source_id": "10.21278/brod77203",
+          "item_type": "paper",
+          "title": "A negotiation method for cooperative collision avoidance between ships in mixed navigation scenarios: model construction, strategy driving, and unilateral learning",
+          "authors_or_author": [
+            "Xiaohui Wang",
+            "Yingjun Zhang",
+            "Shaobo Wang",
+            "Zhiyuan Jiang"
+          ],
+          "published_at": "2026-06-30",
+          "url": "https://doi.org/10.21278/brod77203",
+          "doi": "10.21278/brod77203",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 15.0,
+          "abstract_or_body": "With the gradual development of Maritime Autonomous Surface Ships (MASS), sea traffic is expected to remain in mixed navigation scenarios where autonomous and conventional ships operate concurrently. General collision avoidance methods and autonomous algorithms resolve encounter situations independently, but disparities in decision-making logic and approaches leave uncoordinated collision risks. This study constructs a bilateral negotiation model that enables autonomous and conventional ships to resolve uncoordinated collision avoidance through negotiation. The Zeuthen strategy is applied to ensure convergence and consensus in bargaining, while unilateral Bayesian learning is embedded to allow autonomous ships to estimate relevant information from conventional ships for improved negotiation capacity. The method exploits the computational capability of autonomous ships while imposing only lightweight information exchange requirements on conventional ships. Simulation experiments in representative mixed navigation scenarios demonstrate that the method resolves previously uncoordinated encounters, eliminates unnecessary evasive maneuvers by autonomous ships, and significantly improves overall navigational safety. This research addresses the limited studies on collaborative collision avoidance in such scenarios, reduces unnecessary active avoidance by autonomous ships, enhances the safety of decision-making for heterogeneous fleets, and provides a reference for the design and optimization of mixed navigation methods.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-06-30\n- Authors: Xiaohui Wang, Yingjun Zhang, Shaobo Wang, Zhiyuan Jiang\n- DOI: 10.21278/brod77203\n- Link: https://doi.org/10.21278/brod77203",
+            "source_excerpt": "With the gradual development of Maritime Autonomous Surface Ships (MASS), sea traffic is expected to remain in mixed navigation scenarios where autonomous and conventional ships operate concurrently. General collision avoidance methods and autonomous algorithms resolve encounter situations independently, but disparities in decision-making logic and approaches leave uncoordinated collision risks. This study constructs a bilateral negotiation model that enables autonomous and conventional ships to resolve uncoordinated collision avoidance through negotiation. The Zeuthen strategy is applied to ensure convergence and consensus in bargaining, while unilateral Bayesian learning is embedded to allow autonomous ships to estimate relevant information from conventional ships for improved negotiation capacity. The method exploits the computational capability of autonomous ships while imposing only lightweight information exchange requirements on conventional ships. Simulation experiments in representative mixed navigation scenarios demonstrate that the method resolves previously uncoordinated encounters, eliminates unnecessary evasive maneuvers by autonomous ships, and significantly improves overall navigational safety. This research addresses the limited studies on collaborative collision avoidance in such scenarios, reduces unnecessary active avoidance by autonomous ships, enhances the safety of decision-making for heterogeneous fleets, and provides a reference for the design and optimization of mixed navigation methods.",
+            "short_summary": "The study introduces a bilateral negotiation model to enable autonomous and conventional ships to coordinate collision avoidance in mixed navigation scenarios. Using the Zeuthen strategy for bargaining and unilateral Bayesian learning for information estimation, the method improves negotiation efficiency with minimal data exchange from conventional ships. Simulation results show it resolves uncoordinated encounters, reduces unnecessary evasive maneuvers by autonomous ships, and enhances navigational safety. The approach addresses gaps in collaborative collision avoidance for heterogeneous fleets."
+          }
+        },
+        {
+          "item_id": "e104a34719ea845be6f10348def3cf03787833adb4b98e34a068a3d9934af6d7",
+          "source": "SiliconANGLE",
+          "source_id": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcURCSWtHTXdOeHhVVGhFcW1nTXJ6QXB2c1pBeXBESGk3ekplSTl5VnNQVldvV21EdV90ZGdEdFJ2aDZjb2s5QW5ZY1lXM0RrRjFQTkdVb2hORDFNR2prTDFDX1NxVnRiN3pBRkZ3OFJPSHlaUUJoZ1hsNl9PT1JHdGJfSmJSSFRjQ0VRY1prOC14RW5PRXpMUkxDY0pnUFE1akNzaWlQQ24?oc=5",
+          "item_type": "news_article",
+          "title": "Saronic raises $1.75B at $9.25B valuation to gear up autonomous ship production",
+          "authors_or_author": [
+            "SiliconANGLE"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcURCSWtHTXdOeHhVVGhFcW1nTXJ6QXB2c1pBeXBESGk3ekplSTl5VnNQVldvV21EdV90ZGdEdFJ2aDZjb2s5QW5ZY1lXM0RrRjFQTkdVb2hORDFNR2prTDFDX1NxVnRiN3pBRkZ3OFJPSHlaUUJoZ1hsNl9PT1JHdGJfSmJSSFRjQ0VRY1prOC14RW5PRXpMUkxDY0pnUFE1akNzaWlQQ24?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 14.5,
+          "abstract_or_body": "Saronic raises $1.75B at $9.25B valuation to gear up autonomous ship production &nbsp;&nbsp; SiliconANGLE",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: SiliconANGLE\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcURCSWtHTXdOeHhVVGhFcW1nTXJ6QXB2c1pBeXBESGk3ekplSTl5VnNQVldvV21EdV90ZGdEdFJ2aDZjb2s5QW5ZY1lXM0RrRjFQTkdVb2hORDFNR2prTDFDX1NxVnRiN3pBRkZ3OFJPSHlaUUJoZ1hsNl9PT1JHdGJfSmJSSFRjQ0VRY1prOC14RW5PRXpMUkxDY0pnUFE1akNzaWlQQ24?oc=5",
+            "source_excerpt": "Saronic raises $1.75B at $9.25B valuation to gear up autonomous ship production &nbsp;&nbsp; SiliconANGLE",
+            "short_summary": "Saronic, a company focused on autonomous ship production, raised $1.75 billion in funding, achieving a valuation of $9.25 billion. The capital will be used to accelerate the development and production of autonomous ships. This funding round highlights growing investor confidence in autonomous maritime technology."
+          }
+        },
+        {
+          "item_id": "133266bf9eb8639e919f207334c68adf221dfbab97d508a09a98c229a530c7bf",
+          "source": "CNBC",
+          "source_id": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPenpQNjFPZk96Zlg3N1VSaDgxX2V4NzR3ekVYMHZfX0gtaU1HRVB5SlJ6eU4tOUVwV0NucV9BOEd1TG5zMV9Uc0lncjFvbDJ3OC1oVnZaS1VTS012ZjlNS3llaVlPUk4wUFE2dzhndFZmaG43SEtGZ2xwUXdfaUZiRE5pbEdEdEdzSHo4YW5VVFJRY2FfLXNta9IBngFBVV95cUxQeUhkNHhkVDZrX0ZfRVRXNzdaZi1EWno1MHpIMXJBTmpMN0haVnRTQjNSVGM0QjB2U2JmZHlQTm9BSHItUjY5YjNobkJ3Sm5CSURrZWpJa1pZWGk2QkYwS28yNGJiakxVcUxGeFJWMkFFU0dMRVRwQ1J1OGVtMm9RaWpQWENYU18wb3YxMWIweUdqbzZNeWt4UDV4VVNsUQ?oc=5",
+          "item_type": "news_article",
+          "title": "Autonomous ship startup Saronic raises $1.75 billion in race to modernize U.S. military",
+          "authors_or_author": [
+            "CNBC"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPenpQNjFPZk96Zlg3N1VSaDgxX2V4NzR3ekVYMHZfX0gtaU1HRVB5SlJ6eU4tOUVwV0NucV9BOEd1TG5zMV9Uc0lncjFvbDJ3OC1oVnZaS1VTS012ZjlNS3llaVlPUk4wUFE2dzhndFZmaG43SEtGZ2xwUXdfaUZiRE5pbEdEdEdzSHo4YW5VVFJRY2FfLXNta9IBngFBVV95cUxQeUhkNHhkVDZrX0ZfRVRXNzdaZi1EWno1MHpIMXJBTmpMN0haVnRTQjNSVGM0QjB2U2JmZHlQTm9BSHItUjY5YjNobkJ3Sm5CSURrZWpJa1pZWGk2QkYwS28yNGJiakxVcUxGeFJWMkFFU0dMRVRwQ1J1OGVtMm9RaWpQWENYU18wb3YxMWIweUdqbzZNeWt4UDV4VVNsUQ?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 14.5,
+          "abstract_or_body": "Autonomous ship startup Saronic raises $1.75 billion in race to modernize U.S. military &nbsp;&nbsp; CNBC",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: CNBC\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMimAFBVV95cUxPenpQNjFPZk96Zlg3N1VSaDgxX2V4NzR3ekVYMHZfX0gtaU1HRVB5SlJ6eU4tOUVwV0NucV9BOEd1TG5zMV9Uc0lncjFvbDJ3OC1oVnZaS1VTS012ZjlNS3llaVlPUk4wUFE2dzhndFZmaG43SEtGZ2xwUXdfaUZiRE5pbEdEdEdzSHo4YW5VVFJRY2FfLXNta9IBngFBVV95cUxQeUhkNHhkVDZrX0ZfRVRXNzdaZi1EWno1MHpIMXJBTmpMN0haVnRTQjNSVGM0QjB2U2JmZHlQTm9BSHItUjY5YjNobkJ3Sm5CSURrZWpJa1pZWGk2QkYwS28yNGJiakxVcUxGeFJWMkFFU0dMRVRwQ1J1OGVtMm9RaWpQWENYU18wb3YxMWIweUdqbzZNeWt4UDV4VVNsUQ?oc=5",
+            "source_excerpt": "Autonomous ship startup Saronic raises $1.75 billion in race to modernize U.S. military &nbsp;&nbsp; CNBC",
+            "short_summary": "Autonomous ship startup Saronic secured $1.75 billion in funding to advance U.S. military modernization efforts. The company aims to develop and deploy autonomous naval vessels for defense applications. This significant investment highlights the growing focus on integrating autonomous technology in military operations."
+          }
+        },
+        {
+          "item_id": "4c92d8a54f9fe0633cd953b673d5c037d899c66e5ba0632dd036603273be4acd",
+          "source": "crossref",
+          "source_id": "10.3390/app16073328",
+          "item_type": "paper",
+          "title": "Research on Autonomous Ship Route Planning Based on Time-Dynamic Theta* Algorithm Under Complex and Extreme Sea Conditions",
+          "authors_or_author": [
+            "Junwei Dong",
+            "Ze Sun",
+            "Peng Zhang",
+            "Jiale Zhang",
+            "Chen Chen",
+            "Run Qian"
+          ],
+          "published_at": "2026-03-30",
+          "url": "https://doi.org/10.3390/app16073328",
+          "doi": "10.3390/app16073328",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 14.5,
+          "abstract_or_body": "In complex marine environments, the safety and efficiency of ship navigation face dual challenges from static obstacles, such as shallow waters and islands, and extreme dynamic meteorological threats, such as typhoons. Existing path-planning algorithms often struggle to achieve an optimal balance between computational efficiency and risk-avoidance effectiveness when addressing high-frequency dynamic meteorological changes. To address this limitation, this study proposes a Time-Dynamic Theta* (TDM-Theta*) approach. From an algorithmic perspective, this method extends traditional any-angle path planning by introducing a temporal dimension to the search space. For maritime application, it integrates real-time significant wave height as a spatio-temporal dynamic constraint, thereby dynamically evaluating the actual impact of marine meteorology on ship navigability. Simulation tests were conducted through nine experimental cases designed under three typical navigation scenarios: unrestricted waters, complex terrains, and typhoon transits. The results demonstrate that the TDM-Theta* algorithm not only efficiently generates the shortest paths in statically complex terrains but also achieves a 100% proactive risk avoidance rate within the boundaries of the evaluated extreme weather scenarios with multiple concurrent typhoons, incurring negligible computational overhead and low path costs. This research provides robust theoretical and methodological support for real-time safe route decision-making for intelligent ships in complex and volatile environments.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-30\n- Authors: Junwei Dong, Ze Sun, Peng Zhang, Jiale Zhang, Chen Chen, Run Qian\n- DOI: 10.3390/app16073328\n- Link: https://doi.org/10.3390/app16073328",
+            "source_excerpt": "In complex marine environments, the safety and efficiency of ship navigation face dual challenges from static obstacles, such as shallow waters and islands, and extreme dynamic meteorological threats, such as typhoons. Existing path-planning algorithms often struggle to achieve an optimal balance between computational efficiency and risk-avoidance effectiveness when addressing high-frequency dynamic meteorological changes. To address this limitation, this study proposes a Time-Dynamic Theta* (TDM-Theta*) approach. From an algorithmic perspective, this method extends traditional any-angle path planning by introducing a temporal dimension to the search space. For maritime application, it integrates real-time significant wave height as a spatio-temporal dynamic constraint, thereby dynamically evaluating the actual impact of marine meteorology on ship navigability. Simulation tests were conducted through nine experimental cases designed under three typical navigation scenarios: unrestricted waters, complex terrains, and typhoon transits. The results demonstrate that the TDM-Theta* algorithm not only efficiently generates the shortest paths in statically complex terrains but also achieves a 100% proactive risk avoidance rate within the boundaries of the evaluated extreme weather scenarios with multiple concurrent typhoons, incurring negligible computational overhead and low path costs. This research provides robust theoretical and methodological support for real-time safe route decision-making for intelligent ships in complex and volatile environments.",
+            "short_summary": "The study introduces a Time-Dynamic Theta* (TDM-Theta*) algorithm to improve autonomous ship route planning in complex and extreme sea conditions. The method combines traditional any-angle path planning with a temporal dimension and incorporates real-time significant wave height as a dynamic constraint. Simulation tests across nine cases showed the algorithm efficiently generates optimal paths in static terrains and achieves 100% proactive risk avoidance in extreme weather scenarios with multiple typhoons, with minimal computational overhead. The research supports real-time safe route decision-making for intelligent ships in volatile maritime environments."
+          }
+        },
+        {
+          "item_id": "107fbaac8100125b18b04d906f351cdb32451e9c27f04a4820dfdbd6f81a7937",
+          "source": "Ship & Bunker",
+          "source_id": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbjE2YU5FblNYQjVhS2F6LWxIV19xa0NMekJOYl9wUFZQS0pVV2RiLWZuSnJRRnl4QjZJRktFRFMtUXVab3ktNGhNZGg3SHhjOEtOT1Z4LVIwWmxrQ0szR2c2WURDWFI4akZzRDlwMkVhYnpDMEt3ZmdiZWpyekJLdmcxU2J4UkFVMzNaY1BqM2ZSNm1tclppZkc0c0JKSjhDSThSVFZqWGhUZDBk?oc=5",
+          "item_type": "news_article",
+          "title": "ClassNK Approves Autonomous Navigation System for Container Ship",
+          "authors_or_author": [
+            "Ship & Bunker"
+          ],
+          "published_at": "2026-04-03",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbjE2YU5FblNYQjVhS2F6LWxIV19xa0NMekJOYl9wUFZQS0pVV2RiLWZuSnJRRnl4QjZJRktFRFMtUXVab3ktNGhNZGg3SHhjOEtOT1Z4LVIwWmxrQ0szR2c2WURDWFI4akZzRDlwMkVhYnpDMEt3ZmdiZWpyekJLdmcxU2J4UkFVMzNaY1BqM2ZSNm1tclppZkc0c0JKSjhDSThSVFZqWGhUZDBk?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 14.0,
+          "abstract_or_body": "ClassNK Approves Autonomous Navigation System for Container Ship &nbsp;&nbsp; Ship & Bunker",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-03\n- Authors: Ship & Bunker\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMirAFBVV95cUxNbjE2YU5FblNYQjVhS2F6LWxIV19xa0NMekJOYl9wUFZQS0pVV2RiLWZuSnJRRnl4QjZJRktFRFMtUXVab3ktNGhNZGg3SHhjOEtOT1Z4LVIwWmxrQ0szR2c2WURDWFI4akZzRDlwMkVhYnpDMEt3ZmdiZWpyekJLdmcxU2J4UkFVMzNaY1BqM2ZSNm1tclppZkc0c0JKSjhDSThSVFZqWGhUZDBk?oc=5",
+            "source_excerpt": "ClassNK Approves Autonomous Navigation System for Container Ship &nbsp;&nbsp; Ship & Bunker",
+            "short_summary": "ClassNK has granted approval for an autonomous navigation system designed for a container ship. The approval marks a step forward in the integration of autonomous technology in maritime operations. The system's specifics and the vessel involved were not detailed in the provided text."
+          }
+        },
+        {
+          "item_id": "78391223280df66a4a81c7cc274634c58526df73606ce7985d1396b622e57f70",
+          "source": "SSBCrack",
+          "source_id": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQeUFieElWd0NzS00zQkt3Z3YwNnZtX29rU045YXNKTnh0dlpQcHd4QV9GcElGUHBPdE1aUDkza0FFY2JzUElXZHNSMktSYW5TQXpWZjdTUGQ5NE9BN0pmOHJsVmJjZVJpNTUxenlyZXBNOW5uWVV6U2I3QzBxVGo4aTVHTWRLOXRvTmhMV3RpU0ZRNFVadFlzM2N0V3dpUEYySExVTUdQeXNkaHU1bXUycHBQLXMyeDNwV0l6aEx2SkhWVlN2VjRmLWk4cGtYbVlFR0dLeQ?oc=5",
+          "item_type": "news_article",
+          "title": "Saronic Raises $1.75 Billion to Accelerate Production of Autonomous Surface Vessels Amid Growing Military Demand",
+          "authors_or_author": [
+            "SSBCrack"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQeUFieElWd0NzS00zQkt3Z3YwNnZtX29rU045YXNKTnh0dlpQcHd4QV9GcElGUHBPdE1aUDkza0FFY2JzUElXZHNSMktSYW5TQXpWZjdTUGQ5NE9BN0pmOHJsVmJjZVJpNTUxenlyZXBNOW5uWVV6U2I3QzBxVGo4aTVHTWRLOXRvTmhMV3RpU0ZRNFVadFlzM2N0V3dpUEYySExVTUdQeXNkaHU1bXUycHBQLXMyeDNwV0l6aEx2SkhWVlN2VjRmLWk4cGtYbVlFR0dLeQ?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 14.0,
+          "abstract_or_body": "Saronic Raises $1.75 Billion to Accelerate Production of Autonomous Surface Vessels Amid Growing Military Demand &nbsp;&nbsp; SSBCrack",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: SSBCrack\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMi1AFBVV95cUxQeUFieElWd0NzS00zQkt3Z3YwNnZtX29rU045YXNKTnh0dlpQcHd4QV9GcElGUHBPdE1aUDkza0FFY2JzUElXZHNSMktSYW5TQXpWZjdTUGQ5NE9BN0pmOHJsVmJjZVJpNTUxenlyZXBNOW5uWVV6U2I3QzBxVGo4aTVHTWRLOXRvTmhMV3RpU0ZRNFVadFlzM2N0V3dpUEYySExVTUdQeXNkaHU1bXUycHBQLXMyeDNwV0l6aEx2SkhWVlN2VjRmLWk4cGtYbVlFR0dLeQ?oc=5",
+            "source_excerpt": "Saronic Raises $1.75 Billion to Accelerate Production of Autonomous Surface Vessels Amid Growing Military Demand &nbsp;&nbsp; SSBCrack",
+            "short_summary": "Saronic secured $1.75 billion in funding to boost production of autonomous surface vessels, driven by rising military demand. The investment aims to accelerate development and deployment of unmanned naval systems. Saronic’s expansion responds to increased global interest in autonomous maritime technologies for defense applications."
+          }
+        },
+        {
+          "item_id": "4d5774ffa49c94cef750a72ba208c20887c5aad6a693e5a217fad16045146467",
+          "source": "crossref",
+          "source_id": "10.21278/brod77204",
+          "item_type": "paper",
+          "title": "Development of collision-case-based testing scenarios for validating autonomous ship collision-avoidance algorithms",
+          "authors_or_author": [
+            "Jae-Yong Lee",
+            "Ho Namgung",
+            "Joo-Sung Kim"
+          ],
+          "published_at": "2026-06-30",
+          "url": "https://doi.org/10.21278/brod77204",
+          "doi": "10.21278/brod77204",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 13.5,
+          "abstract_or_body": "The criticality of collision-avoidance technology for ensuring safe navigation of autonomous ships necessitates diverse testing scenarios that reflect complex maritime environments. However, previous testing scenarios, often based on virtual trajectories or simplified encounters, have shown limitations in adequately representing real-world conditions. This study proposes a novel framework for developing collision-avoidance testing scenarios based on actual collision cases. The framework consists of three stages: collision case collection, trajectory extraction, and scenario development. Relevant data were extracted from selected cases, and the trajectories of ships influencing the collision were combined to reconstruct the circumstances at the time of the incident. Encounter situations were then diversified by altering the roles and positions of own and target ships, and finally systematically categorised into a structured testing set. Unlike previous testing scenarios, the developed scenarios exhibit distinctive characteristics derived from actual collision cases, including situations where navigation rules cannot be strictly applied, dynamic encounters, speed variations, and environmental conditions. By reflecting real maritime environments, these scenarios provide a solid basis for validating and improving collision-avoidance algorithms. The proposed framework is expected to contribute not only to the advancement of autonomous-ship technology but also to the enhancement of maritime safety.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-06-30\n- Authors: Jae-Yong Lee, Ho Namgung, Joo-Sung Kim\n- DOI: 10.21278/brod77204\n- Link: https://doi.org/10.21278/brod77204",
+            "source_excerpt": "The criticality of collision-avoidance technology for ensuring safe navigation of autonomous ships necessitates diverse testing scenarios that reflect complex maritime environments. However, previous testing scenarios, often based on virtual trajectories or simplified encounters, have shown limitations in adequately representing real-world conditions. This study proposes a novel framework for developing collision-avoidance testing scenarios based on actual collision cases. The framework consists of three stages: collision case collection, trajectory extraction, and scenario development. Relevant data were extracted from selected cases, and the trajectories of ships influencing the collision were combined to reconstruct the circumstances at the time of the incident. Encounter situations were then diversified by altering the roles and positions of own and target ships, and finally systematically categorised into a structured testing set. Unlike previous testing scenarios, the developed scenarios exhibit distinctive characteristics derived from actual collision cases, including situations where navigation rules cannot be strictly applied, dynamic encounters, speed variations, and environmental conditions. By reflecting real maritime environments, these scenarios provide a solid basis for validating and improving collision-avoidance algorithms. The proposed framework is expected to contribute not only to the advancement of autonomous-ship technology but also to the enhancement of maritime safety.",
+            "short_summary": "This study introduces a framework for creating realistic collision-avoidance testing scenarios for autonomous ships by analyzing actual collision cases. The framework involves collecting collision data, extracting ship trajectories, and developing diverse encounter situations by adjusting ship roles and positions. The resulting scenarios reflect real-world complexities, such as rule violations, dynamic encounters, speed changes, and environmental factors. These scenarios aim to improve the validation of collision-avoidance algorithms and enhance maritime safety."
+          }
+        },
+        {
+          "item_id": "c8d286af5d4855c9cd8db18660fa6db80394eb88f40a77afbeed467c4d00d92f",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7143855329",
+          "item_type": "paper",
+          "title": "Comprehensive literature review of systemic safety analysis: trends and development in the maritime sector☆",
+          "authors_or_author": [
+            "Dwitya Harits Waskito",
+            "Rafet Emek Kurt",
+            "Osman Turan"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://doi.org/10.1016/j.ssci.2026.107208",
+          "doi": "10.1016/j.ssci.2026.107208",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 13.5,
+          "abstract_or_body": "• This study presents the first comprehensive systematic literature review of system-theoretic safety approaches (STAMP, STPA, CAST) in the maritime sector. • A hybrid review methodology was employed, combining the PRISMA method, bibliometric analysis, and structured scoping based on cross-domain review. • STPA is considered the dominant system-theoretic method in maritime safety. • In terms of maritime system and operation, the system-theoretic method was used for Maritime Autonomous Surface Ships (MASS), and also for remote operations of maritime niche applications. • Key research gaps are highlighted, including limited validation, inconsistent treatment of loss scenarios, and underdeveloped integration of human and organisational factors. With the growing complexity of sociotechnical systems in maritime transportation, system-theoretic approaches such as STPA, STAMP, and CAST have emerged as effective tools through their focus on control problems. To strengthen both theoretical foundations and practical implementation in the industry, it is necessary to review the development of systems theory within this domain, addressing current limitations and outlining future research directions. This article presents a comprehensive review of system-theory applications in maritime transportation, encompassing modelling processes, application areas, and associated challenges. A bibliometric analysis of 76 papers published between 2015 and 2024 was conducted to identify thematic clusters, keywords, and research trends. The review examined how systems theory has been applied, the data sources employed to generate models, and how these methods are integrated with conventional risk assessment approaches. Findings indicate that STPA is the most widely adopted technique in the maritime sector for systems-based safety analysis. More than half of the reviewed studies applied systems theory to risk analysis for autonomous vessels, demonstrating researchers’ confidence in STPA’s capacity to address the challenges of highly complex systems such as autonomous ships. At the same time, there is a growing interest in combining STPA with other methodologies to produce quantifiable results for safety assessments. Consequently, an increasing proportion of studies are evolving towards integration with computational methods, algorithms, and Quantitative Risk Assessment (QRA). Overall, this paper provides a critical overview of system-theory applications in the maritime domain, highlighting limitations while offering recommendations to guide future research and practice.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: Dwitya Harits Waskito, Rafet Emek Kurt, Osman Turan\n- DOI: 10.1016/j.ssci.2026.107208\n- Link: https://doi.org/10.1016/j.ssci.2026.107208",
+            "source_excerpt": "• This study presents the first comprehensive systematic literature review of system-theoretic safety approaches (STAMP, STPA, CAST) in the maritime sector. • A hybrid review methodology was employed, combining the PRISMA method, bibliometric analysis, and structured scoping based on cross-domain review. • STPA is considered the dominant system-theoretic method in maritime safety. • In terms of maritime system and operation, the system-theoretic method was used for Maritime Autonomous Surface Ships (MASS), and also for remote operations of maritime niche applications. • Key research gaps are highlighted, including limited validation, inconsistent treatment of loss scenarios, and underdeveloped integration of human and organisational factors. With the growing complexity of sociotechnical systems in maritime transportation, system-theoretic approaches such as STPA, STAMP, and CAST have emerged as effective tools through their focus on control problems. To strengthen both theoretical foundations and practical implementation in the industry, it is necessary to review the development of systems theory within this domain, addressing current limitations and outlining future research directions. This article presents a comprehensive review of system-theory applications in maritime transportation, encompassing modelling processes, application areas, and associated challenges. A bibliometric analysis of 76 papers published between 2015 and 2024 was conducted to identify thematic clusters, keywords, and research trends. The review examined how systems theory has been applied, the data sources employed to generate models, and how these methods are integrated with conventional risk assessment approaches. Findings indicate that STPA is the most widely adopted technique in the maritime sector for systems-based safety analysis. More than half of the reviewed studies applied systems theory to risk analysis for autonomous vessels, demonstrating researchers’ confidence in STPA’s capacity to address the challenges of highly complex systems such as autonomous ships. At the same time, there is a growing interest in combining STPA with other methodologies to produce quantifiable results for safety assessments. Consequently, an increasing proportion of studies are evolving towards integration with computational methods, algorithms, and Quantitative Risk Assessment (QRA). Overall, this paper provides a critical overview of system-theory applications in the maritime domain, highlighting limitations while offering recommendations to guide future research and practice.",
+            "short_summary": "This study reviews system-theoretic safety approaches (STAMP, STPA, CAST) in the maritime sector using a hybrid methodology combining PRISMA, bibliometrics, and scoping. STPA is identified as the dominant method, particularly for Maritime Autonomous Surface Ships (MASS) and remote operations. Key gaps include limited validation, inconsistent loss scenario treatment, and weak integration of human and organizational factors. The review of 76 papers (2015–2024) highlights STPA’s growing use and its integration with quantitative methods like QRA."
+          }
+        },
+        {
+          "item_id": "b41322ec304052e680616cf8adf9f8a1f5b3c2a8aaee3ba401c73c287f0929ab",
+          "source": "Container News",
+          "source_id": "https://news.google.com/rss/articles/CBMingFBVV95cUxNM0ZBdWxVak4wc0czajN0Rzh5WThlNDZ2NHJVU3dteWFyQkpfS1VWcWRIVjFWd0RmZ0Y3WXpndmRNLU0yTjZidTFLR3FPTDF1Znd3d3ZvcG1MNmxPUDdyLXA4Mk9qa3A0S0hNVWJLTVpmeFJwZzlfUjhjWGdNd2ZxOEFCSTZ6eG90aDRJSlk1emJmWEpjZFByRk5pTGdUdw?oc=5",
+          "item_type": "news_article",
+          "title": "ClassNK grants first autonomous ship notation to container ship “Genbu”",
+          "authors_or_author": [
+            "Container News"
+          ],
+          "published_at": "2026-04-03",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNM0ZBdWxVak4wc0czajN0Rzh5WThlNDZ2NHJVU3dteWFyQkpfS1VWcWRIVjFWd0RmZ0Y3WXpndmRNLU0yTjZidTFLR3FPTDF1Znd3d3ZvcG1MNmxPUDdyLXA4Mk9qa3A0S0hNVWJLTVpmeFJwZzlfUjhjWGdNd2ZxOEFCSTZ6eG90aDRJSlk1emJmWEpjZFByRk5pTGdUdw?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 13.0,
+          "abstract_or_body": "ClassNK grants first autonomous ship notation to container ship “Genbu” &nbsp;&nbsp; Container News",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-03\n- Authors: Container News\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMingFBVV95cUxNM0ZBdWxVak4wc0czajN0Rzh5WThlNDZ2NHJVU3dteWFyQkpfS1VWcWRIVjFWd0RmZ0Y3WXpndmRNLU0yTjZidTFLR3FPTDF1Znd3d3ZvcG1MNmxPUDdyLXA4Mk9qa3A0S0hNVWJLTVpmeFJwZzlfUjhjWGdNd2ZxOEFCSTZ6eG90aDRJSlk1emJmWEpjZFByRk5pTGdUdw?oc=5",
+            "source_excerpt": "ClassNK grants first autonomous ship notation to container ship “Genbu” &nbsp;&nbsp; Container News",
+            "short_summary": "ClassNK has awarded the world’s first autonomous ship notation to the container ship *Genbu*. This certification recognizes the vessel’s advanced autonomous navigation capabilities. The notation signifies compliance with ClassNK’s guidelines for autonomous ships. *Genbu* is operated by NYK Line."
+          }
+        },
+        {
+          "item_id": "9958767a57e6b8a86adf9f70a27420feaa97a636200b6c1d11d828df301848d4",
+          "source": "shipmanagementinternational.com",
+          "source_id": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPMUdMRDQ5cFpmc1ZpUkN0ekdWSnNTWnQ5NUZEdEQ0QndTZlgxRlZ0TVozZTJoM0d2d2VSaF9JZzNZdm9aYTNaZlhoNDkzaEt2RVU4SWp4cVg0cWM2dEw5VGdDTkpNS0l1QlVtbkQ3NkZvSjFxN3Rpb3M4VklHdE5NaEx3WWpkYWM0b1VBcWlkZ0Y2UFFPRy1XRjNxQVRXNEpHVHRYMTVJTWdVUFFIN3RYdzJ4NFJHazYwdXhUVmRXUmlha3dYeEJsY2d0TktWdWUtLWJlSDV4RWRqSFpKRlZibmh0b1pTLVdMREE?oc=5",
+          "item_type": "news_article",
+          "title": "Orca AI receives ClassNK Technology Qualification for autonomous ship perception capabilities — SMI DIGITAL",
+          "authors_or_author": [
+            "shipmanagementinternational.com"
+          ],
+          "published_at": "2026-04-02",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPMUdMRDQ5cFpmc1ZpUkN0ekdWSnNTWnQ5NUZEdEQ0QndTZlgxRlZ0TVozZTJoM0d2d2VSaF9JZzNZdm9aYTNaZlhoNDkzaEt2RVU4SWp4cVg0cWM2dEw5VGdDTkpNS0l1QlVtbkQ3NkZvSjFxN3Rpb3M4VklHdE5NaEx3WWpkYWM0b1VBcWlkZ0Y2UFFPRy1XRjNxQVRXNEpHVHRYMTVJTWdVUFFIN3RYdzJ4NFJHazYwdXhUVmRXUmlha3dYeEJsY2d0TktWdWUtLWJlSDV4RWRqSFpKRlZibmh0b1pTLVdMREE?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 13.0,
+          "abstract_or_body": "Orca AI receives ClassNK Technology Qualification for autonomous ship perception capabilities — SMI DIGITAL &nbsp;&nbsp; shipmanagementinternational.com",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-02\n- Authors: shipmanagementinternational.com\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMi6gFBVV95cUxPMUdMRDQ5cFpmc1ZpUkN0ekdWSnNTWnQ5NUZEdEQ0QndTZlgxRlZ0TVozZTJoM0d2d2VSaF9JZzNZdm9aYTNaZlhoNDkzaEt2RVU4SWp4cVg0cWM2dEw5VGdDTkpNS0l1QlVtbkQ3NkZvSjFxN3Rpb3M4VklHdE5NaEx3WWpkYWM0b1VBcWlkZ0Y2UFFPRy1XRjNxQVRXNEpHVHRYMTVJTWdVUFFIN3RYdzJ4NFJHazYwdXhUVmRXUmlha3dYeEJsY2d0TktWdWUtLWJlSDV4RWRqSFpKRlZibmh0b1pTLVdMREE?oc=5",
+            "source_excerpt": "Orca AI receives ClassNK Technology Qualification for autonomous ship perception capabilities — SMI DIGITAL &nbsp;&nbsp; shipmanagementinternational.com",
+            "short_summary": "Orca AI has been granted ClassNK Technology Qualification for its autonomous ship perception capabilities. This qualification recognizes Orca AI's technology for enhancing safety in autonomous maritime navigation. The approval highlights the system's ability to detect and avoid obstacles effectively."
+          }
+        },
+        {
+          "item_id": "3e38ced75ac864bdfd9356bdf6de324fab17471dee95b59ea606d84b4f5cada3",
+          "source": "Marine Log",
+          "source_id": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONzNGME5KSkM3ckpSbDk3WFR3VXctY3otc1EtTndzV0p1TjZZVHJSaXlDMW1tYzgwOXpGVTMyR0dBVE1Lb1F4S01Hank0Ym5WLUc1dVV4aEF1WURyTU4zVHpFWkNfby1GUjBwbk5jeGwxV3pYVkNpTEkwbFZGQjJNV05JVjR3N05QOURFZEJ6OHFGU01JaWFXdGVmWjhhYUdkeUNVcEhpVTYzbG5ibE5xOWxxbmZOc2Vaa04tbGN2S3E1TDIwLU9N?oc=5",
+          "item_type": "news_article",
+          "title": "Autonomous vessel innovator Saronic Series D round raises $1.75BN",
+          "authors_or_author": [
+            "Marine Log"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONzNGME5KSkM3ckpSbDk3WFR3VXctY3otc1EtTndzV0p1TjZZVHJSaXlDMW1tYzgwOXpGVTMyR0dBVE1Lb1F4S01Hank0Ym5WLUc1dVV4aEF1WURyTU4zVHpFWkNfby1GUjBwbk5jeGwxV3pYVkNpTEkwbFZGQjJNV05JVjR3N05QOURFZEJ6OHFGU01JaWFXdGVmWjhhYUdkeUNVcEhpVTYzbG5ibE5xOWxxbmZOc2Vaa04tbGN2S3E1TDIwLU9N?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 13.0,
+          "abstract_or_body": "Autonomous vessel innovator Saronic Series D round raises $1.75BN &nbsp;&nbsp; Marine Log",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: Marine Log\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMixwFBVV95cUxONzNGME5KSkM3ckpSbDk3WFR3VXctY3otc1EtTndzV0p1TjZZVHJSaXlDMW1tYzgwOXpGVTMyR0dBVE1Lb1F4S01Hank0Ym5WLUc1dVV4aEF1WURyTU4zVHpFWkNfby1GUjBwbk5jeGwxV3pYVkNpTEkwbFZGQjJNV05JVjR3N05QOURFZEJ6OHFGU01JaWFXdGVmWjhhYUdkeUNVcEhpVTYzbG5ibE5xOWxxbmZOc2Vaa04tbGN2S3E1TDIwLU9N?oc=5",
+            "source_excerpt": "Autonomous vessel innovator Saronic Series D round raises $1.75BN &nbsp;&nbsp; Marine Log",
+            "short_summary": "Saronic, an innovator in autonomous vessels, secured $1.75 billion in its Series D funding round. The funding round was announced on March 31, 2026."
+          }
+        },
+        {
+          "item_id": "89c17ce716cd11f02bc3c5b8181a137f751dfba78046cd1d1f0083df91483ada",
+          "source": "Shipping Telegraph",
+          "source_id": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeU1XTlN2YXpmQUx3NXN5TkVFQzVJT3JIa0k0eFJBa3JYa3RIQUtmRG5tNWgzaTBqS1FVU21KbGhTaUZkaTl5anlJRGpwWHNDaXFabnBTVEN2dFZmbzkyZ19GZmtMdDdheFZuUndHZENvc3Z1aGlDWU1TRGNra3pVYVJnVWNJZGRrREw0dGNWem9KcXJRblVSbEFuNnhKWDJ3RUpZUjNZb3FLOXF0R0tNUFJR?oc=5",
+          "item_type": "news_article",
+          "title": "Liberty class autonomous ship construction for the US navy begins",
+          "authors_or_author": [
+            "Shipping Telegraph"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeU1XTlN2YXpmQUx3NXN5TkVFQzVJT3JIa0k0eFJBa3JYa3RIQUtmRG5tNWgzaTBqS1FVU21KbGhTaUZkaTl5anlJRGpwWHNDaXFabnBTVEN2dFZmbzkyZ19GZmtMdDdheFZuUndHZENvc3Z1aGlDWU1TRGNra3pVYVJnVWNJZGRrREw0dGNWem9KcXJRblVSbEFuNnhKWDJ3RUpZUjNZb3FLOXF0R0tNUFJR?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 13.0,
+          "abstract_or_body": "Liberty class autonomous ship construction for the US navy begins &nbsp;&nbsp; Shipping Telegraph",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: Shipping Telegraph\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMisgFBVV95cUxNeU1XTlN2YXpmQUx3NXN5TkVFQzVJT3JIa0k0eFJBa3JYa3RIQUtmRG5tNWgzaTBqS1FVU21KbGhTaUZkaTl5anlJRGpwWHNDaXFabnBTVEN2dFZmbzkyZ19GZmtMdDdheFZuUndHZENvc3Z1aGlDWU1TRGNra3pVYVJnVWNJZGRrREw0dGNWem9KcXJRblVSbEFuNnhKWDJ3RUpZUjNZb3FLOXF0R0tNUFJR?oc=5",
+            "source_excerpt": "Liberty class autonomous ship construction for the US navy begins &nbsp;&nbsp; Shipping Telegraph",
+            "short_summary": "Construction of the US Navy's new Liberty class autonomous ships has begun. These vessels are designed to operate without a crew, enhancing naval capabilities. The initiative aims to modernize the fleet with advanced, unmanned technology."
+          }
+        },
+        {
+          "item_id": "e28e19a0c16c75939c91184c2cf18f0984e72926706713f06b5ef2ec6a173bd0",
+          "source": "The Robot Report",
+          "source_id": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVEVHUzYxbjN0Wk56LXhOR2RYWXJCeTNuRW1ub0hIaEVnSm9wdUlKOHFOdHhyWEZ6eUtkTU12SlExQkxQVFBSZ1lfQVgzMDFsUi13M2R2VzFMS2VTRzZKNHNyaWRoeGxhMEVfdGk3RkdVUFVNWlFabEtMVkw0eTBtZmZ5Uzg2VUpN?oc=5",
+          "item_type": "news_article",
+          "title": "Saronic raises $1.75B to build autonomous ships at scale",
+          "authors_or_author": [
+            "The Robot Report"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVEVHUzYxbjN0Wk56LXhOR2RYWXJCeTNuRW1ub0hIaEVnSm9wdUlKOHFOdHhyWEZ6eUtkTU12SlExQkxQVFBSZ1lfQVgzMDFsUi13M2R2VzFMS2VTRzZKNHNyaWRoeGxhMEVfdGk3RkdVUFVNWlFabEtMVkw0eTBtZmZ5Uzg2VUpN?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 13.0,
+          "abstract_or_body": "Saronic raises $1.75B to build autonomous ships at scale &nbsp;&nbsp; The Robot Report",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: The Robot Report\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVEVHUzYxbjN0Wk56LXhOR2RYWXJCeTNuRW1ub0hIaEVnSm9wdUlKOHFOdHhyWEZ6eUtkTU12SlExQkxQVFBSZ1lfQVgzMDFsUi13M2R2VzFMS2VTRzZKNHNyaWRoeGxhMEVfdGk3RkdVUFVNWlFabEtMVkw0eTBtZmZ5Uzg2VUpN?oc=5",
+            "source_excerpt": "Saronic raises $1.75B to build autonomous ships at scale &nbsp;&nbsp; The Robot Report",
+            "short_summary": "Saronic, a company focused on autonomous ships, raised $1.75 billion to scale its operations. The funding will support the development and deployment of autonomous vessels at a larger scale."
+          }
+        },
+        {
+          "item_id": "3151e93d44a08487b98a3d7be30ebcf74135a57cc2af11a4be2961ae4c5fc5d1",
+          "source": "crossref",
+          "source_id": "10.1016/j.oceaneng.2026.124727",
+          "item_type": "paper",
+          "title": "Maritime autonomous surface ship for experimental trajectory tracking in the ocean",
+          "authors_or_author": [
+            "Sang-Do Lee",
+            "Gi-Seon Jeong"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://doi.org/10.1016/j.oceaneng.2026.124727",
+          "doi": "10.1016/j.oceaneng.2026.124727",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 12.5,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-small-latest:fallback",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: Sang-Do Lee, Gi-Seon Jeong\n- DOI: 10.1016/j.oceaneng.2026.124727\n- Link: https://doi.org/10.1016/j.oceaneng.2026.124727",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "1ffc05bf45dea93c7b99704cc8661300c2289e35f1c0a1683982d07b8db18b71",
+          "source": "Baird Maritime",
+          "source_id": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQ0ZhdmszWndvWkI0ZGR4YmNtcHlqSFR2cUxQd2lSMXNJdW1malNMRjhrTlp1ZVU0NWRCQnFCQldELUVOQ0tQS28yMWZxT05DZ01oSHR2OGNBMmVtYlVEOXJMR0M1Y0xRcjFmdE5jYy1SMGNtMVBrU2ZjbDdiQkpNNlEzY0tnSi0xdkZMSTB2VW8yR280M2hqZUw4MXJXbER0azRIV3U1YjBiZjJMNW5pYTdkVUV0QVBjeXB2X0F2UU5aVC1qT2xJYkVDTDJxRUlIcVNGdEUzMNIB5AFBVV95cUxNWHRRb094eTFaTmVzYmJ1bXBOT0RKendNdFBfMUxZa2g1REhGT05JTVpwaF9xU2Z0MVBhRkdoQWtwY0kyQ3pJYVQ4T0pTS0x0TXBfV2MybndidUxQWk1leDV2cnFraEloVjVSbTY0RG8zakM5c3dZRkZlaEwxa09NX2padnlib0pSVEFkSUVieXF4QTZBOE10bWs5Sm4teENPMnVHM19tc2VNcFlBYTczUjhKTmE3eHlJbUs0eGY5WG5zWjNPOXUzMENzM21DU1paU2YwSC1ZaG5uTWNKemUxNjZTNno?oc=5",
+          "item_type": "news_article",
+          "title": "Autonomous shipmaker Saronic hits $9.25b valuation in latest funding round",
+          "authors_or_author": [
+            "Baird Maritime"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQ0ZhdmszWndvWkI0ZGR4YmNtcHlqSFR2cUxQd2lSMXNJdW1malNMRjhrTlp1ZVU0NWRCQnFCQldELUVOQ0tQS28yMWZxT05DZ01oSHR2OGNBMmVtYlVEOXJMR0M1Y0xRcjFmdE5jYy1SMGNtMVBrU2ZjbDdiQkpNNlEzY0tnSi0xdkZMSTB2VW8yR280M2hqZUw4MXJXbER0azRIV3U1YjBiZjJMNW5pYTdkVUV0QVBjeXB2X0F2UU5aVC1qT2xJYkVDTDJxRUlIcVNGdEUzMNIB5AFBVV95cUxNWHRRb094eTFaTmVzYmJ1bXBOT0RKendNdFBfMUxZa2g1REhGT05JTVpwaF9xU2Z0MVBhRkdoQWtwY0kyQ3pJYVQ4T0pTS0x0TXBfV2MybndidUxQWk1leDV2cnFraEloVjVSbTY0RG8zakM5c3dZRkZlaEwxa09NX2padnlib0pSVEFkSUVieXF4QTZBOE10bWs5Sm4teENPMnVHM19tc2VNcFlBYTczUjhKTmE3eHlJbUs0eGY5WG5zWjNPOXUzMENzM21DU1paU2YwSC1ZaG5uTWNKemUxNjZTNno?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 12.0,
+          "abstract_or_body": "Autonomous shipmaker Saronic hits $9.25b valuation in latest funding round &nbsp;&nbsp; Baird Maritime",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: Baird Maritime\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQ0ZhdmszWndvWkI0ZGR4YmNtcHlqSFR2cUxQd2lSMXNJdW1malNMRjhrTlp1ZVU0NWRCQnFCQldELUVOQ0tQS28yMWZxT05DZ01oSHR2OGNBMmVtYlVEOXJMR0M1Y0xRcjFmdE5jYy1SMGNtMVBrU2ZjbDdiQkpNNlEzY0tnSi0xdkZMSTB2VW8yR280M2hqZUw4MXJXbER0azRIV3U1YjBiZjJMNW5pYTdkVUV0QVBjeXB2X0F2UU5aVC1qT2xJYkVDTDJxRUlIcVNGdEUzMNIB5AFBVV95cUxNWHRRb094eTFaTmVzYmJ1bXBOT0RKendNdFBfMUxZa2g1REhGT05JTVpwaF9xU2Z0MVBhRkdoQWtwY0kyQ3pJYVQ4T0pTS0x0TXBfV2MybndidUxQWk1leDV2cnFraEloVjVSbTY0RG8zakM5c3dZRkZlaEwxa09NX2padnlib0pSVEFkSUVieXF4QTZBOE10bWs5Sm4teENPMnVHM19tc2VNcFlBYTczUjhKTmE3eHlJbUs0eGY5WG5zWjNPOXUzMENzM21DU1paU2YwSC1ZaG5uTWNKemUxNjZTNno?oc=5",
+            "source_excerpt": "Autonomous shipmaker Saronic hits $9.25b valuation in latest funding round &nbsp;&nbsp; Baird Maritime",
+            "short_summary": "Saronic, an autonomous ship manufacturer, raised a new funding round valuing the company at $9.25 billion. The latest investment round highlights growing investor confidence in autonomous maritime technology."
+          }
+        },
+        {
+          "item_id": "d05471d912e13845c39a96620058c2230c8e1f9a357a55d5eb9690fa0726496f",
+          "source": "Army Recognition",
+          "source_id": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQeWRBTnpDY2F6RTU3NnJsSTU5b1lQbWwwSXA3M2huOFdVV0VLdk9ES3V2eU1vZHZvSExoMG42SVFhbThTakFhd2JvN2Q3VFdPZ0l6VkdqZDlQbldLM2V1R0tPZlZ4amdGVzBQdkpXLTNXdXFKbnR1eE5fVTNjNXBqcFVZYmFHcEhLVVV2Z0tIa0oxMVp5aWZseUtpNm4xNWoxb194ZGtUdXB2XzBZWHAwM2lkVE5UY0ZJLTVuMDJYSHBmYmNJWGdNR3hEVjRhZzQ5NkNSWHBXbGw?oc=5",
+          "item_type": "news_article",
+          "title": "U.S. Scales Autonomous Vessel Production with $1.75B Saronic Expansion of Shipbuilding Capacity",
+          "authors_or_author": [
+            "Army Recognition"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQeWRBTnpDY2F6RTU3NnJsSTU5b1lQbWwwSXA3M2huOFdVV0VLdk9ES3V2eU1vZHZvSExoMG42SVFhbThTakFhd2JvN2Q3VFdPZ0l6VkdqZDlQbldLM2V1R0tPZlZ4amdGVzBQdkpXLTNXdXFKbnR1eE5fVTNjNXBqcFVZYmFHcEhLVVV2Z0tIa0oxMVp5aWZseUtpNm4xNWoxb194ZGtUdXB2XzBZWHAwM2lkVE5UY0ZJLTVuMDJYSHBmYmNJWGdNR3hEVjRhZzQ5NkNSWHBXbGw?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 11.5,
+          "abstract_or_body": "U.S. Scales Autonomous Vessel Production with $1.75B Saronic Expansion of Shipbuilding Capacity &nbsp;&nbsp; Army Recognition",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: Army Recognition\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMi2AFBVV95cUxQeWRBTnpDY2F6RTU3NnJsSTU5b1lQbWwwSXA3M2huOFdVV0VLdk9ES3V2eU1vZHZvSExoMG42SVFhbThTakFhd2JvN2Q3VFdPZ0l6VkdqZDlQbldLM2V1R0tPZlZ4amdGVzBQdkpXLTNXdXFKbnR1eE5fVTNjNXBqcFVZYmFHcEhLVVV2Z0tIa0oxMVp5aWZseUtpNm4xNWoxb194ZGtUdXB2XzBZWHAwM2lkVE5UY0ZJLTVuMDJYSHBmYmNJWGdNR3hEVjRhZzQ5NkNSWHBXbGw?oc=5",
+            "source_excerpt": "U.S. Scales Autonomous Vessel Production with $1.75B Saronic Expansion of Shipbuilding Capacity &nbsp;&nbsp; Army Recognition",
+            "short_summary": "The U.S. is expanding its autonomous vessel production with a $1.75 billion investment in Saronic's shipbuilding capacity. This expansion aims to scale up the manufacturing of unmanned naval vessels. The move is part of efforts to enhance the country's maritime defense capabilities."
+          }
+        },
+        {
+          "item_id": "345ba9e08d35c8417c1395d05997dda0b84ecef41e808bfbc7dfaa152718f6b7",
+          "source": "Smart Maritime Network",
+          "source_id": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWVJTYTNncTQ0TFRzNVJiczMwcEVBVW9ISC0tNjNFQlZpZnF4aGZrZGRweVFsZ0JNMWZuUHYxTVVXeUktSi1xTXhPdEtHckdXNmlHR1ZSaUZiZkZZVUw4YVUzNUJId2w2dVNuSE9xbnpYb01JTE82YmNtUkQ4aWNRVFZ6V0JPalhHaHRWSEJpa1hqVTV3QTBFb1M5X3JGaE9WNHRMZkRGeDZGZDRvUXhSUFlrSzF3LWpNTXc?oc=5",
+          "item_type": "news_article",
+          "title": "Saronic closes $1.75bn funding round to scale autonomous vessel production",
+          "authors_or_author": [
+            "Smart Maritime Network"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWVJTYTNncTQ0TFRzNVJiczMwcEVBVW9ISC0tNjNFQlZpZnF4aGZrZGRweVFsZ0JNMWZuUHYxTVVXeUktSi1xTXhPdEtHckdXNmlHR1ZSaUZiZkZZVUw4YVUzNUJId2w2dVNuSE9xbnpYb01JTE82YmNtUkQ4aWNRVFZ6V0JPalhHaHRWSEJpa1hqVTV3QTBFb1M5X3JGaE9WNHRMZkRGeDZGZDRvUXhSUFlrSzF3LWpNTXc?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 11.0,
+          "abstract_or_body": "Saronic closes $1.75bn funding round to scale autonomous vessel production &nbsp;&nbsp; Smart Maritime Network",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: Smart Maritime Network\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiugFBVV95cUxNWVJTYTNncTQ0TFRzNVJiczMwcEVBVW9ISC0tNjNFQlZpZnF4aGZrZGRweVFsZ0JNMWZuUHYxTVVXeUktSi1xTXhPdEtHckdXNmlHR1ZSaUZiZkZZVUw4YVUzNUJId2w2dVNuSE9xbnpYb01JTE82YmNtUkQ4aWNRVFZ6V0JPalhHaHRWSEJpa1hqVTV3QTBFb1M5X3JGaE9WNHRMZkRGeDZGZDRvUXhSUFlrSzF3LWpNTXc?oc=5",
+            "source_excerpt": "Saronic closes $1.75bn funding round to scale autonomous vessel production &nbsp;&nbsp; Smart Maritime Network",
+            "short_summary": "Saronic secured a $1.75 billion funding round to expand production of autonomous vessels. The investment aims to accelerate the development and deployment of its unmanned ship technology. This funding will support scaling operations and advancing maritime autonomy solutions."
+          }
+        },
+        {
+          "item_id": "aa073ead3aa4fa37159ac9a619a5c2cb0d2859813cde4ff46d780fda03aaba92",
+          "source": "The Tech Buzz",
+          "source_id": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSmxzUkp4NEFaM0VDR3I3NWJ4NWhjVjUwZlAyZENzV2FXQUFackI5bFc0cWc5bWFsSDhRYjgzNlNXdmkzZzhZODRLTndKWWY1QVV3VDFoYUd3ZV9LNDVrZThVeXp6QjlzQWNMM1RIOFZNMDV3M1RWQkgtUzZLZjZpQUZ1U3RLcEtEOE1zMnZJNkMxeEh0a0VsLXRpNElLcDA?oc=5",
+          "item_type": "news_article",
+          "title": "Defense tech startup Saronic raises $1.75B for autonomous warships",
+          "authors_or_author": [
+            "The Tech Buzz"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSmxzUkp4NEFaM0VDR3I3NWJ4NWhjVjUwZlAyZENzV2FXQUFackI5bFc0cWc5bWFsSDhRYjgzNlNXdmkzZzhZODRLTndKWWY1QVV3VDFoYUd3ZV9LNDVrZThVeXp6QjlzQWNMM1RIOFZNMDV3M1RWQkgtUzZLZjZpQUZ1U3RLcEtEOE1zMnZJNkMxeEh0a0VsLXRpNElLcDA?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 10.5,
+          "abstract_or_body": "Defense tech startup Saronic raises $1.75B for autonomous warships &nbsp;&nbsp; The Tech Buzz",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: The Tech Buzz\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMinwFBVV95cUxOSmxzUkp4NEFaM0VDR3I3NWJ4NWhjVjUwZlAyZENzV2FXQUFackI5bFc0cWc5bWFsSDhRYjgzNlNXdmkzZzhZODRLTndKWWY1QVV3VDFoYUd3ZV9LNDVrZThVeXp6QjlzQWNMM1RIOFZNMDV3M1RWQkgtUzZLZjZpQUZ1U3RLcEtEOE1zMnZJNkMxeEh0a0VsLXRpNElLcDA?oc=5",
+            "source_excerpt": "Defense tech startup Saronic raises $1.75B for autonomous warships &nbsp;&nbsp; The Tech Buzz",
+            "short_summary": "Saronic, a defense tech startup, secured $1.75 billion in funding to develop autonomous warships. The investment will support the company's efforts to advance maritime defense technology. This funding round highlights growing interest in unmanned naval systems."
+          }
+        },
+        {
+          "item_id": "82a4fdae0015d50291f861741639e4794a1b973e6d58a87bb12ec82b271698ca",
+          "source": "Army Recognition",
+          "source_id": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdE12Q0cyLU9qSXhUeEZoVEdiNk41M2lJMWwxVVFBTjQ2U2dVUGdJdllzZzFQU1A2eUFQY3duT2FkM0Q1MVJiRkhhZXV3SVpXMXV2blktc0tzbEhPOHI5SVg3SnJDLTFaVG1BMmxNdkVCbUdGSENzRFRVWUs1d0tfVFZ2cEtPRzM4T3Q2UDFQSEpfWVo3cnNDcWZJZ3VrWGpfS25NelRwakhSTW9VelFCOGU2eVhib3Q4UjVjUWFJdnZLTy1QQmJWd29wLTNEQTloSklCVm41a3JPSF9nMHFn?oc=5",
+          "item_type": "news_article",
+          "title": "US tests new Bulwark Caravel autonomous vessel to transform how troops get supplies in future wars",
+          "authors_or_author": [
+            "Army Recognition"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdE12Q0cyLU9qSXhUeEZoVEdiNk41M2lJMWwxVVFBTjQ2U2dVUGdJdllzZzFQU1A2eUFQY3duT2FkM0Q1MVJiRkhhZXV3SVpXMXV2blktc0tzbEhPOHI5SVg3SnJDLTFaVG1BMmxNdkVCbUdGSENzRFRVWUs1d0tfVFZ2cEtPRzM4T3Q2UDFQSEpfWVo3cnNDcWZJZ3VrWGpfS25NelRwakhSTW9VelFCOGU2eVhib3Q4UjVjUWFJdnZLTy1QQmJWd29wLTNEQTloSklCVm41a3JPSF9nMHFn?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 10.0,
+          "abstract_or_body": "US tests new Bulwark Caravel autonomous vessel to transform how troops get supplies in future wars &nbsp;&nbsp; Army Recognition",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: Army Recognition\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdE12Q0cyLU9qSXhUeEZoVEdiNk41M2lJMWwxVVFBTjQ2U2dVUGdJdllzZzFQU1A2eUFQY3duT2FkM0Q1MVJiRkhhZXV3SVpXMXV2blktc0tzbEhPOHI5SVg3SnJDLTFaVG1BMmxNdkVCbUdGSENzRFRVWUs1d0tfVFZ2cEtPRzM4T3Q2UDFQSEpfWVo3cnNDcWZJZ3VrWGpfS25NelRwakhSTW9VelFCOGU2eVhib3Q4UjVjUWFJdnZLTy1QQmJWd29wLTNEQTloSklCVm41a3JPSF9nMHFn?oc=5",
+            "source_excerpt": "US tests new Bulwark Caravel autonomous vessel to transform how troops get supplies in future wars &nbsp;&nbsp; Army Recognition",
+            "short_summary": "The U.S. is testing the Bulwark Caravel, an autonomous vessel designed to revolutionize military logistics by delivering supplies to troops. This unmanned ship aims to enhance future warfare by improving efficiency and reducing risks to personnel. The Bulwark Caravel represents a shift toward automated resupply solutions in military operations."
+          }
+        },
+        {
+          "item_id": "68de735c5b2bea3a45c5782340ac582c1e4c17390010bdbed38739aca98f1d20",
+          "source": "MSN",
+          "source_id": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQak5lNDlZMkRaODY3eS05elBkYzB6WVFyRmZlN3Z6amlxVkNJODVxR1ZrT0VndGZwSUlaaGtYNGZBbGhvSWVHN0wzcGFudmkyVVhUSU5nUHpDOFAtcUw0dmVVdFRRWjBwNG9yWFVEQl93eldGb0oxbllrWVFnUnc0YXk0THVWb091aTBoRVB0NjExV0NXcVhmZjBlN2RmTXFxR1dIR0N6czNHN0k1Rkw4WWs4c1NJY0xtbmI4Vnh5TVNsbTZYZVFMb25sazRTTTV3NFQ5elFUYw?oc=5",
+          "item_type": "news_article",
+          "title": "Saronic CEO on $1.75 billion funding round, autonomous vessels, and expanding US shipbuilding",
+          "authors_or_author": [
+            "MSN"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQak5lNDlZMkRaODY3eS05elBkYzB6WVFyRmZlN3Z6amlxVkNJODVxR1ZrT0VndGZwSUlaaGtYNGZBbGhvSWVHN0wzcGFudmkyVVhUSU5nUHpDOFAtcUw0dmVVdFRRWjBwNG9yWFVEQl93eldGb0oxbllrWVFnUnc0YXk0THVWb091aTBoRVB0NjExV0NXcVhmZjBlN2RmTXFxR1dIR0N6czNHN0k1Rkw4WWs4c1NJY0xtbmI4Vnh5TVNsbTZYZVFMb25sazRTTTV3NFQ5elFUYw?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 10.0,
+          "abstract_or_body": "Saronic CEO on $1.75 billion funding round, autonomous vessels, and expanding US shipbuilding &nbsp;&nbsp; MSN",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: MSN\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMi1wFBVV95cUxQak5lNDlZMkRaODY3eS05elBkYzB6WVFyRmZlN3Z6amlxVkNJODVxR1ZrT0VndGZwSUlaaGtYNGZBbGhvSWVHN0wzcGFudmkyVVhUSU5nUHpDOFAtcUw0dmVVdFRRWjBwNG9yWFVEQl93eldGb0oxbllrWVFnUnc0YXk0THVWb091aTBoRVB0NjExV0NXcVhmZjBlN2RmTXFxR1dIR0N6czNHN0k1Rkw4WWs4c1NJY0xtbmI4Vnh5TVNsbTZYZVFMb25sazRTTTV3NFQ5elFUYw?oc=5",
+            "source_excerpt": "Saronic CEO on $1.75 billion funding round, autonomous vessels, and expanding US shipbuilding &nbsp;&nbsp; MSN",
+            "short_summary": "Saronic secured a $1.75 billion funding round to advance autonomous vessel technology and expand U.S. shipbuilding. The company’s CEO highlighted plans to enhance maritime autonomy while strengthening domestic shipyard capabilities. The funding will support scaling operations and deploying next-generation autonomous ships. This initiative aims to modernize the maritime industry and reduce reliance on foreign shipbuilding."
+          }
+        },
+        {
+          "item_id": "d2b228555b2bd2f2b6bf8b7fb558bebea114463ffa7f60d250c71817bec12cab",
+          "source": "crossref",
+          "source_id": "10.3390/jmse14070633",
+          "item_type": "paper",
+          "title": "A High-Density Bathymetric Data Model and System Construction Approach Integrated with S-100 for Unmanned Surface Vessel Intelligent Navigation",
+          "authors_or_author": [
+            "Jianan Luo",
+            "Zhichen Liu",
+            "Haifeng Tang",
+            "Chenchen Jiao",
+            "Xiongfei Geng",
+            "Hua Guo"
+          ],
+          "published_at": "2026-03-30",
+          "url": "https://doi.org/10.3390/jmse14070633",
+          "doi": "10.3390/jmse14070633",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 10.0,
+          "abstract_or_body": "Intelligent vessel navigation increasingly demands high-density bathymetric data. To resolve the limitations of traditional standards and overcome existing management bottlenecks, this study proposes a novel methodology for high-density bathymetric data modeling and system construction integrated with the S-100 framework. Centered on the International Hydrographic Organization (IHO) S-102 standard, this methodology pioneers a strongly correlated management paradigm for datasets, data, and metadata. Leveraging a relational database architecture and a three-level indexing mechanism, it enables the structured organization and efficient retrieval of data throughout its entire life cycle. At the data production stage, geometric feature constraints based on convex hulls are innovatively incorporated to facilitate the interpolation of high-density water depth data and the generation of grid arrays. A data organization and structured storage model based on the three-tier logical architecture of the Hierarchical Data Format version 5 (HDF5) is proposed, which couples the technologies of block-based storage and refined version control to achieve the synergistic optimization of storage costs and access efficiency for high-density water depth data. Validation via field measurements in selected sea areas of the East China Sea demonstrated that the generated S-102 bathymetric data complied with international specifications and achieved excellent terrain restoration accuracy. Meanwhile, the proposed HDF5-based storage strategy achieves a storage space reduction of 83.6%. This research provides authoritative and efficient data support for scenarios such as intelligent navigation and port digitalization, and contributes to the construction of an intelligent shipping ecosystem.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-30\n- Authors: Jianan Luo, Zhichen Liu, Haifeng Tang, Chenchen Jiao, Xiongfei Geng, Hua Guo\n- DOI: 10.3390/jmse14070633\n- Link: https://doi.org/10.3390/jmse14070633",
+            "source_excerpt": "Intelligent vessel navigation increasingly demands high-density bathymetric data. To resolve the limitations of traditional standards and overcome existing management bottlenecks, this study proposes a novel methodology for high-density bathymetric data modeling and system construction integrated with the S-100 framework. Centered on the International Hydrographic Organization (IHO) S-102 standard, this methodology pioneers a strongly correlated management paradigm for datasets, data, and metadata. Leveraging a relational database architecture and a three-level indexing mechanism, it enables the structured organization and efficient retrieval of data throughout its entire life cycle. At the data production stage, geometric feature constraints based on convex hulls are innovatively incorporated to facilitate the interpolation of high-density water depth data and the generation of grid arrays. A data organization and structured storage model based on the three-tier logical architecture of the Hierarchical Data Format version 5 (HDF5) is proposed, which couples the technologies of block-based storage and refined version control to achieve the synergistic optimization of storage costs and access efficiency for high-density water depth data. Validation via field measurements in selected sea areas of the East China Sea demonstrated that the generated S-102 bathymetric data complied with international specifications and achieved excellent terrain restoration accuracy. Meanwhile, the proposed HDF5-based storage strategy achieves a storage space reduction of 83.6%. This research provides authoritative and efficient data support for scenarios such as intelligent navigation and port digitalization, and contributes to the construction of an intelligent shipping ecosystem.",
+            "short_summary": "The study introduces a new method for modeling and managing high-density bathymetric data using the S-100 framework, specifically the IHO S-102 standard. It employs a relational database and a three-level indexing system to organize and retrieve data efficiently throughout its lifecycle. The approach includes convex hull-based geometric constraints for interpolating water depth data and an HDF5-based storage model with block storage and version control, reducing storage space by 83.6%. Field tests in the East China Sea confirmed the generated S-102 data met international standards and achieved high terrain restoration accuracy."
+          }
+        },
+        {
+          "item_id": "0bc76d0f4ac996c9247631707d92e5341e02221d21f8907518e77e0d1b5a91b3",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7149422291",
+          "item_type": "paper",
+          "title": "Approximate optimal fast terminal sliding mode control for autonomous surface vessels subject to input constraints and uncertainties",
+          "authors_or_author": [
+            "Jianchun Liao",
+            "Bin Guo",
+            "Songyi DIAN",
+            "Xiangai Miao",
+            "Ting Zheng"
+          ],
+          "published_at": "2026-04-04",
+          "url": "https://doi.org/10.1016/j.ins.2026.123466",
+          "doi": "10.1016/j.ins.2026.123466",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 9.5,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-small-latest:fallback",
+            "metadata_markdown": "- Date: 2026-04-04\n- Authors: Jianchun Liao, Bin Guo, Songyi DIAN, Xiangai Miao, Ting Zheng\n- DOI: 10.1016/j.ins.2026.123466\n- Link: https://doi.org/10.1016/j.ins.2026.123466",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "bd9f380fb4dbfd859e4ea490f5eae808ee25129e9a7f1b153bfa3120e542829c",
+          "source": "Shipping Telegraph",
+          "source_id": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNM01IN3NFNXdveDVsaGpaQXRsbFdZZllyMVVDS2s2OEJNdk1Hakk3X2x3QVhpYWtrUGdrOWZZT1dYQWs5OW9jaV9QdktBRHB3blZHZi0wZU1EN0otcHY5X1hkX1hyMmlYazFYdFE4eDlCM0t1cDl6NlYyN25TZk9rT0piMUc1ZHFaNzk2WjdGYU10X2tWdzB0NEx0MlZDbGhEVDFUd0pJWQ?oc=5",
+          "item_type": "news_article",
+          "title": "Autonomous roro vessel wins green light from Japan",
+          "authors_or_author": [
+            "Shipping Telegraph"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNM01IN3NFNXdveDVsaGpaQXRsbFdZZllyMVVDS2s2OEJNdk1Hakk3X2x3QVhpYWtrUGdrOWZZT1dYQWs5OW9jaV9QdktBRHB3blZHZi0wZU1EN0otcHY5X1hkX1hyMmlYazFYdFE4eDlCM0t1cDl6NlYyN25TZk9rT0piMUc1ZHFaNzk2WjdGYU10X2tWdzB0NEx0MlZDbGhEVDFUd0pJWQ?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 9.5,
+          "abstract_or_body": "Autonomous roro vessel wins green light from Japan &nbsp;&nbsp; Shipping Telegraph",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: Shipping Telegraph\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMipwFBVV95cUxNM01IN3NFNXdveDVsaGpaQXRsbFdZZllyMVVDS2s2OEJNdk1Hakk3X2x3QVhpYWtrUGdrOWZZT1dYQWs5OW9jaV9QdktBRHB3blZHZi0wZU1EN0otcHY5X1hkX1hyMmlYazFYdFE4eDlCM0t1cDl6NlYyN25TZk9rT0piMUc1ZHFaNzk2WjdGYU10X2tWdzB0NEx0MlZDbGhEVDFUd0pJWQ?oc=5",
+            "source_excerpt": "Autonomous roro vessel wins green light from Japan &nbsp;&nbsp; Shipping Telegraph",
+            "short_summary": "Japan has approved the operation of an autonomous roll-on/roll-off (RoRo) vessel, marking a significant step in maritime automation. The vessel received regulatory clearance, allowing it to operate without a traditional crew onboard. This development highlights Japan's push toward integrating autonomous ships in commercial shipping. The decision underscores advancements in maritime technology and safety protocols."
+          }
+        },
+        {
+          "item_id": "76b3b8e06ae3c0124538be2ade00bd8c56f0526a5665c7710839fd0bee3f8745",
+          "source": "crossref",
+          "source_id": "10.3390/s26072132",
+          "item_type": "paper",
+          "title": "Lightweight Visual Localization of Steel Surface Defects for Autonomous Inspection Robots Based on Improved YOLOv10n",
+          "authors_or_author": [
+            "Jinwu Tong",
+            "Xin Zhang",
+            "Xinyun Lu",
+            "Han Cao",
+            "Lengtao Yao",
+            "Bingbing Gao"
+          ],
+          "published_at": "2026-03-30",
+          "url": "https://doi.org/10.3390/s26072132",
+          "doi": "10.3390/s26072132",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 9.5,
+          "abstract_or_body": "To address the challenges of steel surface defect detection—characterized by fine-grained textures, substantial scale variations, and complex background interference—conventional lightweight detectors often struggle to balance real-time navigation requirements with high-precision spatial localization on mobile inspection platforms. In this work, we propose KDM-YOLO, a lightweight visual localization and detection method built upon YOLOv10n, designed to provide an efficient perception engine for autonomous inspection robots. The proposed approach enhances the baseline through three key perspectives: feature extraction, context modeling, and multi-scale fusion. Specifically, KWConv is introduced to strengthen the representation of fine-grained texture and edge cues; C2f-DRB is employed to enlarge the effective receptive field and improve long-range dependency perception to reduce missed detections; and a multi-scale attention fusion (MSAF) module is inserted before the detection head to adaptively integrate spatial details with semantic context while suppressing redundant background responses. Ablation studies confirm that each module contributes to performance gains, and their combination yields the best overall results. Comparative experiments further demonstrate that KDM-YOLO significantly improves detection performance while retaining a compact model size and high inference speed. Compared with the YOLOv10n baseline, Precision, Recall and mAP@50 are increased to 91.0%, 93.9%, and 95.4%, respectively, with a parameter count of 3.29 M and an inference speed of 155.6 f/s. These results indicate that KDM-YOLO achieves an ideal balance between the accuracy and computational efficiency required for embedded navigation platforms, providing an effective solution for online autonomous inspection and real-time localization of steel surface defects.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-30\n- Authors: Jinwu Tong, Xin Zhang, Xinyun Lu, Han Cao, Lengtao Yao, Bingbing Gao\n- DOI: 10.3390/s26072132\n- Link: https://doi.org/10.3390/s26072132",
+            "source_excerpt": "To address the challenges of steel surface defect detection—characterized by fine-grained textures, substantial scale variations, and complex background interference—conventional lightweight detectors often struggle to balance real-time navigation requirements with high-precision spatial localization on mobile inspection platforms. In this work, we propose KDM-YOLO, a lightweight visual localization and detection method built upon YOLOv10n, designed to provide an efficient perception engine for autonomous inspection robots. The proposed approach enhances the baseline through three key perspectives: feature extraction, context modeling, and multi-scale fusion. Specifically, KWConv is introduced to strengthen the representation of fine-grained texture and edge cues; C2f-DRB is employed to enlarge the effective receptive field and improve long-range dependency perception to reduce missed detections; and a multi-scale attention fusion (MSAF) module is inserted before the detection head to adaptively integrate spatial details with semantic context while suppressing redundant background responses. Ablation studies confirm that each module contributes to performance gains, and their combination yields the best overall results. Comparative experiments further demonstrate that KDM-YOLO significantly improves detection performance while retaining a compact model size and high inference speed. Compared with the YOLOv10n baseline, Precision, Recall and mAP@50 are increased to 91.0%, 93.9%, and 95.4%, respectively, with a parameter count of 3.29 M and an inference speed of 155.6 f/s. These results indicate that KDM-YOLO achieves an ideal balance between the accuracy and computational efficiency required for embedded navigation platforms, providing an effective solution for online autonomous inspection and real-time localization of steel surface defects.",
+            "short_summary": "**Summary:** This paper introduces KDM-YOLO, a lightweight visual localization method for detecting steel surface defects, built on YOLOv10n. The approach improves feature extraction, context modeling, and multi-scale fusion using KWConv, C2f-DRB, and an MSAF module. Results show Precision, Recall, and mAP@50 of 91.0%, 93.9%, and 95.4%, with 3.29M parameters and 155.6 f/s inference speed."
+          }
+        },
+        {
+          "item_id": "1a0d5a18a889b4c0b89836a7b37201ed795634ceee3566f801cebcfda26f2167",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7148910575",
+          "item_type": "paper",
+          "title": "Data-driven risk mitigation of Southeast Asian maritime security",
+          "authors_or_author": [
+            "Muhammad Ilham Fahreza",
+            "Enna Hirata",
+            "Kazuhiko ISHIGURO",
+            "Kevin X. Li"
+          ],
+          "published_at": "2026-04-03",
+          "url": "https://doi.org/10.1108/mabr-08-2025-0078",
+          "doi": "10.1108/mabr-08-2025-0078",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 6.5,
+          "abstract_or_body": "Purpose The aim of this research is to develop a comprehensive, data-driven framework for analyzing and mitigating piracy and armed robbery incidents in high-risk maritime corridors, particularly the Strait of Malacca. The study integrates Bayesian network (BN) analysis with the Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) to objectively identify key risk factors, simulate various scenarios and rank effective strategies for reducing piracy incidents. Design/methodology/approach The study employs a combined BN-TOPSIS approach. First, a tree-augmented Bayesian network model is constructed using influential risk factors related to piracy attacks, extracted from historical incident data, to determine probabilistic dependencies. Sensitivity analyses then identify the mutual information values that are used as objective weights for the criteria in the TOPSIS multi-criteria decision-making model. TOPSIS is then applied to systematically evaluate and rank potential intervention strategies under multiple simulated scenarios. Findings The integrated BN-TOPSIS framework effectively identifies critical factors, such as “ship area boarded” and “crew response,” as high-impact variables. Among the proposed solutions, ship-level interventions, such as improved crew readiness and physical ship security, are significantly more effective at reducing successful attacks than broader external coordination measures, such as joint patrols. The model confirms that, despite current preventive measures, the probability of successful piracy remains high (approximately 57%), highlighting the urgent need for strategic improvements. Research limitations/implications The model presently focuses on technical and operational factors extracted from incident reports, omitting broader socio-political and economic dimensions influencing piracy risks. Additionally, it is tailored to Southeast Asian maritime conditions and requires customization before applying to other piracy-prone regions. Future work should incorporate macro-level variables and adapt the framework for generalized geographic contexts. Practical implications This integrated BN-TOPSIS framework provides policymakers and maritime security stakeholders with a robust, evidence-based tool for prioritizing anti-piracy measures. The quantitative insights promote the effective allocation of resources toward ship-specific defenses and crew training, enabling faster, data-supported decision-making. Streamlining reporting systems and enhancing joint task forces can complement these core interventions, further strengthening maritime safety and resilience in critical trade routes. Originality/value By combining the probabilistic modeling capabilities of BN with the objective ranking abilities of TOPSIS, the approach overcomes the limitations of each method when used individually. Unlike previous approaches that relied heavily on subjective expert judgment, this framework uses real-world incident data and a quantitative method to provide an unbiased evaluation of risk and strategy. It also enables scenario-based testing to prioritize interventions quantitatively, which is a novel approach in maritime security research.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-03\n- Authors: Muhammad Ilham Fahreza, Enna Hirata, Kazuhiko ISHIGURO, Kevin X. Li\n- DOI: 10.1108/mabr-08-2025-0078\n- Link: https://doi.org/10.1108/mabr-08-2025-0078",
+            "source_excerpt": "Purpose The aim of this research is to develop a comprehensive, data-driven framework for analyzing and mitigating piracy and armed robbery incidents in high-risk maritime corridors, particularly the Strait of Malacca. The study integrates Bayesian network (BN) analysis with the Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) to objectively identify key risk factors, simulate various scenarios and rank effective strategies for reducing piracy incidents. Design/methodology/approach The study employs a combined BN-TOPSIS approach. First, a tree-augmented Bayesian network model is constructed using influential risk factors related to piracy attacks, extracted from historical incident data, to determine probabilistic dependencies. Sensitivity analyses then identify the mutual information values that are used as objective weights for the criteria in the TOPSIS multi-criteria decision-making model. TOPSIS is then applied to systematically evaluate and rank potential intervention strategies under multiple simulated scenarios. Findings The integrated BN-TOPSIS framework effectively identifies critical factors, such as “ship area boarded” and “crew response,” as high-impact variables. Among the proposed solutions, ship-level interventions, such as improved crew readiness and physical ship security, are significantly more effective at reducing successful attacks than broader external coordination measures, such as joint patrols. The model confirms that, despite current preventive measures, the probability of successful piracy remains high (approximately 57%), highlighting the urgent need for strategic improvements. Research limitations/implications The model presently focuses on technical and operational factors extracted from incident reports, omitting broader socio-political and economic dimensions influencing piracy risks. Additionally, it is tailored to Southeast Asian maritime conditions and requires customization before applying to other piracy-prone regions. Future work should incorporate macro-level variables and adapt the framework for generalized geographic contexts. Practical implications This integrated BN-TOPSIS framework provides policymakers and maritime security stakeholders with a robust, evidence-based tool for prioritizing anti-piracy measures. The quantitative insights promote the effective allocation of resources toward ship-specific defenses and crew training, enabling faster, data-supported decision-making. Streamlining reporting systems and enhancing joint task forces can complement these core interventions, further strengthening maritime safety and resilience in critical trade routes. Originality/value By combining the probabilistic modeling capabilities of BN with the objective ranking abilities of TOPSIS, the approach overcomes the limitations of each method when used individually. Unlike previous approaches that relied heavily on subjective expert judgment, this framework uses real-world incident data and a quantitative method to provide an unbiased evaluation of risk and strategy. It also enables scenario-based testing to prioritize interventions quantitatively, which is a novel approach in maritime security research.",
+            "short_summary": "The study introduces a data-driven framework combining Bayesian networks (BN) and TOPSIS to analyze and mitigate piracy risks in the Strait of Malacca. Key risk factors like \"ship area boarded\" and \"crew response\" were identified, with ship-level interventions proving more effective than broader measures like joint patrols. Despite existing measures, the model estimates a 57% probability of successful piracy, underscoring the need for improved strategies. The framework offers policymakers a quantitative tool for prioritizing anti-piracy actions, though it currently excludes socio-political factors and is tailored to Southeast Asia."
+          }
+        },
+        {
+          "item_id": "3c8701cf7b2524014640a9a751ac52270beb896b928d2cb24897a8eb0a36a173",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7150232400",
+          "item_type": "paper",
+          "title": "Ensemble-Based Machine Learning with PSO and GA for Ship Coating Detection Using Portable Vis/NIR",
+          "authors_or_author": [
+            "Ali Khumaidi",
+            "Ridwan Raafi'udin",
+            "Nusa Setiani Triastuti",
+            "Linda Marlinda"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://doi.org/10.47839/ijc.25.1.4496",
+          "doi": "10.47839/ijc.25.1.4496",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 6.5,
+          "abstract_or_body": "This study presents a method for detecting ship coating quality using a portable Vis/NIR spectroscopy system combined with machine learning. To improve accuracy, we integrated spectral transformation (Nippy), feature selection methods (PSO and GA), and ensemble learning models. The experiments involved four coating quality levels, producing 148 spectral samples. Results show that the proposed approach consistently outperforms single baseline models and traditional feature selection methods such as PCA and IFS. The best performance was achieved by combining Nippy with PSO, where the LDA algorithm reached 99.33% accuracy, while GA also showed strong results with both single and ensemble models. We also examined ensemble results at different stages of preprocessing and feature selection, showing that the ensemble maintained stable performance throughout the process. These findings demonstrate that the integration of spectral transformation and metaheuristic feature selection can enhance model robustness, providing more reliable and accurate coating quality detection for maritime applications.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: Ali Khumaidi, Ridwan Raafi'udin, Nusa Setiani Triastuti, Linda Marlinda\n- DOI: 10.47839/ijc.25.1.4496\n- Link: https://doi.org/10.47839/ijc.25.1.4496",
+            "source_excerpt": "This study presents a method for detecting ship coating quality using a portable Vis/NIR spectroscopy system combined with machine learning. To improve accuracy, we integrated spectral transformation (Nippy), feature selection methods (PSO and GA), and ensemble learning models. The experiments involved four coating quality levels, producing 148 spectral samples. Results show that the proposed approach consistently outperforms single baseline models and traditional feature selection methods such as PCA and IFS. The best performance was achieved by combining Nippy with PSO, where the LDA algorithm reached 99.33% accuracy, while GA also showed strong results with both single and ensemble models. We also examined ensemble results at different stages of preprocessing and feature selection, showing that the ensemble maintained stable performance throughout the process. These findings demonstrate that the integration of spectral transformation and metaheuristic feature selection can enhance model robustness, providing more reliable and accurate coating quality detection for maritime applications.",
+            "short_summary": "This study introduces a method for detecting ship coating quality using portable Vis/NIR spectroscopy and machine learning. The approach combines spectral transformation (Nippy) with feature selection techniques (PSO and GA) and ensemble learning models. Results indicate that the proposed method outperforms single baseline models and traditional feature selection methods, achieving 99.33% accuracy with LDA when using Nippy and PSO. The ensemble models maintained stable performance across different preprocessing and feature selection stages."
+          }
+        },
+        {
+          "item_id": "2478bdda69b137cd68692c12996a14221591c0460a268fec83f24a2f6773523d",
+          "source": "crossref",
+          "source_id": "10.1142/s2301385028500021",
+          "item_type": "paper",
+          "title": "Game-Based Adversarial Control for Unmanned Surface Vessels via Fully Actuated System Approach",
+          "authors_or_author": [
+            "Yu-Zhu Xiang",
+            "Zhengrong Xiang"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://doi.org/10.1142/s2301385028500021",
+          "doi": "10.1142/s2301385028500021",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 6.0,
+          "abstract_or_body": "This paper focuses on zero-sum game-based adversarial control for unmanned surface vehicles (USVs) against disturbances. By using the fully actuated system approach (FASA), the underactuated USV dynamics can be transformed into an equivalent fully actuated form. To solve the zero-sum game between the controller and disturbances, a reinforcement learning approach based on actor-critic architecture and policy iteration is proposed. The method avoids reliance on exact system dynamics by employing an off-policy learning scheme, where neural networks serve as function approximators for the cost function, control policies, and disturbance strategies. It is demonstrated that the iterative evaluation function gradually approaches the optimal value, while the combined weight matrix of all neural networks remains uniformly ultimately bounded. Simulations are conducted to demonstrate the efficacy of the proposed algorithm.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: Yu-Zhu Xiang, Zhengrong Xiang\n- DOI: 10.1142/s2301385028500021\n- Link: https://doi.org/10.1142/s2301385028500021",
+            "source_excerpt": "This paper focuses on zero-sum game-based adversarial control for unmanned surface vehicles (USVs) against disturbances. By using the fully actuated system approach (FASA), the underactuated USV dynamics can be transformed into an equivalent fully actuated form. To solve the zero-sum game between the controller and disturbances, a reinforcement learning approach based on actor-critic architecture and policy iteration is proposed. The method avoids reliance on exact system dynamics by employing an off-policy learning scheme, where neural networks serve as function approximators for the cost function, control policies, and disturbance strategies. It is demonstrated that the iterative evaluation function gradually approaches the optimal value, while the combined weight matrix of all neural networks remains uniformly ultimately bounded. Simulations are conducted to demonstrate the efficacy of the proposed algorithm.",
+            "short_summary": "The paper presents a zero-sum game-based adversarial control method for unmanned surface vessels (USVs) using a fully actuated system approach (FASA) to handle disturbances. A reinforcement learning algorithm with an actor-critic architecture and policy iteration is introduced, eliminating the need for precise system dynamics through off-policy learning with neural networks. The study shows that the evaluation function converges toward optimality while neural network weights remain bounded. Simulation results validate the effectiveness of the proposed approach."
+          }
+        },
+        {
+          "item_id": "46d0c1aeb948248ff56e6625e53ec5a045a36272f18e2ce657725bbf80b6d982",
+          "source": "India Shipping News",
+          "source_id": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbDJjVGtONWZjUFJVQ1EyQlVGRGdCUUg4MmRCU0xTNlVNUzNrRFFDYnV0SWppcUxhRWtmUTFPWmdjb050MTlDYmZLNDRYMm1aaHBMM0poNDJwZkg4QVEwbkNFYUhOLW1wQmlsOGJSVUFqVW9hcTROVDB0M0pmRC0teGNiSmFlcndDTGtabGN0S2RPbHFwMlRHLTd1elNOZURWNDExOWJKak8?oc=5",
+          "item_type": "news_article",
+          "title": "ClassNK awards world’s first MASS notation to domestic container ship “Genbu”",
+          "authors_or_author": [
+            "India Shipping News"
+          ],
+          "published_at": "2026-04-04",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbDJjVGtONWZjUFJVQ1EyQlVGRGdCUUg4MmRCU0xTNlVNUzNrRFFDYnV0SWppcUxhRWtmUTFPWmdjb050MTlDYmZLNDRYMm1aaHBMM0poNDJwZkg4QVEwbkNFYUhOLW1wQmlsOGJSVUFqVW9hcTROVDB0M0pmRC0teGNiSmFlcndDTGtabGN0S2RPbHFwMlRHLTd1elNOZURWNDExOWJKak8?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 5.5,
+          "abstract_or_body": "ClassNK awards world’s first MASS notation to domestic container ship “Genbu” &nbsp;&nbsp; India Shipping News",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-04\n- Authors: India Shipping News\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbDJjVGtONWZjUFJVQ1EyQlVGRGdCUUg4MmRCU0xTNlVNUzNrRFFDYnV0SWppcUxhRWtmUTFPWmdjb050MTlDYmZLNDRYMm1aaHBMM0poNDJwZkg4QVEwbkNFYUhOLW1wQmlsOGJSVUFqVW9hcTROVDB0M0pmRC0teGNiSmFlcndDTGtabGN0S2RPbHFwMlRHLTd1elNOZURWNDExOWJKak8?oc=5",
+            "source_excerpt": "ClassNK awards world’s first MASS notation to domestic container ship “Genbu” &nbsp;&nbsp; India Shipping News",
+            "short_summary": "ClassNK has awarded the world’s first Maritime Autonomous Surface Ship (MASS) notation to the domestic container ship *Genbu*. The recognition highlights the vessel’s advanced autonomous navigation capabilities. This milestone marks a significant step in the adoption of autonomous shipping technology. The notation was granted following a comprehensive review of the ship’s systems and safety compliance."
+          }
+        },
+        {
+          "item_id": "23c5d6a1dffa3419b14f82ecb1f7e42e1675fae7e4cf35bb7456a9af431598d3",
+          "source": "crossref",
+          "source_id": "10.33093/ijoras.2026.8.1.2",
+          "item_type": "paper",
+          "title": "An Integrated Controller System For Unmanned Surface Vehicles (USV)",
+          "authors_or_author": [
+            "Nazreen Rusli",
+            "Zulkifli Zainal Abidin",
+            "Muhammad Aiman Norazuddin",
+            "Taufik Yunahar"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://doi.org/10.33093/ijoras.2026.8.1.2",
+          "doi": "10.33093/ijoras.2026.8.1.2",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 5.5,
+          "abstract_or_body": "Unmanned Surface Vehicles (USVs) are extensive used in several industries, such as environmental monitoring, offshore resource exploration, and maritime security. The benefits of USV for risk minimization and prolonged operational endurance cause an increase in demand. USVs are essential for administering marine security laws since they can remotely monitor traffic. Their ability to navigate well and avoid collisions improves the efficiency and safety of marine traffic. The incorporation of cutting-edge sensors and battery-powered vehicles enhances the dependability and operating capacities while minimizing environmental impact. Unlike traditional fuel-powered vessels, battery-operated USVs produce no direct water pollutants, contributing to cleaner oceans and more sustainable maritime operations. In response to these technological advancements and the unique maritime needs of Malaysia and neighboring oceanic nations, Centre for Unmanned Technologies (CUTe) at the International Islamic University Malaysia (IIUM) collaborated with Prostrain Technologies to develop a robust controller for USVs called \"CxSense\". The controller board of CxSense has been designed to meet the stringent compliance requirements of IPx8, ESD test, and vibrations test, demonstrating their robustness, reliability, stability, and adherence to industry standards for high-level protection. This invention has the potential to significantly improve the efficiency and safety of maritime operations in Malaysia and the surrounding oceanic nations.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: Nazreen Rusli, Zulkifli Zainal Abidin, Muhammad Aiman Norazuddin, Taufik Yunahar\n- DOI: 10.33093/ijoras.2026.8.1.2\n- Link: https://doi.org/10.33093/ijoras.2026.8.1.2",
+            "source_excerpt": "Unmanned Surface Vehicles (USVs) are extensive used in several industries, such as environmental monitoring, offshore resource exploration, and maritime security. The benefits of USV for risk minimization and prolonged operational endurance cause an increase in demand. USVs are essential for administering marine security laws since they can remotely monitor traffic. Their ability to navigate well and avoid collisions improves the efficiency and safety of marine traffic. The incorporation of cutting-edge sensors and battery-powered vehicles enhances the dependability and operating capacities while minimizing environmental impact. Unlike traditional fuel-powered vessels, battery-operated USVs produce no direct water pollutants, contributing to cleaner oceans and more sustainable maritime operations. In response to these technological advancements and the unique maritime needs of Malaysia and neighboring oceanic nations, Centre for Unmanned Technologies (CUTe) at the International Islamic University Malaysia (IIUM) collaborated with Prostrain Technologies to develop a robust controller for USVs called \"CxSense\". The controller board of CxSense has been designed to meet the stringent compliance requirements of IPx8, ESD test, and vibrations test, demonstrating their robustness, reliability, stability, and adherence to industry standards for high-level protection. This invention has the potential to significantly improve the efficiency and safety of maritime operations in Malaysia and the surrounding oceanic nations.",
+            "short_summary": "Nazreen Rusli, Zulkifli Zainal Abidin, Muhammad Aiman Norazuddin, and Taufik Yunahar (2026) present an integrated controller system for Unmanned Surface Vehicles (USVs), designed to enhance maritime operations in environmental monitoring, resource exploration, and security. The \"CxSense\" controller, developed by IIUM’s Centre for Unmanned Technologies and Prostrain Technologies, meets high industry standards (IPx8, ESD, and vibration tests) for robustness and reliability. Battery-powered USVs, like those using CxSense, reduce environmental impact by eliminating direct water pollutants compared to traditional fuel-powered vessels. The system aims to improve maritime safety, efficiency, and sustainability in Malaysia and neighboring regions."
+          }
+        },
+        {
+          "item_id": "c8abc59e05e4a661d7c7581f1e934e9cfd935297c7e77463c687ad34a3a629be",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7143539179",
+          "item_type": "paper",
+          "title": "The Case for Powered Propellers on Ship Wingsails",
+          "authors_or_author": [
+            "Sergio E. Perez"
+          ],
+          "published_at": "2026-03-30",
+          "url": "https://doi.org/10.5957/jst/2026.11.1.115",
+          "doi": "10.5957/jst/2026.11.1.115",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 5.5,
+          "abstract_or_body": "Abstract It is well-known that wingsails operating as auxiliary propulsion on cargo ships can reduce fuel consumption. But the wingsail’s utility can be further increased by installing powered propellers on the wings, which can serve as highly effective ship maneuvering tools, much like azimuth thrusters. In addition, the powered wingsails, referred to as Propeller-Sails or Powered Wingsails, can offer greater lift forces than conventional wingsails. In this work, a velocity prediction program (VPP) is used to compare the power consumption of powered and unpowered wingsails, Flettner rotors and normally powered ships. Finally, limited model testing is used to show the extreme maneuverability possible by the wingsail-mounted propellers. Keywords propeller-sail; Flettner rotor; high-lift device; velocity prediction program; sailing cargo ship; powered wingsail",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-30\n- Authors: Sergio E. Perez\n- DOI: 10.5957/jst/2026.11.1.115\n- Link: https://doi.org/10.5957/jst/2026.11.1.115",
+            "source_excerpt": "Abstract It is well-known that wingsails operating as auxiliary propulsion on cargo ships can reduce fuel consumption. But the wingsail’s utility can be further increased by installing powered propellers on the wings, which can serve as highly effective ship maneuvering tools, much like azimuth thrusters. In addition, the powered wingsails, referred to as Propeller-Sails or Powered Wingsails, can offer greater lift forces than conventional wingsails. In this work, a velocity prediction program (VPP) is used to compare the power consumption of powered and unpowered wingsails, Flettner rotors and normally powered ships. Finally, limited model testing is used to show the extreme maneuverability possible by the wingsail-mounted propellers. Keywords propeller-sail; Flettner rotor; high-lift device; velocity prediction program; sailing cargo ship; powered wingsail",
+            "short_summary": "The study proposes installing powered propellers on ship wingsails to enhance maneuverability and lift, comparing their power consumption with unpowered wingsails, Flettner rotors, and conventional ships using a velocity prediction program (VPP). Powered wingsails, termed Propeller-Sails or Powered Wingsails, can generate greater lift than conventional wingsails and function like azimuth thrusters for improved ship control. Model testing demonstrates the extreme maneuverability achievable with wingsail-mounted propellers. The research highlights the potential fuel savings and operational benefits of this hybrid propulsion system."
+          }
+        },
+        {
+          "item_id": "08d7b9f954ef156c2277e5ac9b6981efcd14e11e94f4230bb67d237f8376a63d",
+          "source": "shipmanagementinternational.com",
+          "source_id": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQOS1CdDVhVndrel9xdmFKUUo1YWQ5N0I2cGlsUkJtZ3pud2lGVWlKQ1F5UGcwdmJDTDhNVmpYV0tSX3JjTmoxR19lOVpwR2IydlRkeHRvVjV4UXM0VEZONWowRlRZUFZyaFp6VHVkZ3M3NE5Xd29xTUJkd0Q1V0ppa3V1aTBWVkdYaTRyYUZFOGRmRjFCM2FCcHlFYmRVV0htNWl3LUhPTnNsbW5MaTFNRERFSW81RWI3NFhrNmNPSXhCenFQaGttRW9kb3hjb2JEQW1ZNmprV2g5WEdkNkd4eE1R?oc=5",
+          "item_type": "news_article",
+          "title": "World’s first hydrogen-fuelled operation in factory of main engine for large commercial vessel — SMI DIGITAL",
+          "authors_or_author": [
+            "shipmanagementinternational.com"
+          ],
+          "published_at": "2026-04-02",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQOS1CdDVhVndrel9xdmFKUUo1YWQ5N0I2cGlsUkJtZ3pud2lGVWlKQ1F5UGcwdmJDTDhNVmpYV0tSX3JjTmoxR19lOVpwR2IydlRkeHRvVjV4UXM0VEZONWowRlRZUFZyaFp6VHVkZ3M3NE5Xd29xTUJkd0Q1V0ppa3V1aTBWVkdYaTRyYUZFOGRmRjFCM2FCcHlFYmRVV0htNWl3LUhPTnNsbW5MaTFNRERFSW81RWI3NFhrNmNPSXhCenFQaGttRW9kb3hjb2JEQW1ZNmprV2g5WEdkNkd4eE1R?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 5.0,
+          "abstract_or_body": "World’s first hydrogen-fuelled operation in factory of main engine for large commercial vessel — SMI DIGITAL &nbsp;&nbsp; shipmanagementinternational.com",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-02\n- Authors: shipmanagementinternational.com\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMi4gFBVV95cUxQOS1CdDVhVndrel9xdmFKUUo1YWQ5N0I2cGlsUkJtZ3pud2lGVWlKQ1F5UGcwdmJDTDhNVmpYV0tSX3JjTmoxR19lOVpwR2IydlRkeHRvVjV4UXM0VEZONWowRlRZUFZyaFp6VHVkZ3M3NE5Xd29xTUJkd0Q1V0ppa3V1aTBWVkdYaTRyYUZFOGRmRjFCM2FCcHlFYmRVV0htNWl3LUhPTnNsbW5MaTFNRERFSW81RWI3NFhrNmNPSXhCenFQaGttRW9kb3hjb2JEQW1ZNmprV2g5WEdkNkd4eE1R?oc=5",
+            "source_excerpt": "World’s first hydrogen-fuelled operation in factory of main engine for large commercial vessel — SMI DIGITAL &nbsp;&nbsp; shipmanagementinternational.com",
+            "short_summary": "SMI DIGITAL reported on April 2, 2026, that the world's first hydrogen-fueled operation was conducted in a factory producing the main engine for a large commercial vessel. The news highlights a significant milestone in the maritime industry's shift toward sustainable fuel alternatives."
+          }
+        },
+        {
+          "item_id": "10f1bea091c66cf324ca2d28b6b0af4b4d9556c9295fc868c28d86fce9f57441",
+          "source": "crossref",
+          "source_id": "10.20295/1815-588x-2026-1-229-238",
+          "item_type": "paper",
+          "title": "Conceptualization of information and communication system development for remotely operated maritime transport in Arctic region",
+          "authors_or_author": [
+            "Konstantin Prostakevich",
+            "Igor' Sikarev",
+            "Igor' Yurin",
+            "Yuriy Kozlov",
+            "Valeriy Abramov"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://doi.org/10.20295/1815-588x-2026-1-229-238",
+          "doi": "10.20295/1815-588x-2026-1-229-238",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 5.0,
+          "abstract_or_body": "Objective: to develop strategic directions for conceptualizing information and communication systems for remotely operated Arctic maritime transport, with particular emphasis on ensuring information security within contemporary project designs. Methods: analogy and abstraction methods, foresight-technologies, and open-source scanning techniques (OSINT) were applied. Results: prospective directions for information and communication system development tailored to remotely operated Arctic maritime transport have been outlined. The proposals advocate deploying communication signal-relay architectures that sustain connectivity between vessels with external crews and remote control centers under conditions of information threat, while concurrently satisfying information security requirements. Practical significance: the research offers recommendations on applying diverse signal-relay communication architectures.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: Konstantin Prostakevich, Igor' Sikarev, Igor' Yurin, Yuriy Kozlov, Valeriy Abramov\n- DOI: 10.20295/1815-588x-2026-1-229-238\n- Link: https://doi.org/10.20295/1815-588x-2026-1-229-238",
+            "source_excerpt": "Objective: to develop strategic directions for conceptualizing information and communication systems for remotely operated Arctic maritime transport, with particular emphasis on ensuring information security within contemporary project designs. Methods: analogy and abstraction methods, foresight-technologies, and open-source scanning techniques (OSINT) were applied. Results: prospective directions for information and communication system development tailored to remotely operated Arctic maritime transport have been outlined. The proposals advocate deploying communication signal-relay architectures that sustain connectivity between vessels with external crews and remote control centers under conditions of information threat, while concurrently satisfying information security requirements. Practical significance: the research offers recommendations on applying diverse signal-relay communication architectures.",
+            "short_summary": "The study by Prostakevich et al. (2026) outlines strategic directions for developing information and communication systems for remotely operated Arctic maritime transport, focusing on information security. Using methods like foresight technologies and OSINT, the authors propose signal-relay architectures to maintain connectivity between vessels and remote control centers amid information threats. The research highlights practical recommendations for implementing these communication systems in Arctic conditions."
+          }
+        },
+        {
+          "item_id": "ef3229c6a0d399cf2fb1258f2a5f85f4d90b7690fb7628d0eace59f434aea9b8",
+          "source": "36 Kr",
+          "source_id": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9RRFBZanRRT3E1X2lwZ0IwNkN2SHh0bFdwRjJkODNhb0kwdEhwZE1qU3Y1aFNUMVdxZmh6TWU3SlJzbkczMlBoNkFQcTdQNndVbW5z?oc=5",
+          "item_type": "news_article",
+          "title": "Unmanned Ship Arrives: Company Completes $12 Billion Financing",
+          "authors_or_author": [
+            "36 Kr"
+          ],
+          "published_at": "2026-04-02",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9RRFBZanRRT3E1X2lwZ0IwNkN2SHh0bFdwRjJkODNhb0kwdEhwZE1qU3Y1aFNUMVdxZmh6TWU3SlJzbkczMlBoNkFQcTdQNndVbW5z?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.5,
+          "abstract_or_body": "Unmanned Ship Arrives: Company Completes $12 Billion Financing &nbsp;&nbsp; 36 Kr",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-02\n- Authors: 36 Kr\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9RRFBZanRRT3E1X2lwZ0IwNkN2SHh0bFdwRjJkODNhb0kwdEhwZE1qU3Y1aFNUMVdxZmh6TWU3SlJzbkczMlBoNkFQcTdQNndVbW5z?oc=5",
+            "source_excerpt": "Unmanned Ship Arrives: Company Completes $12 Billion Financing &nbsp;&nbsp; 36 Kr",
+            "short_summary": "A company secured $12 billion in financing to develop and deploy unmanned ships. The funding marks a significant milestone in advancing autonomous maritime technology. The investment will support large-scale production and operational deployment of the unmanned vessels. This initiative aims to revolutionize global shipping and logistics industries."
+          }
+        },
+        {
+          "item_id": "e5184fdce262ae3f4b9fff1d689152f8ab4a008153e0f8dfd9f1418302866fbb",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7144144700",
+          "item_type": "paper",
+          "title": "A hierarchical learning-based autonomous berthing trajectory planner for unmanned surface vehicle",
+          "authors_or_author": [
+            "Yuqi Dou",
+            "Zhilong Deng",
+            "Xueling Yi",
+            "LEI WANG",
+            "Lu He",
+            "Yunsheng Fan",
+            "Xinwei Wang"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://doi.org/10.1016/j.oceaneng.2026.125266",
+          "doi": "10.1016/j.oceaneng.2026.125266",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.5,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-small-latest:fallback",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: Yuqi Dou, Zhilong Deng, Xueling Yi, LEI WANG, Lu He, Yunsheng Fan, Xinwei Wang\n- DOI: 10.1016/j.oceaneng.2026.125266\n- Link: https://doi.org/10.1016/j.oceaneng.2026.125266",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "7419546d8049bd8489d08d0565dc88126b03fdb84523c1a5e3e0aa981ba70364",
+          "source": "crossref",
+          "source_id": "10.4043/36557-ms",
+          "item_type": "paper",
+          "title": "Powering Change: Electrically Operated Subsea Safety Module for Future Well Intervention",
+          "authors_or_author": [
+            "C. J. Berry"
+          ],
+          "published_at": "2026-03-30",
+          "url": "https://doi.org/10.4043/36557-ms",
+          "doi": "10.4043/36557-ms",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.5,
+          "abstract_or_body": "At all stages of a well's life, be it surface or subsea, there may be a need for hydraulic intervention. Unlike mechanical intervention requiring tools deployed on wire or coiled tubing, hydraulic intervention relies on the reactivity of the chemicals or benign fluids or gasses under pressure for a variety of purposes to perform the operation. Maintenance, remediation, or stimulation may be required to treat wells for build ups of scale, wax, asphaltenes, hydrates etc to restore productivity or injectivity or remove blockages. They are also used to enhance production by treating the reservoir directly. The intervention may be sub-surface in the tubing or reservoir or downstream into flowlines or other subsea infrastructure. Hydraulic pressure can also be used to enable startup of new systems by breaking glass plugs and cycling completion valves. In emergency or end of life situations fluids can be pumped to overbalance the well and regain control or kill the system. During these operations it is required to connect to the live well and establish and maintain well barrier safety to always ensure correct control.                     It may be possible to use existing chemical delivery methods such as chemical lines in the XT umbilical or reverse flow chemicals into production flowlines from surface. These methods are likely to be limited in flow rates or unappealing due to temporary cessation of production or injection. For remote wells they may be unfeasible due to metallurgy and lengths of flowlines to purge and pump through, Efficient delivery of fluids to subsea assets may need dedicated intervention to achieve required flow rates and minimise nonproducing time.                     For subsea wells, fluids need to be injected from an intervention vessel that has remotely operated vehicles (ROVs), a subsea crane, deck space for pumps, HPUs and reelers to deploy downlines to the subsea well. Vessels may have chemical storage tanks however smaller vessels or wells requiring high volumes will require a stim vessel to supply the intervention fluids for pumping subsea. The dynamic heaving nature of the vessel at surface requires downline management as well as means to safely disconnect if the vessel were to drift or drive off location. On the seabed a means to isolate the well and safely attach fluid downlines is required if a disconnect were to occur. This takes the form of a seabed or tree mounted skid or subsea safety module (SSM) that contains isolation valves, downline connection points, and an injection connection point. SSMs are included in API recommended practice 17G2 as part of a subsea pumping well intervention system (SPWIS). A full riser based well control package (WCP) can be used to safely control the fluids into a well however are much larger and over spec'd for this the job. These types of systems require larger vessels/drill ships or rigs to be deployed from. As there is no wireline or coiled tubing being run into the well there is no need for the SSM valves to be capable of shearing so lighter fluid only valves can be used. The SSM is therefore an efficient and fit for purpose tool to safely enable intervention control of the well.                     Fluids can be injected at multiple locations into the subsea system (figure 1). Options are dependent on access availability; the subsea Christmas Tree (XT) type, whether the XT has a purpose designed high flow access connection or if access can be enabled by an alternative location. One such access point is the subsea retrievable choke which has been successfully used as an injection point after temporarily replacement with a short or long term unit. Choke inserts are particularly advantageous as they are installed downstream of main XT isolation valves and provide full bore access. Choke access deployment on horizontal XTs mitigates requirement for crown plug retrieval and leaves USVs undisturbed. On vertical XTs injection directly into the system via the re-entry mandrel may be a preferred option.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-30\n- Authors: C. J. Berry\n- DOI: 10.4043/36557-ms\n- Link: https://doi.org/10.4043/36557-ms",
+            "source_excerpt": "At all stages of a well's life, be it surface or subsea, there may be a need for hydraulic intervention. Unlike mechanical intervention requiring tools deployed on wire or coiled tubing, hydraulic intervention relies on the reactivity of the chemicals or benign fluids or gasses under pressure for a variety of purposes to perform the operation. Maintenance, remediation, or stimulation may be required to treat wells for build ups of scale, wax, asphaltenes, hydrates etc to restore productivity or injectivity or remove blockages. They are also used to enhance production by treating the reservoir directly. The intervention may be sub-surface in the tubing or reservoir or downstream into flowlines or other subsea infrastructure. Hydraulic pressure can also be used to enable startup of new systems by breaking glass plugs and cycling completion valves. In emergency or end of life situations fluids can be pumped to overbalance the well and regain control or kill the system. During these operations it is required to connect to the live well and establish and maintain well barrier safety to always ensure correct control. It may be possible to use existing chemical delivery methods such as chemical lines in the XT umbilical or reverse flow chemicals into production flowlines from surface. These methods are likely to be limited in flow rates or unappealing due to temporary cessation of production or injection. For remote wells they may be unfeasible due to metallurgy and lengths of flowlines to purge and pump through, Efficient delivery of fluids to subsea assets may need dedicated intervention to achieve required flow rates and minimise nonproducing time. For subsea wells, fluids need to be injected from an intervention vessel that has remotely operated vehicles (ROVs), a subsea crane, deck space for pumps, HPUs and reelers to deploy downlines to the subsea well. Vessels may have chemical storage tanks however smaller vessels or wells requiring high volumes will require a stim vessel to supply the intervention fluids for pumping subsea. The dynamic heaving nature of the vessel at surface requires downline management as well as means to safely disconnect if the vessel were to drift or drive off location. On the seabed a means to isolate the well and safely attach fluid downlines is required if a disconnect were to occur. This takes the form of a seabed or tree mounted skid or subsea safety module (SSM) that contains isolation valves, downline connection points, and an injection connection point. SSMs are included in API recommended practice 17G2 as part of a subsea pumping well intervention system (SPWIS). A full riser based well control package (WCP) can be used to safely control the fluids into a well however are much larger and over spec'd for this the job. These types of systems require larger vessels/drill ships or rigs to be deployed from. As there is no wireline or coiled tubing being run into the well there is no need for the SSM valves to be capable of shearing so lighter fluid only valves can be used. The SSM is therefore an efficient and fit for purpose tool to safely enable intervention control of the well. Fluids can be injected at multiple locations into the subsea system (figure 1). Options are dependent on access availability; the subsea Christmas Tree (XT) type, whether the XT has a purpose designed high flow access connection or if access can be enabled by an alternative location. One such access point is the subsea retrievable choke which has been successfully used as an injection point after temporarily replacement with a short or long term unit. Choke inserts are particularly advantageous as they are installed downstream of main XT isolation valves and provide full bore access. Choke access deployment on horizontal XTs mitigates requirement for crown plug retrieval and leaves USVs undisturbed. On vertical XTs injection directly into the system via the re-entry mandrel may be a preferred option.",
+            "short_summary": "This paper discusses the need for hydraulic intervention in oil and gas wells, which uses chemicals or fluids under pressure for maintenance, remediation, or stimulation. It highlights the challenges of delivering fluids to subsea wells, requiring dedicated intervention vessels with remotely operated vehicles (ROVs) and specialized equipment like a subsea safety module (SSM). The SSM, as per API recommended practice 17G2, provides isolation valves, downline connection points, and an injection connection point for safe well intervention. Fluids can be injected at various locations, such as the subsea Christmas Tree or retrievable choke, depending on access availability."
+          }
+        },
+        {
+          "item_id": "04f1779cfbd1802c4e7eb08d21653221db623d2f395e03449c9e77d8b20395d8",
+          "source": "crossref",
+          "source_id": "10.1016/j.robot.2025.105307",
+          "item_type": "paper",
+          "title": "Global navigation-local operation: Pose optimization and multi-sensory guidance strategy for autonomous mobile manipulators",
+          "authors_or_author": [
+            "Dianfan Zhang",
+            "Yujie Zhu",
+            "Shuhong Cheng",
+            "Chao Zhang",
+            "Zedai Wang",
+            "Shijun Zhang"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://doi.org/10.1016/j.robot.2025.105307",
+          "doi": "10.1016/j.robot.2025.105307",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.0,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-small-latest:fallback",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: Dianfan Zhang, Yujie Zhu, Shuhong Cheng, Chao Zhang, Zedai Wang, Shijun Zhang\n- DOI: 10.1016/j.robot.2025.105307\n- Link: https://doi.org/10.1016/j.robot.2025.105307",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "e80afc34cac7b4a6e3d414e6324a1f4d0d14935de9b46db7c015805c7e84f87b",
+          "source": "crossref",
+          "source_id": "10.1016/j.robot.2026.105472",
+          "item_type": "paper",
+          "title": "LiDAR-based vehicle detection and tracking for autonomous racing",
+          "authors_or_author": [
+            "Marcello Cellina",
+            "Matteo Corno",
+            "Sergio Matteo Savaresi"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://doi.org/10.1016/j.robot.2026.105472",
+          "doi": "10.1016/j.robot.2026.105472",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.0,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-small-latest:fallback",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: Marcello Cellina, Matteo Corno, Sergio Matteo Savaresi\n- DOI: 10.1016/j.robot.2026.105472\n- Link: https://doi.org/10.1016/j.robot.2026.105472",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "4e472496b56f0d3ba58cdfaf1573b88eb96fd4009fae1dea2a3fa9f2092a474f",
+          "source": "crossref",
+          "source_id": "10.1016/j.robot.2026.105467",
+          "item_type": "paper",
+          "title": "Shared control for autonomous robotic navigation: A review",
+          "authors_or_author": [
+            "Haojie Zhang",
+            "Chuankai Liu",
+            "Yikang Liu",
+            "Qing Li"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://doi.org/10.1016/j.robot.2026.105467",
+          "doi": "10.1016/j.robot.2026.105467",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.0,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-small-latest:fallback",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: Haojie Zhang, Chuankai Liu, Yikang Liu, Qing Li\n- DOI: 10.1016/j.robot.2026.105467\n- Link: https://doi.org/10.1016/j.robot.2026.105467",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "26c615ec7d46e4bf29f61f7f9852e0d9912f7e6330d3e6ec55a7b5bf54905334",
+          "source": "PR Newswire",
+          "source_id": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNY2ZYYnJQUVg2OXVyMS1VTG8wZHVNdFpGUWFRUVRTdFY3bWhzWkE1LU1nSVo1TVRpNjJ2MkRjTkVtMXJXMzdULUVZNUpPS05LcTJsaktLMlhsbXBDZUh1NjlaRGQ2a19xdzhSWERsWnNtZ3FsVTE0YXMwU2dzQjc1bUdwUEFXWnhUWUdScHIyS1Z5T2hWNHBmMFBHNVRRMF9wZEJvblRPQ2E2SE5WMzdUWm9xdlZFTEFkMnQ3ODRYb3hRMzhqZlg2R3E4c1ZXeGRpZk9sRjFjZkMwZ19RMG9JV29paw?oc=5",
+          "item_type": "news_article",
+          "title": "Saronic Closes $1.75B Series D at $9.25B Valuation to Accelerate a New Era of Maritime Autonomy",
+          "authors_or_author": [
+            "PR Newswire"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNY2ZYYnJQUVg2OXVyMS1VTG8wZHVNdFpGUWFRUVRTdFY3bWhzWkE1LU1nSVo1TVRpNjJ2MkRjTkVtMXJXMzdULUVZNUpPS05LcTJsaktLMlhsbXBDZUh1NjlaRGQ2a19xdzhSWERsWnNtZ3FsVTE0YXMwU2dzQjc1bUdwUEFXWnhUWUdScHIyS1Z5T2hWNHBmMFBHNVRRMF9wZEJvblRPQ2E2SE5WMzdUWm9xdlZFTEFkMnQ3ODRYb3hRMzhqZlg2R3E4c1ZXeGRpZk9sRjFjZkMwZ19RMG9JV29paw?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.0,
+          "abstract_or_body": "Saronic Closes $1.75B Series D at $9.25B Valuation to Accelerate a New Era of Maritime Autonomy &nbsp;&nbsp; PR Newswire",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: PR Newswire\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMi4wFBVV95cUxNY2ZYYnJQUVg2OXVyMS1VTG8wZHVNdFpGUWFRUVRTdFY3bWhzWkE1LU1nSVo1TVRpNjJ2MkRjTkVtMXJXMzdULUVZNUpPS05LcTJsaktLMlhsbXBDZUh1NjlaRGQ2a19xdzhSWERsWnNtZ3FsVTE0YXMwU2dzQjc1bUdwUEFXWnhUWUdScHIyS1Z5T2hWNHBmMFBHNVRRMF9wZEJvblRPQ2E2SE5WMzdUWm9xdlZFTEFkMnQ3ODRYb3hRMzhqZlg2R3E4c1ZXeGRpZk9sRjFjZkMwZ19RMG9JV29paw?oc=5",
+            "source_excerpt": "Saronic Closes $1.75B Series D at $9.25B Valuation to Accelerate a New Era of Maritime Autonomy &nbsp;&nbsp; PR Newswire",
+            "short_summary": "Saronic raised $1.75 billion in a Series D funding round, achieving a $9.25 billion valuation. The company aims to accelerate advancements in maritime autonomy with this investment. The funding will support the development and deployment of autonomous maritime technologies."
+          }
+        },
+        {
+          "item_id": "b518d22469f702afe4f8d22510f450233c5865c6513482c5e196f280bbc2a9ef",
+          "source": "crossref",
+          "source_id": "10.1115/1.4071551",
+          "item_type": "paper",
+          "title": "Optimal Design of Type 2 High Pressure Vessel for CNG Vehicles",
+          "authors_or_author": [
+            "Taeyoung Kim",
+            "Hwa Y. Kim"
+          ],
+          "published_at": "2026-03-30",
+          "url": "https://doi.org/10.1115/1.4071551",
+          "doi": "10.1115/1.4071551",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 3.5,
+          "abstract_or_body": "Abstract                     Compressed Natural Gas (CNG) pressure vessels are used for fuel storage in eco-friendly vehicles, providing a safe fuel supply under high pressure. Lightweighting of CNG pressure vessels while ensuring structural safety is an essential factor. In this study, liner and composite thickness designs were performed to reduce the weight of CNG pressure vessels. The stress behavior based on liner and composite thicknesses was analyzed using the commercial finite element analysis software, ANSYS Workbench. To improve fatigue life and durability, considering failure due to buckling and burst, autofrettage pressure was applied. Using optimal design, a minimum-weight pressure vessel was achieved, meeting criteria for structural safety, fatigue life, and cost reduction. Therefore, a 6.6% reduction in weight was achieved compared to CNG pressure vessels currently manufactured in the field.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-30\n- Authors: Taeyoung Kim, Hwa Y. Kim\n- DOI: 10.1115/1.4071551\n- Link: https://doi.org/10.1115/1.4071551",
+            "source_excerpt": "Abstract Compressed Natural Gas (CNG) pressure vessels are used for fuel storage in eco-friendly vehicles, providing a safe fuel supply under high pressure. Lightweighting of CNG pressure vessels while ensuring structural safety is an essential factor. In this study, liner and composite thickness designs were performed to reduce the weight of CNG pressure vessels. The stress behavior based on liner and composite thicknesses was analyzed using the commercial finite element analysis software, ANSYS Workbench. To improve fatigue life and durability, considering failure due to buckling and burst, autofrettage pressure was applied. Using optimal design, a minimum-weight pressure vessel was achieved, meeting criteria for structural safety, fatigue life, and cost reduction. Therefore, a 6.6% reduction in weight was achieved compared to CNG pressure vessels currently manufactured in the field.",
+            "short_summary": "The study by Kim and Kim (2026) optimized the design of Type 2 high-pressure CNG vessels for vehicles by adjusting liner and composite thicknesses to reduce weight while maintaining safety. Using ANSYS Workbench, they analyzed stress behavior and applied autofrettage pressure to enhance fatigue life and durability against buckling and burst. The optimized design achieved a 6.6% weight reduction compared to current commercial CNG vessels while meeting structural safety, durability, and cost criteria."
+          }
+        },
+        {
+          "item_id": "22815a25b0777953cf7e6898c40cecc41414b2b72dd5741b9fce480f439f9e6d",
+          "source": "Chosunbiz",
+          "source_id": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPTmFHOUxJdkdseTQ3eDVVVGFPUTA4UTJwVk1JemdxNXhmVzFqb1lQeGxRODNCY1VqQVpISWN2REV2cndEZElxaW1fSnF5OFZnYjRTeFpMZ3ZGZGhJaFlwNk0tRnUwSjlkNXVDLVR4UnBMLU00NkZnS3p0anoyVkZvV0dn0gGWAUFVX3lxTE5IdmVhZzVzMFF0Nkh5WGhOV2E3b1F5d2tpSFZNcFBTVEZ2d0lBU3FKN3JJWXNYV1BlWW9ldGZvajA0aEpwZFdRX2ZVYTM4QVNvenpKb2o0TktQU21HRmhLczdiWTVHazZUc3BnOXA5eEFTZWFfR3NfZGd3UmJEUGlGbEhocW5kdnlNQUUyRU1ObVUzckpoUQ?oc=5",
+          "item_type": "news_article",
+          "title": "Canada tech delegation reviews HD Hyundai R&D, eyes Korea autonomy tie-up - CHOSUNBIZ",
+          "authors_or_author": [
+            "Chosunbiz"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPTmFHOUxJdkdseTQ3eDVVVGFPUTA4UTJwVk1JemdxNXhmVzFqb1lQeGxRODNCY1VqQVpISWN2REV2cndEZElxaW1fSnF5OFZnYjRTeFpMZ3ZGZGhJaFlwNk0tRnUwSjlkNXVDLVR4UnBMLU00NkZnS3p0anoyVkZvV0dn0gGWAUFVX3lxTE5IdmVhZzVzMFF0Nkh5WGhOV2E3b1F5d2tpSFZNcFBTVEZ2d0lBU3FKN3JJWXNYV1BlWW9ldGZvajA0aEpwZFdRX2ZVYTM4QVNvenpKb2o0TktQU21HRmhLczdiWTVHazZUc3BnOXA5eEFTZWFfR3NfZGd3UmJEUGlGbEhocW5kdnlNQUUyRU1ObVUzckpoUQ?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 3.0,
+          "abstract_or_body": "Canada tech delegation reviews HD Hyundai R&D, eyes Korea autonomy tie-up - CHOSUNBIZ &nbsp;&nbsp; Chosunbiz",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: Chosunbiz\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiggFBVV95cUxPTmFHOUxJdkdseTQ3eDVVVGFPUTA4UTJwVk1JemdxNXhmVzFqb1lQeGxRODNCY1VqQVpISWN2REV2cndEZElxaW1fSnF5OFZnYjRTeFpMZ3ZGZGhJaFlwNk0tRnUwSjlkNXVDLVR4UnBMLU00NkZnS3p0anoyVkZvV0dn0gGWAUFVX3lxTE5IdmVhZzVzMFF0Nkh5WGhOV2E3b1F5d2tpSFZNcFBTVEZ2d0lBU3FKN3JJWXNYV1BlWW9ldGZvajA0aEpwZFdRX2ZVYTM4QVNvenpKb2o0TktQU21HRmhLczdiWTVHazZUc3BnOXA5eEFTZWFfR3NfZGd3UmJEUGlGbEhocW5kdnlNQUUyRU1ObVUzckpoUQ?oc=5",
+            "source_excerpt": "Canada tech delegation reviews HD Hyundai R&D, eyes Korea autonomy tie-up - CHOSUNBIZ &nbsp;&nbsp; Chosunbiz",
+            "short_summary": "A Canadian technology delegation visited HD Hyundai’s research and development facilities to assess its autonomous driving technology. The visit aimed to explore potential partnerships between Canada and South Korea in autonomous vehicle development. Discussions focused on collaboration opportunities in the tech and automotive sectors. The delegation’s review highlights growing interest in cross-border innovation in autonomy."
+          }
+        },
+        {
+          "item_id": "1e174cf4c0e8bc0c0741641e62a6204153625ff4a75c6b27abcdf0ae8da264a1",
+          "source": "crossref",
+          "source_id": "10.1016/j.oceaneng.2026.124613",
+          "item_type": "paper",
+          "title": "IQ-RRT*: A heuristic approach to path planning for unmanned surface vehicles",
+          "authors_or_author": [
+            "Lianbo Li",
+            "Dixin Zhong",
+            "Shaobo Wang",
+            "Handi Wei"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://doi.org/10.1016/j.oceaneng.2026.124613",
+          "doi": "10.1016/j.oceaneng.2026.124613",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 3.0,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-small-latest:fallback",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: Lianbo Li, Dixin Zhong, Shaobo Wang, Handi Wei\n- DOI: 10.1016/j.oceaneng.2026.124613\n- Link: https://doi.org/10.1016/j.oceaneng.2026.124613",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "559b4fc6c5e1ae023b431e52436d8020c5af9c363981e4acddb3aaa444011de5",
+          "source": "crossref",
+          "source_id": "10.1016/j.oceaneng.2026.124459",
+          "item_type": "paper",
+          "title": "Influence of local hydrodynamics on ship drift leading to ship-bridge allisions",
+          "authors_or_author": [
+            "Tomoaki Nakamura",
+            "J.C. Dietrich",
+            "Yonghwan Cho",
+            "J.E. San Juan",
+            "G. Haikal",
+            "Takashi Tomita"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://doi.org/10.1016/j.oceaneng.2026.124459",
+          "doi": "10.1016/j.oceaneng.2026.124459",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 3.0,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-small-latest:fallback",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: Tomoaki Nakamura, J.C. Dietrich, Yonghwan Cho, J.E. San Juan, G. Haikal, Takashi Tomita\n- DOI: 10.1016/j.oceaneng.2026.124459\n- Link: https://doi.org/10.1016/j.oceaneng.2026.124459",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "a8dec768b2cbc264bf88b265e6de2ddb7c11ce37c72ea35e05c4850d7fd608c2",
+          "source": "Israel Defense",
+          "source_id": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAyTE02YWJabVZxMFE0WHBDTEY0bjZiWjU1NjJoaWVYTHhrdWxpODRaeVd6MnZTWXdzcl9Fa2xVZ3BGR2tEcUtPSHlheHF3QTNQQ0Q5VFhzT0o?oc=5",
+          "item_type": "news_article",
+          "title": "Analysis | The US Navy’s Weak Spot: Mines in the Strait of Hormuz Expose a Critical Gap",
+          "authors_or_author": [
+            "Israel Defense"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAyTE02YWJabVZxMFE0WHBDTEY0bjZiWjU1NjJoaWVYTHhrdWxpODRaeVd6MnZTWXdzcl9Fa2xVZ3BGR2tEcUtPSHlheHF3QTNQQ0Q5VFhzT0o?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 3.0,
+          "abstract_or_body": "Analysis | The US Navy’s Weak Spot: Mines in the Strait of Hormuz Expose a Critical Gap &nbsp;&nbsp; Israel Defense",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: Israel Defense\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiWEFVX3lxTFAyTE02YWJabVZxMFE0WHBDTEY0bjZiWjU1NjJoaWVYTHhrdWxpODRaeVd6MnZTWXdzcl9Fa2xVZ3BGR2tEcUtPSHlheHF3QTNQQ0Q5VFhzT0o?oc=5",
+            "source_excerpt": "Analysis | The US Navy’s Weak Spot: Mines in the Strait of Hormuz Expose a Critical Gap &nbsp;&nbsp; Israel Defense",
+            "short_summary": "The US Navy faces a significant vulnerability in the Strait of Hormuz due to the threat of naval mines, which could disrupt critical maritime traffic. This analysis highlights how mines pose a major risk to naval operations and commercial shipping in the region. The Strait's strategic importance makes it a potential flashpoint for conflicts involving mine warfare. The US Navy's preparedness and countermeasures against this threat remain a critical concern."
+          }
+        },
+        {
+          "item_id": "ada8b580f05ed4bfa74896c3b72307b62819aadbdfa7a5b31717ef0bbc08f083",
+          "source": "WorkBoat",
+          "source_id": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRmlqYUptZVlvNnJ0bHZPVlZyWEJjNVdFSmhRam5nZ1lrOWJTNWFhQWVvbi02VVRwYTNfY09ObFpHRGl2RWRnaFZJT3pDQXdfMWNhMWNscnJ3WVR3d2ZuTUdKWlY1eUFLX1ZTZkUxajg3YzJuemZmM3NTMjNLMEZJLVlleGV0VUxoMEhWMkR3WWdYZ2tjaENOeEh3WlNLU0dDbGc?oc=5",
+          "item_type": "news_article",
+          "title": "Saronic secures additional $1.75 billion for shipyard expansion and autonomy",
+          "authors_or_author": [
+            "WorkBoat"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRmlqYUptZVlvNnJ0bHZPVlZyWEJjNVdFSmhRam5nZ1lrOWJTNWFhQWVvbi02VVRwYTNfY09ObFpHRGl2RWRnaFZJT3pDQXdfMWNhMWNscnJ3WVR3d2ZuTUdKWlY1eUFLX1ZTZkUxajg3YzJuemZmM3NTMjNLMEZJLVlleGV0VUxoMEhWMkR3WWdYZ2tjaENOeEh3WlNLU0dDbGc?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 3.0,
+          "abstract_or_body": "Saronic secures additional $1.75 billion for shipyard expansion and autonomy &nbsp;&nbsp; WorkBoat",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: WorkBoat\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiogFBVV95cUxPRmlqYUptZVlvNnJ0bHZPVlZyWEJjNVdFSmhRam5nZ1lrOWJTNWFhQWVvbi02VVRwYTNfY09ObFpHRGl2RWRnaFZJT3pDQXdfMWNhMWNscnJ3WVR3d2ZuTUdKWlY1eUFLX1ZTZkUxajg3YzJuemZmM3NTMjNLMEZJLVlleGV0VUxoMEhWMkR3WWdYZ2tjaENOeEh3WlNLU0dDbGc?oc=5",
+            "source_excerpt": "Saronic secures additional $1.75 billion for shipyard expansion and autonomy &nbsp;&nbsp; WorkBoat",
+            "short_summary": "Saronic has secured an additional $1.75 billion in funding to expand its shipyard operations and advance its autonomous vessel technology. The investment will support infrastructure growth and the development of unmanned maritime systems. This funding follows prior financial commitments to bolster Saronic's position in the defense and commercial maritime sectors. The expansion aims to enhance production capacity and accelerate innovation in shipbuilding automation."
+          }
+        },
+        {
+          "item_id": "f6d3ab885b4ac3918683d17df0f80b78e36d078d16c256438f58bb7f00207fd0",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7152346689",
+          "item_type": "paper",
+          "title": "Hierarchical Vessel Safe Operation in A Port through CBF, MPC and RRT-like Spatiotemporal Path Planning",
+          "authors_or_author": [
+            "大月 智史",
+            "S. Otsuki",
+            "八田 直樹",
+            "N. Hatta",
+            "Hanif Muhammad",
+            "M. M. Hanif",
+            "舩田 陸",
+            "R. Funada",
+            "K. Nakashima",
+            "畑中 健志",
+            "T. Hatanaka"
+          ],
+          "published_at": "2026-04-03",
+          "url": "http://t2r2.star.titech.ac.jp/cgi-bin/publicationinfo.cgi?q_publication_content_number=CTT100941892",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 0.0,
+          "abstract_or_body": ", Hierarchical Vessel Safe Operation in A Port through CBF, MPC and RRT-like Spatiotemporal Path Planning",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-03\n- Authors: 大月 智史, S. Otsuki, 八田 直樹, N. Hatta, Hanif Muhammad, M. M. Hanif, 舩田 陸, R. Funada, K. Nakashima, 畑中 健志, T. Hatanaka\n- DOI: N/A\n- Link: http://t2r2.star.titech.ac.jp/cgi-bin/publicationinfo.cgi?q_publication_content_number=CTT100941892",
+            "source_excerpt": ", Hierarchical Vessel Safe Operation in A Port through CBF, MPC and RRT-like Spatiotemporal Path Planning",
+            "short_summary": "This paper presents a hierarchical framework for ensuring safe vessel operations in ports using Control Barrier Functions (CBF), Model Predictive Control (MPC), and a Rapidly-exploring Random Tree (RRT)-like spatiotemporal path planning method. The approach integrates real-time collision avoidance and optimal trajectory planning to enhance navigation safety. The authors demonstrate the system's effectiveness through simulations and experiments in port environments. The proposed method aims to reduce risks and improve operational efficiency for autonomous or semi-autonomous vessels."
+          }
+        },
+        {
+          "item_id": "dd2ebeb8be25e8292fec1c9f07b1201a5ddf5923955acf71ebbaf18b220ce7c8",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7151673035",
+          "item_type": "paper",
+          "title": "AIVV: Neuro-Symbolic LLM Agent-Integrated Verification and Validation for Trustworthy Autonomous Systems",
+          "authors_or_author": [
+            "Jiyong Kwon",
+            "Ujin Jeon",
+            "Sooji Lee",
+            "Guang Lin"
+          ],
+          "published_at": "2026-04-02",
+          "url": "https://www.semanticscholar.org/paper/92b56767b008656639bf872ed305118c88e04c03",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 0.0,
+          "abstract_or_body": "Deep learning models excel at detecting anomaly patterns in normal data. However, they do not provide a direct solution for anomaly classification and scalability across diverse control systems, frequently failing to distinguish genuine faults from nuisance faults caused by noise or the control system's large transient response. Consequently, because algorithmic fault validation remains unscalable, full Verification and Validation (V\\&V) operations are still managed by Human-in-the-Loop (HITL) analysis, resulting in an unsustainable manual workload. To automate this essential oversight, we propose Agent-Integrated Verification and Validation (AIVV), a hybrid framework that deploys Large Language Models (LLMs) as a deliberative outer loop. Because rigorous system verification strictly depends on accurate validation, AIVV escalates mathematically flagged anomalies to a role-specialized LLM council. The council agents perform collaborative validation by semantically validating nuisance and true failures based on natural-language (NL) requirements to secure a high-fidelity system-verification baseline. Building on this foundation, the council then performs system verification by assessing post-fault responses against NL operational tolerances, ultimately generating actionable V\\&V artifacts, such as gain-tuning proposals. Experiments on a time-series simulator for Unmanned Underwater Vehicles (UUVs) demonstrate that AIVV successfully digitizes the HITL V\\&V process, overcoming the limitations of rule-based fault classification and offering a scalable blueprint for LLM-mediated oversight in time-series data domains.",
+          "summary": {
+            "provider": "mistral:mistral-small-latest",
+            "metadata_markdown": "- Date: 2026-04-02\n- Authors: Jiyong Kwon, Ujin Jeon, Sooji Lee, Guang Lin\n- DOI: N/A\n- Link: https://www.semanticscholar.org/paper/92b56767b008656639bf872ed305118c88e04c03",
+            "source_excerpt": "Deep learning models excel at detecting anomaly patterns in normal data. However, they do not provide a direct solution for anomaly classification and scalability across diverse control systems, frequently failing to distinguish genuine faults from nuisance faults caused by noise or the control system's large transient response. Consequently, because algorithmic fault validation remains unscalable, full Verification and Validation (V\\&V) operations are still managed by Human-in-the-Loop (HITL) analysis, resulting in an unsustainable manual workload. To automate this essential oversight, we propose Agent-Integrated Verification and Validation (AIVV), a hybrid framework that deploys Large Language Models (LLMs) as a deliberative outer loop. Because rigorous system verification strictly depends on accurate validation, AIVV escalates mathematically flagged anomalies to a role-specialized LLM council. The council agents perform collaborative validation by semantically validating nuisance and true failures based on natural-language (NL) requirements to secure a high-fidelity system-verification baseline. Building on this foundation, the council then performs system verification by assessing post-fault responses against NL operational tolerances, ultimately generating actionable V\\&V artifacts, such as gain-tuning proposals. Experiments on a time-series simulator for Unmanned Underwater Vehicles (UUVs) demonstrate that AIVV successfully digitizes the HITL V\\&V process, overcoming the limitations of rule-based fault classification and offering a scalable blueprint for LLM-mediated oversight in time-series data domains.",
+            "short_summary": "AIVV introduces a hybrid framework using Large Language Models (LLMs) to automate Verification and Validation (V&V) for autonomous systems. It addresses limitations of deep learning models in anomaly classification by deploying a role-specialized LLM council to collaboratively validate faults and assess system responses against natural-language requirements. The framework generates actionable V&V artifacts, such as gain-tuning proposals, and was tested successfully on a time-series simulator for Unmanned Underwater Vehicles (UUVs). AIVV aims to replace manual Human-in-the-Loop (HITL) processes, offering a scalable solution for system oversight."
+          }
+        },
+        {
+          "item_id": "4cf9ad4f336cf1b80da671f29f6f02ab0fd6240f5f9c2003014f4328300b045f",
+          "source": "crossref",
+          "source_id": "10.1016/j.oceaneng.2026.124669",
+          "item_type": "paper",
+          "title": "Data-driven event-triggered heading control for autonomous surface vehicles based on an adaptive observer",
+          "authors_or_author": [
+            "Yihang Zhao",
+            "Yongchao Liu",
+            "Shuaixi Li",
+            "Shubo Wang"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://www.semanticscholar.org/paper/1119f5cb3d4640611a6a34310bcdc70a539f48ef",
+          "doi": "10.1016/j.oceaneng.2026.124669",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 0.0,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-small-latest:fallback",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: Yihang Zhao, Yongchao Liu, Shuaixi Li, Shubo Wang\n- DOI: 10.1016/j.oceaneng.2026.124669\n- Link: https://www.semanticscholar.org/paper/1119f5cb3d4640611a6a34310bcdc70a539f48ef",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "28082749b93f8c22dbad3999afa23e6a5709c037e77429829b7f087636efb827",
+          "source": "crossref",
+          "source_id": "10.1016/j.oceaneng.2026.124201",
+          "item_type": "paper",
+          "title": "Nonlinear stability analysis of autonomous container ship under environmental disturbances using hardware-in-the-loop validation",
+          "authors_or_author": [
+            "Abdurrahim Bilal Ozcan",
+            "Ismail Bayezit",
+            "Omer Kemal Kinaci",
+            "Junaid Khan"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://www.semanticscholar.org/paper/c65184c9fb20f3106d01f67094b9cafe9d9fd484",
+          "doi": "10.1016/j.oceaneng.2026.124201",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 0.0,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-small-latest:fallback",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: Abdurrahim Bilal Ozcan, Ismail Bayezit, Omer Kemal Kinaci, Junaid Khan\n- DOI: 10.1016/j.oceaneng.2026.124201\n- Link: https://www.semanticscholar.org/paper/c65184c9fb20f3106d01f67094b9cafe9d9fd484",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "8730dc53022eec6d85507fbdeaf841dc52171a9b91affb28bb73e2b090e0ffdb",
+          "source": "crossref",
+          "source_id": "10.1016/j.marpol.2025.107020",
+          "item_type": "paper",
+          "title": "Regulation of maritime autonomous surface ships on carbon emissions and marine pollution: Context, challenges, responses",
+          "authors_or_author": [
+            "Jinpeng Wang",
+            "Mengyao Yuan"
+          ],
+          "published_at": "2026-04-01",
+          "url": "https://www.semanticscholar.org/paper/f9e3e30ddb7a5a8150236890a5c2bf77772d90de",
+          "doi": "10.1016/j.marpol.2025.107020",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 0.0,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-small-latest:fallback",
+            "metadata_markdown": "- Date: 2026-04-01\n- Authors: Jinpeng Wang, Mengyao Yuan\n- DOI: 10.1016/j.marpol.2025.107020\n- Link: https://www.semanticscholar.org/paper/f9e3e30ddb7a5a8150236890a5c2bf77772d90de",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "bb3fcf5bf6f0853ed00a7fc36b9b18b6a6bf7233b3a104cac2f098914baeb524",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7143355351",
+          "item_type": "paper",
+          "title": "Heterogeneous multi-scale enhanced YOLOv8 for real-time maritime obstacle detection on unmanned surface vessels",
+          "authors_or_author": [
+            "Runbing Wu",
+            "Yani Cui",
+            "Zijian Hu",
+            "Jia Ren",
+            "Yan Zhang",
+            "Bei Li"
+          ],
+          "published_at": "2026-03-30",
+          "url": "https://www.semanticscholar.org/paper/ff8caa1fdc77976f8c338cbe130f2b6d299701ad",
+          "doi": "10.1016/j.eswa.2026.132244",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 0.0,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-small-latest:fallback",
+            "metadata_markdown": "- Date: 2026-03-30\n- Authors: Runbing Wu, Yani Cui, Zijian Hu, Jia Ren, Yan Zhang, Bei Li\n- DOI: 10.1016/j.eswa.2026.132244\n- Link: https://www.semanticscholar.org/paper/ff8caa1fdc77976f8c338cbe130f2b6d299701ad",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        }
+      ]
+    }
+  ]
+}

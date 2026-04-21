@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<nav class="breadcrumb">
+  <a href="{{ '/' | relative_url }}">All Reports</a>
+  &rsaquo; {{ page.year }}, Week {{ page.week }}
+  &rsaquo; {% if page.report_type == "news" %}News{% else %}Papers{% endif %}
+</nav>
+
+{% assign peer_type = "papers" %}
+{% if page.report_type == "papers" %}{% assign peer_type = "news" %}{% endif %}
+{% assign peer_label = "Papers" %}
+{% if page.report_type == "papers" %}{% assign peer_label = "News" %}{% endif %}
+{% assign peer_url = site.baseurl | append: '/reports/' | append: page.year | append: '/' | append: page.week | append: '/' | append: peer_type | append: '/' %}
+
+<nav class="report-tabs">
+  {% if page.report_type == "news" %}
+  <span class="tab active">News</span>
+  <a class="tab" href="{{ peer_url }}">Papers</a>
+  {% else %}
+  <a class="tab" href="{{ peer_url }}">News</a>
+  <span class="tab active">Papers</span>
+  {% endif %}
+</nav>
+
+{% assign wordcloud_name = "wordcloud_news_article.png" %}
+{% if page.report_type == "papers" %}{% assign wordcloud_name = "wordcloud_paper.png" %}{% endif %}
+{% assign wordcloud_url = site.baseurl | append: '/reports/' | append: page.year | append: '/' | append: page.week | append: '/' | append: wordcloud_name %}
+
+<figure class="wordcloud">
+  <img src="{{ wordcloud_url }}" alt="Word Cloud for week {{ page.week }}">
+  <figcaption>Word Cloud — Week {{ page.week }}, {{ page.year }}</figcaption>
+</figure>
+
+<article class="report-content">
+  {{ content }}
+</article>

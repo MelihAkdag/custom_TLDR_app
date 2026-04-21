@@ -1,0 +1,557 @@
+# Papers Report
+
+- Window: `2026-04-13` to `2026-04-19`
+- Sources queried: crossref, openalex
+- Items in report: 22
+
+## Executive Summary
+
+Recent research highlights advancements in autonomous maritime and vehicle systems, emphasizing safety, efficiency, and adaptive control. Studies on **Maritime Autonomous Surface Ships (MASS)** focus on risk assessment frameworks (e.g., STPA-FTA), optimal berth selection, and dynamic trajectory tracking, with innovations like four-quadrant hydrodynamics reducing errors by up to 62% in complex conditions. **Safety and performance databases** (e.g., EUM) systematically evaluate MASS claims, while **multi-object tracking** (e.g., MAAT) and **obstacle avoidance algorithms** enhance real-time navigation for unmanned vessels. **Autonomous vehicle safety** is addressed through integrated frameworks (FTA-Bayesian Networks) identifying key failure contributors like weather and occlusion. **Energy management** in electric vehicles under cold temperatures is optimized via Model Predictive Control, balancing propulsion and thermal demands. **AI’s societal impacts** are explored, revealing reduced prosocial behavior in automated retail and shifts in professional agency among software developers. **Biomedical and engineering applications** include retinal disease classification (V-MNet) and automated weld parameter extraction, achieving 77.9% accuracy improvements. **Naval and maritime security** strategies emphasize adaptive patrols and inter-agency coordination to combat illegal activities. Collectively, these developments underscore progress in **autonomy, safety, and human-AI collaboration** across industries.
+
+
+## Table of Contents
+
+### Ship Autonomy
+1. [Integrating Qualitative AHP and Quantitative AIS to Berth Location Selection for Maritime Autonomous Surface Ship Mooring at the Kaohsiung Port](#22221ec3c5b47ca20a000e267932a2bed510945f2552ade8ff1f2f3619b14365)
+2. [A Parallel STPA–FTA Risk Assessment Framework for Maritime Autonomous Surface Ships: Development and Case Study Application](#c2becc4657926180436ac5fdbba4a86ffb2b9536f910bc3c2ad6d05bb18961e0)
+3. [Dynamic Trajectory Tracking and Autonomous Berthing Control of a Container Ship Based on Four-Quadrant Hydrodynamics](#952f150aad9bd544f9fe213ce8f9dfba8c7c8290a4dddfcb826c5bfbfb6538c8)
+4. [Evidence-Unit Mapping (EUM) Database of MASS Safety and Economic Performance Claims (2017–2026)](#703717a07ef1c1ac34665784befb7a60c80f27eea7a0888824525efeaf535e86)
+5. [Enhanced trajectory tracking for autonomous navigation of wheeled mobile robots using an adaptive fuzzy PID controller](#b37cee1d19934b8ae8ca201fa0a54636936654eb16d3113d9a2946143a196db8)
+6. [MAAT: A Marine-Aware Adaptive Tracker for Robust and Real-Time Multi-Object Tracking in Maritime Environments](#3141c70152f9a62169ff1367eff45be314386ffc64d5a7375f8affb4cfafb263)
+7. [A SOTIF-Oriented Framework for Safety Assessment in Autonomous Vehicles using Integrated Fault Tree and Bayesian Network Analysis](#e31f4e652bc711167a368166f56e8c902ff0d9789a5b9a8f9802f521c8be4211)
+8. [EXPRESS: Automated Versus Human-Operated: Impact of AI-Driven Autonomous Stores on Prosocial Behavior](#aa980d6be88a643afd521c32746f9eab2d9967abfcab7c6257cc3eda86a4ae9d)
+9. [PDGFRα-positive mesenchymal stem/stromal cells contribute to autonomous vascular formation through in-body tissue architecture](#fb33b3de8b76a12255973d1c1a4ed768536e6498b2d4db652f40ea8482dbc8ee)
+10. [Dynamic Obstacle Avoidance Algorithm for Unmanned Vessels Based on FDWA and IBA*—IGWO Fusion](#b13b331cee1b81342b450832caaede4fbcad7ab3956deea1c7668ab336265ea2)
+11. [BIND-USBL: Bounding IMU Navigation Drift using USBL in Heterogeneous ASV-AUV Teams](#0778e5678779faafa0ca2146226307cb1157ef8026df997b64464b09841a4e62)
+12. [Model Predictive Control-Based Optimal Energy Management of Autonomous Electric Vehicles Under Cold Temperatures](#6339ee563e0536343086c9ad076ded6d4d6556198d3daf2b1874dcb68b54d3d1)
+13. [Laser Scanning-Based Parameter Extraction for Ship Butt Weld Joints](#ed2dfe7f3c02237fe7f4461baa539869a5803eeea07dd93ed433f8db736b792a)
+14. [From Junior to Senior: Allocating Agency and Navigating Professional Growth in Agentic AI-Mediated Software Engineering](#21faf04bf7cbd2989ad7fe17f8f395cb37a9375b46b72ca6bea4f4fb4bb9e092)
+15. [A vessel-guided multi-task deep learning framework with visual interpretability for simultaneous retinal vessel segmentation and multi-disease classification from fundus images](#d3f8f8c8809a6565c7c59bcb1805edb51a0e0776837cc2dc9e0f335f2206f3ed)
+16. [Design of Distributed Ship Systems in the Early Stage Design of Complex Vessels Through a Submarine Example](#b1ff874172e6468e753d398898edc617135cb7cef3667e2e81549e841aa99e8b)
+17. [Strategi Pengamanan Wilayah Laut oleh TNI AL Guna Pengawasan Kegiatan Ship-To-Ship Pulau Nipah Dalam Rangka Peningkatan Keamanan Maritim](#e1d628ae9357e2e27f4f18fbabc5ef7da7a2baf4c4b0f4e18d23c6910311e169)
+18. [Training for Merchant Ship Engineers and Wireless Operators](#f6552c8e48201562a6a9219a2417f2e5feee59afcf49b8104895fe0eaed8e3b2)
+19. [Book Review:
+                    <i>The Edwin Fox: How an Ordinary Sailing Ship Connected the World in the Age of Globalization, 1850–1914</i>
+                    by Boyd Cothran and Adrian Shubert CothranBoydShubertAdrian. The Edwin Fox: How an Ordinary Sailing Ship Connected the World in the Age of Globalization, 1850–1914. Chapel Hill, NC: University of North Carolina Press, 2023. 296 pp., illustrations, maps, notes, bibliography, index. ISBN 978-1-4696-7655-5, $35 (hbk).](#62e3adab3046b09e697815e7457a190c858087814f3ec8cfc301d3a5c78174f3)
+20. [A multi-task reinforcement learning framework for resilient autonomous USV navigation](#b3a0405734b18fc9a5cf5b6590b91f24e37a9028f84f63dd68aca09114f4ecc0)
+21. [Cooperative Learning NN-Based Fault-Tolerant Formation of Networked Unmanned Surface Vehicles with Input Saturation and Prescribed Performance](#ec32510eb38dd2d182ed59cfcbce401ef5b80fc4e70d46d70211ccfa9e4166f7)
+22. [Determination of Tensile Strain Capacity of Girth-Welded X70 and X100 Grade Pipelines With Surface Cracks Under Tension and Bending](#ff33da088b609ee7404e885b9e80ec3e733c1284a4e3da1038e8c8330c6e9f67)
+
+## Ship Autonomy
+
+<br>
+---
+<br>
+
+<a id="22221ec3c5b47ca20a000e267932a2bed510945f2552ade8ff1f2f3619b14365"></a>
+### Integrating Qualitative AHP and Quantitative AIS to Berth Location Selection for Maritime Autonomous Surface Ship Mooring at the Kaohsiung Port
+
+**Metadata**
+
+- Date: 2026-04-17
+- Authors: Chien-Chang Chou, Miao-Ying Chen, Ren-Jun Huang, Hsien‐Pin Hsu, Chia-Nan Wang, Ji‐Feng Ding
+- DOI: 10.5750/ijme.v167ia2.1308
+- Link: https://doi.org/10.5750/ijme.v167ia2.1308
+- Relevance: 19.5 (70%)
+
+**AI Summary**
+
+This study evaluates berth locations at Kaohsiung Port for mooring Maritime Autonomous Surface Ships (MASS) by combining expert input with a two-step method: the qualitative Analytic Hierarchy Process (AHP) and quantitative Automatic Identification System (AIS). Researchers identified three key assessment aspects, nine criteria, and three potential berth alternatives. The analysis determined that the 7th Container Centre is the most suitable berth for MASS mooring. Findings aim to guide port authorities and operators in transitioning to intelligent port infrastructure.
+
+**Abstract / Source Text**
+
+> Maritime transportation has gradually moved towards using Maritime Autonomous Surface Ship (MASS) to reduce the cost of human resources, increase people’s safety and improve operational efficiency. This article explores which berth of the Kaohsiung port is suitable for mooring a MASS. After reviewing the literature and gathering experts’ opinions, a hierarchy structure with three assessment aspects, nine criteria and three potential alternatives suitable for the berth selection of a MASS were obtained. We then integrate the subjective Analytic Hierarchy Process (AHP) method and the objective Automatic Identification System (AIS) technique to select an appropriate berth for the mooring of a MASS. The empirical result indicates that “the 7th Container Centre” of the Kaohsiung port is more suitable for mooring a MASS. Moreover, the conclusions and recommendations are given to maritime government authorities and port operators for reference when upgrading from traditional ports to intelligent ports in the future.
+
+
+<br>
+---
+<br>
+
+<a id="c2becc4657926180436ac5fdbba4a86ffb2b9536f910bc3c2ad6d05bb18961e0"></a>
+### A Parallel STPA–FTA Risk Assessment Framework for Maritime Autonomous Surface Ships: Development and Case Study Application
+
+**Metadata**
+
+- Date: 2026-04-19
+- Authors: Konstantinos Voutzoulidis, Ioannis Tigkas
+- DOI: 10.3390/jmse14080748
+- Link: https://doi.org/10.3390/jmse14080748
+- Relevance: 18.0 (64%)
+
+**AI Summary**
+
+This paper presents a combined risk assessment framework for Maritime Autonomous Surface Ships (MASS) that merges System-Theoretic Process Analysis (STPA) and Fault Tree Analysis (FTA). The approach runs both methods in parallel within a shared system architecture to link hazards, unsafe actions, and failure events. A case study of a semi-autonomous freight vessel in the North Sea highlights risks like perception errors, communication failures, and collision misjudgments. The framework aims to improve safety assessments by connecting systemic control issues to accident pathways.
+
+**Abstract / Source Text**
+
+> Maritime Autonomous Surface Ships (MASS) introduce new safety challenges associated with complex cyber–physical systems, distributed control architectures, and remote supervisory operation. Traditional maritime risk assessment approaches primarily focus on component failures and historical accident data and may therefore be insufficient for capturing interaction-driven hazards arising in autonomous vessel systems. This study develops a parallel and architecturally synchronized risk assessment framework integrating System-Theoretic Process Analysis (STPA) and Fault Tree Analysis (FTA) for the safety assessment of MASS. Within the proposed framework, both analyses evolve concurrently within a shared system architecture, enabling explicit traceability between hazards, unsafe control actions, causal scenarios, failure events, and accident propagation pathways. The framework is demonstrated through a case study of a Degree of Autonomy 3 short-sea freight vessel operating in a high-density North Sea traffic environment. The integrated analysis identifies dominant accident pathways related to perception degradation, communication disturbance, authority coordination conflicts, maneuver execution deviations, and incorrect collision-risk assessment. The results illustrate how the framework supports structured safety assessment of MASS while preserving traceability between systemic control deficiencies and accident propagation mechanisms.
+
+
+<br>
+---
+<br>
+
+<a id="952f150aad9bd544f9fe213ce8f9dfba8c7c8290a4dddfcb826c5bfbfb6538c8"></a>
+### Dynamic Trajectory Tracking and Autonomous Berthing Control of a Container Ship Based on Four-Quadrant Hydrodynamics
+
+**Metadata**
+
+- Date: 2026-04-14
+- Authors: Chen-Wei Chen, Jiahao Yin, Jialin Lu, Chin-Yin Chen, Ningmin Yan, Zhuo Feng
+- DOI: 10.3390/jmse14080724
+- Link: https://doi.org/10.3390/jmse14080724
+- Relevance: 13.0 (46%)
+
+**AI Summary**
+
+This paper introduces an autonomous berthing control system for large container ships, addressing nonlinear hydrodynamics and maneuvering challenges in restricted waters. It uses a four-quadrant propeller model within an improved MMG framework and a dynamic line-of-sight guidance system paired with PD/PI controllers. Validation against S-175 ship data showed errors under 15%, while simulations for the B-573 ship at Yangshan Port demonstrated a 62% reduction in trajectory error under strong currents. The system achieved smooth deceleration from 6.4 m/s to a full stop in 588 seconds, confirming its feasibility in complex maritime conditions.
+
+**Abstract / Source Text**
+
+> To address the strongly nonlinear hydrodynamic coupling and complex maneuvering challenges encountered by large ships during berthing operations in restricted waters, this paper proposes a high-precision autonomous berthing control system incorporating four-quadrant propeller hydrodynamics. Based on an improved Mathematical Maneuvering Group (MMG) framework, a three-degree-of-freedom (3-DOF) dynamic model is established to accurately capture the transient thrust and torque mappings of the propeller over all four quadrants. A dynamic line-of-sight (LOS) guidance system with a nonlinearly decaying acceptance radius is tightly coupled with PD/PI controllers to coordinate and regulate the rudder angle and propeller rotational speed. The numerical solver was rigorously validated against turning-test data for the S-175 container ship, with the errors of the key parameters all controlled within 15%. Subsequently, under the environmental conditions of Yangshan Port, full-condition path-planning and berthing simulations were conducted for the novel B-573 container ship under steady-current disturbances with multiple intensity levels (0 to 1.5 m/s) and multiple flow directions. Quantitative evaluation shows that, under the highly challenging current condition of 1.0 m/s, the dynamic corrective mechanism effectively drives the global mean absolute error (MAE) to converge to 85.50 m, representing a 62% statistical reduction relative to the transient peak value. In addition, a parameter sensitivity analysis based on the cumulative cross-track error confirms that, when subject to variations in the underlying hydrodynamic parameters, the proposed system can suppress fluctuations in trajectory error to a very low level, thereby demonstrating a certain degree of control robustness. During the terminal berthing stage, the vessel smoothly completed an extreme deceleration from an initial speed of 6.4 m/s to a full stop within 588 s, while constraining the maximum astern rotational speed to −2 rps and seamlessly passing through all four propeller quadrants. The results confirm that the proposed autopilot framework possesses a certain degree of engineering feasibility in complex maritime environments.
+
+
+<br>
+---
+<br>
+
+<a id="703717a07ef1c1ac34665784befb7a60c80f27eea7a0888824525efeaf535e86"></a>
+### Evidence-Unit Mapping (EUM) Database of MASS Safety and Economic Performance Claims (2017–2026)
+
+**Metadata**
+
+- Date: 2026-04-07
+- Authors: Wahidul Sheikh Sheikh
+- DOI: 10.17632/tfdrdvwyr7.1
+- Link: https://doi.org/10.17632/tfdrdvwyr7.1
+- Relevance: 11.5 (41%)
+
+**AI Summary**
+
+The **Evidence-Unit Mapping (EUM) Database** breaks down 67 studies on Maritime Autonomous Surface Ships (MASS) into 158 specific safety and economic performance claims. It categorizes data by IMO autonomy levels (DoA 1–4), focus areas, and research methods (quantitative, qualitative, or review). Each claim is assigned a binary or weighted impact score (-1, 0, +1) for safety and cost-efficiency. The dataset includes source references, thematic metadata, and direct quotes from the original studies to justify scoring.
+
+**Abstract / Source Text**
+
+> This dataset contains the granular analytical data supporting the Systematic Literature Review (SLR) titled "Mapping the Safety Dip: A Systematic Evidence-Unit Mapping of Performance Trajectories in Autonomous Shipping." While traditional systematic reviews analyze papers as single units, this dataset employs an Evidence-Unit Mapping (EUM) approach, deconstructing 67 high-impact studies into 158 discrete performance claims regarding safety and economic efficiency in Maritime Autonomous Surface Ships (MASS). The dataset includes (1) Source Coding: Identification of original studies (P1–P67); (2) Thematic Metadata: Categorization by IMO Degrees of Autonomy (DoA 1–4), primary area of focus, and methodological approach (Quantitative, Qualitative, Review); (3) Performance Impact Scores: Binary and weighted consensus coding (-1, 0, +1) for safety and cost-efficiency impacts; (4) Evidence Justification: A dedicated column of "Exact Quotes" from the source literature, providing the qualitative evidence used for each quantitative score.
+
+
+<br>
+---
+<br>
+
+<a id="b37cee1d19934b8ae8ca201fa0a54636936654eb16d3113d9a2946143a196db8"></a>
+### Enhanced trajectory tracking for autonomous navigation of wheeled mobile robots using an adaptive fuzzy PID controller
+
+**Metadata**
+
+- Date: 2026-04-18
+- Authors: Helmy M. El Zoghby, Soliman M. Sharaf, Ahmed F. Bendary, Ahmed Hessien
+- DOI: 10.1038/s41598-026-45772-y
+- Link: https://doi.org/10.1038/s41598-026-45772-y
+- Relevance: 9.5 (34%)
+
+**AI Summary**
+
+This paper introduces an adaptive fuzzy PID controller to improve trajectory tracking in wheeled mobile robots (WMRs) operating in unstructured environments. The controller addresses challenges like nonlinear dynamics, wheel slips, actuator noise, and external disturbances using a cascaded structure with real-time parameter adaptation. Simulations on complex lemniscate curves show reduced RMS tracking error compared to conventional PID and adaptive dynamic control methods. The approach demonstrates robustness against parameter variations and disturbances while maintaining computational efficiency for real-time applications.
+
+**Abstract / Source Text**
+
+> Abstract With the advancement of autonomous technologies, the need for robust control strategies in unstructured environments is becoming increasingly important. The ability to track a trajectory and accurately control the motion of a robot is a key aspect of mobile robotics and is essential if wheeled mobile robots (WMRs) are to successfully perform tasks and function in the real world. Due to the complex and unstructured working environments, the control systems of WMRs must deal with difficulties such as extreme non-linear behaviors of the dynamic systems, unmodeled parameters of the systems, and external disturbances. This paper presents an adaptive fuzzy gain scheduling PID controller that addresses the challenges posed by structured uncertainties like kinematic wheel slips, random actuator noise, and external disturbances. The controller is based on a robust cascaded control structure that can be used for tracking the desired trajectory. The robustness of the controller is ensured by uniformly ultimately bounded analysis. The control system incorporates adaptive fuzzy logic and PID control to achieve a more advanced level of trajectory-tracking control. The control systems enhance fuzzy logic and PID control with an adaptive capability aimed at improving the systems’ robustness against external disturbances. Changes in the robot dynamics or the environment may happen, but the controller can adjust its parameters in real time and achieve the desired result due to the controller’s adaptation mechanism. The efficacy of the controller is validated using extensive simulations for tracking complex lemniscate ( $$\infty$$ ) curves. The results are compared with conventional PID and adaptive dynamic control methods to demonstrate that the proposed controller reduces the RMS tracking error. The results clearly demonstrate that the controller can reject disturbances while achieving precise navigation even for 100% variations in the parameters. The results presented in this paper provide a computationally efficient framework to bridge the gap between kinematics and dynamics for real-time robotic applications.
+
+
+<br>
+---
+<br>
+
+<a id="3141c70152f9a62169ff1367eff45be314386ffc64d5a7375f8affb4cfafb263"></a>
+### MAAT: A Marine-Aware Adaptive Tracker for Robust and Real-Time Multi-Object Tracking in Maritime Environments
+
+**Metadata**
+
+- Date: 2026-04-16
+- Authors: Xinjie Han, Qi Han, Yunsheng Fan, Dongdong Mu
+- DOI: 10.3390/jmse14080738
+- Link: https://doi.org/10.3390/jmse14080738
+- Relevance: 9.5 (34%)
+
+**AI Summary**
+
+The paper introduces MAAT (Marine-Aware Adaptive Tracker), a multi-object tracking system designed for maritime environments to improve autonomous navigation of unmanned surface vehicles (USVs). It enhances ByteTrack by adding an adaptive Kalman filter and a density-aware association strategy to handle challenges like platform jitter and nonlinear object motion. Tested on the Singapore Maritime Dataset, MAAT achieves 44.37 MOTA and 43.857 IDF1 while running in real time at 41.4 FPS. The results show MAAT provides robust and accurate tracking for dynamic maritime conditions.
+
+**Abstract / Source Text**
+
+> Multi-object tracking (MOT) is a key technology for enabling autonomous navigation of unmanned surface vehicle (USV) as it provides continuous perception of surrounding maritime targets and supports navigation decision-making. However, videos acquired on maritime platforms typically suffer from challenges such as platform-induced jitter and nonlinear object motion, which significantly degrade tracking performance. To address these challenges, this paper builds upon ByteTrack by incorporating an adaptive Kalman filtering scheme and proposing a density-aware association strategy, resulting in a novel tracker termed the Marine-Aware Adaptive Tracker (MAAT). Specifically, an adaptive Kalman filter is introduced to increase the contribution of high-confidence detections during the state update process, thereby enhancing the stability and robustness of state estimation. Furthermore, to better mitigate the frequent identity switches caused by severe platform jitter from the USV observation platform, a density-aware association strategy is proposed. This strategy dynamically adjusts the composition of the cost matrix according to the density of high-confidence targets, enabling more reliable data association under varying scene conditions. Finally, the proposed tracking algorithm is evaluated against several state-of-the-art methods on the Singapore Maritime Dataset. It achieves competitive performance, attaining 44.37 MOTA and 43.857 IDF1. Moreover, MAAT operates in real time, running at 41.4 FPS. The experimental results demonstrate that MAAT is capable of performing accurate and real-time multi-object tracking in dynamic maritime environments with surface fluctuations, thereby providing effective technical support for intelligent maritime surveillance applications.
+
+
+<br>
+---
+<br>
+
+<a id="e31f4e652bc711167a368166f56e8c902ff0d9789a5b9a8f9802f521c8be4211"></a>
+### A SOTIF-Oriented Framework for Safety Assessment in Autonomous Vehicles using Integrated Fault Tree and Bayesian Network Analysis
+
+**Metadata**
+
+- Date: 2026-04-17
+- Authors: Lansu Dai, Burak Kantarci
+- DOI: 10.1145/3810950
+- Link: https://doi.org/10.1145/3810950
+- Relevance: 8.0 (29%)
+
+**AI Summary**
+
+This paper introduces a safety assessment framework for autonomous vehicles by combining Fault Tree Analysis (FTA) and Bayesian Network (BN) to address both failures and functional insufficiencies, such as perception and sensor limitations. The approach enables qualitative and quantitative analysis, accounting for dynamic dependencies and uncertainties in real-world driving conditions. A case study on object detection failures identified weather and occlusion as major contributors, responsible for 45.76% and 58.72% of failures, respectively. The framework offers actionable insights for improving autonomous vehicle reliability under the Safety of the Intended Functionality (SOTIF) standard.
+
+**Abstract / Source Text**
+
+> Ensuring the safety of autonomous vehicles requires addressing not only hardware and software failures, but also functional insufficiencies arising from limitations in perception, decision-making, and sensor performance. While traditional Fault Tree Analysis (FTA) provides a systematic framework for identifying failure pathways, it does not account for the dynamic dependencies and uncertainties inherent in real-world driving scenarios. To overcome these limitations, this paper proposes an integrated methodology that combines FTA with BN from the perspective of the Safety of the Intended Functionality (SOTIF). The proposed framework enables both qualitative and quantitative safety analysis, capturing logical structural as well as probabilistic dependencies among triggering conditions, functional insufficiencies, and failure modes. A case study on object detection failure in autonomous vehicles is conducted to demonstrate the applicability of the methodology. The results indicate that environmental factors such as weather and occlusion are major contributors to object detection failures, which contributes to 45.76% and 58.72%, respectively. Additionally, posterior probability analysis highlights the influence of specific variables and provides actionable insights for prioritizing mitigation strategies. This study contributes a novel framework that enhances safety assessment capabilities in SOTIF contexts and provides system designers with practical guidance to improve the reliability and robustness of autonomous vehicle systems.
+
+
+<br>
+---
+<br>
+
+<a id="aa980d6be88a643afd521c32746f9eab2d9967abfcab7c6257cc3eda86a4ae9d"></a>
+### EXPRESS: Automated Versus Human-Operated: Impact of AI-Driven Autonomous Stores on Prosocial Behavior
+
+**Metadata**
+
+- Date: 2026-04-13
+- Authors: Xiaoyan (Jenny) Liu, Chi Hoang, Sharon Ng
+- DOI: 10.1177/00222429261445436
+- Link: https://doi.org/10.1177/00222429261445436
+- Relevance: 8.0 (29%)
+
+**AI Summary**
+
+This study examines how AI-driven autonomous stores affect prosocial behavior, finding that consumers act less prosocially after interacting with them compared to human-operated stores. The decline stems from reduced social connectedness due to the lack of human interaction at key service points. The effect holds for both non-embodied and humanlike AI systems but can be lessened under specific conditions, such as joint consumption or consumer-welfare-focused AI framing. The research highlights potential social costs of automated retail and suggests strategies to mitigate them.
+
+**Abstract / Source Text**
+
+> Many leading retailers have introduced AI-driven autonomous stores, sparking a trend that others are eager to follow. Although prior research has emphasized consumer acceptance of these formats and their operational advantages (e.g., reduced costs, improved efficiency), their broader societal consequences remain underexplored. Across nine online and field experiments, this research demonstrates that consumers engage in less prosocial behavior after interacting with AI-driven autonomous (vs. human-operated) stores. This effect stems from a diminished sense of social connectedness caused by the absence of human interaction at key service touchpoints (e.g., reception, checkout) and persists across both non-embodied and embodied humanlike AI systems. Three boundary conditions specify when this adverse effect can be mitigated, spanning the consumer context (joint consumption), firm context (consumer-welfare AI framing), and charitable organization context (self-benefiting prosocial appeal). Together, these findings provide the first empirical evidence of the social costs associated with autonomous retail formats and offer actionable insights for marketers, charitable organizations, and policymakers seeking to balance technological efficiency with societal well-being in an increasingly automated world.
+
+
+<br>
+---
+<br>
+
+<a id="fb33b3de8b76a12255973d1c1a4ed768536e6498b2d4db652f40ea8482dbc8ee"></a>
+### PDGFRα-positive mesenchymal stem/stromal cells contribute to autonomous vascular formation through in-body tissue architecture
+
+**Metadata**
+
+- Date: 2026-04-16
+- Authors: Satoru Morikawa, Masaki Yoda, Takehito Ouchi, Takazumi Yasui, Kazumasa Fukuda, Michiru Sugimoto, Rintaro Harada, Tatsuaki Matsumoto, Yo Mabuchi, Osahiko Tsuji, Narihito Nagoshi, Yoshitaka Kase, Hideyuki Okano, Yuko Kitagawa, Masaya Nakamura, Taneaki Nakagawa, Yasuhide Nakayama
+- DOI: 10.1371/journal.pone.0347197
+- Link: https://doi.org/10.1371/journal.pone.0347197
+- Relevance: 7.0 (25%)
+
+**AI Summary**
+
+This study explores how PDGFRα-positive mesenchymal stem/stromal cells (MSCs) enable the formation of vascularized tissues within implanted molds through in-body tissue architecture (iBTA). Using PDGFRα reporter mice, researchers found these cells associated with blood vessels and expressed MSC markers (CD73, CD90, CD105), showing multi-lineage differentiation potential in lab tests. The method was successfully tested in pigs, producing organized vascular tissue and collagen within two weeks. iBTA avoids cell isolation and immunosuppression by using the body’s own MSCs for tissue engineering.
+
+**Abstract / Source Text**
+
+> Driven by endogenous platelet-derived growth factor receptor α (PDGFRα)-positive cells, in-body tissue architecture (iBTA) enables the autonomous formation of vascularized tissues within subcutaneously implanted molds, overcoming the limitations of traditional cell therapies. The cellular mechanisms were investigated in PDGFRα reporter mice. Recruited PDGFRα-lineage cells were closely associated with Pecam-1-positive vessels and often adopted perivascular positions. Flow cytometry revealed that these cells expressed the mesenchymal stem/stromal cell (MSC) markers (CD73, CD90, and CD105). Additionally, the cultured isolates maintained MSC morphology and demonstrated osteogenic, chondrogenic, and adipogenic differentiation potential in vitro. The approach was successfully scaled to a porcine model, which exhibited organized tissue maturation, including vascular structures and collagen deposition, within 2 weeks. iBTA eliminates the need for cell isolation and immunosuppression by leveraging resident PDGFRα-positive MSCs for in situ tissue generation, providing a direct pathway for autologous vascular tissue engineering applications.
+
+
+<br>
+---
+<br>
+
+<a id="b13b331cee1b81342b450832caaede4fbcad7ab3956deea1c7668ab336265ea2"></a>
+### Dynamic Obstacle Avoidance Algorithm for Unmanned Vessels Based on FDWA and IBA*—IGWO Fusion
+
+**Metadata**
+
+- Date: 2026-04-14
+- Authors: Min Wang, Jinwen Gao, Chenhao Li, Mei Hong, Huaihai Guo, Hanfei Xie, Minghang Shi
+- DOI: 10.3390/jmse14080722
+- Link: https://doi.org/10.3390/jmse14080722
+- Relevance: 7.0 (25%)
+
+**AI Summary**
+
+This paper introduces a dynamic obstacle-avoidance algorithm for unmanned surface vehicles (USVs) by merging Fuzzy-enhanced Dynamic Window Approach (FDWA) with an Improved Bidirectional A*–Improved Grey Wolf Optimizer (IBA*–IGWO) framework. The method improves traditional DWA by optimizing the initial heading angle and using a fuzzy controller to adjust weight coefficients in the cost function, enhancing adaptability in varying environments. The IBA*–IGWO algorithm provides a global route, with key nodes serving as local endpoints for FDWA to ensure optimal navigation and dynamic adjustments. Simulation results confirm the method’s effectiveness in avoiding unknown and dynamic obstacles while returning USVs to pre-planned routes.
+
+**Abstract / Source Text**
+
+> This paper proposes a dynamic obstacle-avoidance algorithm for unmanned surface vehicles (USVs) that combines a Fuzzy-enhanced Dynamic Window Approach (FDWA) with an Improved Bidirectional A*–Improved Grey Wolf Optimizer (IBA*–IGWO) framework. Firstly, the traditional dynamic window method (DWA) is improved by adopting an initial heading angle optimization strategy to reduce the heading deviation of unmanned vessels during cruising. Secondly, a fuzzy controller is introduced, which can adaptively adjust the weight coefficients in the cost function of the DWA algorithm based on the current position of the unmanned vessel, surrounding environmental information, etc., to improve obstacle avoidance ability and adaptability in different environments. Finally, using the global static cruise route provided by the IBA*–IGWO algorithm, key nodes are selected as local endpoints for the FDWA algorithm to ensure that the unmanned vessel can perform cruise tasks according to the optimal plan during navigation and make dynamic adjustments in case of emergencies. The simulation results demonstrate the feasibility of the proposed method in handling unknown and dynamic obstacles under the current grid-based experimental settings, while enabling the USV to return to the pre-planned global route after local obstacle avoidance. These results provide a basis for further development toward more robust and rule-aware autonomous navigation in realistic maritime environments.
+
+
+<br>
+---
+<br>
+
+<a id="0778e5678779faafa0ca2146226307cb1157ef8026df997b64464b09841a4e62"></a>
+### BIND-USBL: Bounding IMU Navigation Drift using USBL in Heterogeneous ASV-AUV Teams
+
+**Metadata**
+
+- Date: 2026-04-13
+- Authors: Pranav Kedia, Rajini Makam, Heiko Hamann, Suresh Sundaram
+- DOI: 10.48550/arxiv.2604.11861
+- Link: https://www.semanticscholar.org/paper/d2f1293f01d5aa59a3e1fef8af1bd4f5d286b90b
+- Relevance: 7.0 (25%)
+
+**AI Summary**
+
+The paper *BIND-USBL* introduces a cooperative localization system for Autonomous Underwater Vehicles (AUVs) in GPS-denied environments, where drift from inertial navigation is a major issue. The framework uses Autonomous Surface Vessels (ASVs) with Ultra-Short Baseline (USBL) acoustic positioning to provide intermittent fixes, reducing dead-reckoning errors. Key components include a multi-ASV formation model, a conflict-graph-based scheduler for efficient acoustic updates, and delayed fusion of USBL data with inertial measurements. Simulations demonstrate improved localization performance based on survey scale, acoustic coverage, and ASV-AUV team geometry.
+
+**Abstract / Source Text**
+
+> Accurate and continuous localization of Autonomous Underwater Vehicles (AUVs) in GPS-denied environments is a persistent challenge in marine robotics. In the absence of external position fixes, AUVs rely on inertial dead-reckoning, which accumulates unbounded drift due to sensor bias and noise. This paper presents BIND-USBL, a cooperative localization framework in which a fleet of Autonomous Surface Vessels (ASVs) equipped with Ultra-Short Baseline (USBL) acoustic positioning systems provides intermittent fixes to bound AUV dead-reckoning error. The key insight is that long-duration navigation failure is driven not by the accuracy of individual USBL measurements, but by the temporal sparsity and geometric availability of those fixes. BIND-USBL combines a multi-ASV formation model linking survey scale and anchor placement to acoustic coverage, a conflict-graph-based TDMA uplink scheduler for shared-channel servicing, and delayed fusion of received USBL updates with drift-prone dead reckoning. The framework is evaluated in the HoloOcean simulator using heterogeneous ASV-AUV teams executing lawnmower coverage missions. The results show that localization performance is shaped by the interaction of survey scale, acoustic coverage, team composition, and ASV-formation geometry. Further, the spatial-reuse scheduler improves per-AUV fix delivery rate without violating the no-collision constraint, while maintaining low end-to-end fix latency.
+
+
+<br>
+---
+<br>
+
+<a id="6339ee563e0536343086c9ad076ded6d4d6556198d3daf2b1874dcb68b54d3d1"></a>
+### Model Predictive Control-Based Optimal Energy Management of Autonomous Electric Vehicles Under Cold Temperatures
+
+**Metadata**
+
+- Date: 2026-04-13
+- Authors: Shanthan K. Padisala, Satadru Dey
+- DOI: 10.1115/1.4071649
+- Link: https://doi.org/10.1115/1.4071649
+- Relevance: 7.0 (25%)
+
+**AI Summary**
+
+This paper presents a real-time Model Predictive Control (MPC) approach for optimizing energy management in autonomous electric vehicles (AEVs) under cold temperatures. It addresses the challenge of balancing battery power allocation between propulsion, HVAC systems, and battery preconditioning to preserve driving range and battery health. The method dynamically adjusts power distribution to maintain thermal comfort while ensuring the battery is ready for immediate charging upon arrival. The study aims to replace heuristic rules with a principled strategy for improved energy efficiency.
+
+**Abstract / Source Text**
+
+> Abstract In autonomous electric vehicles (AEVs), battery energy must be judiciously allocated to satisfy primary propulsion demands and secondary auxiliary demands, particularly the Heating, Ventilation, and Air Conditioning (HVAC) system. This becomes especially critical when the battery is in a low state of charge under cold ambient conditions, and cabin heating and battery preconditioning (prior to actual charging) can consume a significant percentage of available energy, directly impacting the driving range. In such cases, one usually prioritizes propulsion or applies heuristic rules for thermal management, often resulting in suboptimal energy utilization. There is a pressing need for a principled approach that can dynamically allocate battery power in a way that balances thermal comfort, battery health and preconditioning, along with range preservation. This paper attempts to address this issue using real-time Model Predictive Control to optimize the power consumption between the propulsion, HVAC, and battery temperature preparation so that it can be charged immediately once the destination is reached.
+
+
+<br>
+---
+<br>
+
+<a id="ed2dfe7f3c02237fe7f4461baa539869a5803eeea07dd93ed433f8db736b792a"></a>
+### Laser Scanning-Based Parameter Extraction for Ship Butt Weld Joints
+
+**Metadata**
+
+- Date: 2026-04-15
+- Authors: Yi Shen, Sheng Zhang, Tao Ma, Yuanchao Lin, Lijia Tao, Mingxin Yuan
+- DOI: [10.21203/rs.3.rs-9257406/v1](https://doi.org/10.21203/rs.3.rs-9257406/v1)
+- Link: [https://doi.org/10.21203/rs.3.rs-9257406/v1](https://doi.org/10.21203/rs.3.rs-9257406/v1)
+- Relevance: 6.0 (21%)
+
+**AI Summary**
+
+This paper presents an automated algorithm using laser scanning to extract geometric parameters for I-groove, X-groove, and K-groove ship butt welds. The method employs density clustering and normal vector techniques for surface separation, followed by a universal parameter extraction module with adaptive strategies for each weld type. Experimental results show mean absolute errors (MAE) of 0.66 mm for plate thickness and 0.58 mm for root gap in I-groove welds, while groove angle MAE for X-groove and K-groove welds remains under 4°. The algorithm outperforms traditional methods, achieving an average accuracy improvement of 77.9%.
+
+**Abstract / Source Text**
+
+> Abstract To address the need for efficient and high-precision extraction of geometric parameters for three types of ship butt welds (I-groove, X-groove, and K-groove), an automatic weld parameter extraction algorithm based on laser scanning is proposed. First, point cloud surface separation is achieved through DBSCAN density clustering for I-groove welds and point cloud normal vector method for X-groove and K-groove welds. Subsequently, a universal parameter extraction module is constructed, incorporating a robust plate thickness calculation method and an adaptive groove angle extraction strategy. Finally, specialized parameter extraction strategies are designed according to the geometric characteristics of each weld type, forming a unified processing framework for multiple types of butt welds. Experimental results demonstrate that the mean absolute errors (MAE) for plate thickness and root gap of I-groove welds are 0.66 mm and 0.58 mm, respectively; the MAE for groove angles of X-groove and K-groove welds is maintained within 4°, while MAE for other parameters is controlled within 1 mm. Comparative experiments show that the proposed algorithm achieves superior measurement accuracy across all three weld types compared to traditional algorithms, with an 81.8% improvement over the slope analysis method, a 73.9% improvement over the height transition feature method, and an overall average accuracy improvement of approximately 77.9%.
+
+
+<br>
+---
+<br>
+
+<a id="21faf04bf7cbd2989ad7fe17f8f395cb37a9375b46b72ca6bea4f4fb4bb9e092"></a>
+### From Junior to Senior: Allocating Agency and Navigating Professional Growth in Agentic AI-Mediated Software Engineering
+
+**Metadata**
+
+- Date: 2026-04-13
+- Authors: Dana Feng, Bhada Yun, April Wang
+- DOI: 10.1145/3772318.3791642
+- Link: https://doi.org/10.1145/3772318.3791642
+- Relevance: 6.0 (21%)
+
+**AI Summary**
+
+This study examines how agentic AI affects professional agency in software engineering, comparing junior and senior developers. Juniors, who grew up with AI, often struggle with over-reliance or avoidance, while seniors maintain control by delegating tasks and using pre-AI instincts. Organizational policies, not personal choice, primarily limit agency. The authors propose three practices to preserve agency in coding, learning, and mentorship as AI becomes more autonomous.
+
+**Abstract / Source Text**
+
+> Juniors enter as AI‑natives, seniors adapted mid‑career. AI is not just changing how engineers code—it is reshaping who holds agency across work and professional growth. We contribute junior–senior accounts on their usage of agentic AI through a three-phase mixed-methods study: ACTA combined with a Delphi process with 5 seniors, an AI-assisted debugging task with 10 juniors, and blind reviews of junior prompt histories by 5 more seniors. We found that agency in software engineering is primarily constrained by organizational policies rather than individual preferences, with experienced developers maintaining control through detailed delegation while novices struggle between over-reliance and cautious avoidance. Seniors leverage pre-AI foundational instincts to steer modern tools and possess valuable perspectives for mentoring juniors in their early AI-encouraged career development. From synthesis of results, we suggest three practices that focus on preserving agency in software engineering for coding, learning, and mentorship, especially as AI grows increasingly autonomous.
+
+
+<br>
+---
+<br>
+
+<a id="d3f8f8c8809a6565c7c59bcb1805edb51a0e0776837cc2dc9e0f335f2206f3ed"></a>
+### A vessel-guided multi-task deep learning framework with visual interpretability for simultaneous retinal vessel segmentation and multi-disease classification from fundus images
+
+**Metadata**
+
+- Date: 2026-04-17
+- Authors: Qi Li, Liming Tao
+- DOI: 10.3389/fmed.2026.1799745
+- Link: https://doi.org/10.3389/fmed.2026.1799745
+- Relevance: 5.5 (20%)
+
+**AI Summary**
+
+Qi Li and Liming Tao (2026) developed V-MNet, a deep learning framework that simultaneously performs retinal vessel segmentation and multi-disease classification from fundus images. The model uses a vessel-guided mechanism to improve classification accuracy, achieving a Dice coefficient of 0.831 for segmentation and an average AUC of 0.978 for disease classification across four public datasets. It also incorporates Grad-CAM for visual interpretability, highlighting lesion regions to aid clinical decision-making. Ablation studies confirmed the effectiveness of its multi-task and vessel-guided design.
+
+**Abstract / Source Text**
+
+> Introduction Retinal diseases represent a leading cause of visual impairment and blindness worldwide, with early and accurate diagnosis being crucial for preventing irreversible vision loss. Although deep learning techniques have achieved significant advances in fundus image analysis, existing methods predominantly focus on single tasks, treating vessel segmentation and disease diagnosis as independent problems without fully leveraging their intrinsic relationships. Furthermore, the lack of transparency in deep model predictions limits clinical adoption; while full interpretability remains an open challenge, post-hoc techniques such as Grad-CAM can provide partial transparency by highlighting influential image regions. Methods This study presents V-MNet, a vessel-guided multi-task deep learning framework that simultaneously achieves retinal vessel segmentation and multi-disease classification, and provides visual transparency through Grad-CAM-based class activation mapping to support clinical decision-making. The framework comprises three core modules: a shared encoder extracts multi-scale feature representations; a segmentation decoder employs a U-Net-style architecture to generate vessel masks; and a classification decoder incorporates an innovative vessel-guided mechanism that explicitly transfers structural priors from the segmentation branch to the classification task, enabling the model to precisely localize pathological regions. Concurrently, an integrated Grad-CAM module generates post-hoc class activation maps for each disease category, highlighting spatially relevant lesion regions for clinician review. Comprehensive experiments were conducted on four public datasets-RFMiD, ODIR-5K, DRIVE, and EyePACS-light-v2. Results Experiments demonstrate that V-MNet achieves a Dice coefficient of 0.831 and AUC of 0.985 for vessel segmentation tasks, and an average AUC of 0.978 with F1-score of 0.935 for multi-disease classification tasks, significantly outperforming single-task baseline models and existing state-of-the-art methods. Ablation studies systematically quantify the performance contributions of multi-task learning and the vessel-guided mechanism, confirming the effectiveness of the framework's core innovations. Discussion V-MNet demonstrates broad application potential as a computer-aided diagnostic tool by jointly leveraging vascular structure and disease pathology for superior performance and visual transparency. The vessel-guided multi-task design effectively exploits the intrinsic relationship between vessel segmentation and disease classification, while the integrated Grad-CAM module addresses the lack of model transparency, facilitating clinical adoption and supporting clinical decision-making.
+
+
+<br>
+---
+<br>
+
+<a id="b1ff874172e6468e753d398898edc617135cb7cef3667e2e81549e841aa99e8b"></a>
+### Design of Distributed Ship Systems in the Early Stage Design of Complex Vessels Through a Submarine Example
+
+**Metadata**
+
+- Date: 2026-04-17
+- Authors: Muhammad Hary Mukti, Rachel Jean Pawling, David John Andrews
+- DOI: 10.5750/ijme.v167ia2.1503
+- Link: https://doi.org/10.5750/ijme.v167ia2.1503
+- Relevance: 5.0 (18%)
+
+**AI Summary**
+
+This paper expands on earlier work applying network theory to submarine power and propulsion design, introducing the UCL Network Block Approach (NBA). The NBA combines 3D Computer Aided Ship Design with network theory to improve early-stage design of distributed ship systems, demonstrated through a submarine case study. Validated by three design sensitivity studies, the approach enables rapid sizing and balancing of energy needs while visualizing complex systems in 3D. It also supports evaluating emerging technologies, like net-zero carbon energy solutions for future naval vessels.
+
+**Abstract / Source Text**
+
+> This paper builds upon the 2021 IJME publication by the same authors, which introduced the application of network theory to the design and evaluation of a simplified submarine power and propulsion system for early-stage ship design. The current work presents significant advancements from that initial investigation, detailing the UCL Network Block Approach (NBA). The NBA integrates the strengths of a proven 3D Computer Aided Ship Design (CASD) system’s architecture-driven approach using a network theory approach, specifically for the design of distributed ship service systems in complex vessels, demonstrated through a submarine case study. The proposed approach has now been validated through three design sensitivity studies, which examined variations at three levels: overall ship performance, main-level design styles, and micro-level design styles. The findings indicate that the NBA facilitates the holistic investigation of distributed ship service systems during early-stage ship design. Additionally, it enables naval architects and marine engineers to quickly size and balance energy requirements for different distributed systems and visualise the intricate structure of submarine systems within a 3D CASD environment and a 3D multiplex network layout. Furthermore, the NBA provides a basis for assessing the potential impacts of emerging technologies, such as the development of net-zero carbon based energy solutions for future naval vessels.
+
+
+<br>
+---
+<br>
+
+<a id="e1d628ae9357e2e27f4f18fbabc5ef7da7a2baf4c4b0f4e18d23c6910311e169"></a>
+### Strategi Pengamanan Wilayah Laut oleh TNI AL Guna Pengawasan Kegiatan Ship-To-Ship Pulau Nipah Dalam Rangka Peningkatan Keamanan Maritim
+
+**Metadata**
+
+- Date: 2026-04-13
+- Authors: Aang Zaenal Mutaqin, Niko Oktoria, Tony Priyo Utomo
+- DOI: 10.54371/jiip.v9i4.11227
+- Link: https://doi.org/10.54371/jiip.v9i4.11227
+- Relevance: 5.0 (18%)
+
+**AI Summary**
+
+This study examines the Indonesian Navy's (TNI AL) strategies for securing maritime areas, focusing on monitoring illegal Ship-to-Ship (STS) activities near Nipah Island, a key international trade route. Using qualitative methods like interviews, field observations, and document analysis, it evaluates operational capacity, inter-agency coordination, and economic impacts. The research highlights the need for adaptive approaches, including risk-based patrols, surveillance technology, and cross-agency collaboration to enforce sovereignty and support the blue economy in Riau Islands Province. It also suggests expanding future research to include coastal communities and mixed-method data for better decision-making.
+
+**Abstract / Source Text**
+
+> Keamanan wilayah laut merupakan aspek strategis yang menentukan kedaulatan negara dan stabilitas ekonomi, khususnya di perairan Pulau Nipah yang menjadi jalur vital perdagangan internasional. Penelitian ini bertujuan untuk menganalisis strategi pengamanan wilayah laut oleh TNI Angkatan Laut dan mengevaluasi efektivitas pengawasan terhadap aktivitas Ship-to-Ship (STS) ilegal. Pendekatan kualitatif deskriptif analitis diterapkan melalui triangulasi data yang mencakup wawancara mendalam dengan narasumber kunci, observasi langsung di lapangan, dan studi dokumentasi regulasi. Analisis data dilakukan menggunakan perangkat lunak NVivo untuk memetakan pola hubungan antara kapasitas operasional, koordinasi antarinstansi, dan implikasi terhadap stabilitas ekonomi regional. Penelitian ini menekankan pentingnya pendekatan adaptif yang mengintegrasikan patroli berbasis risiko, pemanfaatan teknologi pengawasan secara optimal, dan koordinasi lintas lembaga. Strategi tersebut tidak hanya berkaitan dengan penegakan kedaulatan dan hukum di perairan strategis, tetapi juga berperan dalam mendukung pengelolaan ekonomi biru di Provinsi Kepulauan Riau. Kerangka analisis yang digunakan dalam penelitian ini juga membuka peluang pengembangan penelitian lanjutan dengan memperluas wilayah studi, melibatkan perspektif masyarakat pesisir, dan mengkombinasikan data kualitatif serta kuantitatif untuk mendukung pengambilan keputusan strategis yang lebih komprehensif.
+
+
+<br>
+---
+<br>
+
+<a id="f6552c8e48201562a6a9219a2417f2e5feee59afcf49b8104895fe0eaed8e3b2"></a>
+### Training for Merchant Ship Engineers and Wireless Operators
+
+**Metadata**
+
+- Date: 2026-04-14
+- Authors: Unknown
+- DOI: [10.2307/jj.38191935.14](https://doi.org/10.2307/jj.38191935.14)
+- Link: [https://doi.org/10.2307/jj.38191935.14](https://doi.org/10.2307/jj.38191935.14)
+- Relevance: 4.5 (16%)
+
+**AI Summary**
+
+No abstract or body text was available, so this entry is reported from metadata only.
+
+
+<br>
+---
+<br>
+
+<a id="62e3adab3046b09e697815e7457a190c858087814f3ec8cfc301d3a5c78174f3"></a>
+### Book Review:
+                    <i>The Edwin Fox: How an Ordinary Sailing Ship Connected the World in the Age of Globalization, 1850–1914</i>
+                    by Boyd Cothran and Adrian Shubert CothranBoydShubertAdrian. The Edwin Fox: How an Ordinary Sailing Ship Connected the World in the Age of Globalization, 1850–1914. Chapel Hill, NC: University of North Carolina Press, 2023. 296 pp., illustrations, maps, notes, bibliography, index. ISBN 978-1-4696-7655-5, $35 (hbk).
+
+**Metadata**
+
+- Date: 2026-04-13
+- Authors: Martin Dusinberre
+- DOI: [10.1177/08438714261437556](https://doi.org/10.1177/08438714261437556)
+- Link: [https://doi.org/10.1177/08438714261437556](https://doi.org/10.1177/08438714261437556)
+- Relevance: 4.5 (16%)
+
+**AI Summary**
+
+No abstract or body text was available, so this entry is reported from metadata only.
+
+
+<br>
+---
+<br>
+
+<a id="b3a0405734b18fc9a5cf5b6590b91f24e37a9028f84f63dd68aca09114f4ecc0"></a>
+### A multi-task reinforcement learning framework for resilient autonomous USV navigation
+
+**Metadata**
+
+- Date: 2026-04-17
+- Authors: Theodore Tranos, Piyabhum Chaysri, Christos Spatharis, Konstantinos Blekas
+- DOI: [10.1016/j.oceaneng.2026.125549](https://doi.org/10.1016/j.oceaneng.2026.125549)
+- Link: [https://doi.org/10.1016/j.oceaneng.2026.125549](https://doi.org/10.1016/j.oceaneng.2026.125549)
+- Relevance: 4.0 (14%)
+
+**AI Summary**
+
+No abstract or body text was available, so this entry is reported from metadata only.
+
+
+<br>
+---
+<br>
+
+<a id="ec32510eb38dd2d182ed59cfcbce401ef5b80fc4e70d46d70211ccfa9e4166f7"></a>
+### Cooperative Learning NN-Based Fault-Tolerant Formation of Networked Unmanned Surface Vehicles with Input Saturation and Prescribed Performance
+
+**Metadata**
+
+- Date: 2026-04-19
+- Authors: Yunhao Zhang, Huafeng Ding
+- DOI: 10.3390/machines14040452
+- Link: https://doi.org/10.3390/machines14040452
+- Relevance: 3.5 (12%)
+
+**AI Summary**
+
+This paper presents a fault-tolerant control (FTC) algorithm for unmanned surface vehicles (USVs) to maintain formation under challenges like disturbances, model uncertainties, actuator faults, and input saturation. The method combines cooperative learning neural networks, distributed disturbance observers, and backstepping techniques, with shared neural network weights improving coordination. An auxiliary system and actuator matrix address input saturation and propeller failures, ensuring errors stay within predefined performance limits. Simulations with four USVs confirm the algorithm’s effectiveness in maintaining formation and reducing tracking error oscillations compared to non-learning methods.
+
+**Abstract / Source Text**
+
+> This paper investigates the cooperative formation control problem in unmanned surface vehicles (USVs) with prescribed performance constraints under complex marine conditions including external disturbances, model uncertainties, actuator faults, and input saturation. A novel fault-tolerant control (FTC) algorithm is developed by integrating cooperative learning neural networks (NNs), distributed disturbance observers, and the backstepping technique. Specifically, the learning NNs adaptively approximate system uncertainties, and the learned weight information is shared among vehicles to enhance cooperative cognition. Additionally, an auxiliary dynamic system and an actuator configuration matrix are designed to compensate for input saturation and propeller failures. Theoretical analysis based on the Lyapunov method proves that all signals in the closed-loop system are bounded, and the formation tracking errors strictly remain within the predefined transient and steady-state performance bounds. Finally, simulation experiments involving a group of four USVs validate the proposed algorithm. The results demonstrate that the USVs can rapidly converge to and maintain the desired quadrilateral formation shape despite time-varying disturbances and actuator efficiency loss. Furthermore, comparative simulation results indicate that the proposed cooperative learning FTC scheme significantly reduces velocity tracking error oscillations compared to traditional non-learning methods, explicitly verifying its superior robustness and fault-tolerant capabilities.
+
+
+<br>
+---
+<br>
+
+<a id="ff33da088b609ee7404e885b9e80ec3e733c1284a4e3da1038e8c8330c6e9f67"></a>
+### Determination of Tensile Strain Capacity of Girth-Welded X70 and X100 Grade Pipelines With Surface Cracks Under Tension and Bending
+
+**Metadata**
+
+- Date: 2026-10-01
+- Authors: Xinping Yu, Dong-Yeob Park, Xin Wang
+- DOI: 10.1115/1.4071499
+- Link: https://doi.org/10.1115/1.4071499
+- Relevance: 3.0 (11%)
+
+**AI Summary**
+
+This study used finite element analysis to assess the tensile strain capacity (TSC) of X70 and X100 pipelines with surface cracks in the heat-affected zone under tension and bending. It examined how internal pressure, HAZ softening, loading type, and weld strength overmatch ratios affect TSC. Results showed TSC decreases with higher HAZ softening and internal pressure but improves with greater overmatch ratios. Similar trends were observed for both initiation and ductile tearing criteria across tension and bending conditions.
+
+**Abstract / Source Text**
+
+> Abstract This paper presents a comprehensive finite element analysis using abaqus to obtain the tensile strain capacity (TSC) of X70 and X100 pipelines with external semi-elliptical cracks in the heat-affected zone (HAZ) under tension and bending. The analysis estimates the crack driving forces using the J-integral in relation to the pipeline's remote strain. Subsequently, the evaluation of TSC was carried out employing both initiation and ductile tearing criteria. The study investigates the effects of internal pressures, HAZ softening levels, loading type, and weld strength overmatch ratios on TSC. The results reveal similar trends in TSC between the initiation and ductile tearing criteria, as well as between tension and bending for both types of steel. Notably, TSC decreases with increased HAZ softening and internal pressures, while higher overmatch ratios appear to enhance it. These findings highlight the critical influence of these factors on the structural integrity of pipeline girth welds, offering essential insights for the design and maintenance of pipeline systems.

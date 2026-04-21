@@ -1,0 +1,15 @@
+title: TLDR Weekly Reports
+description: Curated weekly AI-summarized maritime research and news
+baseurl: "/custom_TLDR_app"
+url: "https://melihakdag.github.io"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock

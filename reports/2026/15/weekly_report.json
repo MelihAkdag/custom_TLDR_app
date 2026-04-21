@@ -1,0 +1,1452 @@
+{
+  "run_id": "657315966e574d4d9861530bb4277cb8",
+  "requested_week": "2026-W15",
+  "window_start": "2026-04-06",
+  "window_end": "2026-04-12",
+  "status": "success",
+  "source_stats": {
+    "crossref": {
+      "existing_items": 12,
+      "fetched": 25,
+      "filtered_out": 13,
+      "new_items": 0
+    },
+    "news_rss": {
+      "existing_items": 30,
+      "fetched": 78,
+      "filtered_out": 48,
+      "new_items": 0
+    },
+    "openalex": {
+      "existing_items": 19,
+      "fetched": 27,
+      "filtered_out": 8,
+      "new_items": 0
+    }
+  },
+  "warnings": [],
+  "errors": [],
+  "topics": [
+    {
+      "topic_id": "ship_autonomy",
+      "display_name": "Ship Autonomy",
+      "items": [
+        {
+          "item_id": "ea8184aedbbbf837e8efacef030bc4f54e41f609b97868a8810aef8ec833585a",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7153670691",
+          "item_type": "paper",
+          "title": "\"Why This Avoidance Maneuver?\" Contrastive Explanations in Human-Supervised Maritime Autonomous Navigation",
+          "authors_or_author": [
+            "Joel Jose",
+            "Andreas Madsen",
+            "Andreas Brandsæter",
+            "Tor A. Johansen",
+            "Erlend M. Coates"
+          ],
+          "published_at": "2026-04-09",
+          "url": "https://doi.org/10.48550/arxiv.2604.08032",
+          "doi": "10.48550/arxiv.2604.08032",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 14.0,
+          "abstract_or_body": "Automated maritime collision avoidance will rely on human supervision for the foreseeable future. This necessitates transparency into how the system perceives a scenario and plans a maneuver. However, the causal logic behind avoidance maneuvers is often complex and difficult to convey to a navigator. This paper explores how to explain these factors in a selective, understandable manner for supervisors with a nautical background. We propose a method for generating contrastive explanations, which provide human-centric insights by comparing a system's proposed solution against relevant alternatives. To evaluate this, we developed a framework that uses visual and textual cues to highlight key objectives from a state-of-the-art collision avoidance system. An exploratory user study with four experienced marine officers suggests that contrastive explanations support the understanding of the system's objectives. However, our findings also reveal that while these explanations are highly valuable in complex multi-vessel encounters, they can increase cognitive workload, suggesting that future maritime interfaces may benefit most from demand-driven or scenario-specific explanation strategies.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-09\n- Authors: Joel Jose, Andreas Madsen, Andreas Brandsæter, Tor A. Johansen, Erlend M. Coates\n- DOI: 10.48550/arxiv.2604.08032\n- Link: https://doi.org/10.48550/arxiv.2604.08032",
+            "source_excerpt": "Automated maritime collision avoidance will rely on human supervision for the foreseeable future. This necessitates transparency into how the system perceives a scenario and plans a maneuver. However, the causal logic behind avoidance maneuvers is often complex and difficult to convey to a navigator. This paper explores how to explain these factors in a selective, understandable manner for supervisors with a nautical background. We propose a method for generating contrastive explanations, which provide human-centric insights by comparing a system's proposed solution against relevant alternatives. To evaluate this, we developed a framework that uses visual and textual cues to highlight key objectives from a state-of-the-art collision avoidance system. An exploratory user study with four experienced marine officers suggests that contrastive explanations support the understanding of the system's objectives. However, our findings also reveal that while these explanations are highly valuable in complex multi-vessel encounters, they can increase cognitive workload, suggesting that future maritime interfaces may benefit most from demand-driven or scenario-specific explanation strategies.",
+            "short_summary": "This paper examines how to improve transparency in maritime collision avoidance systems for human supervisors. It introduces contrastive explanations, comparing a system’s proposed maneuver with alternatives to clarify decision-making. A study with four marine officers found these explanations helpful, especially in complex multi-vessel scenarios, but noted increased cognitive workload. The authors suggest future interfaces should offer explanations on demand or tailored to specific situations."
+          }
+        },
+        {
+          "item_id": "63957bbfc5c018c870840c32758ba349b398aadce699e5653f0c2f29116a8a45",
+          "source": "IndexBox",
+          "source_id": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNXFOaVhhUncwdVlwQ3VsLV9vSDFkcHFobXctNnJJREZpdWZMTHk5VzdUMzJKalN1bTBVY2dOTHlZUG10b3JwZ0xfWUdXTU5wNEN1Q1lncjhwZFhIWGlibS1kYks2SFdrTHhjVGVISEd5RTFhRl9vdWdDSUJ2dnlHLS1YVmo3Y0p1RDlTQjRwZ3FZN3hpWUtjTUZtb3hGNEpRaEE?oc=5",
+          "item_type": "news_article",
+          "title": "Autonomous Ship Progress: Japan's Genbu & South Korea's HiNAS Gain Key Approvals - News and Statistics",
+          "authors_or_author": [
+            "IndexBox"
+          ],
+          "published_at": "2026-04-08",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNXFOaVhhUncwdVlwQ3VsLV9vSDFkcHFobXctNnJJREZpdWZMTHk5VzdUMzJKalN1bTBVY2dOTHlZUG10b3JwZ0xfWUdXTU5wNEN1Q1lncjhwZFhIWGlibS1kYks2SFdrTHhjVGVISEd5RTFhRl9vdWdDSUJ2dnlHLS1YVmo3Y0p1RDlTQjRwZ3FZN3hpWUtjTUZtb3hGNEpRaEE?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 13.0,
+          "abstract_or_body": "Autonomous Ship Progress: Japan's Genbu & South Korea's HiNAS Gain Key Approvals - News and Statistics &nbsp;&nbsp; IndexBox",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-08\n- Authors: IndexBox\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiogFBVV95cUxPNXFOaVhhUncwdVlwQ3VsLV9vSDFkcHFobXctNnJJREZpdWZMTHk5VzdUMzJKalN1bTBVY2dOTHlZUG10b3JwZ0xfWUdXTU5wNEN1Q1lncjhwZFhIWGlibS1kYks2SFdrTHhjVGVISEd5RTFhRl9vdWdDSUJ2dnlHLS1YVmo3Y0p1RDlTQjRwZ3FZN3hpWUtjTUZtb3hGNEpRaEE?oc=5",
+            "source_excerpt": "Autonomous Ship Progress: Japan's Genbu & South Korea's HiNAS Gain Key Approvals - News and Statistics &nbsp;&nbsp; IndexBox",
+            "short_summary": "Japan’s autonomous ship system, Genbu, and South Korea’s HiNAS have received key regulatory approvals in 2026. These approvals mark significant progress in the development and deployment of autonomous maritime technology. Both systems are advancing toward operational use in commercial shipping. The article highlights recent milestones and related statistics in autonomous ship adoption."
+          }
+        },
+        {
+          "item_id": "84b331bdf9631827280d616376f60b2dc9b0dafffd2a312eb815afc1f9fd8bb0",
+          "source": "vocal.media",
+          "source_id": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNd1ozeHZPV05vYzBDYmhNYUs4dVRLeVRrYy11U055ckwxRFN4dmZJZHRadVVTLVZON3dKeExGUjdWdFMxYlRFamkzZHM1NEcyWjZkNUt5bmlJM0QwTTlmSDdDbl96dU8zUlp2SzM2NTdwRWpaZWN0dE5xdHFuT2dnY2Zwam43LU9ESU5nSXhOY0YwQXJHMTI0TWU0SEgxcG9WaFpmckdUanRPd2tqakVTdHAtOXpvaExFVUNIWGxCSDdwNmJqX0JB?oc=5",
+          "item_type": "news_article",
+          "title": "Autonomous Ships Market Trends: Collision Avoidance, AI Control Systems & Industry Forecast to 2033",
+          "authors_or_author": [
+            "vocal.media"
+          ],
+          "published_at": "2026-04-08",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNd1ozeHZPV05vYzBDYmhNYUs4dVRLeVRrYy11U055ckwxRFN4dmZJZHRadVVTLVZON3dKeExGUjdWdFMxYlRFamkzZHM1NEcyWjZkNUt5bmlJM0QwTTlmSDdDbl96dU8zUlp2SzM2NTdwRWpaZWN0dE5xdHFuT2dnY2Zwam43LU9ESU5nSXhOY0YwQXJHMTI0TWU0SEgxcG9WaFpmckdUanRPd2tqakVTdHAtOXpvaExFVUNIWGxCSDdwNmJqX0JB?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 13.0,
+          "abstract_or_body": "Autonomous Ships Market Trends: Collision Avoidance, AI Control Systems & Industry Forecast to 2033 &nbsp;&nbsp; vocal.media",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-08\n- Authors: vocal.media\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMixwFBVV95cUxNd1ozeHZPV05vYzBDYmhNYUs4dVRLeVRrYy11U055ckwxRFN4dmZJZHRadVVTLVZON3dKeExGUjdWdFMxYlRFamkzZHM1NEcyWjZkNUt5bmlJM0QwTTlmSDdDbl96dU8zUlp2SzM2NTdwRWpaZWN0dE5xdHFuT2dnY2Zwam43LU9ESU5nSXhOY0YwQXJHMTI0TWU0SEgxcG9WaFpmckdUanRPd2tqakVTdHAtOXpvaExFVUNIWGxCSDdwNmJqX0JB?oc=5",
+            "source_excerpt": "Autonomous Ships Market Trends: Collision Avoidance, AI Control Systems & Industry Forecast to 2033 &nbsp;&nbsp; vocal.media",
+            "short_summary": "The autonomous ships market is projected to grow significantly by 2033, driven by advancements in collision avoidance and AI control systems. Key trends include increased adoption of automation to improve maritime safety and efficiency. The report highlights industry forecasts, emphasizing the role of AI in enhancing navigation and operational decision-making. Market expansion is expected across commercial and defense sectors."
+          }
+        },
+        {
+          "item_id": "89c17ce716cd11f02bc3c5b8181a137f751dfba78046cd1d1f0083df91483ada",
+          "source": "Shipping Telegraph",
+          "source_id": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeU1XTlN2YXpmQUx3NXN5TkVFQzVJT3JIa0k0eFJBa3JYa3RIQUtmRG5tNWgzaTBqS1FVU21KbGhTaUZkaTl5anlJRGpwWHNDaXFabnBTVEN2dFZmbzkyZ19GZmtMdDdheFZuUndHZENvc3Z1aGlDWU1TRGNra3pVYVJnVWNJZGRrREw0dGNWem9KcXJRblVSbEFuNnhKWDJ3RUpZUjNZb3FLOXF0R0tNUFJR?oc=5",
+          "item_type": "news_article",
+          "title": "Liberty class autonomous ship construction for the US navy begins",
+          "authors_or_author": [
+            "Shipping Telegraph"
+          ],
+          "published_at": "2026-03-31",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeU1XTlN2YXpmQUx3NXN5TkVFQzVJT3JIa0k0eFJBa3JYa3RIQUtmRG5tNWgzaTBqS1FVU21KbGhTaUZkaTl5anlJRGpwWHNDaXFabnBTVEN2dFZmbzkyZ19GZmtMdDdheFZuUndHZENvc3Z1aGlDWU1TRGNra3pVYVJnVWNJZGRrREw0dGNWem9KcXJRblVSbEFuNnhKWDJ3RUpZUjNZb3FLOXF0R0tNUFJR?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 13.0,
+          "abstract_or_body": "Liberty class autonomous ship construction for the US navy begins &nbsp;&nbsp; Shipping Telegraph",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-03-31\n- Authors: Shipping Telegraph\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMisgFBVV95cUxNeU1XTlN2YXpmQUx3NXN5TkVFQzVJT3JIa0k0eFJBa3JYa3RIQUtmRG5tNWgzaTBqS1FVU21KbGhTaUZkaTl5anlJRGpwWHNDaXFabnBTVEN2dFZmbzkyZ19GZmtMdDdheFZuUndHZENvc3Z1aGlDWU1TRGNra3pVYVJnVWNJZGRrREw0dGNWem9KcXJRblVSbEFuNnhKWDJ3RUpZUjNZb3FLOXF0R0tNUFJR?oc=5",
+            "source_excerpt": "Liberty class autonomous ship construction for the US navy begins &nbsp;&nbsp; Shipping Telegraph",
+            "short_summary": "Construction of the US Navy’s Liberty-class autonomous ships has started as of March 2026. The vessels are designed to operate without a crew, enhancing naval capabilities. This initiative marks a shift toward increased automation in maritime operations. Details on specific timelines or shipyard locations were not provided."
+          }
+        },
+        {
+          "item_id": "c71b363699e80d34f5cb0332c82fbd3955f2027caf3f7ba8f029268357566413",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7152403706",
+          "item_type": "paper",
+          "title": "The efficacy of the UAE legislation in regulating the liability of the maritime carrier in the era of automated shipping",
+          "authors_or_author": [
+            "Derar Al-Daboubi"
+          ],
+          "published_at": "2026-04-09",
+          "url": "https://doi.org/10.1108/jitlp-09-2025-0090",
+          "doi": "10.1108/jitlp-09-2025-0090",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 12.5,
+          "abstract_or_body": "Purpose This paper examines the legal position of parties involved in the carriage of goods via autonomous vessels, as these parties are not typically encountered in the context of conventional carriage carried out through traditional vessels. This study aims to define the legal position of the Shore-Based Controller (SBC), Programmer of the Voyage and Software Provider, and to explain the legal perspective in terms of cyberattacks targeting the electronic systems of autonomous vessels. Design/methodology/approach This study will apply qualitative and comparative approaches, critically analyze the relevant provisions of the Hague-Visby Rules, UAEML and the IMO Regulatory Scoping Exercise on Maritime Autonomous Surface Ships (MASS). Additionally, the author will discuss the jurisprudential perspective on the legal framework of autonomous vessels and the parties involved in these operations. Findings This study recommends that the relevant international conventions and UAEML may determine how can a maritime carrier, under autonomous transportation, rebut a liability if damage to, loss of goods or delay in delivering them is attributable to the act of a third party, like SBC or Voyage Programmer, where such determination should be grounded on the absence of the employment relationship between maritime carrier and these parties. It also suggests that International Sets and guidelines, as well as UAEML, should also include provisions considering hacking into a ship’s computer system, such as an attack made by a public enemy or pirates. The UAEML is also requested to illuminate the responsibility of the maritime carrier for unseaworthiness caused by the fault of SBC, computer hardware, software or software programming. Originality/value This paper is of high originality. This is because it addresses the legal framework of artificial intelligence in the context of shipping, which the UAE law has not yet addressed, despite the UAE Maritime Law coming into force in March 2024.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-09\n- Authors: Derar Al-Daboubi\n- DOI: 10.1108/jitlp-09-2025-0090\n- Link: https://doi.org/10.1108/jitlp-09-2025-0090",
+            "source_excerpt": "Purpose This paper examines the legal position of parties involved in the carriage of goods via autonomous vessels, as these parties are not typically encountered in the context of conventional carriage carried out through traditional vessels. This study aims to define the legal position of the Shore-Based Controller (SBC), Programmer of the Voyage and Software Provider, and to explain the legal perspective in terms of cyberattacks targeting the electronic systems of autonomous vessels. Design/methodology/approach This study will apply qualitative and comparative approaches, critically analyze the relevant provisions of the Hague-Visby Rules, UAEML and the IMO Regulatory Scoping Exercise on Maritime Autonomous Surface Ships (MASS). Additionally, the author will discuss the jurisprudential perspective on the legal framework of autonomous vessels and the parties involved in these operations. Findings This study recommends that the relevant international conventions and UAEML may determine how can a maritime carrier, under autonomous transportation, rebut a liability if damage to, loss of goods or delay in delivering them is attributable to the act of a third party, like SBC or Voyage Programmer, where such determination should be grounded on the absence of the employment relationship between maritime carrier and these parties. It also suggests that International Sets and guidelines, as well as UAEML, should also include provisions considering hacking into a ship’s computer system, such as an attack made by a public enemy or pirates. The UAEML is also requested to illuminate the responsibility of the maritime carrier for unseaworthiness caused by the fault of SBC, computer hardware, software or software programming. Originality/value This paper is of high originality. This is because it addresses the legal framework of artificial intelligence in the context of shipping, which the UAE law has not yet addressed, despite the UAE Maritime Law coming into force in March 2024.",
+            "short_summary": "This paper analyzes the legal challenges of regulating liability for maritime carriers using autonomous vessels under UAE legislation. It focuses on defining the roles and responsibilities of the Shore-Based Controller (SBC), voyage programmers, and software providers, as well as addressing liability in cases of cyberattacks. The study recommends updates to international conventions and UAE Maritime Law (UAEML) to clarify liability for third-party actions and cyber threats. It also highlights gaps in UAEML regarding unseaworthiness caused by faults in software or hardware systems."
+          }
+        },
+        {
+          "item_id": "e9066c9fba58f049abea44568b4511c1c7a608a24e3e3e206b78310fbb039f5b",
+          "source": "Chosunbiz",
+          "source_id": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOX3RwM2hNRWxFcC1zdHdjWEo0SzJ4QXNKenhuamg1RWdxQnpRWlduWXROeWpHUkhlWUV3dkR2VURVd21COC1pTW9ybDNLVnFaMGpKU3dOYkNnTXdOQjRKVVZZaXVHX0VOdG9CUU1LZEE5TTdOOUFxUk0zYUd5UjExZE9R0gGWAUFVX3lxTE1idGhpMjNwY3ZmWTN2dzNSMC1Eczl2M2ZUZ2ozb0k3MzVWYy1UTS11ZUZRUFJCdjNaV1J3TnN4NGthMFI4R1N4SXlOQ0VwaGU5VWNZaG1WWVNPUFZTYzdPYXdUazhUUFR2TEc3aGZxVjRGV0JGZ3VFZktUX2RscTItTktFRFpRS2hya3Bvb1NIcGswem5xZw?oc=5",
+          "item_type": "news_article",
+          "title": "Avikus wins DNV approval to speed global rollout of autonomous ship tech - CHOSUNBIZ",
+          "authors_or_author": [
+            "Chosunbiz"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOX3RwM2hNRWxFcC1zdHdjWEo0SzJ4QXNKenhuamg1RWdxQnpRWlduWXROeWpHUkhlWUV3dkR2VURVd21COC1pTW9ybDNLVnFaMGpKU3dOYkNnTXdOQjRKVVZZaXVHX0VOdG9CUU1LZEE5TTdOOUFxUk0zYUd5UjExZE9R0gGWAUFVX3lxTE1idGhpMjNwY3ZmWTN2dzNSMC1Eczl2M2ZUZ2ozb0k3MzVWYy1UTS11ZUZRUFJCdjNaV1J3TnN4NGthMFI4R1N4SXlOQ0VwaGU5VWNZaG1WWVNPUFZTYzdPYXdUazhUUFR2TEc3aGZxVjRGV0JGZ3VFZktUX2RscTItTktFRFpRS2hya3Bvb1NIcGswem5xZw?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 11.5,
+          "abstract_or_body": "Avikus wins DNV approval to speed global rollout of autonomous ship tech - CHOSUNBIZ &nbsp;&nbsp; Chosunbiz",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: Chosunbiz\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiggFBVV95cUxOX3RwM2hNRWxFcC1zdHdjWEo0SzJ4QXNKenhuamg1RWdxQnpRWlduWXROeWpHUkhlWUV3dkR2VURVd21COC1pTW9ybDNLVnFaMGpKU3dOYkNnTXdOQjRKVVZZaXVHX0VOdG9CUU1LZEE5TTdOOUFxUk0zYUd5UjExZE9R0gGWAUFVX3lxTE1idGhpMjNwY3ZmWTN2dzNSMC1Eczl2M2ZUZ2ozb0k3MzVWYy1UTS11ZUZRUFJCdjNaV1J3TnN4NGthMFI4R1N4SXlOQ0VwaGU5VWNZaG1WWVNPUFZTYzdPYXdUazhUUFR2TEc3aGZxVjRGV0JGZ3VFZktUX2RscTItTktFRFpRS2hya3Bvb1NIcGswem5xZw?oc=5",
+            "source_excerpt": "Avikus wins DNV approval to speed global rollout of autonomous ship tech - CHOSUNBIZ &nbsp;&nbsp; Chosunbiz",
+            "short_summary": "Avikus received approval from DNV, a leading classification society, to accelerate the global deployment of its autonomous ship technology. This certification supports the company’s efforts to expand its self-navigating systems in the maritime industry. The approval is expected to facilitate faster adoption and regulatory acceptance of autonomous vessels worldwide. The development marks a significant step in advancing automated shipping solutions."
+          }
+        },
+        {
+          "item_id": "703717a07ef1c1ac34665784befb7a60c80f27eea7a0888824525efeaf535e86",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7151415619",
+          "item_type": "paper",
+          "title": "Evidence-Unit Mapping (EUM) Database of MASS Safety and Economic Performance Claims (2017–2026)",
+          "authors_or_author": [
+            "Wahidul Sheikh Sheikh"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://doi.org/10.17632/tfdrdvwyr7.1",
+          "doi": "10.17632/tfdrdvwyr7.1",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 11.5,
+          "abstract_or_body": "This dataset contains the granular analytical data supporting the Systematic Literature Review (SLR) titled \"Mapping the Safety Dip: A Systematic Evidence-Unit Mapping of Performance Trajectories in Autonomous Shipping.\" While traditional systematic reviews analyze papers as single units, this dataset employs an Evidence-Unit Mapping (EUM) approach, deconstructing 67 high-impact studies into 158 discrete performance claims regarding safety and economic efficiency in Maritime Autonomous Surface Ships (MASS). The dataset includes (1) Source Coding: Identification of original studies (P1–P67); (2) Thematic Metadata: Categorization by IMO Degrees of Autonomy (DoA 1–4), primary area of focus, and methodological approach (Quantitative, Qualitative, Review); (3) Performance Impact Scores: Binary and weighted consensus coding (-1, 0, +1) for safety and cost-efficiency impacts; (4) Evidence Justification: A dedicated column of \"Exact Quotes\" from the source literature, providing the qualitative evidence used for each quantitative score.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: Wahidul Sheikh Sheikh\n- DOI: 10.17632/tfdrdvwyr7.1\n- Link: https://doi.org/10.17632/tfdrdvwyr7.1",
+            "source_excerpt": "This dataset contains the granular analytical data supporting the Systematic Literature Review (SLR) titled \"Mapping the Safety Dip: A Systematic Evidence-Unit Mapping of Performance Trajectories in Autonomous Shipping.\" While traditional systematic reviews analyze papers as single units, this dataset employs an Evidence-Unit Mapping (EUM) approach, deconstructing 67 high-impact studies into 158 discrete performance claims regarding safety and economic efficiency in Maritime Autonomous Surface Ships (MASS). The dataset includes (1) Source Coding: Identification of original studies (P1–P67); (2) Thematic Metadata: Categorization by IMO Degrees of Autonomy (DoA 1–4), primary area of focus, and methodological approach (Quantitative, Qualitative, Review); (3) Performance Impact Scores: Binary and weighted consensus coding (-1, 0, +1) for safety and cost-efficiency impacts; (4) Evidence Justification: A dedicated column of \"Exact Quotes\" from the source literature, providing the qualitative evidence used for each quantitative score.",
+            "short_summary": "The **Evidence-Unit Mapping (EUM) Database** breaks down 67 studies on Maritime Autonomous Surface Ships (MASS) into 158 specific safety and economic performance claims. It categorizes data by IMO autonomy levels (DoA 1–4), focus areas, and research methods (quantitative, qualitative, or review). Each claim is scored (-1, 0, +1) for safety and cost-efficiency impacts, supported by direct quotes from the original studies. The dataset provides granular, traceable evidence for analyzing MASS performance trends from 2017–2026."
+          }
+        },
+        {
+          "item_id": "ecb93508a74f43fde92c4639423d346eb6d1b075b984e0a248ad2a11e7ec09b9",
+          "source": "crossref",
+          "source_id": "10.1007/s00773-026-01111-4",
+          "item_type": "paper",
+          "title": "Model predictive formation control of multi-vessel systems considering ship-to-ship interaction",
+          "authors_or_author": [
+            "Xin Xiong",
+            "Rudy R. Negenborn",
+            "Yusong Pang"
+          ],
+          "published_at": "2026-04-11",
+          "url": "https://doi.org/10.1007/s00773-026-01111-4",
+          "doi": "10.1007/s00773-026-01111-4",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 11.0,
+          "abstract_or_body": "Abstract                     The formation control of autonomous surface vessels presents significant challenges when operating in close proximity, where ship-to-ship interaction becomes non-negligible. While conventional formation control methods often neglect these interactions or simplify them excessively, this paper develops a centralized model predictive control (MPC) framework that explicitly incorporates a three-degrees-of-freedom interaction model. This interaction model is constructed empirically based on existing computational fluid dynamics results, offering an efficient and practical way to approximate proximity-induced forces in real-time. The proposed control strategy enables accurate trajectory tracking and effective disturbance adaptation in typical formation geometries, including platooning, parallel, and triangular formations. Simulation results demonstrate that the MPC controller can outperform traditional PID controllers in both tracking precision and interaction robustness across the configurations. Formation-specific performance differences are also analyzed in detail.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-11\n- Authors: Xin Xiong, Rudy R. Negenborn, Yusong Pang\n- DOI: 10.1007/s00773-026-01111-4\n- Link: https://doi.org/10.1007/s00773-026-01111-4",
+            "source_excerpt": "Abstract The formation control of autonomous surface vessels presents significant challenges when operating in close proximity, where ship-to-ship interaction becomes non-negligible. While conventional formation control methods often neglect these interactions or simplify them excessively, this paper develops a centralized model predictive control (MPC) framework that explicitly incorporates a three-degrees-of-freedom interaction model. This interaction model is constructed empirically based on existing computational fluid dynamics results, offering an efficient and practical way to approximate proximity-induced forces in real-time. The proposed control strategy enables accurate trajectory tracking and effective disturbance adaptation in typical formation geometries, including platooning, parallel, and triangular formations. Simulation results demonstrate that the MPC controller can outperform traditional PID controllers in both tracking precision and interaction robustness across the configurations. Formation-specific performance differences are also analyzed in detail.",
+            "short_summary": "This paper introduces a centralized model predictive control (MPC) framework for autonomous surface vessels that accounts for ship-to-ship interactions, which are often ignored or oversimplified in traditional methods. The approach uses an empirically derived, three-degrees-of-freedom interaction model based on computational fluid dynamics to estimate proximity-induced forces in real time. Simulations show the MPC controller improves trajectory tracking and disturbance handling compared to PID controllers, particularly in platooning, parallel, and triangular formations. The study also examines performance variations across different formation types."
+          }
+        },
+        {
+          "item_id": "9119f83250d593c78af4ce5f9abe68481441c4d430c2776df85a5bce1a9997f7",
+          "source": "Marine Technology News",
+          "source_id": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRkVEV3h0eE5LZVpTQVFmNlNfZy1salJONUxtNTE1dGxJeEx2YnZvQTl1MnQ1SEp3QURacEJsUURfVTJZQ0pxRTFVbDFLVGdCT1RTbmt3LVE2X0NmSEFMNmxuLXZCUHRPVndiblBfek16VWRPeVljVHNRZHExcnoxNWxGY3hieGMwOE5zakVR?oc=5",
+          "item_type": "news_article",
+          "title": "SeaBot Maritime, GRi Simulations and Frontier Robotics Feature Human-AI Autonomous Maritime Training Platform",
+          "authors_or_author": [
+            "Marine Technology News"
+          ],
+          "published_at": "2026-04-10",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRkVEV3h0eE5LZVpTQVFmNlNfZy1salJONUxtNTE1dGxJeEx2YnZvQTl1MnQ1SEp3QURacEJsUURfVTJZQ0pxRTFVbDFLVGdCT1RTbmt3LVE2X0NmSEFMNmxuLXZCUHRPVndiblBfek16VWRPeVljVHNRZHExcnoxNWxGY3hieGMwOE5zakVR?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 11.0,
+          "abstract_or_body": "SeaBot Maritime, GRi Simulations and Frontier Robotics Feature Human-AI Autonomous Maritime Training Platform &nbsp;&nbsp; Marine Technology News",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-10\n- Authors: Marine Technology News\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMijgFBVV95cUxPRkVEV3h0eE5LZVpTQVFmNlNfZy1salJONUxtNTE1dGxJeEx2YnZvQTl1MnQ1SEp3QURacEJsUURfVTJZQ0pxRTFVbDFLVGdCT1RTbmt3LVE2X0NmSEFMNmxuLXZCUHRPVndiblBfek16VWRPeVljVHNRZHExcnoxNWxGY3hieGMwOE5zakVR?oc=5",
+            "source_excerpt": "SeaBot Maritime, GRi Simulations and Frontier Robotics Feature Human-AI Autonomous Maritime Training Platform &nbsp;&nbsp; Marine Technology News",
+            "short_summary": "SeaBot Maritime, GRi Simulations, and Frontier Robotics collaborated to develop a human-AI autonomous maritime training platform. The platform aims to enhance training for maritime operations by integrating artificial intelligence. It was featured in a demonstration highlighting its capabilities. The system is designed to improve efficiency and safety in maritime environments."
+          }
+        },
+        {
+          "item_id": "9fc9964abed68591567fde65dd8eedcf3fb15183dbc8ddfed290390ca6f9ab72",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7151819667",
+          "item_type": "paper",
+          "title": "A Methodological Approach to Defining Seakeeping Performance Criteria for Unmanned Surface Vessel",
+          "authors_or_author": [
+            "Kwangho Shin",
+            "Hyunwoo Song",
+            "Yonghoon Choi",
+            "Woongki Lee",
+            "Wonsam Choi",
+            "Wonhee Lee"
+          ],
+          "published_at": "2026-04-08",
+          "url": "https://doi.org/10.3744/snak.2026.63.2.60",
+          "doi": "10.3744/snak.2026.63.2.60",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 11.0,
+          "abstract_or_body": "In response to the evolving nature of future naval warfare, the Navy is pursuing a strategic plan to enhance its existing manned forces and secure a range of unmanned surface vehicle (USV) assets designed for mission-specific operations. This initiative aims to strengthen operational capabilities and establish maritime superiority in future battlefields through the integration of manned and unmanned forces. USV is expected to operate independently in harsh maritime environments or conduct joint missions in coordination with manned ships, thereby expanding the Navy’s operational flexibility and effectiveness in multi-domain maritime operations. Under such circumstances, USV is expected to be at a disadvantage in terms of seakeeping performance compared to larger and more capable manned ships. Therefore, greater attention should be directed toward the design and improvement of seakeeping performance during the development phase. Consequently, a preliminary examination of methods for establishing seakeeping performance criteria—which serve as the foundation for seakeeping-oriented design of USV is considered necessary. This paper aims to propose a method for establishing seakeeping performance criteria for USV to ensure their effective operation in harsh maritime environments. The main content includes a comparative and analytical review of seakeeping performance data for various vessels, including manned ships, to develop a procedure suitable for USV. As a case study, a 7-meter-class USV was used to establish preliminary seakeeping criteria and to validate them through model tests.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-08\n- Authors: Kwangho Shin, Hyunwoo Song, Yonghoon Choi, Woongki Lee, Wonsam Choi, Wonhee Lee\n- DOI: 10.3744/snak.2026.63.2.60\n- Link: https://doi.org/10.3744/snak.2026.63.2.60",
+            "source_excerpt": "In response to the evolving nature of future naval warfare, the Navy is pursuing a strategic plan to enhance its existing manned forces and secure a range of unmanned surface vehicle (USV) assets designed for mission-specific operations. This initiative aims to strengthen operational capabilities and establish maritime superiority in future battlefields through the integration of manned and unmanned forces. USV is expected to operate independently in harsh maritime environments or conduct joint missions in coordination with manned ships, thereby expanding the Navy’s operational flexibility and effectiveness in multi-domain maritime operations. Under such circumstances, USV is expected to be at a disadvantage in terms of seakeeping performance compared to larger and more capable manned ships. Therefore, greater attention should be directed toward the design and improvement of seakeeping performance during the development phase. Consequently, a preliminary examination of methods for establishing seakeeping performance criteria—which serve as the foundation for seakeeping-oriented design of USV is considered necessary. This paper aims to propose a method for establishing seakeeping performance criteria for USV to ensure their effective operation in harsh maritime environments. The main content includes a comparative and analytical review of seakeeping performance data for various vessels, including manned ships, to develop a procedure suitable for USV. As a case study, a 7-meter-class USV was used to establish preliminary seakeeping criteria and to validate them through model tests.",
+            "short_summary": "This paper proposes a method to define seakeeping performance criteria for unmanned surface vessels (USVs) to improve their operation in harsh maritime conditions. It reviews seakeeping data from various vessels, including manned ships, to develop a tailored procedure for USVs. A 7-meter-class USV serves as a case study, where preliminary criteria were established and validated through model tests. The goal is to enhance USV design for better performance in joint or independent naval missions."
+          }
+        },
+        {
+          "item_id": "1abb2dc5ce63e7bec2093ae0acfd50d66fab87e24d8cde282c50dcca2b650c84",
+          "source": "crossref",
+          "source_id": "10.21203/rs.3.rs-9295806/v1",
+          "item_type": "paper",
+          "title": "First Autonomous eDNA Survey Using a Self- Righting, Solar-Powered Surface Vehicle in an Estuarine Hope Spot",
+          "authors_or_author": [
+            "Elizabeth A. Suter",
+            "Christine Santora",
+            "Elizabeth T. Sciorilli",
+            "Natalia Benejam",
+            "Fritz Stahr",
+            "Madeleine Bouvier-Brown",
+            "Ari Robinson",
+            "Ivory Engstrom",
+            "Sunshine Gumbs",
+            "James P. Browne",
+            "David N. Hoffman",
+            "Kelsey Leonard",
+            "Julie Angus",
+            "Ellen Pikitch"
+          ],
+          "published_at": "2026-04-08",
+          "url": "https://doi.org/10.21203/rs.3.rs-9295806/v1",
+          "doi": "10.21203/rs.3.rs-9295806/v1",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 11.0,
+          "abstract_or_body": "Abstract                   The integration of environmental DNA (eDNA) samplers with autonomous or remotely operated vehicles offers non-invasive and scalable approaches to marine biodiversity monitoring, particularly in the context of global conservation goals. We demonstrate the first successful integration of a solar-powered, self-righting, uncrewed surface vehicle, the DataXplorer™ (DX; Open Ocean Robotics) with an autonomous eDNA sampler, the Robotic Cartridge Sampling Instrument (RoCSI; McLane Research Laboratories) and its deployment in a shallow, tidally influenced coastal lagoon, Shinnecock Bay, New York, a Mission Blue-designated Hope Spot®. Over 8 days, the instrument produced 98 usable samples for sequencing, including nighttime samples and those from sensitive eelgrass habitats. Using eDNA metabarcoding with 3 complementary primer sets paired with occupancy modeling, we resolved the presence and distributions of 15 priority taxa (endangered, vulnerable, threatened, or of special concern to conservation) and 8 invasive species. A strong east-west gradient in occupancy was observed, with over 200 taxa exhibiting higher occupancy in the eastern bay, where water quality is known to be less degraded, and a small subset of 13 taxa, including invasive species, more concentrated in the western bay. Eelgrass beds were identified as a critical biodiversity hotspot and were positively associated with the occupancy of over 200 taxa across multiple trophic levels. Observed finescale temporal patterns allowed for the first-ever nighttime observations, including increased presence of small fish like anchovies, gobies, and silversides in open water at night, as well as the presence of a nocturnal predator, the shortfin mako shark. By pairing eDNA-based biodiversity monitoring with a solar-powered maritime platform, this technology supports both biodiversity and climate-related objectives of the UN Sustainable Development Goals and UN Ocean Decade. This technology thus demonstrated its value for emissions-free, non-invasive, and high-resolution coastal monitoring in a sensitive conservation area for a restoration program.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-08\n- Authors: Elizabeth A. Suter, Christine Santora, Elizabeth T. Sciorilli, Natalia Benejam, Fritz Stahr, Madeleine Bouvier-Brown, Ari Robinson, Ivory Engstrom, Sunshine Gumbs, James P. Browne, David N. Hoffman, Kelsey Leonard, Julie Angus, Ellen Pikitch\n- DOI: 10.21203/rs.3.rs-9295806/v1\n- Link: https://doi.org/10.21203/rs.3.rs-9295806/v1",
+            "source_excerpt": "Abstract The integration of environmental DNA (eDNA) samplers with autonomous or remotely operated vehicles offers non-invasive and scalable approaches to marine biodiversity monitoring, particularly in the context of global conservation goals. We demonstrate the first successful integration of a solar-powered, self-righting, uncrewed surface vehicle, the DataXplorer™ (DX; Open Ocean Robotics) with an autonomous eDNA sampler, the Robotic Cartridge Sampling Instrument (RoCSI; McLane Research Laboratories) and its deployment in a shallow, tidally influenced coastal lagoon, Shinnecock Bay, New York, a Mission Blue-designated Hope Spot®. Over 8 days, the instrument produced 98 usable samples for sequencing, including nighttime samples and those from sensitive eelgrass habitats. Using eDNA metabarcoding with 3 complementary primer sets paired with occupancy modeling, we resolved the presence and distributions of 15 priority taxa (endangered, vulnerable, threatened, or of special concern to conservation) and 8 invasive species. A strong east-west gradient in occupancy was observed, with over 200 taxa exhibiting higher occupancy in the eastern bay, where water quality is known to be less degraded, and a small subset of 13 taxa, including invasive species, more concentrated in the western bay. Eelgrass beds were identified as a critical biodiversity hotspot and were positively associated with the occupancy of over 200 taxa across multiple trophic levels. Observed finescale temporal patterns allowed for the first-ever nighttime observations, including increased presence of small fish like anchovies, gobies, and silversides in open water at night, as well as the presence of a nocturnal predator, the shortfin mako shark. By pairing eDNA-based biodiversity monitoring with a solar-powered maritime platform, this technology supports both biodiversity and climate-related objectives of the UN Sustainable Development Goals and UN Ocean Decade. This technology thus demonstrated its value for emissions-free, non-invasive, and high-resolution coastal monitoring in a sensitive conservation area for a restoration program.",
+            "short_summary": "This study deployed a solar-powered, self-righting surface vehicle equipped with an autonomous eDNA sampler in Shinnecock Bay, New York, a designated conservation area. Over eight days, the system collected 98 usable samples, revealing biodiversity patterns, including 15 priority conservation taxa and 8 invasive species, with higher occupancy in the less degraded eastern bay. Eelgrass beds were identified as key biodiversity hotspots, while nighttime sampling detected nocturnal species like anchovies and shortfin mako sharks. The approach supports scalable, emissions-free coastal monitoring aligned with global sustainability goals."
+          }
+        },
+        {
+          "item_id": "97bfce9085696b0b08d3003aab401bf23f6bca688dcb005961e228d170ba7962",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7151809915",
+          "item_type": "paper",
+          "title": "A Study on RoI-based Data-efficient AtoN Classification for MASS using VLM",
+          "authors_or_author": [
+            "S.B. Im",
+            "Si-Won Kim",
+            "Seonghyeon Jung",
+            "Ji Heui Seo",
+            "Yeon-Soo Kim",
+            "Hyun-Jae Jo",
+            "Jong-Yong Park"
+          ],
+          "published_at": "2026-04-08",
+          "url": "https://doi.org/10.3744/snak.2026.63.2.101",
+          "doi": "10.3744/snak.2026.63.2.101",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 10.5,
+          "abstract_or_body": "This study proposes a RoI-based, data-efficient fine-grained Aids to Navigation (AtoN) classification method using vision– language models (VLMs) for Maritime Autonomous Surface Ship (MASS). The reliability of the Electronic Chart Display and Information System (ECDIS) can be limited by operating anomalies and discrepancies between charted and actual environments, motivating camera-based situational awareness to support human watch-keeping. AtoNs, which are crucial indicators for coastal navigation, are typically observed as a distant and small-scale objects, making large-scale labeled data collection difficult and degrading full-frame classification due to background dominance. To address this, we focus on RoI-based classification under limited supervision and compare a supervised YOLOv12 classifier baseline with CLIP (Contrastive Language–Image Pre-training). CLIP maximizes data efficiency through domain-specific prompt engineering grounded in IALA Region B attributes and LoRA-based few-shot tuning. Experiments on Virtual RobotX (VRX) simulation datasets under clear and foggy conditions and on real-sea RoI images demonstrate that the proposed VLM-based classifier achieves robust performance with limited training samples and maintains higher robustness under degraded visibility. These results suggest an effective direction for practical, data-efficient AtoN classification in maritime environments via RoI-based preprocessing and parameter-efficient VLM adaptation.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-08\n- Authors: S.B. Im, Si-Won Kim, Seonghyeon Jung, Ji Heui Seo, Yeon-Soo Kim, Hyun-Jae Jo, Jong-Yong Park\n- DOI: 10.3744/snak.2026.63.2.101\n- Link: https://doi.org/10.3744/snak.2026.63.2.101",
+            "source_excerpt": "This study proposes a RoI-based, data-efficient fine-grained Aids to Navigation (AtoN) classification method using vision– language models (VLMs) for Maritime Autonomous Surface Ship (MASS). The reliability of the Electronic Chart Display and Information System (ECDIS) can be limited by operating anomalies and discrepancies between charted and actual environments, motivating camera-based situational awareness to support human watch-keeping. AtoNs, which are crucial indicators for coastal navigation, are typically observed as a distant and small-scale objects, making large-scale labeled data collection difficult and degrading full-frame classification due to background dominance. To address this, we focus on RoI-based classification under limited supervision and compare a supervised YOLOv12 classifier baseline with CLIP (Contrastive Language–Image Pre-training). CLIP maximizes data efficiency through domain-specific prompt engineering grounded in IALA Region B attributes and LoRA-based few-shot tuning. Experiments on Virtual RobotX (VRX) simulation datasets under clear and foggy conditions and on real-sea RoI images demonstrate that the proposed VLM-based classifier achieves robust performance with limited training samples and maintains higher robustness under degraded visibility. These results suggest an effective direction for practical, data-efficient AtoN classification in maritime environments via RoI-based preprocessing and parameter-efficient VLM adaptation.",
+            "short_summary": "This study introduces a data-efficient method for classifying Aids to Navigation (AtoN) using vision-language models (VLMs) and Region of Interest (RoI) processing for Maritime Autonomous Surface Ships (MASS). It addresses challenges like limited labeled data and background interference by comparing a YOLOv12 classifier with CLIP, which uses prompt engineering and few-shot tuning. Tests on simulated and real-world datasets show CLIP performs robustly with minimal training data, even in low-visibility conditions. The approach improves practical AtoN classification in maritime settings."
+          }
+        },
+        {
+          "item_id": "28a7735fc0ff077a74db32fe2cd68690540c6c6001b58fa2adfa0cafa6681282",
+          "source": "Smart Maritime Network",
+          "source_id": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa1lpTXdtLWxVNkxZN0xGR3RneF94YVdkbTdOTFhtSTZHRENOZVVhRGNqWmg0SDB1RENxbDdBNkNfXzY1dUU3TTZuMm1URWJLZ3ZpYUg5X1dPeVlfdnVuaTFfMVcyclNUeUg5UWh4X2ZEOEpwQkhmdGl2TnlKRURLeU9RSHJraEJpdXhMM185VmZaOXlKTnJmRDRGYkZyT3hkVVE?oc=5",
+          "item_type": "news_article",
+          "title": "Avikus gets DNV approval for autonomous navigation tech",
+          "authors_or_author": [
+            "Smart Maritime Network"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa1lpTXdtLWxVNkxZN0xGR3RneF94YVdkbTdOTFhtSTZHRENOZVVhRGNqWmg0SDB1RENxbDdBNkNfXzY1dUU3TTZuMm1URWJLZ3ZpYUg5X1dPeVlfdnVuaTFfMVcyclNUeUg5UWh4X2ZEOEpwQkhmdGl2TnlKRURLeU9RSHJraEJpdXhMM185VmZaOXlKTnJmRDRGYkZyT3hkVVE?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 10.5,
+          "abstract_or_body": "Avikus gets DNV approval for autonomous navigation tech &nbsp;&nbsp; Smart Maritime Network",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: Smart Maritime Network\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiogFBVV95cUxOa1lpTXdtLWxVNkxZN0xGR3RneF94YVdkbTdOTFhtSTZHRENOZVVhRGNqWmg0SDB1RENxbDdBNkNfXzY1dUU3TTZuMm1URWJLZ3ZpYUg5X1dPeVlfdnVuaTFfMVcyclNUeUg5UWh4X2ZEOEpwQkhmdGl2TnlKRURLeU9RSHJraEJpdXhMM185VmZaOXlKTnJmRDRGYkZyT3hkVVE?oc=5",
+            "source_excerpt": "Avikus gets DNV approval for autonomous navigation tech &nbsp;&nbsp; Smart Maritime Network",
+            "short_summary": "Avikus received approval from DNV for its autonomous navigation technology. The certification validates the system's compliance with maritime safety and performance standards. This approval marks a step toward broader adoption of autonomous shipping solutions. The technology aims to enhance navigation efficiency and reduce human error in maritime operations."
+          }
+        },
+        {
+          "item_id": "cefd8d0f500e4c10e6b70532bac441d2fd143d4dfffeeedecb2daf84245a69c4",
+          "source": "crossref",
+          "source_id": "10.20944/preprints202604.0288.v1",
+          "item_type": "paper",
+          "title": "CD-HSSRL: Cross-Domain Hierarchical Safe Switching Reinforcement Learning Framework for Autonomous Amphibious Robot Navigation",
+          "authors_or_author": [
+            "Shuang Liu",
+            "Lei Wei",
+            "Xiaoqing Li"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://doi.org/10.20944/preprints202604.0288.v1",
+          "doi": "10.20944/preprints202604.0288.v1",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 10.5,
+          "abstract_or_body": "Autonomous tracked amphibious robotic systems operating across water and land environments are essential for coastal inspection, disaster response, environmental monitoring, and complex terrain exploration. However, discontinuous water-land dynamics, unstable medium switching, and safety-critical control under environmental uncertainty pose significant challenges to existing amphibious navigation and path planning methods, where global reachability and adaptive decision-making are difficult to unify. Motivated by these challenges, this paper proposes CD-HSSRL, a Cross-Domain Hierarchical Safe-Switching Reinforcement Learning framework for autonomous tracked amphibious navigation. Specifically, a Cross-Domain Global Reachability Planner is developed to construct unified cost representations across heterogeneous water-land environments, a Hierarchical Safe Switching Policy enables stable medium-transition decision-making through option-based policy decomposition with switching regularization, and a Safety-Constrained Continuous Controller integrates action safety projection and risk-sensitive reward shaping to ensure collision-free control during complex shoreline interactions. These components are jointly optimized in an end-to-end manner to achieve robust cross-domain navigation. Comprehensive experiments on WaterScenes, MVTD, BARN, and Gazebo cross-domain benchmarks demonstrate that CD-HSSRL consistently outperforms state-of-the-art baselines, achieving up to 15% improvement in cross-domain transition success rate and 40% reduction in collision rate. Robustness and ablation studies further verify the effectiveness of hierarchical switching and safety-constrained control mechanisms. Overall, this work establishes a unified solution for safe and reliable cross-domain navigation of tracked amphibious robotic systems, providing new insights into hierarchical safe-switching architectures for multi-medium autonomous robots.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: Shuang Liu, Lei Wei, Xiaoqing Li\n- DOI: 10.20944/preprints202604.0288.v1\n- Link: https://doi.org/10.20944/preprints202604.0288.v1",
+            "source_excerpt": "Autonomous tracked amphibious robotic systems operating across water and land environments are essential for coastal inspection, disaster response, environmental monitoring, and complex terrain exploration. However, discontinuous water-land dynamics, unstable medium switching, and safety-critical control under environmental uncertainty pose significant challenges to existing amphibious navigation and path planning methods, where global reachability and adaptive decision-making are difficult to unify. Motivated by these challenges, this paper proposes CD-HSSRL, a Cross-Domain Hierarchical Safe-Switching Reinforcement Learning framework for autonomous tracked amphibious navigation. Specifically, a Cross-Domain Global Reachability Planner is developed to construct unified cost representations across heterogeneous water-land environments, a Hierarchical Safe Switching Policy enables stable medium-transition decision-making through option-based policy decomposition with switching regularization, and a Safety-Constrained Continuous Controller integrates action safety projection and risk-sensitive reward shaping to ensure collision-free control during complex shoreline interactions. These components are jointly optimized in an end-to-end manner to achieve robust cross-domain navigation. Comprehensive experiments on WaterScenes, MVTD, BARN, and Gazebo cross-domain benchmarks demonstrate that CD-HSSRL consistently outperforms state-of-the-art baselines, achieving up to 15% improvement in cross-domain transition success rate and 40% reduction in collision rate. Robustness and ablation studies further verify the effectiveness of hierarchical switching and safety-constrained control mechanisms. Overall, this work establishes a unified solution for safe and reliable cross-domain navigation of tracked amphibious robotic systems, providing new insights into hierarchical safe-switching architectures for multi-medium autonomous robots.",
+            "short_summary": "The paper introduces CD-HSSRL, a reinforcement learning framework for autonomous amphibious robots navigating both water and land. It addresses challenges like discontinuous dynamics and safety risks by combining a global reachability planner, hierarchical switching policies, and a safety-constrained controller. Tests on multiple benchmarks show a 15% improvement in transition success and a 40% reduction in collisions compared to existing methods. The framework offers a unified solution for safe cross-domain navigation in amphibious robots."
+          }
+        },
+        {
+          "item_id": "abe66687912a5310a8c2ad0b37df899a85b9ece8dcb2a73eb8ac0ae06c5808b8",
+          "source": "The Maritime Executive",
+          "source_id": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPc0JOOGZyU3VWRmxzSnJUZXIwZ0VnR1JjbGdtZVc5Y3puX0RSUnNaNjBkeFF6OWh6Q1NkcTBfOWRaVktYOFpBb2Vnb25fRDRneVJ2WEpvc1pFU2N0Q25fempHZzBIeDZSdDZNbmxfNlQtNDlsTkhydV8wcDJnR0ZlRVUzMVRoTVlGcjZlbHdvN2l0WnN6?oc=5",
+          "item_type": "news_article",
+          "title": "Japan and South Korea Advance Autonomous Navigation",
+          "authors_or_author": [
+            "The Maritime Executive"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPc0JOOGZyU3VWRmxzSnJUZXIwZ0VnR1JjbGdtZVc5Y3puX0RSUnNaNjBkeFF6OWh6Q1NkcTBfOWRaVktYOFpBb2Vnb25fRDRneVJ2WEpvc1pFU2N0Q25fempHZzBIeDZSdDZNbmxfNlQtNDlsTkhydV8wcDJnR0ZlRVUzMVRoTVlGcjZlbHdvN2l0WnN6?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 10.5,
+          "abstract_or_body": "Japan and South Korea Advance Autonomous Navigation &nbsp;&nbsp; The Maritime Executive",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: The Maritime Executive\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMilAFBVV95cUxPc0JOOGZyU3VWRmxzSnJUZXIwZ0VnR1JjbGdtZVc5Y3puX0RSUnNaNjBkeFF6OWh6Q1NkcTBfOWRaVktYOFpBb2Vnb25fRDRneVJ2WEpvc1pFU2N0Q25fempHZzBIeDZSdDZNbmxfNlQtNDlsTkhydV8wcDJnR0ZlRVUzMVRoTVlGcjZlbHdvN2l0WnN6?oc=5",
+            "source_excerpt": "Japan and South Korea Advance Autonomous Navigation &nbsp;&nbsp; The Maritime Executive",
+            "short_summary": "Japan and South Korea are progressing in autonomous navigation technology for maritime applications. Both countries are developing systems to enhance ship safety and operational efficiency. The advancements aim to reduce human error and improve navigation in challenging conditions. Collaborative efforts and regulatory frameworks are being established to support these innovations."
+          }
+        },
+        {
+          "item_id": "1cca25094b8c59347b742f010d890dfd3be3ad948ba4ce4b68dc60d7e8fc5f74",
+          "source": "GeekWire",
+          "source_id": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOY1hIVEczdHZlZ3RKa1lSRWo3b0VYUktVVUlybHlxaUNJMVI4cTloVEJpejl6ekM3Q0R2bmVkVjBVTTJjUlhRZ2pCNGV5eEg3RUtxamhXWnlTYjAtb2RwSHBIRHNOa05TdnAxX2stZWRWX3YwOXo4aWcwc01zV21jQTF1U2tPSmpxdXZiajI4blowQ3FUQm9XSDNlT1NCbjFmbzhFZVZvMU9HQUJYeDdSMzRPRlFUb2UxMEJIOTE1NDNTUQ?oc=5",
+          "item_type": "news_article",
+          "title": "Defense giant Anduril is quietly building autonomous warships on Seattle's historic ship canal",
+          "authors_or_author": [
+            "GeekWire"
+          ],
+          "published_at": "2026-04-08",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOY1hIVEczdHZlZ3RKa1lSRWo3b0VYUktVVUlybHlxaUNJMVI4cTloVEJpejl6ekM3Q0R2bmVkVjBVTTJjUlhRZ2pCNGV5eEg3RUtxamhXWnlTYjAtb2RwSHBIRHNOa05TdnAxX2stZWRWX3YwOXo4aWcwc01zV21jQTF1U2tPSmpxdXZiajI4blowQ3FUQm9XSDNlT1NCbjFmbzhFZVZvMU9HQUJYeDdSMzRPRlFUb2UxMEJIOTE1NDNTUQ?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 10.0,
+          "abstract_or_body": "Defense giant Anduril is quietly building autonomous warships on Seattle's historic ship canal &nbsp;&nbsp; GeekWire",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-08\n- Authors: GeekWire\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiwgFBVV95cUxOY1hIVEczdHZlZ3RKa1lSRWo3b0VYUktVVUlybHlxaUNJMVI4cTloVEJpejl6ekM3Q0R2bmVkVjBVTTJjUlhRZ2pCNGV5eEg3RUtxamhXWnlTYjAtb2RwSHBIRHNOa05TdnAxX2stZWRWX3YwOXo4aWcwc01zV21jQTF1U2tPSmpxdXZiajI4blowQ3FUQm9XSDNlT1NCbjFmbzhFZVZvMU9HQUJYeDdSMzRPRlFUb2UxMEJIOTE1NDNTUQ?oc=5",
+            "source_excerpt": "Defense giant Anduril is quietly building autonomous warships on Seattle's historic ship canal &nbsp;&nbsp; GeekWire",
+            "short_summary": "Anduril, a major defense contractor, is constructing autonomous warships in Seattle’s historic ship canal. The project is being carried out discreetly, with few public details available. The company specializes in advanced military technology, including AI-driven systems. The initiative reflects Anduril’s expansion into unmanned naval capabilities."
+          }
+        },
+        {
+          "item_id": "c169d88ced65d956fbdc1acbc0cdd9b39800743ca2b9ff53491d6fdea2d7b74d",
+          "source": "Engineering and Technology Magazine",
+          "source_id": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNT0ZXcDM1RXBnS1RYcTlXVjh1bXdWeHRJbGVsRjRKakM2YkMyLXFVZktxU25RbXlPSlZsVGFnR1cyRDFNeEduVUljc3UwZnA4T28wajVCTDBDQlQwMXN3UUtWQ3FEeWttZjZDZXFxc0h6UmVycThNd2VwdzRzRUtLYkJDRzVnRG5PbXJYMS1EZXhTOEtwczdCYzVOdm10VzNwWVVWVVcwQThKWDM0N3cteVg0a0M?oc=5",
+          "item_type": "news_article",
+          "title": "UK deploys autonomous vessel to detect and destroy underwater mines",
+          "authors_or_author": [
+            "Engineering and Technology Magazine"
+          ],
+          "published_at": "2026-04-08",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNT0ZXcDM1RXBnS1RYcTlXVjh1bXdWeHRJbGVsRjRKakM2YkMyLXFVZktxU25RbXlPSlZsVGFnR1cyRDFNeEduVUljc3UwZnA4T28wajVCTDBDQlQwMXN3UUtWQ3FEeWttZjZDZXFxc0h6UmVycThNd2VwdzRzRUtLYkJDRzVnRG5PbXJYMS1EZXhTOEtwczdCYzVOdm10VzNwWVVWVVcwQThKWDM0N3cteVg0a0M?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 10.0,
+          "abstract_or_body": "UK deploys autonomous vessel to detect and destroy underwater mines &nbsp;&nbsp; Engineering and Technology Magazine",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-08\n- Authors: Engineering and Technology Magazine\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMitAFBVV95cUxNT0ZXcDM1RXBnS1RYcTlXVjh1bXdWeHRJbGVsRjRKakM2YkMyLXFVZktxU25RbXlPSlZsVGFnR1cyRDFNeEduVUljc3UwZnA4T28wajVCTDBDQlQwMXN3UUtWQ3FEeWttZjZDZXFxc0h6UmVycThNd2VwdzRzRUtLYkJDRzVnRG5PbXJYMS1EZXhTOEtwczdCYzVOdm10VzNwWVVWVVcwQThKWDM0N3cteVg0a0M?oc=5",
+            "source_excerpt": "UK deploys autonomous vessel to detect and destroy underwater mines &nbsp;&nbsp; Engineering and Technology Magazine",
+            "short_summary": "The UK has deployed an autonomous vessel designed to detect and destroy underwater mines. This unmanned system aims to enhance naval safety and operational efficiency. The technology reduces risks to human divers and crewed ships. The initiative reflects advancements in maritime defense automation."
+          }
+        },
+        {
+          "item_id": "5ab40e8d64407788b05c33a7f742c1cafcc84daa09e73558a367689aa6f88226",
+          "source": "아시아경제",
+          "source_id": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1VQzlsUE5kc3RDdXd2bjNidnVkakhZU243U1ZWSXR4azlaeTFyQ3pEMnhOTGdUWVAyRTBvMUF4QmNxb2xHc1RVWklZeDNlM3M1S3QyTXA0VUM3Y1ZnVXR2d0syTVg?oc=5",
+          "item_type": "news_article",
+          "title": "HD Hyundai Avikus Receives World's First Type Approval for Universal Autonomous Navigation System",
+          "authors_or_author": [
+            "아시아경제"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1VQzlsUE5kc3RDdXd2bjNidnVkakhZU243U1ZWSXR4azlaeTFyQ3pEMnhOTGdUWVAyRTBvMUF4QmNxb2xHc1RVWklZeDNlM3M1S3QyTXA0VUM3Y1ZnVXR2d0syTVg?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 10.0,
+          "abstract_or_body": "HD Hyundai Avikus Receives World's First Type Approval for Universal Autonomous Navigation System &nbsp;&nbsp; 아시아경제",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: 아시아경제\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiZEFVX3lxTE1VQzlsUE5kc3RDdXd2bjNidnVkakhZU243U1ZWSXR4azlaeTFyQ3pEMnhOTGdUWVAyRTBvMUF4QmNxb2xHc1RVWklZeDNlM3M1S3QyTXA0VUM3Y1ZnVXR2d0syTVg?oc=5",
+            "source_excerpt": "HD Hyundai Avikus Receives World's First Type Approval for Universal Autonomous Navigation System &nbsp;&nbsp; 아시아경제",
+            "short_summary": "HD Hyundai Avikus received the world’s first type approval for a universal autonomous navigation system on April 7, 2026. The certification, granted by a classification society, validates the system’s compliance with international maritime safety standards. This approval allows the technology to be installed on various vessel types without additional testing. The system aims to enhance autonomous shipping operations globally."
+          }
+        },
+        {
+          "item_id": "3f7cb6cbc361b9798662d97afdf94146bfa909da58adecfcfbb152ff8d49d0fb",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7152615755",
+          "item_type": "paper",
+          "title": "VAK-Former: Swin-L based Mask2Former for Maritime Semantic Segmentation",
+          "authors_or_author": [
+            "Payal Mittal",
+            "Khagendra Saini",
+            "Anirudh Phophalia",
+            "Vaani Mehta"
+          ],
+          "published_at": "2026-04-09",
+          "url": "https://doi.org/10.5281/zenodo.19482302",
+          "doi": "10.5281/zenodo.19482302",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 8.5,
+          "abstract_or_body": "This is the first official release of VAK-Former, a Swin-L based Mask2Former-style semantic segmentation framework designed for autonomous inspection of Unmanned Surface Vessels (USVs) in maritime environments. This release corresponds to the version of the code used in our manuscript: \"A Transformer-Based Semantic Segmentation Framework for Autonomous Inspection of Unmanned Surface Vessels\" (submitted to The Visual Computer). Key Features: Mask2Former-style transformer architecture Swin-Large hierarchical vision transformer backbone Multi-scale pixel decoder with deformable attention Query-based mask classification framework Optimized for maritime semantic segmentation (LaRS dataset) Dataset: Experiments conducted on the LaRS (Lakes, Rivers and Seas) Maritime Dataset Dataset must be obtained from original authors (see README) Reproducibility: Includes configuration files, training pipeline, and evaluation scripts Designed for reproducible research using MMSegmentation framework Environment: Python 3.8 PyTorch 2.1.2 MMSegmentation (OpenMMLab) Note: This release is archived via Zenodo to ensure long-term accessibility and reproducibility. A DOI is assigned for citation purposes. If you use this work, please cite the repository and the associated manuscript.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-09\n- Authors: Payal Mittal, Khagendra Saini, Anirudh Phophalia, Vaani Mehta\n- DOI: 10.5281/zenodo.19482302\n- Link: https://doi.org/10.5281/zenodo.19482302",
+            "source_excerpt": "This is the first official release of VAK-Former, a Swin-L based Mask2Former-style semantic segmentation framework designed for autonomous inspection of Unmanned Surface Vessels (USVs) in maritime environments. This release corresponds to the version of the code used in our manuscript: \"A Transformer-Based Semantic Segmentation Framework for Autonomous Inspection of Unmanned Surface Vessels\" (submitted to The Visual Computer). Key Features: Mask2Former-style transformer architecture Swin-Large hierarchical vision transformer backbone Multi-scale pixel decoder with deformable attention Query-based mask classification framework Optimized for maritime semantic segmentation (LaRS dataset) Dataset: Experiments conducted on the LaRS (Lakes, Rivers and Seas) Maritime Dataset Dataset must be obtained from original authors (see README) Reproducibility: Includes configuration files, training pipeline, and evaluation scripts Designed for reproducible research using MMSegmentation framework Environment: Python 3.8 PyTorch 2.1.2 MMSegmentation (OpenMMLab) Note: This release is archived via Zenodo to ensure long-term accessibility and reproducibility. A DOI is assigned for citation purposes. If you use this work, please cite the repository and the associated manuscript.",
+            "short_summary": "VAK-Former is a semantic segmentation framework for autonomous Unmanned Surface Vessels (USVs) in maritime settings, using a Swin-L based Mask2Former architecture. It features a hierarchical vision transformer backbone, multi-scale pixel decoding, and query-based mask classification, optimized for the LaRS maritime dataset. The release includes reproducible training and evaluation scripts built on MMSegmentation, PyTorch 2.1.2, and Python 3.8. The code and associated manuscript are archived on Zenodo for long-term accessibility."
+          }
+        },
+        {
+          "item_id": "ece67e022a1b5906fc68b2bf931a66a1bc7128d06760e5ace2e686b8106f0510",
+          "source": "PressReader",
+          "source_id": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYkw4NWVGa2VIdmdrSHl4aGpQWDZFbEI1bUJ6RW9FOXBzWHZ4Y1RmekdtQTctM2Z4eEc0WjhaNWZGWk5QRGdLaV9FQjVtcHZ3eXR6UGltZ2VwTmxySjV0clpyRGtjVXlsOTFQcEVjZk1tRzh6V2VlWDROQkR5S2llbXdiNjVWVVlHQXN4ZXJ2N0E2Zw?oc=5",
+          "item_type": "news_article",
+          "title": "Avikus wins certificat­ion for autonomous navigation",
+          "authors_or_author": [
+            "PressReader"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYkw4NWVGa2VIdmdrSHl4aGpQWDZFbEI1bUJ6RW9FOXBzWHZ4Y1RmekdtQTctM2Z4eEc0WjhaNWZGWk5QRGdLaV9FQjVtcHZ3eXR6UGltZ2VwTmxySjV0clpyRGtjVXlsOTFQcEVjZk1tRzh6V2VlWDROQkR5S2llbXdiNjVWVVlHQXN4ZXJ2N0E2Zw?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 8.5,
+          "abstract_or_body": "Avikus wins certificat­ion for autonomous navigation &nbsp;&nbsp; PressReader",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: PressReader\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMikgFBVV95cUxPYkw4NWVGa2VIdmdrSHl4aGpQWDZFbEI1bUJ6RW9FOXBzWHZ4Y1RmekdtQTctM2Z4eEc0WjhaNWZGWk5QRGdLaV9FQjVtcHZ3eXR6UGltZ2VwTmxySjV0clpyRGtjVXlsOTFQcEVjZk1tRzh6V2VlWDROQkR5S2llbXdiNjVWVVlHQXN4ZXJ2N0E2Zw?oc=5",
+            "source_excerpt": "Avikus wins certificat­ion for autonomous navigation &nbsp;&nbsp; PressReader",
+            "short_summary": "Avikus received certification for its autonomous navigation technology in April 2026. The achievement marks a milestone for the company’s self-steering systems. No further details on the certification scope or testing process were provided. The development signals progress in maritime automation."
+          }
+        },
+        {
+          "item_id": "4ea4eaccdc6013a2ac20eb287836a4f29ff9896e8d5d413fbe8ff356a0c4802c",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7150958199",
+          "item_type": "paper",
+          "title": "An Investigation on Wake Control Mechanism and Performance Optimization of the Flow-interrupting Plate in Unmanned Sailing Vessels",
+          "authors_or_author": [
+            "Zongrui Hao",
+            "Z. Ping",
+            "K. Li",
+            "J. Xu",
+            "J. Chen",
+            "Y. Wang",
+            "G. Liu"
+          ],
+          "published_at": "2026-04-06",
+          "url": "https://doi.org/10.47176/jafm.19.5.4019",
+          "doi": "10.47176/jafm.19.5.4019",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 8.5,
+          "abstract_or_body": "Unmanned sailing vessels are increasingly utilized for reconnaissance, environmental monitoring, and autonomous transportation; however, they produce considerable stern wake disturbances that diminish propulsive efficiency and degrade stealth performance. Although various strategies, such as stern rounding, fins, and hydrofoil appendages, have been studied, quantitative investigations on the effect of stern-mounted flow-interrupting plates under varying geometric configurations remain limited. To bridge this gap, this study proposes a stern flow-interrupting plate and employs a three-dimensional CFD framework combining the SST k–ω turbulence model with the VOF free-surface method, enabling detailed evaluation of wake evolution, wave height response, and hydrodynamic resistance under varying plate inclination angles and vertical distances from the waterline. Comparative analyses reveal that, with a plate inclination of 2.5° and a distance of 10 mm from the waterline, vortex diffusion is effectively suppressed, wake height is substantially reduced, and additional resistance is limited to approximately 4 N. Specifically, quantitative evaluation in defined downstream regions shows maximum wave height reductions of 20.99% in D1, 57.08% in D2, and 43.85% in D3, demonstrating consistent attenuation of wave amplitude from the near wake to the far-field region. These findings provide compelling evidence for the effectiveness of the proposed flow-interrupting plate in controlling wake formation and evolution. Furthermore, the study offers a practical reference for stealth optimization of unmanned surface vessels and yields valuable insights into the hydrodynamic design of next-generation surface vehicles, underscoring the unique potential of passive stern flow-interrupting structures for quantitative wake suppression.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-06\n- Authors: Zongrui Hao, Z. Ping, K. Li, J. Xu, J. Chen, Y. Wang, G. Liu\n- DOI: 10.47176/jafm.19.5.4019\n- Link: https://doi.org/10.47176/jafm.19.5.4019",
+            "source_excerpt": "Unmanned sailing vessels are increasingly utilized for reconnaissance, environmental monitoring, and autonomous transportation; however, they produce considerable stern wake disturbances that diminish propulsive efficiency and degrade stealth performance. Although various strategies, such as stern rounding, fins, and hydrofoil appendages, have been studied, quantitative investigations on the effect of stern-mounted flow-interrupting plates under varying geometric configurations remain limited. To bridge this gap, this study proposes a stern flow-interrupting plate and employs a three-dimensional CFD framework combining the SST k–ω turbulence model with the VOF free-surface method, enabling detailed evaluation of wake evolution, wave height response, and hydrodynamic resistance under varying plate inclination angles and vertical distances from the waterline. Comparative analyses reveal that, with a plate inclination of 2.5° and a distance of 10 mm from the waterline, vortex diffusion is effectively suppressed, wake height is substantially reduced, and additional resistance is limited to approximately 4 N. Specifically, quantitative evaluation in defined downstream regions shows maximum wave height reductions of 20.99% in D1, 57.08% in D2, and 43.85% in D3, demonstrating consistent attenuation of wave amplitude from the near wake to the far-field region. These findings provide compelling evidence for the effectiveness of the proposed flow-interrupting plate in controlling wake formation and evolution. Furthermore, the study offers a practical reference for stealth optimization of unmanned surface vessels and yields valuable insights into the hydrodynamic design of next-generation surface vehicles, underscoring the unique potential of passive stern flow-interrupting structures for quantitative wake suppression.",
+            "short_summary": "This study examines the use of stern-mounted flow-interrupting plates to reduce wake disturbances in unmanned sailing vessels, which impact efficiency and stealth. Using CFD simulations with the SST k–ω turbulence model and VOF method, researchers tested varying plate angles and positions. A 2.5° inclination and 10 mm waterline distance minimized vortex diffusion, cut wake height, and limited added resistance to ~4 N. The plate achieved wave height reductions of up to 57.08% in downstream regions, offering a practical solution for wake suppression and stealth optimization."
+          }
+        },
+        {
+          "item_id": "7e1b1cc6fbb6b18acbdae1d67684788c513b549adec6351aa45e940efc11f06e",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7153272579",
+          "item_type": "paper",
+          "title": "Optimization of a Ship-Based Three-Magnet Energy Harvester Using Wave Excitation via the Flower Pollination and Simulated Annealing Algorithms",
+          "authors_or_author": [
+            "Ho-Chih Cheng",
+            "Min-Chie Chiu",
+            "Ming-Guo Her"
+          ],
+          "published_at": "2026-04-10",
+          "url": "https://doi.org/10.3390/vibration9020026",
+          "doi": "10.3390/vibration9020026",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 8.0,
+          "abstract_or_body": "In response to the urgent requirement for sustainable power supply for deep-sea or offshore underwater sensing equipment, this work investigates autonomous power generation aboard marine vessels. The vertical vibrations induced by wave excitation at the bottom of the vessel are utilized to drive the vibration energy harvesters on the deck for power generation. In a scenario involving automatic steering, a multiplicity of magnetoelectric harvesters mounted on the deck would move vertically in response to surface wave motion, enabling continuous conversion of wave energy into electrical power. The key feature of this study is that the ship-based self-power generation system is simple to install and safe, with the vibration energy harvesters mounted above the sea surface to avoid the unpredictable underwater sea conditions. This study presents a numerical case analysis of a three-magnet energy harvester designed to generate induced electrical power under wave conditions characterized by a speed of V = 3.0 m/s, amplitude of Zo = 0.4 m, and wavelength of λ = 2.0 m. Prior to optimizing the ship-based energy harvester, the mathematical model of a three-magnet vibration system was validated against experimental data to ensure accuracy. Subsequently, a sensitivity study was performed to evaluate the influence of wave parameters (e.g., amplitude and wavelength) and the harvester’s geometric parameters on the electrical power output. To maximize power generation, the flower pollination algorithm—an efficient bio-inspired optimization method known for its robustness in global search—was integrated with the objective function defined as the root-mean-square electrical power. Simulation results indicate that the optimized harvester is capable of producing up to 0.1943 W. These findings highlight the potential of ship-based energy harvesters as a sustainable and reliable source of electrical power.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-10\n- Authors: Ho-Chih Cheng, Min-Chie Chiu, Ming-Guo Her\n- DOI: 10.3390/vibration9020026\n- Link: https://doi.org/10.3390/vibration9020026",
+            "source_excerpt": "In response to the urgent requirement for sustainable power supply for deep-sea or offshore underwater sensing equipment, this work investigates autonomous power generation aboard marine vessels. The vertical vibrations induced by wave excitation at the bottom of the vessel are utilized to drive the vibration energy harvesters on the deck for power generation. In a scenario involving automatic steering, a multiplicity of magnetoelectric harvesters mounted on the deck would move vertically in response to surface wave motion, enabling continuous conversion of wave energy into electrical power. The key feature of this study is that the ship-based self-power generation system is simple to install and safe, with the vibration energy harvesters mounted above the sea surface to avoid the unpredictable underwater sea conditions. This study presents a numerical case analysis of a three-magnet energy harvester designed to generate induced electrical power under wave conditions characterized by a speed of V = 3.0 m/s, amplitude of Zo = 0.4 m, and wavelength of λ = 2.0 m. Prior to optimizing the ship-based energy harvester, the mathematical model of a three-magnet vibration system was validated against experimental data to ensure accuracy. Subsequently, a sensitivity study was performed to evaluate the influence of wave parameters (e.g., amplitude and wavelength) and the harvester’s geometric parameters on the electrical power output. To maximize power generation, the flower pollination algorithm—an efficient bio-inspired optimization method known for its robustness in global search—was integrated with the objective function defined as the root-mean-square electrical power. Simulation results indicate that the optimized harvester is capable of producing up to 0.1943 W. These findings highlight the potential of ship-based energy harvesters as a sustainable and reliable source of electrical power.",
+            "short_summary": "This study explores a ship-based energy harvester using wave-induced vibrations to power offshore underwater sensors. A three-magnet system, mounted above sea level for safety and simplicity, converts wave motion into electrical energy. Optimization via the flower pollination and simulated annealing algorithms improved power output, achieving up to 0.1943 W under tested wave conditions (3.0 m/s speed, 0.4 m amplitude, 2.0 m wavelength). The system’s design avoids underwater risks and shows promise as a sustainable power source for marine equipment."
+          }
+        },
+        {
+          "item_id": "3997750d1e4a0d1b8929e91ef2f73b5a62c1f451dd9666b14c0c920ab13a86ee",
+          "source": "Marine Insight",
+          "source_id": "https://www.marineinsight.com/pakistan-navy-rescues-18-crew-from-distressed-ship-gold-autumn-in-north-arabian-sea/?utm_source=rss&utm_medium=rss&utm_campaign=pakistan-navy-rescues-18-crew-from-distressed-ship-gold-autumn-in-north-arabian-sea",
+          "item_type": "news_article",
+          "title": "Pakistan Navy Rescues 18 Crew From Distressed Ship GOLD AUTUMN In North Arabian Sea",
+          "authors_or_author": [
+            "Marine Insight"
+          ],
+          "published_at": "2026-04-11",
+          "url": "https://www.marineinsight.com/pakistan-navy-rescues-18-crew-from-distressed-ship-gold-autumn-in-north-arabian-sea/?utm_source=rss&utm_medium=rss&utm_campaign=pakistan-navy-rescues-18-crew-from-distressed-ship-gold-autumn-in-north-arabian-sea",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 7.5,
+          "abstract_or_body": "The vessel, MV Gold Autumn, issued an emergency alert, prompting a coordinated response from maritime authorities.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-11\n- Authors: Marine Insight\n- DOI: N/A\n- Link: https://www.marineinsight.com/pakistan-navy-rescues-18-crew-from-distressed-ship-gold-autumn-in-north-arabian-sea/?utm_source=rss&utm_medium=rss&utm_campaign=pakistan-navy-rescues-18-crew-from-distressed-ship-gold-autumn-in-north-arabian-sea",
+            "source_excerpt": "The vessel, MV Gold Autumn, issued an emergency alert, prompting a coordinated response from maritime authorities.",
+            "short_summary": "The Pakistan Navy rescued 18 crew members from the distressed ship *MV Gold Autumn* in the North Arabian Sea. The vessel sent an emergency alert, leading to a coordinated maritime response. The incident occurred on April 11, 2026. No further details on the cause of distress were provided."
+          }
+        },
+        {
+          "item_id": "bcb5d7fc7f9f08c6dac69753ccbe462847c2f07bf0591c5323dc8e4c9dee3b98",
+          "source": "Marine Link",
+          "source_id": "https://www.marinelink.com/news/pakistan-navy-evacuates-merchant-ship-537934",
+          "item_type": "news_article",
+          "title": "Pakistan Navy Evacuates Merchant Ship Crew",
+          "authors_or_author": [
+            "Marine Link"
+          ],
+          "published_at": "2026-04-10",
+          "url": "https://www.marinelink.com/news/pakistan-navy-evacuates-merchant-ship-537934",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 7.0,
+          "abstract_or_body": "Pakistan said its navy had rescued and evacuated 18 crew members of a merchant vessel operating in the North Arabian sea after a distress call.The rescued crew members of the vessel, GOLD AUTUMN, who included nationals of China, Bangladesh, Myanmar, Vietnam and Indonesia, were safely transported to",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-10\n- Authors: Marine Link\n- DOI: N/A\n- Link: https://www.marinelink.com/news/pakistan-navy-evacuates-merchant-ship-537934",
+            "source_excerpt": "Pakistan said its navy had rescued and evacuated 18 crew members of a merchant vessel operating in the North Arabian sea after a distress call.The rescued crew members of the vessel, GOLD AUTUMN, who included nationals of China, Bangladesh, Myanmar, Vietnam and Indonesia, were safely transported to",
+            "short_summary": "The Pakistan Navy rescued 18 crew members from the merchant vessel *Gold Autumn* in the North Arabian Sea following a distress call. The crew included nationals from China, Bangladesh, Myanmar, Vietnam, and Indonesia. All rescued individuals were safely evacuated and transported. The incident occurred in April 2026."
+          }
+        },
+        {
+          "item_id": "52224e8f9c117d88d4ede002aae5b49efb7189f1d1bb1ba0421721344b98b09b",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7151958438",
+          "item_type": "paper",
+          "title": "\"Lidar_Ship_detectedBY_MID360\"",
+          "authors_or_author": [
+            "Xuanchen Li"
+          ],
+          "published_at": "2026-04-08",
+          "url": "https://doi.org/10.21227/84f3-0k50",
+          "doi": "10.21227/84f3-0k50",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 7.0,
+          "abstract_or_body": "\"This 3D point cloud dataset is captured using a Livox Mid-360 LiDAR sensor, focusing on real-scene vessel targets on inland lakes, and is fully structured to be directly compatible with the OpenPCDet framework for 3D object detection tasks. It mainly consists of small fishing boats under natural water environments, with rich point cloud features including hull structures, shipboard details, and partial water surface reflections, covering diverse real-world lake navigation scenarios with variations in boat sizes, viewing angles, and environmental conditions. The dataset is organized in a standard OpenPCDet-compatible structure, with core directories including points\\/ for raw point cloud data, labels\\/ for manually annotated 3D bounding box labels, ImageSets\\/ for train\\/val split files, and gt_database\\/ for ground-truth point cloud patches optimized for data augmentation. Pre-generated pickle files (custom_dbinfos_train.pkl, custom_infos_train.pkl, custom_infos_val.pkl) store dataset metadata and sample information, eliminating the need for additional preprocessing. The data provides accurate, dense, and scene-consistent point cloud samples, supporting research on 3D object detection, point cloud segmentation, and maritime target perception for unmanned surface vehicles (USVs) and marine engineering applications.\"",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-08\n- Authors: Xuanchen Li\n- DOI: 10.21227/84f3-0k50\n- Link: https://doi.org/10.21227/84f3-0k50",
+            "source_excerpt": "\"This 3D point cloud dataset is captured using a Livox Mid-360 LiDAR sensor, focusing on real-scene vessel targets on inland lakes, and is fully structured to be directly compatible with the OpenPCDet framework for 3D object detection tasks. It mainly consists of small fishing boats under natural water environments, with rich point cloud features including hull structures, shipboard details, and partial water surface reflections, covering diverse real-world lake navigation scenarios with variations in boat sizes, viewing angles, and environmental conditions. The dataset is organized in a standard OpenPCDet-compatible structure, with core directories including points\\/ for raw point cloud data, labels\\/ for manually annotated 3D bounding box labels, ImageSets\\/ for train\\/val split files, and gt_database\\/ for ground-truth point cloud patches optimized for data augmentation. Pre-generated pickle files (custom_dbinfos_train.pkl, custom_infos_train.pkl, custom_infos_val.pkl) store dataset metadata and sample information, eliminating the need for additional preprocessing. The data provides accurate, dense, and scene-consistent point cloud samples, supporting research on 3D object detection, point cloud segmentation, and maritime target perception for unmanned surface vehicles (USVs) and marine engineering applications.\"",
+            "short_summary": "This paper presents a 3D point cloud dataset collected using a Livox Mid-360 LiDAR sensor, targeting real-world vessel detection on inland lakes. It includes small fishing boats with detailed hull structures, water reflections, and varied environmental conditions, formatted for direct use with the OpenPCDet framework. The dataset contains raw point clouds, annotated 3D bounding boxes, and pre-processed metadata for training and validation. It supports research in 3D object detection, segmentation, and maritime perception for unmanned surface vehicles."
+          }
+        },
+        {
+          "item_id": "7bff2651e9e5f956981cedea3d278333ecc1b98de618ecfa83e938c4f2a8c337",
+          "source": "crossref",
+          "source_id": "10.20944/preprints202604.0327.v1",
+          "item_type": "paper",
+          "title": "Autonomous Vehicle Front Steering Control Computation Saving",
+          "authors_or_author": [
+            "Jose Vicente Roig",
+            "Julian Salt"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://doi.org/10.20944/preprints202604.0327.v1",
+          "doi": "10.20944/preprints202604.0327.v1",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 7.0,
+          "abstract_or_body": "In the trajectory tracking of an autonomous vehicle, a lane-keeping control loop is fundamental. This involves a correct orientation of the yaw angle, which is achieved by actuating the steering. When addressing this type of control, one possible approach is to consider the design of a robust controller with various performance requirements defined by weighting functions. This procedure usually leads to a high-order controller, which entails a computational cost that burdens the processor dedicated to other high-demand control loops, such as computer vision algorithms. In this work, an interlacing procedure for the implementation of the robust controller will be introduced, which will allow a substantial reduction in computational load. The technique is applied to the state-space controller, allowing its extrapolation to MIMO controllers. Several options will be discussed, and the effectiveness and validity of the method will be evaluated through results based on real path tracking.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: Jose Vicente Roig, Julian Salt\n- DOI: 10.20944/preprints202604.0327.v1\n- Link: https://doi.org/10.20944/preprints202604.0327.v1",
+            "source_excerpt": "In the trajectory tracking of an autonomous vehicle, a lane-keeping control loop is fundamental. This involves a correct orientation of the yaw angle, which is achieved by actuating the steering. When addressing this type of control, one possible approach is to consider the design of a robust controller with various performance requirements defined by weighting functions. This procedure usually leads to a high-order controller, which entails a computational cost that burdens the processor dedicated to other high-demand control loops, such as computer vision algorithms. In this work, an interlacing procedure for the implementation of the robust controller will be introduced, which will allow a substantial reduction in computational load. The technique is applied to the state-space controller, allowing its extrapolation to MIMO controllers. Several options will be discussed, and the effectiveness and validity of the method will be evaluated through results based on real path tracking.",
+            "short_summary": "This paper explores a method to reduce computational demands in autonomous vehicle steering control. Traditional robust controllers for lane-keeping systems often result in high-order computations, straining processing resources. The authors propose an interlacing technique to simplify the controller’s implementation, lowering computational load while maintaining performance. The approach is tested on real path-tracking scenarios, demonstrating its effectiveness for state-space and MIMO controllers."
+          }
+        },
+        {
+          "item_id": "e8091fb1eb3bd6de28016e8fa453417fac821607615b6523066e93e64c9bc172",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7150953453",
+          "item_type": "paper",
+          "title": "Financial analysis of sulphur abatement measures in compliance with maritime regulation",
+          "authors_or_author": [
+            "Kazi Khaled Mahmud",
+            "Mohammed Mojahid Hossain Chowdhury",
+            "Md Mostafa Aziz Shaheen",
+            "Ziaul Haque Munim",
+            "Tien Anh Tran"
+          ],
+          "published_at": "2026-04-06",
+          "url": "https://doi.org/10.1108/mabr-03-2025-0027",
+          "doi": "10.1108/mabr-03-2025-0027",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 7.0,
+          "abstract_or_body": "Purpose The study aimed to determine the compliance cost by comparing the net present value (NPV) of two sulphur abatement options, scrubber installation and very low sulphur oil (VLSFO) switching, with the case study of 907 TEUs and 3,000 TEU feeder container vessels while operating on distinct liner shipping routes. Design/methodology/approach This study adopted quantitative methodology to compare the NPV associated with utilizing VLSFO vs. installing scrubbers to comply with IMO sulphur requirements on two case study feeder vessel scenarios. Besides, sensitivity assessment of the findings was performed under volatile fuel prices, loading factors, freight rates and scrubber costs. Findings The study outcome reveals that retrofitting the 907 TEU container vessel with a scrubber is more financially advantageous when the economic lifespan of the vessel is above 9.5 years. In contrast, VLSFO is the most economically viable option for 3,000 TEU vessels in its entire lifespan. Besides, fuel switching is a cost-effective alternative for 907 TEU vessels while the price spread between VLSFO and high sulphur fuel oil is 147 dollars or less. Research limitations/implications This study primarily evaluated shipowners’ compliance costs between fuel switching and scrubber installation. Alternative options – such as wind, solar, fuel cells, battery charging and alternative fuels – were excluded due to barriers including limited infrastructure, technological maturity, availability and high retrofitting costs. Practical implications The outcomes will enhance the shipping industry's economic performance and competitiveness, reducing costs and risks and identifying opportunities for increased efficiency, innovation and market differentiation while preparing for future regulatory requirements. Originality/value The study's novelty lies in its quantitative assessment of sulphur abatement techniques tailored to feeder container vessels, with a focus on NPV under varied operational and market scenarios. Additionally, it provides actionable insights for ship owners ahead of the Mediterranean Sea emission control area enforcement, emphasizing mixed compliance strategies.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-06\n- Authors: Kazi Khaled Mahmud, Mohammed Mojahid Hossain Chowdhury, Md Mostafa Aziz Shaheen, Ziaul Haque Munim, Tien Anh Tran\n- DOI: 10.1108/mabr-03-2025-0027\n- Link: https://doi.org/10.1108/mabr-03-2025-0027",
+            "source_excerpt": "Purpose The study aimed to determine the compliance cost by comparing the net present value (NPV) of two sulphur abatement options, scrubber installation and very low sulphur oil (VLSFO) switching, with the case study of 907 TEUs and 3,000 TEU feeder container vessels while operating on distinct liner shipping routes. Design/methodology/approach This study adopted quantitative methodology to compare the NPV associated with utilizing VLSFO vs. installing scrubbers to comply with IMO sulphur requirements on two case study feeder vessel scenarios. Besides, sensitivity assessment of the findings was performed under volatile fuel prices, loading factors, freight rates and scrubber costs. Findings The study outcome reveals that retrofitting the 907 TEU container vessel with a scrubber is more financially advantageous when the economic lifespan of the vessel is above 9.5 years. In contrast, VLSFO is the most economically viable option for 3,000 TEU vessels in its entire lifespan. Besides, fuel switching is a cost-effective alternative for 907 TEU vessels while the price spread between VLSFO and high sulphur fuel oil is 147 dollars or less. Research limitations/implications This study primarily evaluated shipowners’ compliance costs between fuel switching and scrubber installation. Alternative options – such as wind, solar, fuel cells, battery charging and alternative fuels – were excluded due to barriers including limited infrastructure, technological maturity, availability and high retrofitting costs. Practical implications The outcomes will enhance the shipping industry's economic performance and competitiveness, reducing costs and risks and identifying opportunities for increased efficiency, innovation and market differentiation while preparing for future regulatory requirements. Originality/value The study's novelty lies in its quantitative assessment of sulphur abatement techniques tailored to feeder container vessels, with a focus on NPV under varied operational and market scenarios. Additionally, it provides actionable insights for ship owners ahead of the Mediterranean Sea emission control area enforcement, emphasizing mixed compliance strategies.",
+            "short_summary": "This study compared the financial costs of two sulphur abatement methods—scrubber installation and very low sulphur oil (VLSFO) switching—for 907 TEU and 3,000 TEU feeder container vessels. Scrubbers were found to be more cost-effective for the smaller vessel if used for over 9.5 years, while VLSFO was better for the larger vessel across its entire lifespan. VLSFO also became viable for the 907 TEU vessel if the price difference with high sulphur fuel oil was $147 or less. The analysis excluded alternative fuels and technologies due to current limitations in infrastructure and cost."
+          }
+        },
+        {
+          "item_id": "8ff1d0a6951a2a55a13979af2aac19e9ca6f9995a46fc8eef43b1e989cf99dab",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7152493917",
+          "item_type": "paper",
+          "title": "Black Cruiser: A Fractal-Palindromic Vessel for Autonomous Energy Navigation (OPEN SOURCE - FREE PATENTS -OLD MISTAKED DRAFT)",
+          "authors_or_author": [
+            "Martín Fuertes Oliva"
+          ],
+          "published_at": "2026-04-09",
+          "url": "https://doi.org/10.5281/zenodo.19477327",
+          "doi": "10.5281/zenodo.19477327",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 6.5,
+          "abstract_or_body": "This article introduces the concept of the Black Cruiser, an advanced theoreticalspacecraft built upon the principles of the Black Motor and the electromagnetichypothesis of black as a palindromic fractal. The energy core is based on a selfsufficient system of symbiotic transduction that reorganizes ambient and vacuumradiation into usable thrust and control energy. The cruiser functions as a modularand scalable extension of the original concept, adapted for long-range navigation,fractal curvature manipulation, and multidimensional folding",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-09\n- Authors: Martín Fuertes Oliva\n- DOI: 10.5281/zenodo.19477327\n- Link: https://doi.org/10.5281/zenodo.19477327",
+            "source_excerpt": "This article introduces the concept of the Black Cruiser, an advanced theoreticalspacecraft built upon the principles of the Black Motor and the electromagnetichypothesis of black as a palindromic fractal. The energy core is based on a selfsufficient system of symbiotic transduction that reorganizes ambient and vacuumradiation into usable thrust and control energy. The cruiser functions as a modularand scalable extension of the original concept, adapted for long-range navigation,fractal curvature manipulation, and multidimensional folding",
+            "short_summary": "The *Black Cruiser* is a theoretical spacecraft concept combining the *Black Motor* and the electromagnetic hypothesis of black as a palindromic fractal. Its energy core uses symbiotic transduction to convert ambient and vacuum radiation into thrust and control energy. Designed for long-range navigation, it features modular scalability, fractal curvature manipulation, and multidimensional folding. The draft is open-source and patent-free."
+          }
+        },
+        {
+          "item_id": "9bd402a6ae0521479298cdff11aeea8f34badd4709e6483ffba74b7d60ee7472",
+          "source": "crossref",
+          "source_id": "10.3390/su18083653",
+          "item_type": "paper",
+          "title": "Sustainable Risk Management of Damage to Seaport Infrastructure Caused by Vessel Impacts",
+          "authors_or_author": [
+            "Teresa Abramowicz-Gerigk"
+          ],
+          "published_at": "2026-04-08",
+          "url": "https://doi.org/10.3390/su18083653",
+          "doi": "10.3390/su18083653",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 6.5,
+          "abstract_or_body": "This paper presents an analysis of the risk of failure of port structures in a modern seaport due to vessel impacts. The analysis addresses potential damage related to port maneuvers of self-maneuvering vessels and possible risk reduction options that can be applied to enhance port resilience. The proposed system model—including ship, port infrastructure, and environment—enabled the observation of both implemented and anticipated future risk reduction measures. The analysis was carried out using the ferry terminal in the large Polish Port of Gdynia as a case study. A Bayesian influence diagram—including decisions related to the implementation of risk reduction options—was used to determine the total risk associated with Ro-Pax ferry port calls. Sustainable risk management led to the implementation of a cloud-based monitoring system and, subsequently, to the design of a new terminal in line with the green port concept. The main result of the study was a quantitative assessment of the risk of damage to port infrastructure caused by ferries, related to ship maneuvering operations. A comparative assessment of the two locations demonstrated improved safety and reduced environmental pollution in the new Public Ferry Terminal. This improvement was made possible mainly by reduced spatial risk and the implementation of cold-ironing technology.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-08\n- Authors: Teresa Abramowicz-Gerigk\n- DOI: 10.3390/su18083653\n- Link: https://doi.org/10.3390/su18083653",
+            "source_excerpt": "This paper presents an analysis of the risk of failure of port structures in a modern seaport due to vessel impacts. The analysis addresses potential damage related to port maneuvers of self-maneuvering vessels and possible risk reduction options that can be applied to enhance port resilience. The proposed system model—including ship, port infrastructure, and environment—enabled the observation of both implemented and anticipated future risk reduction measures. The analysis was carried out using the ferry terminal in the large Polish Port of Gdynia as a case study. A Bayesian influence diagram—including decisions related to the implementation of risk reduction options—was used to determine the total risk associated with Ro-Pax ferry port calls. Sustainable risk management led to the implementation of a cloud-based monitoring system and, subsequently, to the design of a new terminal in line with the green port concept. The main result of the study was a quantitative assessment of the risk of damage to port infrastructure caused by ferries, related to ship maneuvering operations. A comparative assessment of the two locations demonstrated improved safety and reduced environmental pollution in the new Public Ferry Terminal. This improvement was made possible mainly by reduced spatial risk and the implementation of cold-ironing technology.",
+            "short_summary": "This study analyzes the risk of port infrastructure damage from vessel impacts, focusing on self-maneuvering ships in a modern seaport. Using the Port of Gdynia’s ferry terminal as a case study, it applied a Bayesian influence diagram to assess risks and evaluate mitigation measures. Sustainable risk management led to a cloud-based monitoring system and a redesigned terminal under the green port concept. Results showed reduced infrastructure damage risk, improved safety, and lower environmental pollution at the new terminal due to cold-ironing technology and optimized spatial risk."
+          }
+        },
+        {
+          "item_id": "44bfaceda8b44ee64687918d11a10cf2d2fd1bbf201c694608d7a72918464d24",
+          "source": "crossref",
+          "source_id": "10.15184/aqy.2026.10330",
+          "item_type": "paper",
+          "title": "The Herlaugshaugen ship burial: closing the gap between the East Anglian and Scandinavian ship burial traditions",
+          "authors_or_author": [
+            "Geir Grønnesby",
+            "Hanne Bryn",
+            "Lars Forseth",
+            "Bente Philippsen",
+            "Knut Paasche",
+            "Christian Løchsen Rødsrud",
+            "Arne Abel Stamnes"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://doi.org/10.15184/aqy.2026.10330",
+          "doi": "10.15184/aqy.2026.10330",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 6.5,
+          "abstract_or_body": "The large mound of Herlaugshaugen, on the island of Leka off the coast of Norway, has long been associated with the legendary storeroom (and burial place) of Herlaug, a pre-Viking king of the region Namdalen. Excavations at the site in 2023 recovered iron clinker nails and wooden fragments, identifying one of the earliest ship burials in Scandinavia. Here, the authors detail these findings and explore the significance of Herlaugshaugen in expanding our understanding of the region and its maritime connections in the seventh and eighth centuries AD, arguing that Leka may have been a node in a much wider network.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: Geir Grønnesby, Hanne Bryn, Lars Forseth, Bente Philippsen, Knut Paasche, Christian Løchsen Rødsrud, Arne Abel Stamnes\n- DOI: 10.15184/aqy.2026.10330\n- Link: https://doi.org/10.15184/aqy.2026.10330",
+            "source_excerpt": "The large mound of Herlaugshaugen, on the island of Leka off the coast of Norway, has long been associated with the legendary storeroom (and burial place) of Herlaug, a pre-Viking king of the region Namdalen. Excavations at the site in 2023 recovered iron clinker nails and wooden fragments, identifying one of the earliest ship burials in Scandinavia. Here, the authors detail these findings and explore the significance of Herlaugshaugen in expanding our understanding of the region and its maritime connections in the seventh and eighth centuries AD, arguing that Leka may have been a node in a much wider network.",
+            "short_summary": "The Herlaugshaugen ship burial on Norway’s Leka island, linked to the pre-Viking King Herlaug, was confirmed as one of Scandinavia’s earliest ship burials after 2023 excavations uncovered iron clinker nails and wooden fragments. These findings highlight the site’s role in bridging East Anglian and Scandinavian ship burial traditions. Researchers suggest Herlaugshaugen reflects Leka’s importance as a maritime hub in the 7th–8th centuries AD. The discovery expands knowledge of regional connections during this period."
+          }
+        },
+        {
+          "item_id": "5fb765d582dcf73122398fa92856682dfe5e9d014fa8ff06ac1f77e8be709b10",
+          "source": "crossref",
+          "source_id": "10.25259/jksus_952_2025",
+          "item_type": "paper",
+          "title": "Fermat polynomial-based machine learning algorithm for a few non-linear ship roll damping models arising in ship dynamics",
+          "authors_or_author": [
+            "S. Krithikka",
+            "G. Hariharan",
+            "H. Jafari"
+          ],
+          "published_at": "2026-04-06",
+          "url": "https://doi.org/10.25259/jksus_952_2025",
+          "doi": "10.25259/jksus_952_2025",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 6.5,
+          "abstract_or_body": "Roll damping significantly influences ship dynamical models, playing a key role in predicting vessel behavior. Recently, in [Ocean Engineering 264 (2022) 112390] discussed the study, which considers a floating production storage and offloading (FPSO) tank model and a barge-like vessel model that consists of two spherical tanks, each governed by different restoring moments and damping coefficients to capture their unique dynamic behaviors. The Lucas wavelet method, along with the multi-layer perceptron approach, has been used for parameter estimations to the observed model. In this study, a machine-learning-based model—multi layer perceptron (MLP)—is employed to predict the roll angle of the ship by incorporating both the restoring moments and damping coefficients results obtained using the fermat polynomial method (FPM). The non-linear differential equations are transformed into simple algebraic equations by considering appropriate collocation points by utilizing derivatives of operational matrices. Accuracy and effectiveness of the proposed FPM-based approximation are validated using experimental data from frozen cargo conditions and validated with the homotopy perturbation method (HPM) results. The obtained solution is compared with a few numerical methods and experimental results. However, the FPM solutions are easy to investigate, straightforward, and convenient algorithms for solving differential equations that are non-linear and arise in ship dynamics.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-06\n- Authors: S. Krithikka, G. Hariharan, H. Jafari\n- DOI: 10.25259/jksus_952_2025\n- Link: https://doi.org/10.25259/jksus_952_2025",
+            "source_excerpt": "Roll damping significantly influences ship dynamical models, playing a key role in predicting vessel behavior. Recently, in [Ocean Engineering 264 (2022) 112390] discussed the study, which considers a floating production storage and offloading (FPSO) tank model and a barge-like vessel model that consists of two spherical tanks, each governed by different restoring moments and damping coefficients to capture their unique dynamic behaviors. The Lucas wavelet method, along with the multi-layer perceptron approach, has been used for parameter estimations to the observed model. In this study, a machine-learning-based model—multi layer perceptron (MLP)—is employed to predict the roll angle of the ship by incorporating both the restoring moments and damping coefficients results obtained using the fermat polynomial method (FPM). The non-linear differential equations are transformed into simple algebraic equations by considering appropriate collocation points by utilizing derivatives of operational matrices. Accuracy and effectiveness of the proposed FPM-based approximation are validated using experimental data from frozen cargo conditions and validated with the homotopy perturbation method (HPM) results. The obtained solution is compared with a few numerical methods and experimental results. However, the FPM solutions are easy to investigate, straightforward, and convenient algorithms for solving differential equations that are non-linear and arise in ship dynamics.",
+            "short_summary": "This study introduces a machine-learning model using Fermat polynomial methods (FPM) to predict ship roll angles by solving non-linear differential equations in ship dynamics. The approach transforms complex equations into algebraic forms and incorporates restoring moments and damping coefficients for FPSO and barge-like vessel models. Accuracy was validated against experimental data and the homotopy perturbation method (HPM), showing FPM as a simpler and effective alternative. Results were compared with numerical methods and real-world observations."
+          }
+        },
+        {
+          "item_id": "552bae0d7161dc06eb1bb3450e572e6824b5d2f3bc2dbeccba8211f202617f1f",
+          "source": "Marine Insight",
+          "source_id": "https://www.marineinsight.com/amsa-bans-liberia-flagged-ship-from-australian-ports-after-7-months-of-unpaid-wages-crew-exploitation/?utm_source=rss&utm_medium=rss&utm_campaign=amsa-bans-liberia-flagged-ship-from-australian-ports-after-7-months-of-unpaid-wages-crew-exploitation",
+          "item_type": "news_article",
+          "title": "AMSA Bans Liberia-Flagged Ship from Australian Ports After 7 Months Of Unpaid Wages & Crew Exploitation",
+          "authors_or_author": [
+            "Marine Insight"
+          ],
+          "published_at": "2026-04-10",
+          "url": "https://www.marineinsight.com/amsa-bans-liberia-flagged-ship-from-australian-ports-after-7-months-of-unpaid-wages-crew-exploitation/?utm_source=rss&utm_medium=rss&utm_campaign=amsa-bans-liberia-flagged-ship-from-australian-ports-after-7-months-of-unpaid-wages-crew-exploitation",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 6.0,
+          "abstract_or_body": "AMSA boarded the Liberia-flagged vessel BBG Wuzhou when it docked in Newcastle and conducted a comprehensive inspection.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-10\n- Authors: Marine Insight\n- DOI: N/A\n- Link: https://www.marineinsight.com/amsa-bans-liberia-flagged-ship-from-australian-ports-after-7-months-of-unpaid-wages-crew-exploitation/?utm_source=rss&utm_medium=rss&utm_campaign=amsa-bans-liberia-flagged-ship-from-australian-ports-after-7-months-of-unpaid-wages-crew-exploitation",
+            "source_excerpt": "AMSA boarded the Liberia-flagged vessel BBG Wuzhou when it docked in Newcastle and conducted a comprehensive inspection.",
+            "short_summary": "The Australian Maritime Safety Authority (AMSA) banned the Liberia-flagged ship *BBG Wuzhou* from Australian ports after discovering seven months of unpaid wages and crew exploitation. The vessel was inspected upon docking in Newcastle, revealing these violations. The ban follows AMSA’s enforcement actions against labor abuses in the maritime industry. No further details on crew conditions or company response were provided."
+          }
+        },
+        {
+          "item_id": "7bdb54398d7769144afaa689b58ae03d99685052fa582de261a2c28201b45606",
+          "source": "crossref",
+          "source_id": "10.7753/ijcatr1501.1004",
+          "item_type": "paper",
+          "title": "Adversarial MLOps and the Protection of the Agentic Attack Surface in Distributed Autonomous AI Systems",
+          "authors_or_author": [
+            "Eria Pinyi"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://doi.org/10.7753/ijcatr1501.1004",
+          "doi": "10.7753/ijcatr1501.1004",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 6.0,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-large-latest:fallback",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: Eria Pinyi\n- DOI: 10.7753/ijcatr1501.1004\n- Link: https://doi.org/10.7753/ijcatr1501.1004",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "bc023c7e076e644d3e1102d8c6ab43cad8aac7d730629eded12f48c44b1e309b",
+          "source": "Victoria News",
+          "source_id": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSW5EX3JfWEhsN0dsbW1RWkVtRnc5d01lUV92dVR0OFA3RC13S19BRkFiTkpGR1FuSkpWTDZLRWFhMVZzTjh0TDFFU0NZQkUwNU9pQUJtVFdzTWFIQ1NtUENvSzZqYTdBNWRjWmV4anNXbmQ4Mm1XcXJiZ2xZbGpqU2t1c1ZzTUdtNHV3Q28tOXZMR1lKVEZIOW8wSVh6d2FTdER0UHpOZkd0QQ?oc=5",
+          "item_type": "news_article",
+          "title": "Company envisions autonomous ferry connecting Greater Victoria communities",
+          "authors_or_author": [
+            "Victoria News"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSW5EX3JfWEhsN0dsbW1RWkVtRnc5d01lUV92dVR0OFA3RC13S19BRkFiTkpGR1FuSkpWTDZLRWFhMVZzTjh0TDFFU0NZQkUwNU9pQUJtVFdzTWFIQ1NtUENvSzZqYTdBNWRjWmV4anNXbmQ4Mm1XcXJiZ2xZbGpqU2t1c1ZzTUdtNHV3Q28tOXZMR1lKVEZIOW8wSVh6d2FTdER0UHpOZkd0QQ?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 6.0,
+          "abstract_or_body": "Company envisions autonomous ferry connecting Greater Victoria communities &nbsp;&nbsp; Victoria News",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: Victoria News\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSW5EX3JfWEhsN0dsbW1RWkVtRnc5d01lUV92dVR0OFA3RC13S19BRkFiTkpGR1FuSkpWTDZLRWFhMVZzTjh0TDFFU0NZQkUwNU9pQUJtVFdzTWFIQ1NtUENvSzZqYTdBNWRjWmV4anNXbmQ4Mm1XcXJiZ2xZbGpqU2t1c1ZzTUdtNHV3Q28tOXZMR1lKVEZIOW8wSVh6d2FTdER0UHpOZkd0QQ?oc=5",
+            "source_excerpt": "Company envisions autonomous ferry connecting Greater Victoria communities &nbsp;&nbsp; Victoria News",
+            "short_summary": "A company plans to introduce an autonomous ferry service to connect communities in Greater Victoria by 2026. The proposed system aims to improve transportation efficiency and reduce reliance on traditional ferry routes. No specific technical details or operational timelines beyond the vision have been confirmed. The project is still in the conceptual phase."
+          }
+        },
+        {
+          "item_id": "72c1a334d8089bbf9fa8f4c8f48b1cccee2b4e2337008feac391f5053c3f741a",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7151224358",
+          "item_type": "paper",
+          "title": "A coordinated control framework for maneuvering and power management in autonomous all-electric ships",
+          "authors_or_author": [
+            "Tiewei Song",
+            "Lijun Fu",
+            "Linlin Zhong",
+            "Yaxiang Fan",
+            "Meng Zhang"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://doi.org/10.1016/j.oceaneng.2026.125392",
+          "doi": "10.1016/j.oceaneng.2026.125392",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 5.5,
+          "abstract_or_body": null,
+          "summary": {
+            "provider": "mistral:mistral-large-latest:fallback",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: Tiewei Song, Lijun Fu, Linlin Zhong, Yaxiang Fan, Meng Zhang\n- DOI: 10.1016/j.oceaneng.2026.125392\n- Link: https://doi.org/10.1016/j.oceaneng.2026.125392",
+            "source_excerpt": null,
+            "short_summary": "No abstract or body text was available, so this entry is reported from metadata only."
+          }
+        },
+        {
+          "item_id": "ce4b668620f443bac7b2b98ee9a1f39ade2eba7b50bdba5f30d0f03995ad575e",
+          "source": "shipmanagementinternational.com",
+          "source_id": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQWFFmTXpxWnJRYzFPakpHMVpLRXFEYi1ITHU5VkVYbVFtdFdmcXAwSUw0Y2U1dUJNNW1pdWR4UmNnT1lCWHdzWEhWbzB1Y1VEdUk2ZU9VczA1c2lKMnpoOFZDZzN1M1dIeG92UHZRdHdQVm9DeFNjMWN3eTNxbEVYeXdnUUhaOXkxMi1UVlJMS0JuWjNlSWtnVjN3YnQzV1o2cDUycE0zekhmc2c1UWhCRm54NkpfNVJLSjZaYWZLUU13WFRaUURVQkROSUNSc1NTaURuMkdlM3RXS3RDTF9pT1Z5Z1ktZlJYQTVsY3hqNGc1cnBMVTFrV1pqbTFNMWxBQ244bmU0a3pra0JnYU9FWUpB?oc=5",
+          "item_type": "news_article",
+          "title": "ClassNK awards world’s first MASS notation to domestic container ship ‘Genbu’ — SMI DIGITAL",
+          "authors_or_author": [
+            "shipmanagementinternational.com"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQWFFmTXpxWnJRYzFPakpHMVpLRXFEYi1ITHU5VkVYbVFtdFdmcXAwSUw0Y2U1dUJNNW1pdWR4UmNnT1lCWHdzWEhWbzB1Y1VEdUk2ZU9VczA1c2lKMnpoOFZDZzN1M1dIeG92UHZRdHdQVm9DeFNjMWN3eTNxbEVYeXdnUUhaOXkxMi1UVlJMS0JuWjNlSWtnVjN3YnQzV1o2cDUycE0zekhmc2c1UWhCRm54NkpfNVJLSjZaYWZLUU13WFRaUURVQkROSUNSc1NTaURuMkdlM3RXS3RDTF9pT1Z5Z1ktZlJYQTVsY3hqNGc1cnBMVTFrV1pqbTFNMWxBQ244bmU0a3pra0JnYU9FWUpB?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 5.5,
+          "abstract_or_body": "ClassNK awards world’s first MASS notation to domestic container ship ‘Genbu’ — SMI DIGITAL &nbsp;&nbsp; shipmanagementinternational.com",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: shipmanagementinternational.com\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMikgJBVV95cUxQWFFmTXpxWnJRYzFPakpHMVpLRXFEYi1ITHU5VkVYbVFtdFdmcXAwSUw0Y2U1dUJNNW1pdWR4UmNnT1lCWHdzWEhWbzB1Y1VEdUk2ZU9VczA1c2lKMnpoOFZDZzN1M1dIeG92UHZRdHdQVm9DeFNjMWN3eTNxbEVYeXdnUUhaOXkxMi1UVlJMS0JuWjNlSWtnVjN3YnQzV1o2cDUycE0zekhmc2c1UWhCRm54NkpfNVJLSjZaYWZLUU13WFRaUURVQkROSUNSc1NTaURuMkdlM3RXS3RDTF9pT1Z5Z1ktZlJYQTVsY3hqNGc1cnBMVTFrV1pqbTFNMWxBQ244bmU0a3pra0JnYU9FWUpB?oc=5",
+            "source_excerpt": "ClassNK awards world’s first MASS notation to domestic container ship ‘Genbu’ — SMI DIGITAL &nbsp;&nbsp; shipmanagementinternational.com",
+            "short_summary": "ClassNK granted the world’s first Maritime Autonomous Surface Ship (MASS) notation to the domestic container ship *Genbu*. The notation certifies the vessel’s compliance with autonomous shipping standards. This milestone marks progress in integrating autonomous technology into commercial maritime operations. The ship is operated by a Japanese company."
+          }
+        },
+        {
+          "item_id": "b6e8c543c376c9403c19330158d8cc338e191b79559a3c072dd1bf278da39cdd",
+          "source": "gCaptain",
+          "source_id": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRnNoang0TDg1MC1VanZiQ3FkVzBpLXl6YXU2eGVyRjg4WVBfWGl0QUxhV29qRGJLd0ZtTm1KYVQyckVBQ05aMTlNUmFwLWh5RUhSM284SWhUQUVzYmdkN0hQQl9Vc2NKVkVZakk1MWpERkpMUzYxdHdhdEI4cXYwYWNteHQyb3ZLT0xsVkFR?oc=5",
+          "item_type": "news_article",
+          "title": "Global Ship Order Book Hits 17-Year High as Tanker Orders Surge",
+          "authors_or_author": [
+            "gCaptain"
+          ],
+          "published_at": "2026-04-09",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRnNoang0TDg1MC1VanZiQ3FkVzBpLXl6YXU2eGVyRjg4WVBfWGl0QUxhV29qRGJLd0ZtTm1KYVQyckVBQ05aMTlNUmFwLWh5RUhSM284SWhUQUVzYmdkN0hQQl9Vc2NKVkVZakk1MWpERkpMUzYxdHdhdEI4cXYwYWNteHQyb3ZLT0xsVkFR?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 5.0,
+          "abstract_or_body": "Global Ship Order Book Hits 17-Year High as Tanker Orders Surge &nbsp;&nbsp; gCaptain",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-09\n- Authors: gCaptain\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMijgFBVV95cUxPRnNoang0TDg1MC1VanZiQ3FkVzBpLXl6YXU2eGVyRjg4WVBfWGl0QUxhV29qRGJLd0ZtTm1KYVQyckVBQ05aMTlNUmFwLWh5RUhSM284SWhUQUVzYmdkN0hQQl9Vc2NKVkVZakk1MWpERkpMUzYxdHdhdEI4cXYwYWNteHQyb3ZLT0xsVkFR?oc=5",
+            "source_excerpt": "Global Ship Order Book Hits 17-Year High as Tanker Orders Surge &nbsp;&nbsp; gCaptain",
+            "short_summary": "The global ship order book reached its highest level in 17 years, driven by a surge in tanker orders. This increase reflects strong demand in the shipping industry. The trend indicates growing confidence in future maritime trade. Tanker orders specifically saw significant growth."
+          }
+        },
+        {
+          "item_id": "3f2b41ff13d3b2118c9335b371d1c810e4b90ded09c90d40ae820b429b3ad36d",
+          "source": "The Defence Blog",
+          "source_id": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPNDNzUzVNWFMxdFBHWm1oVmNBc1ZLekl0YXQzdEN4WGduci1rNldWQkpHSGI3SWpaeUF6d1p4b2JkUHdMcm5VVkVCSjMxUEp2cURVaFFaWC1tWjh0ZnNaaXNUUXNlcE5CY0hVU0VGaXdQZ25HWnlBLWxkbHRMY0JidEF3RENfZ9IBiwFBVV95cUxOWGR4SDZsSnBhN2w2cFB2YjFteVFVc2RJa3oyMU8xSXBDMVVWMWJxcXhSLXM2anpUaVhjRDFxbWJocERSNnRSc3dFSlptSWY3WUREMEt6bWlYdFJDTElJcVVoaTBaMUwtLXQ1OGlrNjBWM2JwWlVHbGdNd1dfdUhCWDVDakZFV19SSWtF?oc=5",
+          "item_type": "news_article",
+          "title": "U.S. Special Forces tests FOG unmanned vessel in Spain",
+          "authors_or_author": [
+            "The Defence Blog"
+          ],
+          "published_at": "2026-04-09",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPNDNzUzVNWFMxdFBHWm1oVmNBc1ZLekl0YXQzdEN4WGduci1rNldWQkpHSGI3SWpaeUF6d1p4b2JkUHdMcm5VVkVCSjMxUEp2cURVaFFaWC1tWjh0ZnNaaXNUUXNlcE5CY0hVU0VGaXdQZ25HWnlBLWxkbHRMY0JidEF3RENfZ9IBiwFBVV95cUxOWGR4SDZsSnBhN2w2cFB2YjFteVFVc2RJa3oyMU8xSXBDMVVWMWJxcXhSLXM2anpUaVhjRDFxbWJocERSNnRSc3dFSlptSWY3WUREMEt6bWlYdFJDTElJcVVoaTBaMUwtLXQ1OGlrNjBWM2JwWlVHbGdNd1dfdUhCWDVDakZFV19SSWtF?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 5.0,
+          "abstract_or_body": "U.S. Special Forces tests FOG unmanned vessel in Spain &nbsp;&nbsp; The Defence Blog",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-09\n- Authors: The Defence Blog\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMihgFBVV95cUxPNDNzUzVNWFMxdFBHWm1oVmNBc1ZLekl0YXQzdEN4WGduci1rNldWQkpHSGI3SWpaeUF6d1p4b2JkUHdMcm5VVkVCSjMxUEp2cURVaFFaWC1tWjh0ZnNaaXNUUXNlcE5CY0hVU0VGaXdQZ25HWnlBLWxkbHRMY0JidEF3RENfZ9IBiwFBVV95cUxOWGR4SDZsSnBhN2w2cFB2YjFteVFVc2RJa3oyMU8xSXBDMVVWMWJxcXhSLXM2anpUaVhjRDFxbWJocERSNnRSc3dFSlptSWY3WUREMEt6bWlYdFJDTElJcVVoaTBaMUwtLXQ1OGlrNjBWM2JwWlVHbGdNd1dfdUhCWDVDakZFV19SSWtF?oc=5",
+            "source_excerpt": "U.S. Special Forces tests FOG unmanned vessel in Spain &nbsp;&nbsp; The Defence Blog",
+            "short_summary": "U.S. Special Forces conducted tests of the FOG unmanned vessel in Spain in April 2026. The trials focused on evaluating the vessel's capabilities for potential military applications. No specific results or operational details were disclosed in the report. The tests were documented by The Defence Blog."
+          }
+        },
+        {
+          "item_id": "f4bc8ff710b1eedc4385a381665019c7b365f956d39dc9cd2901baa5d8cd589e",
+          "source": "crossref",
+          "source_id": "10.65520/erciyesfen.1881181",
+          "item_type": "paper",
+          "title": "Design Of an Unmanned Surface Vehicle and Flow and Structural Analysis of Its Hull",
+          "authors_or_author": [
+            "İsa Ünver",
+            "Musa Demirci"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://doi.org/10.65520/erciyesfen.1881181",
+          "doi": "10.65520/erciyesfen.1881181",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 5.0,
+          "abstract_or_body": "The functionality of Unmanned Surface Vehicles (USVs) relies on sophisticated engineering processes that enhance both hydrodynamic efficiency and structural strength. This research introduces a comprehensive approach to validate the design of a distinctive 7-m-long V-type trimaran hull created in SolidWorks, using multifield analyses conducted on the ANSYS platform. The main innovation of this study is its integrated engineering strategy, which extends beyond a single discipline and directly transfers flow pressure data from a computational fluid dynamics (CFD) analysis to the structural analysis phase to replicate realistic maritime conditions. The hull was designed with a sharp-bottomed V-type trimaran configuration to minimize drag at high speeds and improve stability in rough seas, and its hydrodynamic performance was confirmed through CFD analyses. Using these validated data, static structural analyses were performed to assess the hull's resistance to external forces, employing Von Mises stress and total deformation data to create a detailed optimization guide for critical areas. Additionally, modal analysis was carried out to investigate the effects of environmental vibrations on structural behavior. In line with national defense industry objectives, this study provides an innovative framework for future USV development projects by integrating design, fluid dynamics, and structural mechanics into a unified process.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: İsa Ünver, Musa Demirci\n- DOI: 10.65520/erciyesfen.1881181\n- Link: https://doi.org/10.65520/erciyesfen.1881181",
+            "source_excerpt": "The functionality of Unmanned Surface Vehicles (USVs) relies on sophisticated engineering processes that enhance both hydrodynamic efficiency and structural strength. This research introduces a comprehensive approach to validate the design of a distinctive 7-m-long V-type trimaran hull created in SolidWorks, using multifield analyses conducted on the ANSYS platform. The main innovation of this study is its integrated engineering strategy, which extends beyond a single discipline and directly transfers flow pressure data from a computational fluid dynamics (CFD) analysis to the structural analysis phase to replicate realistic maritime conditions. The hull was designed with a sharp-bottomed V-type trimaran configuration to minimize drag at high speeds and improve stability in rough seas, and its hydrodynamic performance was confirmed through CFD analyses. Using these validated data, static structural analyses were performed to assess the hull's resistance to external forces, employing Von Mises stress and total deformation data to create a detailed optimization guide for critical areas. Additionally, modal analysis was carried out to investigate the effects of environmental vibrations on structural behavior. In line with national defense industry objectives, this study provides an innovative framework for future USV development projects by integrating design, fluid dynamics, and structural mechanics into a unified process.",
+            "short_summary": "This study presents the design and analysis of a 7-meter V-type trimaran hull for an Unmanned Surface Vehicle (USV) using SolidWorks and ANSYS. The research combines computational fluid dynamics (CFD) and structural analysis to assess hydrodynamic efficiency, stability, and resistance to external forces, including stress and deformation. Modal analysis was also conducted to evaluate the hull’s response to environmental vibrations. The integrated approach aims to optimize USV performance for high-speed and rough sea conditions while supporting defense industry applications."
+          }
+        },
+        {
+          "item_id": "338ef202e7a656310e5cbda6d2e31b6af2b53b3bb7c894a35f5292f146d13dfa",
+          "source": "The Defense Post",
+          "source_id": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBDU0pwZk5LWWg0MHMzRnV6VnZNVV9HbDV2NmNrUlA2M0FrZDhtOTVIWEtVZ1NLUnRXdmI1R0ludEtrZm8ybW5Ob2Y0b3dUanR0YjlOMDRXTUVTTGZScUJGOHFNUmJEdHBlaExhd2dZQzFUZW1uNkNaadIBfkFVX3lxTFB1SDdLdC1fdHJUWHU0Tkk3MWhXNHBsaS1MOWpCXzJzQ05RMDlVeUJwRTctVzhPQmpBbFlGblh4aGZXRm5MRHBYc1FnQ1U4eC1zOVhyN3dkcTJZYXhkUTU0aFgzSXl2bWRncF9GdzJOeXR0RlJxYnlNWXBIcl9IQQ?oc=5",
+          "item_type": "news_article",
+          "title": "Royal Navy Receives Second Unmanned Minehunting Vessel",
+          "authors_or_author": [
+            "The Defense Post"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBDU0pwZk5LWWg0MHMzRnV6VnZNVV9HbDV2NmNrUlA2M0FrZDhtOTVIWEtVZ1NLUnRXdmI1R0ludEtrZm8ybW5Ob2Y0b3dUanR0YjlOMDRXTUVTTGZScUJGOHFNUmJEdHBlaExhd2dZQzFUZW1uNkNaadIBfkFVX3lxTFB1SDdLdC1fdHJUWHU0Tkk3MWhXNHBsaS1MOWpCXzJzQ05RMDlVeUJwRTctVzhPQmpBbFlGblh4aGZXRm5MRHBYc1FnQ1U4eC1zOVhyN3dkcTJZYXhkUTU0aFgzSXl2bWRncF9GdzJOeXR0RlJxYnlNWXBIcl9IQQ?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 5.0,
+          "abstract_or_body": "Royal Navy Receives Second Unmanned Minehunting Vessel &nbsp;&nbsp; The Defense Post",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: The Defense Post\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMieEFVX3lxTFBDU0pwZk5LWWg0MHMzRnV6VnZNVV9HbDV2NmNrUlA2M0FrZDhtOTVIWEtVZ1NLUnRXdmI1R0ludEtrZm8ybW5Ob2Y0b3dUanR0YjlOMDRXTUVTTGZScUJGOHFNUmJEdHBlaExhd2dZQzFUZW1uNkNaadIBfkFVX3lxTFB1SDdLdC1fdHJUWHU0Tkk3MWhXNHBsaS1MOWpCXzJzQ05RMDlVeUJwRTctVzhPQmpBbFlGblh4aGZXRm5MRHBYc1FnQ1U4eC1zOVhyN3dkcTJZYXhkUTU0aFgzSXl2bWRncF9GdzJOeXR0RlJxYnlNWXBIcl9IQQ?oc=5",
+            "source_excerpt": "Royal Navy Receives Second Unmanned Minehunting Vessel &nbsp;&nbsp; The Defense Post",
+            "short_summary": "The Royal Navy has taken delivery of its second unmanned minehunting vessel. This addition strengthens its fleet of autonomous systems designed for detecting and neutralizing naval mines. The vessel is part of a broader effort to modernize mine countermeasure capabilities. No specific operational details or timelines were provided in the announcement."
+          }
+        },
+        {
+          "item_id": "f2b76c439c897ef2734659b5f663693ba607d835af9721476cd1394ab2e075b0",
+          "source": "crossref",
+          "source_id": "10.36989/didaktik.v12i02.12430",
+          "item_type": "paper",
+          "title": "OPTIMALISASI PELAKSANAAN BUNKERING SHIP TO SHIP BERDASAR STANDAR STS TRANSFER CHECKLIST PT. PERTAMINA INTERNATIONAL SHIPPING",
+          "authors_or_author": [
+            "Ananda Kevin",
+            "Achmad Ali Mashartanto",
+            "Bayu Yudho Baskoro",
+            "Dody Efrianto",
+            "Pesta Fery A"
+          ],
+          "published_at": "2026-04-06",
+          "url": "https://doi.org/10.36989/didaktik.v12i02.12430",
+          "doi": "10.36989/didaktik.v12i02.12430",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 5.0,
+          "abstract_or_body": "STS bunkering is the activity of supplying ship fuel through the ship-to-ship method. This study aims to optimize the implementation of STS bunkering based on the STS transfer checklist. The research method used is a qualitative descriptive method with data collection techniques of field observation, interviews, and documentation studies. The results of the study show that the factors hindering the fulfillment of the STS transfer checklist consist of several factors, including: lack of supervision on duty, damage and lack of equipment, errors in cargo handling, cargo contamination, manual sounding measurements, cargo contamination by water, high waves, and strong winds. These factors are interrelated and cause disruption to the fulfillment of the STS transfer checklist standards. Efforts made to overcome these obstacles include conducting routine STS drills, maintaining and providing equipment spare parts, implementing cargo circulation methods, conducting multiple soundings, monitoring cargo, and taking weather conditions into account before bunkering. With the implementation of these efforts, it is hoped that STS bunkering can be carried out optimally based on STS transfer checklist standards.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-06\n- Authors: Ananda Kevin, Achmad Ali Mashartanto, Bayu Yudho Baskoro, Dody Efrianto, Pesta Fery A\n- DOI: 10.36989/didaktik.v12i02.12430\n- Link: https://doi.org/10.36989/didaktik.v12i02.12430",
+            "source_excerpt": "STS bunkering is the activity of supplying ship fuel through the ship-to-ship method. This study aims to optimize the implementation of STS bunkering based on the STS transfer checklist. The research method used is a qualitative descriptive method with data collection techniques of field observation, interviews, and documentation studies. The results of the study show that the factors hindering the fulfillment of the STS transfer checklist consist of several factors, including: lack of supervision on duty, damage and lack of equipment, errors in cargo handling, cargo contamination, manual sounding measurements, cargo contamination by water, high waves, and strong winds. These factors are interrelated and cause disruption to the fulfillment of the STS transfer checklist standards. Efforts made to overcome these obstacles include conducting routine STS drills, maintaining and providing equipment spare parts, implementing cargo circulation methods, conducting multiple soundings, monitoring cargo, and taking weather conditions into account before bunkering. With the implementation of these efforts, it is hoped that STS bunkering can be carried out optimally based on STS transfer checklist standards.",
+            "short_summary": "This study examines the optimization of ship-to-ship (STS) bunkering using the STS transfer checklist. Researchers identified key obstacles, such as poor supervision, equipment issues, cargo handling errors, contamination, manual measurements, and adverse weather. Solutions proposed include regular drills, equipment maintenance, improved cargo monitoring, and weather assessments. Implementing these measures aims to enhance compliance with STS bunkering standards."
+          }
+        },
+        {
+          "item_id": "451e5d1045db3cd3e2acf3c83e9ed74f154224a9f7fc04469b9058e67b18ed0d",
+          "source": "crossref",
+          "source_id": "10.1007/s10514-026-10251-w",
+          "item_type": "paper",
+          "title": "Multi-robot navigation in social mini-games: definitions, taxonomy, and algorithms",
+          "authors_or_author": [
+            "Rohan Chandra",
+            "Shubham Singh",
+            "Wenhao Luo",
+            "Katia Sycara"
+          ],
+          "published_at": "2026-06-01",
+          "url": "https://doi.org/10.1007/s10514-026-10251-w",
+          "doi": "10.1007/s10514-026-10251-w",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.5,
+          "abstract_or_body": "Abstract                                          The “Last Mile Challenge” has long been considered an important, yet unsolved, challenge for autonomous vehicles, public service robots, and delivery robots. A central issue in this challenge is the ability of robots to navigate constrained and cluttered environments that have high agency (e.g., doorways, hallways, corridor intersections), often while competing for space with other robots and humans. We refer to these environments as “Social Mini-Games” (SMGs). Traditional navigation approaches designed for MRN do not perform well in SMGs, which has led to focused research on dedicated SMG solvers. However, publications on SMG navigation research make different assumptions (on centralized versus decentralized, observability, communication, cooperation, etc.), and have different objective functions (safety versus liveness). These assumptions and objectives are sometimes implicitly assumed or described informally. This makes it difficult to establish appropriate baselines for comparison in research papers, as well as making it difficult for practitioners to find the papers relevant to their concrete application. Such ad-hoc representation of the field also presents a barrier to new researchers wanting to start research in this area. SMG navigation research requires its own taxonomy, definitions, and evaluation protocols to guide effective research moving forward. This survey is the first to catalog SMG solvers using a well-defined and unified taxonomy and to classify existing methods accordingly. It also discusses the essential properties of SMG solvers, defines what SMGs are and how they appear in practice, outlines how to evaluate SMG solvers, and highlights the differences between SMG solvers and general navigation systems. The survey concludes with an overview of future directions and open challenges in the field. Our project is open-sourced at                                              https://socialminigames.github.io/                                            .",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-06-01\n- Authors: Rohan Chandra, Shubham Singh, Wenhao Luo, Katia Sycara\n- DOI: 10.1007/s10514-026-10251-w\n- Link: https://doi.org/10.1007/s10514-026-10251-w",
+            "source_excerpt": "Abstract The “Last Mile Challenge” has long been considered an important, yet unsolved, challenge for autonomous vehicles, public service robots, and delivery robots. A central issue in this challenge is the ability of robots to navigate constrained and cluttered environments that have high agency (e.g., doorways, hallways, corridor intersections), often while competing for space with other robots and humans. We refer to these environments as “Social Mini-Games” (SMGs). Traditional navigation approaches designed for MRN do not perform well in SMGs, which has led to focused research on dedicated SMG solvers. However, publications on SMG navigation research make different assumptions (on centralized versus decentralized, observability, communication, cooperation, etc.), and have different objective functions (safety versus liveness). These assumptions and objectives are sometimes implicitly assumed or described informally. This makes it difficult to establish appropriate baselines for comparison in research papers, as well as making it difficult for practitioners to find the papers relevant to their concrete application. Such ad-hoc representation of the field also presents a barrier to new researchers wanting to start research in this area. SMG navigation research requires its own taxonomy, definitions, and evaluation protocols to guide effective research moving forward. This survey is the first to catalog SMG solvers using a well-defined and unified taxonomy and to classify existing methods accordingly. It also discusses the essential properties of SMG solvers, defines what SMGs are and how they appear in practice, outlines how to evaluate SMG solvers, and highlights the differences between SMG solvers and general navigation systems. The survey concludes with an overview of future directions and open challenges in the field. Our project is open-sourced at https://socialminigames.github.io/ .",
+            "short_summary": "This paper introduces \"Social Mini-Games\" (SMGs) as constrained, high-agency environments (e.g., doorways, hallways) where robots must navigate while interacting with humans and other robots. It highlights inconsistencies in assumptions, objectives, and evaluation methods across existing SMG navigation research, creating challenges for comparisons and practical applications. The authors propose a unified taxonomy and definitions to standardize the field, classify current methods, and outline evaluation protocols. The work aims to guide future research and lower barriers for new researchers in multi-robot navigation."
+          }
+        },
+        {
+          "item_id": "5378524ae7eac5dbb5f1055b3579a1451ff7fad00eb0fad73ba3982c76dd7e5e",
+          "source": "Marine Insight",
+          "source_id": "https://www.marineinsight.com/fire-on-south-korean-navy-submarine-kills-worker-during-maintenance-at-hyundai-shipyard/?utm_source=rss&utm_medium=rss&utm_campaign=fire-on-south-korean-navy-submarine-kills-worker-during-maintenance-at-hyundai-shipyard",
+          "item_type": "news_article",
+          "title": "Fire On South Korean Navy Submarine Kills Worker During Maintenance At Hyundai Shipyard",
+          "authors_or_author": [
+            "Marine Insight"
+          ],
+          "published_at": "2026-04-11",
+          "url": "https://www.marineinsight.com/fire-on-south-korean-navy-submarine-kills-worker-during-maintenance-at-hyundai-shipyard/?utm_source=rss&utm_medium=rss&utm_campaign=fire-on-south-korean-navy-submarine-kills-worker-during-maintenance-at-hyundai-shipyard",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.5,
+          "abstract_or_body": "The fire started at around 1:58 p.m. on April 9 on the Sohn Won-yil-class submarine Hong Beom-do, which was in the yard for maintenance.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-11\n- Authors: Marine Insight\n- DOI: N/A\n- Link: https://www.marineinsight.com/fire-on-south-korean-navy-submarine-kills-worker-during-maintenance-at-hyundai-shipyard/?utm_source=rss&utm_medium=rss&utm_campaign=fire-on-south-korean-navy-submarine-kills-worker-during-maintenance-at-hyundai-shipyard",
+            "source_excerpt": "The fire started at around 1:58 p.m. on April 9 on the Sohn Won-yil-class submarine Hong Beom-do, which was in the yard for maintenance.",
+            "short_summary": "A fire broke out on April 9 at 1:58 p.m. during maintenance work on the South Korean Navy submarine *Hong Beom-do*, a Sohn Won-yil-class vessel, at a Hyundai shipyard. The incident resulted in the death of a worker. The submarine was undergoing routine maintenance at the time. No additional details on the cause or extent of the fire were provided."
+          }
+        },
+        {
+          "item_id": "54c349ce3ea348c98bfb8a091d134768861144b74016adcdcc57c137645da45f",
+          "source": "Marine Insight",
+          "source_id": "https://www.marineinsight.com/india-conducts-first-shore-to-ship-methanol-bunkering-at-kandla-port/?utm_source=rss&utm_medium=rss&utm_campaign=india-conducts-first-shore-to-ship-methanol-bunkering-at-kandla-port",
+          "item_type": "news_article",
+          "title": "India Conducts First Shore-to-Ship Methanol Bunkering At Kandla Port",
+          "authors_or_author": [
+            "Marine Insight"
+          ],
+          "published_at": "2026-04-11",
+          "url": "https://www.marineinsight.com/india-conducts-first-shore-to-ship-methanol-bunkering-at-kandla-port/?utm_source=rss&utm_medium=rss&utm_campaign=india-conducts-first-shore-to-ship-methanol-bunkering-at-kandla-port",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.5,
+          "abstract_or_body": "The trial is part of India’s plan to reduce emissions in the maritime sector and move towards net-zero by 2050.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-11\n- Authors: Marine Insight\n- DOI: N/A\n- Link: https://www.marineinsight.com/india-conducts-first-shore-to-ship-methanol-bunkering-at-kandla-port/?utm_source=rss&utm_medium=rss&utm_campaign=india-conducts-first-shore-to-ship-methanol-bunkering-at-kandla-port",
+            "source_excerpt": "The trial is part of India’s plan to reduce emissions in the maritime sector and move towards net-zero by 2050.",
+            "short_summary": "India conducted its first shore-to-ship methanol bunkering at Kandla Port as part of its maritime emissions reduction strategy. The trial supports the country’s goal of achieving net-zero emissions by 2050. This initiative aims to promote cleaner fuel alternatives in the shipping industry. The effort aligns with broader sustainability targets for the maritime sector."
+          }
+        },
+        {
+          "item_id": "e07bc7c81949f1c5eabc042df2c6e2e9d5a5e0ac6dd6021185731035a95325a0",
+          "source": "Marine Insight",
+          "source_id": "https://www.marineinsight.com/worlds-first-100-battery-electric-cruise-ship-concept-unveiled-by-meyer-werft/?utm_source=rss&utm_medium=rss&utm_campaign=worlds-first-100-battery-electric-cruise-ship-concept-unveiled-by-meyer-werft",
+          "item_type": "news_article",
+          "title": "World’s First 100% Battery-Electric Cruise Ship Concept Unveiled By MEYER WERFT",
+          "authors_or_author": [
+            "Marine Insight"
+          ],
+          "published_at": "2026-04-11",
+          "url": "https://www.marineinsight.com/worlds-first-100-battery-electric-cruise-ship-concept-unveiled-by-meyer-werft/?utm_source=rss&utm_medium=rss&utm_campaign=worlds-first-100-battery-electric-cruise-ship-concept-unveiled-by-meyer-werft",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.5,
+          "abstract_or_body": "The vessel is planned to be over 80,000 gross tonnage, around 82,000 GT, and will be able to carry 1,856 passengers.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-11\n- Authors: Marine Insight\n- DOI: N/A\n- Link: https://www.marineinsight.com/worlds-first-100-battery-electric-cruise-ship-concept-unveiled-by-meyer-werft/?utm_source=rss&utm_medium=rss&utm_campaign=worlds-first-100-battery-electric-cruise-ship-concept-unveiled-by-meyer-werft",
+            "source_excerpt": "The vessel is planned to be over 80,000 gross tonnage, around 82,000 GT, and will be able to carry 1,856 passengers.",
+            "short_summary": "MEYER WERFT unveiled the world’s first 100% battery-electric cruise ship concept. The vessel will measure over 80,000 gross tonnage and accommodate 1,856 passengers. No fossil fuels will be used for propulsion or onboard operations. The design aims to set a new standard for sustainable maritime travel."
+          }
+        },
+        {
+          "item_id": "a34a47938ef9b5086b3c2689c943b027c827c24a85be353698bd839a2133116f",
+          "source": "Marine Insight",
+          "source_id": "https://www.marineinsight.com/eu-rejects-trumps-joint-venture-with-iran-to-introduce-pay-to-pass-system-in-strait-of-hormuz-calls-it-illegal/?utm_source=rss&utm_medium=rss&utm_campaign=eu-rejects-trumps-joint-venture-with-iran-to-introduce-pay-to-pass-system-in-strait-of-hormuz-calls-it-illegal",
+          "item_type": "news_article",
+          "title": "EU Rejects Trump’s “Joint Venture” With Iran To Introduce Pay-To-Pass System In Strait Of Hormuz, Calls It Illegal",
+          "authors_or_author": [
+            "Marine Insight"
+          ],
+          "published_at": "2026-04-11",
+          "url": "https://www.marineinsight.com/eu-rejects-trumps-joint-venture-with-iran-to-introduce-pay-to-pass-system-in-strait-of-hormuz-calls-it-illegal/?utm_source=rss&utm_medium=rss&utm_campaign=eu-rejects-trumps-joint-venture-with-iran-to-introduce-pay-to-pass-system-in-strait-of-hormuz-calls-it-illegal",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.0,
+          "abstract_or_body": "Ship movement through the strait is still limited. Data shows that only a few vessels have managed to pass in recent days.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-11\n- Authors: Marine Insight\n- DOI: N/A\n- Link: https://www.marineinsight.com/eu-rejects-trumps-joint-venture-with-iran-to-introduce-pay-to-pass-system-in-strait-of-hormuz-calls-it-illegal/?utm_source=rss&utm_medium=rss&utm_campaign=eu-rejects-trumps-joint-venture-with-iran-to-introduce-pay-to-pass-system-in-strait-of-hormuz-calls-it-illegal",
+            "source_excerpt": "Ship movement through the strait is still limited. Data shows that only a few vessels have managed to pass in recent days.",
+            "short_summary": "The EU rejected a proposal by Trump for a \"joint venture\" with Iran to implement a pay-to-pass system in the Strait of Hormuz, declaring it illegal. Ship traffic through the strait remains restricted, with only a few vessels successfully navigating the area in recent days. The article highlights concerns over the legality and impact of the proposed system. No further details on vessel numbers or enforcement were provided."
+          }
+        },
+        {
+          "item_id": "ca2839c1bd774c084e5cfdbddb0ea25382d833c65ec96a409925c833ba30ef04",
+          "source": "Marine Insight",
+          "source_id": "https://www.marineinsight.com/indian-navy-launches-emergency-mission-to-rescue-18-stranded-ships-in-persian-gulf/?utm_source=rss&utm_medium=rss&utm_campaign=indian-navy-launches-emergency-mission-to-rescue-18-stranded-ships-in-persian-gulf",
+          "item_type": "news_article",
+          "title": "Indian Navy Launches Emergency Mission To Rescue 18 Stranded Ships In Persian Gulf",
+          "authors_or_author": [
+            "Marine Insight"
+          ],
+          "published_at": "2026-04-11",
+          "url": "https://www.marineinsight.com/indian-navy-launches-emergency-mission-to-rescue-18-stranded-ships-in-persian-gulf/?utm_source=rss&utm_medium=rss&utm_campaign=indian-navy-launches-emergency-mission-to-rescue-18-stranded-ships-in-persian-gulf",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.0,
+          "abstract_or_body": "The Indian Navy and the multi-ministry task force are evacuating 18 ships stranded in the Strait of Hormuz, carrying cargo bound for India.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-11\n- Authors: Marine Insight\n- DOI: N/A\n- Link: https://www.marineinsight.com/indian-navy-launches-emergency-mission-to-rescue-18-stranded-ships-in-persian-gulf/?utm_source=rss&utm_medium=rss&utm_campaign=indian-navy-launches-emergency-mission-to-rescue-18-stranded-ships-in-persian-gulf",
+            "source_excerpt": "The Indian Navy and the multi-ministry task force are evacuating 18 ships stranded in the Strait of Hormuz, carrying cargo bound for India.",
+            "short_summary": "The Indian Navy and a multi-ministry task force launched an emergency mission to rescue 18 ships stranded in the Strait of Hormuz. These vessels were carrying cargo destined for India. The operation aims to evacuate the ships from the Persian Gulf region. The mission was initiated on April 11, 2026."
+          }
+        },
+        {
+          "item_id": "1208bcf8b6dc6ddda8047174f1250f071f8af335f3dc290cfc3a349f3a5fed1d",
+          "source": "Marine Insight",
+          "source_id": "https://www.marineinsight.com/oil-spill-at-port-of-antwerp-halts-shipping-operations-spreads-to-natural-wetlands/?utm_source=rss&utm_medium=rss&utm_campaign=oil-spill-at-port-of-antwerp-halts-shipping-operations-spreads-to-natural-wetlands",
+          "item_type": "news_article",
+          "title": "Oil Spill At Port Of Antwerp Halts Shipping Operations & Spreads To Doelpolder Wetlands",
+          "authors_or_author": [
+            "Marine Insight"
+          ],
+          "published_at": "2026-04-11",
+          "url": "https://www.marineinsight.com/oil-spill-at-port-of-antwerp-halts-shipping-operations-spreads-to-natural-wetlands/?utm_source=rss&utm_medium=rss&utm_campaign=oil-spill-at-port-of-antwerp-halts-shipping-operations-spreads-to-natural-wetlands",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.0,
+          "abstract_or_body": "Shipping operations stopped at Port of Antwerp after an oil spill occurred during bunkering operation of the container ship MSC Denmark VI.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-11\n- Authors: Marine Insight\n- DOI: N/A\n- Link: https://www.marineinsight.com/oil-spill-at-port-of-antwerp-halts-shipping-operations-spreads-to-natural-wetlands/?utm_source=rss&utm_medium=rss&utm_campaign=oil-spill-at-port-of-antwerp-halts-shipping-operations-spreads-to-natural-wetlands",
+            "source_excerpt": "Shipping operations stopped at Port of Antwerp after an oil spill occurred during bunkering operation of the container ship MSC Denmark VI.",
+            "short_summary": "A major oil spill at the Port of Antwerp disrupted shipping operations after occurring during a bunkering procedure on the container ship *MSC Denmark VI*. The spill spread beyond the port, reaching the nearby Doelpolder wetlands. Authorities halted all shipping activities in response to the incident. The extent of environmental impact is under assessment."
+          }
+        },
+        {
+          "item_id": "ff0c9ba35ae6ac0d70c183b8205802f8bcae8450b789caa542950b75232f3625",
+          "source": "Marine Link",
+          "source_id": "https://www.marinelink.com/news/port-tampa-bay-welcomes-container-vessel-537942",
+          "item_type": "news_article",
+          "title": "Port Tampa Bay Welcomes Container Vessel with Largest Carrying Capacity",
+          "authors_or_author": [
+            "Marine Link"
+          ],
+          "published_at": "2026-04-10",
+          "url": "https://www.marinelink.com/news/port-tampa-bay-welcomes-container-vessel-537942",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 4.0,
+          "abstract_or_body": "Port Tampa Bay welcomed a container vessel Thursday that set a new record for carrying capacity at the port. The ZIM Canada docked with 11,900 twenty-foot equivalent units (TEUs), nearly 2,000 more than any vessel previously handled at the port.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-10\n- Authors: Marine Link\n- DOI: N/A\n- Link: https://www.marinelink.com/news/port-tampa-bay-welcomes-container-vessel-537942",
+            "source_excerpt": "Port Tampa Bay welcomed a container vessel Thursday that set a new record for carrying capacity at the port. The ZIM Canada docked with 11,900 twenty-foot equivalent units (TEUs), nearly 2,000 more than any vessel previously handled at the port.",
+            "short_summary": "Port Tampa Bay set a new record by welcoming the *ZIM Canada*, a container vessel with a carrying capacity of 11,900 TEUs. This surpasses the port’s previous record by nearly 2,000 TEUs. The arrival marks the largest container ship ever handled at Port Tampa Bay. The milestone reflects the port’s growing capacity for larger vessels."
+          }
+        },
+        {
+          "item_id": "2ca87371f6e794b6cd67b195d8bb087b803a930a60db17b86ad1caaf62e56112",
+          "source": "EMSA - European Maritime Safety Agency",
+          "source_id": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOX0RxREdRSVFGSG9EeXNfOEcxdnBwVUVFNEMzSUp0c2tKTTVhZ3NBSVVVeFBfcVZVN20yUUk0MFBDdDJMLTVSWU1Da2NxYkMzMUhOX0hGbGZ6dFVyazRHMXZhYi1WdURoTWtnTWptNV9YUDM5aldaeE4wSVNtaDI4NXhEUDJtSTg5cnFDVUlneS03UlFBYXg5RXhTN192Z3RTcDdLOE9teDVoeWp2NnJTOURlc20yMkxITHp3bmZGWks2dFlwOEk3NDdkQXVMMnBNOFE0VWtPZm1PME5mdGN4bXhlMFZuUQ?oc=5",
+          "item_type": "news_article",
+          "title": "EMSA OPR Vessels, EAS and MAR-ICE - Activities Report 2025. Sustainability and Technical Assistance - EMSA",
+          "authors_or_author": [
+            "EMSA - European Maritime Safety Agency"
+          ],
+          "published_at": "2026-04-10",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOX0RxREdRSVFGSG9EeXNfOEcxdnBwVUVFNEMzSUp0c2tKTTVhZ3NBSVVVeFBfcVZVN20yUUk0MFBDdDJMLTVSWU1Da2NxYkMzMUhOX0hGbGZ6dFVyazRHMXZhYi1WdURoTWtnTWptNV9YUDM5aldaeE4wSVNtaDI4NXhEUDJtSTg5cnFDVUlneS03UlFBYXg5RXhTN192Z3RTcDdLOE9teDVoeWp2NnJTOURlc20yMkxITHp3bmZGWks2dFlwOEk3NDdkQXVMMnBNOFE0VWtPZm1PME5mdGN4bXhlMFZuUQ?oc=5",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 3.5,
+          "abstract_or_body": "EMSA OPR Vessels, EAS and MAR-ICE - Activities Report 2025. Sustainability and Technical Assistance &nbsp;&nbsp; EMSA - European Maritime Safety Agency",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-10\n- Authors: EMSA - European Maritime Safety Agency\n- DOI: N/A\n- Link: https://news.google.com/rss/articles/CBMi5gFBVV95cUxOX0RxREdRSVFGSG9EeXNfOEcxdnBwVUVFNEMzSUp0c2tKTTVhZ3NBSVVVeFBfcVZVN20yUUk0MFBDdDJMLTVSWU1Da2NxYkMzMUhOX0hGbGZ6dFVyazRHMXZhYi1WdURoTWtnTWptNV9YUDM5aldaeE4wSVNtaDI4NXhEUDJtSTg5cnFDVUlneS03UlFBYXg5RXhTN192Z3RTcDdLOE9teDVoeWp2NnJTOURlc20yMkxITHp3bmZGWks2dFlwOEk3NDdkQXVMMnBNOFE0VWtPZm1PME5mdGN4bXhlMFZuUQ?oc=5",
+            "source_excerpt": "EMSA OPR Vessels, EAS and MAR-ICE - Activities Report 2025. Sustainability and Technical Assistance &nbsp;&nbsp; EMSA - European Maritime Safety Agency",
+            "short_summary": "The 2025 Activities Report from the European Maritime Safety Agency (EMSA) details operations of OPR Vessels, the European Assistance Service (EAS), and the MAR-ICE network. It highlights sustainability efforts and technical support provided to EU member states in maritime safety and pollution response. The report covers key activities, performance metrics, and advancements in maritime assistance. EMSA’s role in coordinating emergency responses and improving maritime infrastructure is emphasized."
+          }
+        },
+        {
+          "item_id": "6e01588380509cfb49f14ecb84ea28309bbb3ad4a28ca01e66c4ebd7f0c7bddd",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7151943292",
+          "item_type": "paper",
+          "title": "Editorial for the First Edition of the Special Issue “Risk and Safety of Maritime Transportation”",
+          "authors_or_author": [
+            "Andrea Maternová"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://doi.org/10.3390/app16073604",
+          "doi": "10.3390/app16073604",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 3.5,
+          "abstract_or_body": "“Shipping is perhaps the most international of all the world’s great industries and one of the most dangerous [...]",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: Andrea Maternová\n- DOI: 10.3390/app16073604\n- Link: https://doi.org/10.3390/app16073604",
+            "source_excerpt": "“Shipping is perhaps the most international of all the world’s great industries and one of the most dangerous [...]",
+            "short_summary": "This editorial introduces a special issue focused on the risks and safety challenges in maritime transportation. It highlights shipping as a globally critical yet hazardous industry. The issue aims to address key concerns in maritime safety and risk management. No specific findings or methods are detailed in the provided text."
+          }
+        },
+        {
+          "item_id": "ac7b503984cf186eb3cf6736648f930fa99cbfaf9152cda7debdc168b1deb02c",
+          "source": "Marine Insight",
+          "source_id": "https://www.marineinsight.com/iran-allows-only-15-ships-to-cross-strait-of-hormuz-daily-per-the-ceasefire-agreement/?utm_source=rss&utm_medium=rss&utm_campaign=iran-allows-only-15-ships-to-cross-strait-of-hormuz-daily-per-the-ceasefire-agreement",
+          "item_type": "news_article",
+          "title": "Iran Allows Only 15 Ships To Cross Strait Of Hormuz Daily Per The Ceasefire Agreement",
+          "authors_or_author": [
+            "Marine Insight"
+          ],
+          "published_at": "2026-04-10",
+          "url": "https://www.marineinsight.com/iran-allows-only-15-ships-to-cross-strait-of-hormuz-daily-per-the-ceasefire-agreement/?utm_source=rss&utm_medium=rss&utm_campaign=iran-allows-only-15-ships-to-cross-strait-of-hormuz-daily-per-the-ceasefire-agreement",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 3.0,
+          "abstract_or_body": "Shipping through the Strait of Hormuz remained limited on Thursday even after a ceasefire between Iran and the United States.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-10\n- Authors: Marine Insight\n- DOI: N/A\n- Link: https://www.marineinsight.com/iran-allows-only-15-ships-to-cross-strait-of-hormuz-daily-per-the-ceasefire-agreement/?utm_source=rss&utm_medium=rss&utm_campaign=iran-allows-only-15-ships-to-cross-strait-of-hormuz-daily-per-the-ceasefire-agreement",
+            "source_excerpt": "Shipping through the Strait of Hormuz remained limited on Thursday even after a ceasefire between Iran and the United States.",
+            "short_summary": "Iran has restricted shipping in the Strait of Hormuz to 15 vessels per day under a ceasefire agreement. The limitation remained in effect despite the truce between Iran and the United States. The measure was implemented following recent tensions in the region. No further details on enforcement or duration were provided."
+          }
+        },
+        {
+          "item_id": "568b0872aca0028e4dee54b136ab939c87814a4c4b82c3f8659ffb6febbd3ccc",
+          "source": "Marine Insight",
+          "source_id": "https://www.marineinsight.com/just-12-ships-cross-strait-of-hormuz-after-us-iran-ceasefire-trump-alleges-iran-charging-tolls/?utm_source=rss&utm_medium=rss&utm_campaign=just-12-ships-cross-strait-of-hormuz-after-us-iran-ceasefire-trump-alleges-iran-charging-tolls",
+          "item_type": "news_article",
+          "title": "Just 12 Ships Cross Strait Of Hormuz After US-Iran Ceasefire; Trump Alleges Iran Charging Tolls",
+          "authors_or_author": [
+            "Marine Insight"
+          ],
+          "published_at": "2026-04-10",
+          "url": "https://www.marineinsight.com/just-12-ships-cross-strait-of-hormuz-after-us-iran-ceasefire-trump-alleges-iran-charging-tolls/?utm_source=rss&utm_medium=rss&utm_campaign=just-12-ships-cross-strait-of-hormuz-after-us-iran-ceasefire-trump-alleges-iran-charging-tolls",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 3.0,
+          "abstract_or_body": "Data from Kpler shows that only 12 ships have passed through the strait since the ceasefire was announced on April 8.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-10\n- Authors: Marine Insight\n- DOI: N/A\n- Link: https://www.marineinsight.com/just-12-ships-cross-strait-of-hormuz-after-us-iran-ceasefire-trump-alleges-iran-charging-tolls/?utm_source=rss&utm_medium=rss&utm_campaign=just-12-ships-cross-strait-of-hormuz-after-us-iran-ceasefire-trump-alleges-iran-charging-tolls",
+            "source_excerpt": "Data from Kpler shows that only 12 ships have passed through the strait since the ceasefire was announced on April 8.",
+            "short_summary": "Only 12 ships crossed the Strait of Hormuz following the US-Iran ceasefire announced on April 8, 2026, according to Kpler data. The low traffic contrasts with previous levels of maritime activity in the region. President Trump alleged that Iran is imposing tolls on vessels passing through the strait. The article does not provide further details on toll claims or verification."
+          }
+        },
+        {
+          "item_id": "da2d897fed5e5fc3cb98a68a1e372c798bbc73f25ef20017368ddc670f12433a",
+          "source": "Marine Insight",
+          "source_id": "https://www.marineinsight.com/maryland-secures-settlement-with-cargo-ship-owners-over-baltimore-bridge-collapse-that-killed-6/?utm_source=rss&utm_medium=rss&utm_campaign=maryland-secures-settlement-with-cargo-ship-owners-over-baltimore-bridge-collapse-that-killed-6",
+          "item_type": "news_article",
+          "title": "Maryland Secures Settlement With Cargo Ship Owners Over Baltimore Bridge Collapse That Killed 6",
+          "authors_or_author": [
+            "Marine Insight"
+          ],
+          "published_at": "2026-04-10",
+          "url": "https://www.marineinsight.com/maryland-secures-settlement-with-cargo-ship-owners-over-baltimore-bridge-collapse-that-killed-6/?utm_source=rss&utm_medium=rss&utm_campaign=maryland-secures-settlement-with-cargo-ship-owners-over-baltimore-bridge-collapse-that-killed-6",
+          "doi": null,
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 3.0,
+          "abstract_or_body": "The state sought compensation for the destroyed bridge, loss of revenue, environmental damage, and economic losses.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-10\n- Authors: Marine Insight\n- DOI: N/A\n- Link: https://www.marineinsight.com/maryland-secures-settlement-with-cargo-ship-owners-over-baltimore-bridge-collapse-that-killed-6/?utm_source=rss&utm_medium=rss&utm_campaign=maryland-secures-settlement-with-cargo-ship-owners-over-baltimore-bridge-collapse-that-killed-6",
+            "source_excerpt": "The state sought compensation for the destroyed bridge, loss of revenue, environmental damage, and economic losses.",
+            "short_summary": "Maryland reached a settlement with the owners of the cargo ship responsible for the Baltimore bridge collapse in 2026. The agreement covers compensation for the destroyed bridge, lost revenue, environmental damage, and broader economic losses. The collapse had previously resulted in six fatalities. No further details on the settlement amount or terms were disclosed."
+          }
+        },
+        {
+          "item_id": "73887f4c8ef074aac75e1d7c239ca5289a798f3c58e75dabf74f0a8359b991c6",
+          "source": "crossref",
+          "source_id": "10.1057/s41278-026-00354-7",
+          "item_type": "paper",
+          "title": "Exploring the drivers of ship idling decisions in container shipping: a Zero-Truncated Negative Binomial model",
+          "authors_or_author": [
+            "Lixian Fan",
+            "Le Wu",
+            "Shaohan Wang",
+            "Xinxin Liu"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://doi.org/10.1057/s41278-026-00354-7",
+          "doi": "10.1057/s41278-026-00354-7",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 0.0,
+          "abstract_or_body": "The container shipping industry, characterized by high volatility and uncertainty in freight markets, requires shipping companies to adopt flexible and responsive operational fleet strategies. Vessel idling—temporarily withdrawing ships from active operation while keeping them technically available—is a key practice, yet the determinants underlying its application in today’s volatile environment are not yet fully understood. This study investigates the determinants of vessel idle duration, measured as monthly idle days per vessel. Using a panel dataset of over 19,544 vessel-month observations from January 2022 to December 2024, a Zero-Truncated Negative Binomial (ZTNB) model examines how vessel-specific characteristics, company-level factors, and market conditions influence idle decisions. Results show older vessels endure longer idling, while larger vessels and those in bigger fleets are idled for shorter durations, reflecting a more strategic use of this practice. Market factors such as freight rates and supply-demand balance significantly affect idle duration. These findings offer a data-driven perspective on short-term capacity management and practical insights for improving fleet deployment strategies, such as optimizing vessel reactivation timing and fleet composition during market downturns.",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: Lixian Fan, Le Wu, Shaohan Wang, Xinxin Liu\n- DOI: 10.1057/s41278-026-00354-7\n- Link: https://doi.org/10.1057/s41278-026-00354-7",
+            "source_excerpt": "The container shipping industry, characterized by high volatility and uncertainty in freight markets, requires shipping companies to adopt flexible and responsive operational fleet strategies. Vessel idling—temporarily withdrawing ships from active operation while keeping them technically available—is a key practice, yet the determinants underlying its application in today’s volatile environment are not yet fully understood. This study investigates the determinants of vessel idle duration, measured as monthly idle days per vessel. Using a panel dataset of over 19,544 vessel-month observations from January 2022 to December 2024, a Zero-Truncated Negative Binomial (ZTNB) model examines how vessel-specific characteristics, company-level factors, and market conditions influence idle decisions. Results show older vessels endure longer idling, while larger vessels and those in bigger fleets are idled for shorter durations, reflecting a more strategic use of this practice. Market factors such as freight rates and supply-demand balance significantly affect idle duration. These findings offer a data-driven perspective on short-term capacity management and practical insights for improving fleet deployment strategies, such as optimizing vessel reactivation timing and fleet composition during market downturns.",
+            "short_summary": "This study analyzes factors influencing ship idling duration in container shipping using a Zero-Truncated Negative Binomial model. Data from 19,544 vessel-month observations (2022–2024) revealed older vessels idle longer, while larger vessels and those in bigger fleets idle for shorter periods. Freight rates and supply-demand balance also significantly impact idling decisions. The findings provide insights for optimizing fleet deployment during market downturns."
+          }
+        },
+        {
+          "item_id": "383da4fe1381291d52ef882fdbbb0dbfe79d5781dadec596a36f7fa7985730f5",
+          "source": "openalex",
+          "source_id": "https://openalex.org/W7152382850",
+          "item_type": "paper",
+          "title": "SeaGuard-AI: An Adversarial Robust Framework For Reliable Sea State Estimation In Autonomous Marine Vessels",
+          "authors_or_author": [
+            "Mrs.KanakaTulasi P.Reddi"
+          ],
+          "published_at": "2026-04-07",
+          "url": "https://doi.org/10.61137/ijsret.vol.12.issue2.152",
+          "doi": "10.61137/ijsret.vol.12.issue2.152",
+          "topic_ids": [
+            "ship_autonomy"
+          ],
+          "relevance_score": 0.0,
+          "abstract_or_body": "Image processing Research Paper, Research Paper on Image Processing, Survey on VLSI with implementation on wind tool, free paper download, free survey paper",
+          "summary": {
+            "provider": "mistral:mistral-large-latest",
+            "metadata_markdown": "- Date: 2026-04-07\n- Authors: Mrs.KanakaTulasi P.Reddi\n- DOI: 10.61137/ijsret.vol.12.issue2.152\n- Link: https://doi.org/10.61137/ijsret.vol.12.issue2.152",
+            "source_excerpt": "Image processing Research Paper, Research Paper on Image Processing, Survey on VLSI with implementation on wind tool, free paper download, free survey paper",
+            "short_summary": "The paper *SeaGuard-AI* introduces an adversarial-robust framework designed for reliable sea state estimation in autonomous marine vessels. Authored by Mrs. Kanaka Tulasi P. Reddi, it focuses on improving the accuracy and security of image-processing-based systems against adversarial attacks. The work is scheduled for publication on April 7, 2026. Additional unrelated topics, such as VLSI surveys and free paper downloads, are mentioned but not part of the core research."
+          }
+        }
+      ]
+    }
+  ]
+}

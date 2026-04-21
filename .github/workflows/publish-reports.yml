@@ -1,0 +1,50 @@
+name: Publish Reports to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "reports/**"
+      - "jekyll/**"
+      - "scripts/build_jekyll_site.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+
+      - name: Install Jekyll dependencies
+        run: bundle install
+        working-directory: jekyll
+
+      - name: Prepare Jekyll site content from reports
+        run: python scripts/build_jekyll_site.py
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --destination ../_site_output
+        working-directory: jekyll
+        env:
+          JEKYLL_ENV: production
+
+      - name: Deploy to GitHub Pages (gh-pages branch)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site_output
