@@ -125,7 +125,7 @@ def main() -> None:
                         "report_type": report_type,
                         "window_start": start_str,
                         "window_end": end_str,
-                        "permalink": f"/custom_TLDR_app/reports/{year}/{week}/{report_type}/",
+                        "permalink": f"/reports/{year}/{week}/{report_type}/",
                     },
                 )
                 if report_type == "news":
